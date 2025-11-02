@@ -1,7 +1,7 @@
 # Olems-Watchlist
 A website showcasing my personal watchlist of movies, organized by genres and themes. Each film is presented with a custom-designed movie card, featuring a cover art, title, and overview, styled with a responsive, modern UI using HTML, CSS, and JavaScript.
 
-18 October 2025 - 
+**Timeline**: 18 October 2025 - 2 November 2025
 
 ## Adding Posters Progress Tracker
 
