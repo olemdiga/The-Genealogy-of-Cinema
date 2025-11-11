@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Computer Crimes</title>
+    <title>Computer Crimes - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing computer crime movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing computer crime movies I've watched, rated by color. Explore hacking thrillers, cybercrime documentaries and digital intrigue.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Computer Crimes</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Digital intrigue, cyber heists, and hacking adventures that explore the dark side of technology.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 9 movies</span>
+            <span class="movie-count">2 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -29,6 +34,7 @@
             <li><a href="black-lives.html">Black Lives</a></li>
             <li><a href="christmas-family.html">Christmas & Family</a></li>
             <li><a href="comedy.html">Comedy</a></li>
+            <li><a href="computer-crimes.html" aria-current="page">Computer Crimes</a></li>
             <li><a href="computers.html">Computers</a></li>
             <li><a href="crime.html">Crime</a></li>
             <li><a href="documentary.html">Documentary</a></li>
@@ -53,120 +59,178 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Documentaries on Cybercrime</h2>
-            <p>Real-life explorations of hacking, cyber warfare, and digital underworlds.</p>
+        <!-- Documentaries on Cybercrime Section -->
+        <section class="movie-section" aria-labelledby="cybercrime-docs-heading">
+            <header class="section-header">
+                <h2 id="cybercrime-docs-heading">Documentaries on Cybercrime</h2>
+                <p>Real-life explorations of hacking, cyber warfare, and digital underworlds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/computer-crimes/Zero Days.jpg" alt="Zero Days Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/computer-crimes/Zero Days.jpg" alt="Zero Days movie poster" loading="lazy">
+                        <figcaption class="sr-only">Zero Days (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Zero Days (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stuxnet’s cyber sabotage exposes the chilling reality of digital warfare. Tense and revelatory, it’s a code-breaking thriller that doesn’t need a sequel. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stuxnet's cyber sabotage exposes the chilling reality of digital warfare. Tense and revelatory, it's a code-breaking thriller that doesn't need a sequel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/computer-crimes/TPB AFK.jpg" alt="TPB AFK Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/computer-crimes/TPB AFK.jpg" alt="TPB AFK - The Pirate Bay - Away from Keyboard movie poster" loading="lazy">
+                        <figcaption class="sr-only">TPB AFK - The Pirate Bay - Away from Keyboard (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>TPB AFK - The Pirate Bay - Away from Keyboard (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pirate Bay’s founders navigate courtroom storms over their torrent empire. Raw and rebellious, though the legal tangles can feel like a download stuck at 99%. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Pirate Bay's founders navigate courtroom storms over their torrent empire. Raw and rebellious, though the legal tangles can feel like a download stuck at 99%.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/computer-crimes/We Are Legion.jpg" alt="We Are Legion Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/computer-crimes/We Are Legion.jpg" alt="We Are Legion - The Story of the Hacktivists movie poster" loading="lazy">
+                        <figcaption class="sr-only">We Are Legion - The Story of the Hacktivists (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>We Are Legion - The Story of the Hacktivists (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Anonymous unmasks the power of hacktivism in a digital uprising. Chaotic and eye-opening, but the anonymity blurs the focus at times. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Anonymous unmasks the power of hacktivism in a digital uprising. Chaotic and eye-opening, but the anonymity blurs the focus at times.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/computer-crimes/Billion Dollar Heist.jpg" alt="Billion Dollar Heist Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/computer-crimes/Billion Dollar Heist.jpg" alt="Billion Dollar Heist movie poster" loading="lazy">
+                        <figcaption class="sr-only">Billion Dollar Heist (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Billion Dollar Heist (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Digital bandits pull off a crypto caper that shakes the blockchain world. Gripping dive into dark web dealings, though the tech jargon might crash your system. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Digital bandits pull off a crypto caper that shakes the blockchain world. Gripping dive into dark web dealings, though the tech jargon might crash your system.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/computer-crimes/Cyberbunker - The Criminal Underworld.jpg" alt="Cyberbunker Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/computer-crimes/Cyberbunker - The Criminal Underworld.jpg" alt="Cyberbunker - The Criminal Underworld movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cyberbunker - The Criminal Underworld (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cyberbunker - The Criminal Underworld (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bunker hosts servers for the internet’s shadiest schemes. Fascinating peek into cybercrime’s fortress, but the narrative occasionally buffers. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bunker hosts servers for the internet's shadiest schemes. Fascinating peek into cybercrime's fortress, but the narrative occasionally buffers.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Fictional Hacking Thrillers</h2>
-            <p>Dramatic tales of cybercrime, espionage, and digital intrigue.</p>
+        <!-- Fictional Hacking Thrillers Section -->
+        <section class="movie-section" aria-labelledby="hacking-thrillers-heading">
+            <header class="section-header">
+                <h2 id="hacking-thrillers-heading">Fictional Hacking Thrillers</h2>
+                <p>Dramatic tales of cybercrime, espionage, and digital intrigue.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/computer-crimes/WarGames.jpg" alt="WarGames Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/computer-crimes/WarGames.jpg" alt="WarGames movie poster" loading="lazy">
+                        <figcaption class="sr-only">WarGames (1983)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>WarGames (1983)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen’s modem mischief nearly triggers nuclear armageddon. Cold War tension meets early internet charm, still clicking despite dated dial-up vibes. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen's modem mischief nearly triggers nuclear armageddon. Cold War tension meets early internet charm, still clicking despite dated dial-up vibes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/computer-crimes/Blackhat.jpg" alt="Blackhat Cover">
-                    <div class="movie-title">
-                        <h3>Blackhat (2015)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A convicted coder hunts a digital phantom wreaking global havoc. Gritty tech-thriller vibes, but the keyboard action clacks louder than the plot. Rating: 3/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/computer-crimes/Hackers.jpg" alt="Hackers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/computer-crimes/Hackers.jpg" alt="Hackers movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hackers (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hackers (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teen tech rebels hack their way out of a corporate frame job. 90s nostalgia pops with neon flair, though the tech looks more retro than radical now. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Teen tech rebels hack their way out of a corporate frame job. Pure 90s cyberpunk gold with iconic style, killer soundtrack, and cult classic charm that defined a generation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/computer-crimes/Hacker (2016).jpg" alt="Hacker Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/computer-crimes/Blackhat.jpg" alt="Blackhat movie poster" loading="lazy">
+                        <figcaption class="sr-only">Blackhat (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Blackhat (2015)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A convicted coder hunts a digital phantom wreaking global havoc. Gritty tech-thriller vibes, but the keyboard action clacks louder than the plot.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/computer-crimes/Hacker (2016).jpg" alt="Hacker movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hacker (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hacker (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A desperate coder dives into the dark web to fund his family’s dreams. Ambition meets ambition, but the stakes feel as repetitive as a phishing scam. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>A desperate coder dives into the dark web to fund his family's dreams. Ambition meets ambition, but the stakes feel as repetitive as a phishing scam.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Serial Killers</title>
+    <title>Serial Killers - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing serial killer movies sorted by theme, with witty, insightful overviews and objective ratings based on Rotten Tomatoes consensus, factoring in negative reviews.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing serial killer movies I've watched, rated by color. Explore psychological thrillers, cat-and-mouse investigations, and chilling true crime stories.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Serial Killers</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Chilling psychological thrillers, cat-and-mouse investigations, and true crime stories that explore the darkest corners of the human psyche.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 15 movies</span>
+            <span class="movie-count">3 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -47,193 +52,288 @@
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="religion-mythology.html">Religion & Mythology</a></li>
             <li><a href="sci-fi.html">Sci-Fi</a></li>
+            <li><a href="serial-killers.html" aria-current="page">Serial Killers</a></li>
             <li><a href="series-films.html">Series Films</a></li>
             <li><a href="sports.html">Sports</a></li>
             <li><a href="spy-film.html">Spy Film</a></li>
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Hannibal Lecter Saga</h2>
-            <p>The chilling exploits of the iconic cannibalistic genius and those who hunt him.</p>
+        <!-- Hannibal Lecter Saga Section -->
+        <section class="movie-section" aria-labelledby="hannibal-lecter-heading">
+            <header class="section-header">
+                <h2 id="hannibal-lecter-heading">Hannibal Lecter Saga</h2>
+                <p>The chilling exploits of the iconic cannibalistic genius and those who hunt him.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/serial-killer/The Silence of the Lambs.jpeg" alt="The Silence of the Lambs Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/serial-killer/The Silence of the Lambs.jpeg" alt="The Silence of the Lambs movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Silence of the Lambs (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Silence of the Lambs (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rookie FBI agent consults a caged cannibal to catch a skin-flaying killer. Hopkins’ hypnotic Lecter and Foster’s steely Clarice mesmerize, though some find its violence indulgent. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rookie FBI agent consults a caged cannibal to catch a skin-flaying killer. Hopkins' hypnotic Lecter and Foster's steely Clarice mesmerize, though some find its violence indulgent.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/serial-killer/Manhunter.jpg" alt="Manhunter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/serial-killer/Manhunter.jpg" alt="Manhunter movie poster" loading="lazy">
+                        <figcaption class="sr-only">Manhunter (1986)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Manhunter (1986)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A profiler hunts the Tooth Fairy killer with Lecter’s twisted aid. Mann’s stylish visuals pop, but dated pacing and less charismatic Lecter dull its edge. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A profiler hunts the Tooth Fairy killer with Lecter's twisted aid. Mann's stylish visuals pop, but dated pacing and less charismatic Lecter dull its edge.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/serial-killer/Red Dragon.jpg" alt="Red Dragon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/serial-killer/Red Dragon.jpg" alt="Red Dragon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Red Dragon (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Red Dragon (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A retired profiler faces the Tooth Fairy with Lecter’s help. Strong cast delivers, but formulaic retread of Manhunter lacks fresh bite. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A retired profiler faces the Tooth Fairy with Lecter's help. Strong cast delivers, but formulaic retread of Manhunter lacks fresh bite.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/serial-killer/Hannibal.jpg" alt="Hannibal Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/serial-killer/Hannibal.jpg" alt="Hannibal movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hannibal (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hannibal (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Lecter’s free and hunted by a disfigured victim in a grotesque sequel. Hopkins’ charm lingers, but cartoonish excess and missing Clarice spark sap its menace. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Lecter's free and hunted by a disfigured victim in a grotesque sequel. Hopkins' charm lingers, but cartoonish excess and missing Clarice spark sap its menace.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/serial-killer/Hannibal Rising.jpg" alt="Hannibal Rising Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/serial-killer/Hannibal Rising.jpg" alt="Hannibal Rising movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hannibal Rising (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hannibal Rising (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Young Lecter’s origin traces his descent into cannibalistic vengeance. Intriguing premise flounders with dull execution and uninspired villainy, stripping the icon’s mystique. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Young Lecter's origin traces his descent into cannibalistic vengeance. Intriguing premise flounders with dull execution and uninspired villainy, stripping the icon's mystique.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Psychological & Social Critique</h2>
-            <p>Killers reflecting society’s darkness or personal obsession.</p>
+        <!-- Psychological & Social Critique Section -->
+        <section class="movie-section" aria-labelledby="psychological-critique-heading">
+            <header class="section-header">
+                <h2 id="psychological-critique-heading">Psychological & Social Critique</h2>
+                <p>Killers reflecting society's darkness or personal obsession.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/serial-killer/Se7en.jpg" alt="Se7en Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/serial-killer/Se7en.jpg" alt="Se7en movie poster" loading="lazy">
+                        <figcaption class="sr-only">Se7en (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Se7en (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two detectives hunt a killer staging murders by the seven sins. Fincher’s grim masterpiece grips with dread, though its bleakness and shock tactics overwhelm some. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two detectives hunt a killer staging murders by the seven sins. Fincher's grim masterpiece grips with dread, though its bleakness and shock tactics overwhelm some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/serial-killer/American Psycho.jpg" alt="American Psycho Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/serial-killer/American Psycho.jpg" alt="American Psycho movie poster" loading="lazy">
+                        <figcaption class="sr-only">American Psycho (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>American Psycho (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A yuppie banker’s polished facade hides a bloodthirsty killer. Bale’s chilling satire skewers capitalism, but graphic violence and cold tone alienate some viewers. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A yuppie banker's polished facade hides a bloodthirsty killer. Bale's chilling satire skewers capitalism, but graphic violence and cold tone alienate some viewers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/serial-killer/Perfume - The Story of a Murderer.jpg" alt="Perfume: The Story of a Murderer Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/serial-killer/Perfume - The Story of a Murderer.jpg" alt="Perfume: The Story of a Murderer movie poster" loading="lazy">
+                        <figcaption class="sr-only">Perfume: The Story of a Murderer (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Perfume: The Story of a Murderer (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An 18th-century obsessive kills to craft the perfect scent. Lush visuals enchant, but slow pacing and detached tone make its grim tale hard to inhale. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>An 18th-century obsessive kills to craft the perfect scent. Lush visuals enchant, but slow pacing and detached tone make its grim tale hard to inhale.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/serial-killer/Henry - Portrait of a Serial Killer.jpg" alt="Henry: Portrait of a Serial Killer Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/serial-killer/Henry - Portrait of a Serial Killer.jpg" alt="Henry: Portrait of a Serial Killer movie poster" loading="lazy">
+                        <figcaption class="sr-only">Henry: Portrait of a Serial Killer (1986)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Henry: Portrait of a Serial Killer (1986)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A drifter’s aimless murders expose raw psychopathy. Unflinching and unsettling, but low-budget grit and relentless bleakness repel mainstream audiences. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A drifter's aimless murders expose raw psychopathy. Unflinching and unsettling, but low-budget grit and relentless bleakness repel mainstream audiences.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Cat-and-Mouse Investigations</h2>
-            <p>Detectives and profilers chasing elusive, twisted minds.</p>
+        <!-- Cat-and-Mouse Investigations Section -->
+        <section class="movie-section" aria-labelledby="cat-and-mouse-heading">
+            <header class="section-header">
+                <h2 id="cat-and-mouse-heading">Cat-and-Mouse Investigations</h2>
+                <p>Detectives and profilers chasing elusive, twisted minds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/serial-killer/Identity.jpg" alt="Identity Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/serial-killer/Identity.jpg" alt="Identity movie poster" loading="lazy">
+                        <figcaption class="sr-only">Identity (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Identity (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stranded motel guests die one by one, tied to a killer’s psyche. Clever twists keep it gripping, but gimmicky reveals and weak logic frustrate some. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stranded motel guests die one by one, tied to a killer's psyche. Clever twists keep it gripping, but gimmicky reveals and weak logic frustrate some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/serial-killer/The Bone Collector.jpg" alt="The Bone Collector Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/serial-killer/The Bone Collector.jpg" alt="The Bone Collector movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Bone Collector (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Bone Collector (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A paralyzed forensic expert guides a rookie to catch a brutal killer. Washington’s intensity anchors, but formulaic thrills and dated clichés dull the chase. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A paralyzed forensic expert guides a rookie to catch a brutal killer. Washington's intensity anchors, but formulaic thrills and dated clichés dull the chase.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/serial-killer/The Frozen Ground.jpg" alt="The Frozen Ground Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/serial-killer/The Frozen Ground.jpg" alt="The Frozen Ground movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Frozen Ground (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Frozen Ground (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cop and a teen survivor hunt an Alaskan serial killer. Cage and Cusack try hard, but generic scripting and sluggish pacing freeze its potential. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cop and a teen survivor hunt an Alaskan serial killer. Cage and Cusack try hard, but generic scripting and sluggish pacing freeze its potential.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/serial-killer/No Man of God.jpg" alt="No Man of God Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/serial-killer/No Man of God.jpg" alt="No Man of God movie poster" loading="lazy">
+                        <figcaption class="sr-only">No Man of God (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>No Man of God (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An FBI analyst profiles Ted Bundy through prison talks. Wood’s chilling Bundy intrigues, but stagey dialogue and lack of depth make it feel like a TV special. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>An FBI analyst profiles Ted Bundy through prison talks. Wood's chilling Bundy intrigues, but stagey dialogue and lack of depth make it feel like a TV special.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/serial-killer/The Postcard Killings.jpg" alt="The Postcard Killings Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/serial-killer/The Postcard Killings.jpg" alt="The Postcard Killings movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Postcard Killings (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Postcard Killings (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A detective tracks a killer staging murders as art across Europe. Intriguing setup collapses under clunky acting and a predictable, plodding script. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A detective tracks a killer staging murders as art across Europe. Intriguing setup collapses under clunky acting and a predictable, plodding script.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/serial-killer/Hangman.jpg" alt="Hangman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/serial-killer/Hangman.jpg" alt="Hangman movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hangman (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hangman (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cop and profiler chase a killer playing deadly word games. Pacino’s grit can’t save a derivative plot, shoddy writing, and laughable twists. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cop and profiler chase a killer playing deadly word games. Pacino's grit can't save a derivative plot, shoddy writing, and laughable twists.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

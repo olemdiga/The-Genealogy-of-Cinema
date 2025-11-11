@@ -3,25 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>African</title>
+    <title>African Movies - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing African movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing African movies I've watched, rated by color. Explore anti-apartheid dramas, coming-of-age stories, crime thrillers and more.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
-        <h1>African</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
+        <h1>African Cinema</h1>
+        <p>Exploring the vibrant world of African storytelling through films that explore diverse themes, cultures, and perspectives from across the continent.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 114 movies</span>
+            <span class="movie-count">8 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
-            <li><a href="african.html">African</a></li>
+            <li><a href="african.html" aria-current="page">African</a></li>
             <li><a href="ai-machines.html">AI & Machines</a></li>
             <li><a href="animation.html">Animation</a></li>
             <li><a href="apocalyptic.html">Apocalyptic</a></li>
@@ -54,1263 +59,1915 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html" aria-current="page">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Anti-Apartheid and Racial Justice</h2>
-            <p>Movies exploring the struggles against apartheid, racial discrimination, and the fight for equality in South Africa.</p>
+        <!-- Anti-Apartheid and Racial Justice Section -->
+        <section class="movie-section" aria-labelledby="anti-apartheid-heading">
+            <header class="section-header">
+                <h2 id="anti-apartheid-heading">Anti-Apartheid and Racial Justice</h2>
+                <p>Movies exploring the struggles against apartheid, racial discrimination, and the fight for equality in South Africa.</p>
+                <div class="section-stats">
+                    <span class="movie-count">18 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/african/Moffie.jpg" alt="Moffie Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/african/Moffie.jpg" alt="Moffie movie poster showing soldiers in training" loading="lazy">
+                        <figcaption class="sr-only">Moffie (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Moffie (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young gay conscript endures brutal military training amid apartheid's homophobic regime, where survival means hiding his true self in a sea of toxic masculinity. Gritty and unflinching, it exposes the scars of forced conformity. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young gay conscript endures brutal military training amid apartheid's homophobic regime, where survival means hiding his true self in a sea of toxic masculinity. Gritty and unflinching, it exposes the scars of forced conformity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Cry, the Beloved Country.jpg" alt="Cry, the Beloved Country Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Cry, the Beloved Country.jpg" alt="Cry, the Beloved Country movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cry, the Beloved Country (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cry, the Beloved Country (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pastor searches for his son in Johannesburg, finding him entangled in murder and apartheid's grip. Heartfelt but heavy, it leans hard into tragedy. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pastor searches for his son in Johannesburg, finding him entangled in murder and apartheid's grip. Heartfelt but heavy, it leans hard into tragedy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/A United Kingdom.jpg" alt="A United Kingdom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/A United Kingdom.jpg" alt="A United Kingdom movie poster showing interracial couple" loading="lazy">
+                        <figcaption class="sr-only">A United Kingdom (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A United Kingdom (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A prince's interracial marriage sparks diplomatic chaos in colonial Africa. Love defies borders, but the drama feels polished to a predictable sheen. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A prince's interracial marriage sparks diplomatic chaos in colonial Africa. Love defies borders, but the drama feels polished to a predictable sheen.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Disgrace.jpg" alt="Disgrace Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Disgrace.jpg" alt="Disgrace movie poster" loading="lazy">
+                        <figcaption class="sr-only">Disgrace (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Disgrace (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A shamed professor retreats to his daughter's farm, facing post-apartheid violence and regret. Raw and unflinching, but the gloom overshadows insight. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A shamed professor retreats to his daughter's farm, facing post-apartheid violence and regret. Raw and unflinching, but the gloom overshadows insight.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Invictus.jpg" alt="Invictus Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Invictus.jpg" alt="Invictus movie poster with Morgan Freeman as Mandela" loading="lazy">
+                        <figcaption class="sr-only">Invictus (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Invictus (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mandela rallies South Africa behind rugby to heal apartheid's scars. Uplifting and polished, but the sports drama overshadows deeper divides. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mandela rallies South Africa behind rugby to heal apartheid's scars. Uplifting and polished, but the sports drama overshadows deeper divides.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/A Dry White Season.jpg" alt="A Dry White Season Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/A Dry White Season.jpg" alt="A Dry White Season movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Dry White Season (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Dry White Season (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teacher uncovers apartheid's brutality after a tragic death, diving into a legal battle against systemic oppression. Truth stings, but the pace drags like a dusty trail. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teacher uncovers apartheid's brutality after a tragic death, diving into a legal battle against systemic oppression. Truth stings, but the pace drags like a dusty trail.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Cry Freedom.jpg" alt="Cry Freedom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Cry Freedom.jpg" alt="Cry Freedom movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cry Freedom (1987)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cry Freedom (1987)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A journalist bonds with activist Steve Biko, fleeing South Africa after his death. Friendship fuels resistance, though the white lens softens the edge. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A journalist bonds with activist Steve Biko, fleeing South Africa after his death. Friendship fuels resistance, though the white lens softens the edge.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Escape From Pretoria.jpg" alt="Escape From Pretoria Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Escape From Pretoria.jpg" alt="Escape From Pretoria movie poster" loading="lazy">
+                        <figcaption class="sr-only">Escape From Pretoria (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Escape From Pretoria (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Anti-apartheid activists carve keys for a daring prison break. Tense and clever, but the stakes feel more mechanical than revolutionary. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Anti-apartheid activists carve keys for a daring prison break. Tense and clever, but the stakes feel more mechanical than revolutionary.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Silverton Siege.jpg" alt="Silverton Siege Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Silverton Siege.jpg" alt="Silverton Siege movie poster" loading="lazy">
+                        <figcaption class="sr-only">Silverton Siege (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Silverton Siege (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Anti-apartheid fighters take a bank hostage to free Mandela. Tense but tidy, it delivers action over nuanced history. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Anti-apartheid fighters take a bank hostage to free Mandela. Tense but tidy, it delivers action over nuanced history.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Mandela.jpg" alt="Mandela Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Mandela.jpg" alt="Mandela movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mandela (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mandela (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mandela's life from village boy to president unfolds in broad strokes. Sweeping but shallow, it skims the surface of a titan’s journey. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mandela's life from village boy to president unfolds in broad strokes. Sweeping but shallow, it skims the surface of a titan's journey.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Mandela - Long Walk to Freedom.jpg" alt="Mandela: Long Walk to Freedom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Mandela - Long Walk to Freedom.jpg" alt="Mandela: Long Walk to Freedom movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mandela: Long Walk to Freedom (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mandela: Long Walk to Freedom (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mandela's epic from rural roots to revolutionary icon plays out grandly. Bold but bloated, it captures the man but not the movement’s messiness. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mandela's epic from rural roots to revolutionary icon plays out grandly. Bold but bloated, it captures the man but not the movement's messiness.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Sarafina.jpg" alt="Sarafina Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Sarafina.jpg" alt="Sarafina movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sarafina (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sarafina (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Soweto girl joins the 1976 student uprisings in a musical rebellion. Vibrant and defiant, but the songs outshine the story’s depth. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Soweto girl joins the 1976 student uprisings in a musical rebellion. Vibrant and defiant, but the songs outshine the story's depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Winnie.jpg" alt="Winnie Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Winnie.jpg" alt="Winnie movie poster" loading="lazy">
+                        <figcaption class="sr-only">Winnie (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Winnie (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Winnie Mandela’s life, from love to controversy, unfolds in bold strokes. Passionate but patchy, it struggles to balance her fire and flaws. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Winnie Mandela's life, from love to controversy, unfolds in bold strokes. Passionate but patchy, it struggles to balance her fire and flaws.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Skin.jpg" alt="Skin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Skin.jpg" alt="Skin movie poster" loading="lazy">
+                        <figcaption class="sr-only">Skin (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Skin (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A black child born to white parents navigates apartheid’s cruel classifications. Poignant and personal, but the drama tilts toward melodrama. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A black child born to white parents navigates apartheid's cruel classifications. Poignant and personal, but the drama tilts toward melodrama.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/The Bang Bang Club.jpg" alt="The Bang Bang Club Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/The Bang Bang Club.jpg" alt="The Bang Bang Club movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Bang Bang Club (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Bang Bang Club (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Photographers capture apartheid’s violent end, risking lives for iconic shots. Gritty and gripping, though ethics take a backseat to adrenaline. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Photographers capture apartheid's violent end, risking lives for iconic shots. Gritty and gripping, though ethics take a backseat to adrenaline.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/african/Goodbye Bafana.jpg" alt="Goodbye Bafana Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/african/Goodbye Bafana.jpg" alt="Goodbye Bafana movie poster" loading="lazy">
+                        <figcaption class="sr-only">Goodbye Bafana (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Goodbye Bafana (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A guard's bond with Mandela shifts his apartheid views during years of imprisonment. Earnest but sentimental, it softens the system's brutality. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A guard's bond with Mandela shifts his apartheid views during years of imprisonment. Earnest but sentimental, it softens the system's brutality.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/african/Kalushi - The Story of Solomon Mahlangu.jpg" alt="Kalushi: The Story of Solomon Mahlangu Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/african/Kalushi - The Story of Solomon Mahlangu.jpg" alt="Kalushi: The Story of Solomon Mahlangu movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kalushi: The Story of Solomon Mahlangu (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kalushi: The Story of Solomon Mahlangu (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young ANC fighter faces execution for resisting apartheid. Gritty and tragic, it honors sacrifice but leans heavily on martyrdom. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young ANC fighter faces execution for resisting apartheid. Gritty and tragic, it honors sacrifice but leans heavily on martyrdom.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Coming-of-Age and Personal Growth</h2>
-            <p>Stories of youth navigating personal challenges, identity, and societal pressures in African settings.</p>
+        <!-- Coming-of-Age and Personal Growth Section -->
+        <section class="movie-section" aria-labelledby="coming-of-age-heading">
+            <header class="section-header">
+                <h2 id="coming-of-age-heading">Coming-of-Age and Personal Growth</h2>
+                <p>Stories of youth navigating personal challenges, identity, and societal pressures in African settings.</p>
+                <div class="section-stats">
+                    <span class="movie-count">14 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/african/Queen of Katwe.jpg" alt="Queen of Katwe Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/african/Queen of Katwe.jpg" alt="Queen of Katwe movie poster showing young chess player" loading="lazy">
+                        <figcaption class="sr-only">Queen of Katwe (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Queen of Katwe (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Ugandan girl from the slums discovers chess and checkmates poverty, rising to international fame through sheer grit and clever moves. Uplifting underdog tale that's as strategic as it is heartfelt. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Ugandan girl from the slums discovers chess and checkmates poverty, rising to international fame through sheer grit and clever moves. Uplifting underdog tale that's as strategic as it is heartfelt.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/african/Rafiki.jpg" alt="Rafiki Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/african/Rafiki.jpg" alt="Rafiki movie poster showing two young women" loading="lazy">
+                        <figcaption class="sr-only">Rafiki (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rafiki (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two Kenyan girls from rival political families fall in love, defying societal norms in a vibrant tale of forbidden romance and self-discovery. Bold and colorful, it checkmates homophobia with grace. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two Kenyan girls from rival political families fall in love, defying societal norms in a vibrant tale of forbidden romance and self-discovery. Bold and colorful, it checkmates homophobia with grace.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/african/The Boy Who Harnessed the Wind .jpg" alt="The Boy Who Harnessed the Wind Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/african/The Boy Who Harnessed the Wind .jpg" alt="The Boy Who Harnessed the Wind movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Boy Who Harnessed the Wind (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Boy Who Harnessed the Wind (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Malawian teen builds a windmill from scrap to save his famine-stricken village, proving ingenuity can outwit adversity. Inspiring true story that's a breath of fresh air in innovation. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Malawian teen builds a windmill from scrap to save his famine-stricken village, proving ingenuity can outwit adversity. Inspiring true story that's a breath of fresh air in innovation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/A Million Colours.jpg" alt="A Million Colours Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/A Million Colours.jpg" alt="A Million Colours movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Million Colours (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Million Colours (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Forbidden love blooms amid apartheid's shadows, inspired by child stars' real lives. Romantic rebellion shines, but the narrative blends into familiarity. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Forbidden love blooms amid apartheid's shadows, inspired by child stars' real lives. Romantic rebellion shines, but the narrative blends into familiarity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/A Girl from Mogadishu.jpg" alt="A Girl from Mogadishu Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/A Girl from Mogadishu.jpg" alt="A Girl from Mogadishu movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Girl from Mogadishu (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Girl from Mogadishu (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Somali refugee flees war and FGM, rising as an activist in Ireland. Dreams defy despair, but the tale tugs a bit too hard on heartstrings. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Somali refugee flees war and FGM, rising as an activist in Ireland. Dreams defy despair, but the tale tugs a bit too hard on heartstrings.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Inxeba - The Wound.jpg" alt="Inxeba: The Wound Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Inxeba - The Wound.jpg" alt="Inxeba: The Wound movie poster" loading="lazy">
+                        <figcaption class="sr-only">Inxeba: The Wound (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Inxeba: The Wound (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Xhosa initiation rite unveils forbidden love and masculinity's scars. Cutting and courageous, it bleeds truth amid cultural taboos. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Xhosa initiation rite unveils forbidden love and masculinity's scars. Cutting and courageous, it bleeds truth amid cultural taboos.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Small Country - An African Childhood.jpg" alt="Small Country: An African Childhood Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Small Country - An African Childhood.jpg" alt="Small Country: An African Childhood movie poster" loading="lazy">
+                        <figcaption class="sr-only">Small Country: An African Childhood (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Small Country: An African Childhood (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Burundi boy's idyll shatters in Rwanda's genocide storm. Childhood crumbles, evoking loss with quiet power. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Burundi boy's idyll shatters in Rwanda's genocide storm. Childhood crumbles, evoking loss with quiet power.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/The First Grader.jpg" alt="The First Grader Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/The First Grader.jpg" alt="The First Grader movie poster" loading="lazy">
+                        <figcaption class="sr-only">The First Grader (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The First Grader (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Elderly Kenyan veteran enrolls in school, defying odds for literacy. Uplifting defiance, though sentiment schools subtlety. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Elderly Kenyan veteran enrolls in school, defying odds for literacy. Uplifting defiance, though sentiment schools subtlety.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/The Forgotten Kingdom.jpg" alt="The Forgotten Kingdom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/The Forgotten Kingdom.jpg" alt="The Forgotten Kingdom movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Forgotten Kingdom (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Forgotten Kingdom (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Man buries father in Lesotho, rediscovering heritage and heart. Scenic soul-searching, pacing drifts like highland winds. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Man buries father in Lesotho, rediscovering heritage and heart. Scenic soul-searching, pacing drifts like highland winds.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Elevator Baby .jpg" alt="Elevator Baby Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Elevator Baby .jpg" alt="Elevator Baby movie poster" loading="lazy">
+                        <figcaption class="sr-only">Elevator Baby (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Elevator Baby (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A spoiled rich kid and a struggling pregnant woman get trapped in an elevator, forcing a crash course in empathy amid labor pains. Tense confines deliver life lessons and literal birth. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A spoiled rich kid and a struggling pregnant woman get trapped in an elevator, forcing a crash course in empathy amid labor pains. Tense confines deliver life lessons and literal birth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Four Corners.jpg" alt="Four Corners Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Four Corners.jpg" alt="Four Corners movie poster" loading="lazy">
+                        <figcaption class="sr-only">Four Corners (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Four Corners (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chess prodigy in Cape Flats dodges gang traps and family secrets. Strategic moves thrill, but the board feels crowded with clichés. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chess prodigy in Cape Flats dodges gang traps and family secrets. Strategic moves thrill, but the board feels crowded with clichés.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Knuckle City.jpg" alt="Knuckle City Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Knuckle City.jpg" alt="Knuckle City movie poster" loading="lazy">
+                        <figcaption class="sr-only">Knuckle City (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Knuckle City (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ex-boxer trains brother amid Mdantsane's tough streets and old demons. Fists fly, but the knockout punch lacks surprise. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ex-boxer trains brother amid Mdantsane's tough streets and old demons. Fists fly, but the knockout punch lacks surprise.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Coming of Age.jpg" alt="Coming of Age Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Coming of Age.jpg" alt="Coming of Age movie poster" loading="lazy">
+                        <figcaption class="sr-only">Coming of Age (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Coming of Age (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Lesotho teens navigate tradition and change in a mountain kingdom. Observational glimpses captivate, but the pace wanders like highland paths. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Lesotho teens navigate tradition and change in a mountain kingdom. Observational glimpses captivate, but the pace wanders like highland paths.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Kedibone.jpg" alt="Kedibone Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Kedibone.jpg" alt="Kedibone movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kedibone (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kedibone (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Soweto girl chases stardom, trading innocence for spotlight's shadows. Ambition bites back, but the glamour glosses over grit. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Soweto girl chases stardom, trading innocence for spotlight's shadows. Ambition bites back, but the glamour glosses over grit.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Crime and Heist</h2>
-            <p>Thrilling tales of crime, heists, and the criminal underworld set in African cities.</p>
+        <!-- Crime and Heist Section -->
+        <section class="movie-section" aria-labelledby="crime-heist-heading">
+            <header class="section-header">
+                <h2 id="crime-heist-heading">Crime and Heist</h2>
+                <p>Thrilling tales of crime, heists, and the criminal underworld set in African cities.</p>
+                <div class="section-stats">
+                    <span class="movie-count">21 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Big Nunus Little Heist.jpg" alt="Big Nunu's Little Heist Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Big Nunus Little Heist.jpg" alt="Big Nunu's Little Heist movie poster" loading="lazy">
+                        <figcaption class="sr-only">Big Nunu's Little Heist (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Big Nunu's Little Heist (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Deliveryman joins bungling crew for township heist gone haywire. Chaos charms with clever twists and vibrant energy, a fresh take on caper comedy. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Deliveryman joins bungling crew for township heist gone haywire. Chaos charms with clever twists and vibrant energy, a fresh take on caper comedy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Jerusalema.jpg" alt="Jerusalema Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Jerusalema.jpg" alt="Jerusalema movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jerusalema (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jerusalema (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Soweto youth rises to property tycoon through crime. Ambitious ascent grips, but the empire builds on shaky ground. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Soweto youth rises to property tycoon through crime. Ambitious ascent grips, but the empire builds on shaky ground.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Tsotsi.jpg" alt="Tsotsi Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Tsotsi.jpg" alt="Tsotsi movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tsotsi (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Tsotsi (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gangster's carjacking yields a baby, sparking redemption in Johannesburg. Raw transformation moves, earning its Oscar nod. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Gangster's carjacking yields a baby, sparking redemption in Johannesburg. Raw transformation moves, earning its Oscar nod.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Wild Is The Wind.jpg" alt="Wild Is The Wind Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Wild Is The Wind.jpg" alt="Wild Is The Wind movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wild Is The Wind (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wild Is The Wind (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Corrupt cops probe a young girl's murder in a racially tense town, where justice blows hot and cold like the veld winds. Gritty thriller uncovers buried prejudices. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Corrupt cops probe a young girl's murder in a racially tense town, where justice blows hot and cold like the veld winds. Gritty thriller uncovers buried prejudices.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Zulu.jpg" alt="Zulu Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Zulu.jpg" alt="Zulu movie poster" loading="lazy">
+                        <figcaption class="sr-only">Zulu (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Zulu (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cape Town cops chase a brutal serial killer through apartheid's lingering shadows, blending visceral action with social scars. Tense hunt, but formulaic twists. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cape Town cops chase a brutal serial killer through apartheid's lingering shadows, blending visceral action with social scars. Tense hunt, but formulaic twists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Losing Lerato.jpg" alt="Losing Lerato Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Losing Lerato.jpg" alt="Losing Lerato movie poster" loading="lazy">
+                        <figcaption class="sr-only">Losing Lerato (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Losing Lerato (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A desperate father kidnaps his daughter from school to reclaim custody, sparking a high-stakes chase full of paternal passion. Emotional heist of the heart. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A desperate father kidnaps his daughter from school to reclaim custody, sparking a high-stakes chase full of paternal passion. Emotional heist of the heart.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Hijack Stories.webp" alt="Hijack Stories Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Hijack Stories.webp" alt="Hijack Stories movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hijack Stories (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hijack Stories (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An actor immerses in Soweto's criminal underbelly for a role, blurring lines between performance and peril. Street smarts school the stage. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>An actor immerses in Soweto's criminal underbelly for a role, blurring lines between performance and peril. Street smarts school the stage.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/iNumber Number - Jozi Gold.jpg" alt="iNumber Number: Jozi Gold Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/iNumber Number - Jozi Gold.jpg" alt="iNumber Number: Jozi Gold movie poster" loading="lazy">
+                        <figcaption class="sr-only">iNumber Number: Jozi Gold (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>iNumber Number: Jozi Gold (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cop probes gold heist amid Johannesburg corruption. Action glitters, but the sequel lacks fresh ore. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cop probes gold heist amid Johannesburg corruption. Action glitters, but the sequel lacks fresh ore.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/How to Steal 2 Million.jpg" alt="How to Steal 2 Million Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/How to Steal 2 Million.jpg" alt="How to Steal 2 Million movie poster" loading="lazy">
+                        <figcaption class="sr-only">How to Steal 2 Million (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>How to Steal 2 Million (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ex-con plots heist with old partner against corrupt mark. Betrayals brew, but the caper cashes in familiarity. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ex-con plots heist with old partner against corrupt mark. Betrayals brew, but the caper cashes in familiarity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/iNumber Number.jpg" alt="iNumber Number Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/iNumber Number.jpg" alt="iNumber Number movie poster" loading="lazy">
+                        <figcaption class="sr-only">iNumber Number (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>iNumber Number (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Undercover cop turns heister after reward denial. Moral flips thrill, but the switch feels a bit forced. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Undercover cop turns heister after reward denial. Moral flips thrill, but the switch feels a bit forced.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Nommer 37.jpg" alt="Nommer 37 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Nommer 37.jpg" alt="Nommer 37 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Nommer 37 (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Nommer 37 (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Wheelchair-bound man spies murder, tangling with Cape Town gangs. Tense voyeurism nods to Hitchcock, but twists turn obvious. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Wheelchair-bound man spies murder, tangling with Cape Town gangs. Tense voyeurism nods to Hitchcock, but twists turn obvious.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Skeem.jpg" alt="Skeem Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Skeem.jpg" alt="Skeem movie poster" loading="lazy">
+                        <figcaption class="sr-only">Skeem (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Skeem (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bumblers find cash at resort, schemes clash with eccentrics. Comedic capers entertain, but the plot piles on too thick. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bumblers find cash at resort, schemes clash with eccentrics. Comedic capers entertain, but the plot piles on too thick.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Moruti Wa Tsotsi.jpg" alt="Moruti Wa Tsotsi Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Moruti Wa Tsotsi.jpg" alt="Moruti Wa Tsotsi movie poster" loading="lazy">
+                        <figcaption class="sr-only">Moruti Wa Tsotsi (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Moruti Wa Tsotsi (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pastor dives into the criminal underworld, blending faith with felony in a satirical take on morality. Holy heists meet divine dilemmas. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pastor dives into the criminal underworld, blending faith with felony in a satirical take on morality. Holy heists meet divine dilemmas.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Losing Lerato 2.jpg" alt="Losing Lerato 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Losing Lerato 2.jpg" alt="Losing Lerato 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Losing Lerato 2 (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Losing Lerato 2 (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Father released from prison fights to stay with daughter, navigating illness and unbreakable bonds. Sequel amps the emotional stakes. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Father released from prison fights to stay with daughter, navigating illness and unbreakable bonds. Sequel amps the emotional stakes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Clean Job.jpg" alt="Clean Job Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Clean Job.jpg" alt="Clean Job movie poster" loading="lazy">
+                        <figcaption class="sr-only">Clean Job (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Clean Job (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Women pose as maids to rob the rich, juggling crime and dreams. Clever caper, but the twists mop up predictability. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Women pose as maids to rob the rich, juggling crime and dreams. Clever caper, but the twists mop up predictability.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Collision.jpg" alt="Collision Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Collision.jpg" alt="Collision movie poster" loading="lazy">
+                        <figcaption class="sr-only">Collision (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Collision (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Corruption and vengeance collide in one Johannesburg day. Tense intersections, but the paths cross too conveniently. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Corruption and vengeance collide in one Johannesburg day. Tense intersections, but the paths cross too conveniently.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Heart of the Hunter.jpg" alt="Heart of the Hunter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Heart of the Hunter.jpg" alt="Heart of the Hunter movie poster" loading="lazy">
+                        <figcaption class="sr-only">Heart of the Hunter (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Heart of the Hunter (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Retired assassin thwarts corrupt politician's power grab. Thrills hunt well, but the politics dodge depth. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Retired assassin thwarts corrupt politician's power grab. Thrills hunt well, but the politics dodge depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Santana.jpg" alt="Santana Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Santana.jpg" alt="Santana movie poster" loading="lazy">
+                        <figcaption class="sr-only">Santana (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Santana (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Brothers, one a general and one a narcotics agent, hunt the drug lord who killed their parents. Sibling synergy fuels revenge, but clichés crowd the chase. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Brothers, one a general and one a narcotics agent, hunt the drug lord who killed their parents. Sibling synergy fuels revenge, but clichés crowd the chase.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Proof of Payment.jpg" alt="Proof of Payment Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Proof of Payment.jpg" alt="Proof of Payment movie poster" loading="lazy">
+                        <figcaption class="sr-only">Proof of Payment (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Proof of Payment (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An intelligent but disadvantaged youth navigates crime and charisma in modern South Africa. Street smarts meet moral quandaries. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>An intelligent but disadvantaged youth navigates crime and charisma in modern South Africa. Street smarts meet moral quandaries.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/african/Bulletproof 2.jpg" alt="Bulletproof 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/african/Bulletproof 2.jpg" alt="Bulletproof 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bulletproof 2 (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bulletproof 2 (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Undercover cop poses as thief to bust South African syndicate. Chases amuse, but the sequel stalls on recycled gags. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Undercover cop poses as thief to bust South African syndicate. Chases amuse, but the sequel stalls on recycled gags.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Romance and Relationships</h2>
-            <p>Heartwarming and dramatic stories of love, marriage, and interpersonal bonds across Africa.</p>
+        <!-- Romance and Relationships Section -->
+        <section class="movie-section" aria-labelledby="romance-heading">
+            <header class="section-header">
+                <h2 id="romance-heading">Romance and Relationships</h2>
+                <p>Heartwarming and dramatic stories of love, marriage, and interpersonal bonds across Africa.</p>
+                <div class="section-stats">
+                    <span class="movie-count">14 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Catching Feelings.jpg" alt="Catching Feelings Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Catching Feelings.jpg" alt="Catching Feelings movie poster" loading="lazy">
+                        <figcaption class="sr-only">Catching Feelings (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Catching Feelings (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Couple's marriage tested by infamous writer's intrusion. Jealousy brews cleverly, blending satire with South African flair. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Couple's marriage tested by infamous writer's intrusion. Jealousy brews cleverly, blending satire with South African flair.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Happiness Is a Four-letter Word.jpg" alt="Happiness Is a Four-letter Word Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Happiness Is a Four-letter Word.jpg" alt="Happiness Is a Four-letter Word movie poster" loading="lazy">
+                        <figcaption class="sr-only">Happiness Is a Four-letter Word (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Happiness Is a Four-letter Word (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Women balance success and relationships, questioning happiness. Chic and relatable, it sparkles with Johannesburg vibe. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Women balance success and relationships, questioning happiness. Chic and relatable, it sparkles with Johannesburg vibe.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Hard to Get.jpg" alt="Hard to Get Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Hard to Get.jpg" alt="Hard to Get movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hard to Get (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hard to Get (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Township girl flees past, romancing ski instructor amid dangers. Thrilling chase, but romance skis on thin ice. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Township girl flees past, romancing ski instructor amid dangers. Thrilling chase, but romance skis on thin ice.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Valley of a Thousand Hills.jpg" alt="Valley of a Thousand Hills Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Valley of a Thousand Hills.jpg" alt="Valley of a Thousand Hills movie poster" loading="lazy">
+                        <figcaption class="sr-only">Valley of a Thousand Hills (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Valley of a Thousand Hills (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Zulu woman defies arranged marriage for same-sex love. Bold defiance resonates, challenging norms with grace. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Zulu woman defies arranged marriage for same-sex love. Bold defiance resonates, challenging norms with grace.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/White Wedding.jpg" alt="White Wedding Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/White Wedding.jpg" alt="White Wedding movie poster" loading="lazy">
+                        <figcaption class="sr-only">White Wedding (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>White Wedding (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Groom's road trip to wedding tests bonds across South Africa. Adventures bond, blending humor with cultural insights. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Groom's road trip to wedding tests bonds across South Africa. Adventures bond, blending humor with cultural insights.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Hey You.webp" alt="Hey You Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Hey You.webp" alt="Hey You movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hey You (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hey You (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A shy nerd meets a bold woman online, but her obsessive admirers complicate their digital dalliance. Virtual sparks fly amid real-world jealousy. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A shy nerd meets a bold woman online, but her obsessive admirers complicate their digital dalliance. Virtual sparks fly amid real-world jealousy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/A Royal Christmas Surprise.jpg" alt="A Royal Christmas Surprise Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/A Royal Christmas Surprise.jpg" alt="A Royal Christmas Surprise movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Royal Christmas Surprise (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Royal Christmas Surprise (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>American meets African prince's family for holiday, clashing cultures ensue. Festive fluff charms, but tropes reign supreme. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>American meets African prince's family for holiday, clashing cultures ensue. Festive fluff charms, but tropes reign supreme.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/A Soweto Love Story.jpg" alt="A Soweto Love Story Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/A Soweto Love Story.jpg" alt="A Soweto Love Story movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Soweto Love Story (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Soweto Love Story (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mom bets house on sons' marriages by New Year's. Chaotic courtship amuses, but the rush skips heartfelt beats. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mom bets house on sons' marriages by New Year's. Chaotic courtship amuses, but the rush skips heartfelt beats.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Happiness Ever After.jpg" alt="Happiness Ever After Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Happiness Ever After.jpg" alt="Happiness Ever After movie poster" loading="lazy">
+                        <figcaption class="sr-only">Happiness Ever After (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Happiness Ever After (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends navigate love and growth in Johannesburg sequel. Bonds endure, but the drama recycles familiar heartaches. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Friends navigate love and growth in Johannesburg sequel. Bonds endure, but the drama recycles familiar heartaches.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Love By Chance.jpg" alt="Love By Chance Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Love By Chance.jpg" alt="Love By Chance movie poster" loading="lazy">
+                        <figcaption class="sr-only">Love By Chance (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Love By Chance (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aspiring actors in America collide in unexpected romance. Dreams entwine, but the plot wanders off script. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aspiring actors in America collide in unexpected romance. Dreams entwine, but the plot wanders off script.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Love, Sex and 30 Candles.jpg" alt="Love, Sex and 30 Candles Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Love, Sex and 30 Candles.jpg" alt="Love, Sex and 30 Candles movie poster" loading="lazy">
+                        <figcaption class="sr-only">Love, Sex and 30 Candles (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Love, Sex and 30 Candles (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends turning 30 tackle love and transitions together. Bonds flicker, but the candles burn out predictably. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Friends turning 30 tackle love and transitions together. Bonds flicker, but the candles burn out predictably.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Smart Casuals.jpg" alt="Smart Casuals Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Smart Casuals.jpg" alt="Smart Casuals movie poster" loading="lazy">
+                        <figcaption class="sr-only">Smart Casuals (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Smart Casuals (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Couples' tales intertwine, questioning marriage and new starts. Relatable rifts, but the connections tie loosely. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Couples' tales intertwine, questioning marriage and new starts. Relatable rifts, but the connections tie loosely.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/The Lobola Man.jpg" alt="The Lobola Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/The Lobola Man.jpg" alt="The Lobola Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lobola Man (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Lobola Man (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Negotiator faces high-stakes lobola beyond cash. Traditions twist, but the comedy bargains for laughs unevenly. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Negotiator faces high-stakes lobola beyond cash. Traditions twist, but the comedy bargains for laughs unevenly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/The Honeymoon.jpg" alt="The Honeymoon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/The Honeymoon.jpg" alt="The Honeymoon movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Honeymoon (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Honeymoon (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Three friends on a chaotic honeymoon navigate mishaps and matrimony in a comedic tangle of love and laughter. Bliss turns bonkers. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Three friends on a chaotic honeymoon navigate mishaps and matrimony in a comedic tangle of love and laughter. Bliss turns bonkers.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Comedy and Satire</h2>
-            <p>Lighthearted films filled with humor, cultural satire, and comedic adventures.</p>
+        <!-- Comedy and Satire Section -->
+        <section class="movie-section" aria-labelledby="comedy-heading">
+            <header class="section-header">
+                <h2 id="comedy-heading">Comedy and Satire</h2>
+                <p>Lighthearted films filled with humor, cultural satire, and comedic adventures.</p>
+                <div class="section-stats">
+                    <span class="movie-count">25 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/african/Hyenas.jpg" alt="Hyenas Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/african/Hyenas.jpg" alt="Hyenas movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hyenas (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hyenas (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A wealthy exile returns to her impoverished Senegalese village, offering riches for revenge on her old lover. Sharp satire bites into greed and colonialism with wry fangs. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A wealthy exile returns to her impoverished Senegalese village, offering riches for revenge on her old lover. Sharp satire bites into greed and colonialism with wry fangs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Inyakanyaka.jpg" alt="Inyakanyaka Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Inyakanyaka.jpg" alt="Inyakanyaka movie poster" loading="lazy">
+                        <figcaption class="sr-only">Inyakanyaka (1977)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Inyakanyaka (1977)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mshefane and S'dudla's misadventures in the comic magazine world lead to endless hilarity and chaos. A cornerstone of South African comedy that captures the absurdity of everyday life with sharp wit. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mshefane and S'dudla's misadventures in the comic magazine world lead to endless hilarity and chaos. A cornerstone of South African comedy that captures the absurdity of everyday life with sharp wit.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Ngaka.jpg" alt="Ngaka Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Ngaka.jpg" alt="Ngaka movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ngaka (1977)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ngaka (1977)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A comedic exploration of traditional healing gone awry, blending cultural customs with slapstick humor. Laughter ensues as remedies turn into ridiculous mishaps. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A comedic exploration of traditional healing gone awry, blending cultural customs with slapstick humor. Laughter ensues as remedies turn into ridiculous mishaps.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Nothing For Mahala.jpg" alt="Nothing For Mahala Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Nothing For Mahala.jpg" alt="Nothing For Mahala movie poster" loading="lazy">
+                        <figcaption class="sr-only">Nothing For Mahala (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Nothing For Mahala (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A flashy property agent learns humility from an old man in community service, discovering life's true value beyond cash. Witty life lessons served gratis. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A flashy property agent learns humility from an old man in community service, discovering life's true value beyond cash. Witty life lessons served gratis.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Max and Mona.jpg" alt="Max and Mona Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Max and Mona.jpg" alt="Max and Mona movie poster" loading="lazy">
+                        <figcaption class="sr-only">Max and Mona (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Max and Mona (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young man with a gift for mourning teams with a lucky goat for urban adventures. Quirky satire mixes tradition and modernity in comedic chaos. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young man with a gift for mourning teams with a lucky goat for urban adventures. Quirky satire mixes tradition and modernity in comedic chaos.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Paradise Stop.jpg" alt="Paradise Stop Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Paradise Stop.jpg" alt="Paradise Stop movie poster" loading="lazy">
+                        <figcaption class="sr-only">Paradise Stop (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Paradise Stop (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A truck stop owner battles local crime and corruption with humor and heart. Roadside antics deliver laughs amid dusty dilemmas. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A truck stop owner battles local crime and corruption with humor and heart. Roadside antics deliver laughs amid dusty dilemmas.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Osuofia in London.jpg" alt="Osuofia in London Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Osuofia in London.jpg" alt="Osuofia in London movie poster" loading="lazy">
+                        <figcaption class="sr-only">Osuofia in London (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Osuofia in London (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Villager inherits fortune in London, clashing cultures comically. Bumpkin blunders burst, bridging worlds with wit. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Villager inherits fortune in London, clashing cultures comically. Bumpkin blunders burst, bridging worlds with wit.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Theres a Zulu On My Stoep.jpg" alt="There's a Zulu On My Stoep Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Theres a Zulu On My Stoep.jpg" alt="There's a Zulu On My Stoep movie poster" loading="lazy">
+                        <figcaption class="sr-only">There's a Zulu On My Stoep (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>There's a Zulu On My Stoep (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Racial foes fake friendship for inheritance. Cultural satire swings, hitting stereotypes with humor. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Racial foes fake friendship for inheritance. Cultural satire swings, hitting stereotypes with humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Gog Helen.jpg" alt="Gog Helen Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Gog Helen.jpg" alt="Gog Helen movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gog Helen (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Gog Helen (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Elderly woman and granddaughter hunt for discarded mattress hiding life savings. Treasure quest turns township upside down with humor. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Elderly woman and granddaughter hunt for discarded mattress hiding life savings. Treasure quest turns township upside down with humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Upondo No Nkinsela.jpg" alt="Upondo No Nkinsela Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Upondo No Nkinsela.jpg" alt="Upondo No Nkinsela movie poster" loading="lazy">
+                        <figcaption class="sr-only">Upondo No Nkinsela (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Upondo No Nkinsela (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Zulu tale of intrigue and cultural clashes, blending tradition with modern mischief in a lighthearted romp. Folklore meets fun. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Zulu tale of intrigue and cultural clashes, blending tradition with modern mischief in a lighthearted romp. Folklore meets fun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Baby Police.jpg" alt="Baby Police Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Baby Police.jpg" alt="Baby Police movie poster" loading="lazy">
+                        <figcaption class="sr-only">Baby Police (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Baby Police (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man forms a quirky "Baby Police Force" in Nigeria to fight crime in unconventional ways. Infantile antics meet law enforcement lunacy. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man forms a quirky "Baby Police Force" in Nigeria to fight crime in unconventional ways. Infantile antics meet law enforcement lunacy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Crazy Entertainers.jpg" alt="Crazy Entertainers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Crazy Entertainers.jpg" alt="Crazy Entertainers movie poster" loading="lazy">
+                        <figcaption class="sr-only">Crazy Entertainers (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Crazy Entertainers (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A series of comedic sketches and antics involving eccentric entertainers in absurd situations. Madness ensues in this Nollywood romp. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A series of comedic sketches and antics involving eccentric entertainers in absurd situations. Madness ensues in this Nollywood romp.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Disaster Holiday.jpg" alt="Disaster Holiday Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Disaster Holiday.jpg" alt="Disaster Holiday movie poster" loading="lazy">
+                        <figcaption class="sr-only">Disaster Holiday (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Disaster Holiday (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Family vacation botched by dad's mix-up spirals into mishaps. Chaos chuckles, but the trip tires quickly. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Family vacation botched by dad's mix-up spirals into mishaps. Chaos chuckles, but the trip tires quickly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Little Big Mouth.jpg" alt="Little Big Mouth Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Little Big Mouth.jpg" alt="Little Big Mouth movie poster" loading="lazy">
+                        <figcaption class="sr-only">Little Big Mouth (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Little Big Mouth (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Guitarist crashes with bookkeeper, sparking unlikely bond. Tunes tangle, harmonizing humor with heart. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Guitarist crashes with bookkeeper, sparking unlikely bond. Tunes tangle, harmonizing humor with heart.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Mr Bones.jpg" alt="Mr. Bones Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Mr Bones.jpg" alt="Mr. Bones movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mr. Bones (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mr. Bones (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tribesman guides lost golfer through cultural clashes. Bushman buffoonery bounces, blending laughs with lore. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tribesman guides lost golfer through cultural clashes. Bushman buffoonery bounces, blending laughs with lore.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Mr Bones 2 - Back from the Past.jpg" alt="Mr Bones 2: Back from the Past Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Mr Bones 2 - Back from the Past.jpg" alt="Mr Bones 2: Back from the Past movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mr Bones 2: Back from the Past (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mr Bones 2: Back from the Past (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cursed artifact time-warps tribesman to historical havoc. Temporal tomfoolery tickles, sequel spins familiar yarn. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cursed artifact time-warps tribesman to historical havoc. Temporal tomfoolery tickles, sequel spins familiar yarn.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Oh Schucks...! Here Comes UNTAG.jpg" alt="Oh Schucks...! Here Comes UNTAG Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Oh Schucks...! Here Comes UNTAG.jpg" alt="Oh Schucks...! Here Comes UNTAG movie poster" loading="lazy">
+                        <figcaption class="sr-only">Oh Schucks...! Here Comes UNTAG (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Oh Schucks...! Here Comes UNTAG (1990)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bumblers tangle with UN in Namibian transition farce. Satirical shenanigans spark, poking political absurdities. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bumblers tangle with UN in Namibian transition farce. Satirical shenanigans spark, poking political absurdities.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Oh Schuks... Im Gatvol.jpg" alt="Oh Schuks... I'm Gatvol Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Oh Schuks... Im Gatvol.jpg" alt="Oh Schuks... I'm Gatvol movie poster" loading="lazy">
+                        <figcaption class="sr-only">Oh Schuks... I'm Gatvol (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Oh Schuks... I'm Gatvol (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Candid pranks satirize South African society. Hidden camera hilarity hits, but some gags grate. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Candid pranks satirize South African society. Hidden camera hilarity hits, but some gags grate.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Panic Mechanic.jpg" alt="Panic Mechanic Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Panic Mechanic.jpg" alt="Panic Mechanic movie poster" loading="lazy">
+                        <figcaption class="sr-only">Panic Mechanic (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Panic Mechanic (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bumbling mechanic wrecks cars in slapstick spree. Mayhem motors along, fueling frantic fun. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bumbling mechanic wrecks cars in slapstick spree. Mayhem motors along, fueling frantic fun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Piets Sake.jpg" alt="Piet's Sake Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Piets Sake.jpg" alt="Piet's Sake movie poster" loading="lazy">
+                        <figcaption class="sr-only">Piet's Sake (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Piet's Sake (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Employer and employee swap lives, exposing privileges. Identity flip flips scripts, but humor swaps unevenly. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Employer and employee swap lives, exposing privileges. Identity flip flips scripts, but humor swaps unevenly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Piets Sake 2.jpg" alt="Piet's Sake 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Piets Sake 2.jpg" alt="Piet's Sake 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Piet's Sake 2 (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Piet's Sake 2 (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Swapped lives continue in comedic chaos. Reversals reprise, recycling swaps with fresh twists. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Swapped lives continue in comedic chaos. Reversals reprise, recycling swaps with fresh twists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Schuks! Your Country Needs You.jpg" alt="Schuks! Your Country Needs You Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Schuks! Your Country Needs You.jpg" alt="Schuks! Your Country Needs You movie poster" loading="lazy">
+                        <figcaption class="sr-only">Schuks! Your Country Needs You (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Schuks! Your Country Needs You (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Candid pranks poke South African politics. Satirical stings strike, blending laughs with local bite. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Candid pranks poke South African politics. Satirical stings strike, blending laughs with local bite.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/african/Mad Buddies.jpg" alt="Mad Buddies Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/african/Mad Buddies.jpg" alt="Mad Buddies movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mad Buddies (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mad Buddies (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rivals handcuffed hike for prize, forging friendship. Road romps roar, but gags chain to stereotypes. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rivals handcuffed hike for prize, forging friendship. Road romps roar, but gags chain to stereotypes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/african/Mama Jack.jpg" alt="Mama Jack Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/african/Mama Jack.jpg" alt="Mama Jack movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mama Jack (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mama Jack (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Fugitive disguises as woman, romancing boss on set. Cross-dress capers crack up, but tropes drag on. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Fugitive disguises as woman, romancing boss on set. Cross-dress capers crack up, but tropes drag on.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/african/Mr Bones 3 - Son of Bones.jpg" alt="Mr Bones 3: Son of Bones Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/african/Mr Bones 3 - Son of Bones.jpg" alt="Mr Bones 3: Son of Bones movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mr Bones 3: Son of Bones (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mr Bones 3: Son of Bones (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Seer's son blends tradition with modern quests. Legacy laughs linger, but the charm wears thin. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Seer's son blends tradition with modern quests. Legacy laughs linger, but the charm wears thin.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Social Issues and Activism</h2>
-            <p>Films addressing critical social issues like poverty, health crises, and activism for change.</p>
+        <!-- Social Issues and Activism Section -->
+        <section class="movie-section" aria-labelledby="social-issues-heading">
+            <header class="section-header">
+                <h2 id="social-issues-heading">Social Issues and Activism</h2>
+                <p>Films addressing critical social issues like poverty, health crises, and activism for change.</p>
+                <div class="section-stats">
+                    <span class="movie-count">10 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/african/Miners Shot Down.jpg" alt="Miners Shot Down Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/Miners Shot Down.jpg" alt="Miners Shot Down movie poster" loading="lazy">
+                        <figcaption class="sr-only">Miners Shot Down (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Miners Shot Down (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Doc probes Marikana massacre's police brutality. Stark exposure shocks, demanding justice unflinchingly. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Doc probes Marikana massacre's police brutality. Stark exposure shocks, demanding justice unflinchingly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Beat the Drum.jpg" alt="Beat the Drum Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Beat the Drum.jpg" alt="Beat the Drum movie poster" loading="lazy">
+                        <figcaption class="sr-only">Beat the Drum (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Beat the Drum (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Orphaned boy quests for uncle amid AIDS devastation. Heart-rending journey beats awareness drum steadily. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Orphaned boy quests for uncle amid AIDS devastation. Heart-rending journey beats awareness drum steadily.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Black Venus.jpg" alt="Black Venus Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Black Venus.jpg" alt="Black Venus movie poster" loading="lazy">
+                        <figcaption class="sr-only">Black Venus (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Venus (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Saartjie Baartman's exploitation as freak show exhibit. Tragic tale exposes colonial cruelty unflinchingly. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Saartjie Baartman's exploitation as freak show exhibit. Tragic tale exposes colonial cruelty unflinchingly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Yesterday.png" alt="Yesterday Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Yesterday.png" alt="Yesterday movie poster" loading="lazy">
+                        <figcaption class="sr-only">Yesterday (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Yesterday (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>HIV-stricken woman fights for daughter's future. Poignant perseverance, a quiet cry against stigma. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>HIV-stricken woman fights for daughter's future. Poignant perseverance, a quiet cry against stigma.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Small Small Thing - The Olivia Zinnah Story.jpg" alt="Small Small Thing: The Olivia Zinnah Story Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Small Small Thing - The Olivia Zinnah Story.jpg" alt="Small Small Thing: The Olivia Zinnah Story movie poster" loading="lazy">
+                        <figcaption class="sr-only">Small Small Thing: The Olivia Zinnah Story (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Small Small Thing: The Olivia Zinnah Story (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Liberian girl's rape highlights abuse and justice fight. Harrowing doc dreams of change amid despair. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Liberian girl's rape highlights abuse and justice fight. Harrowing doc dreams of change amid despair.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/I Am All Girls.jpg" alt="I Am All Girls Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/I Am All Girls.jpg" alt="I Am All Girls movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Am All Girls (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Am All Girls (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Detective allies with killer against trafficking ring. Vigilante vengeance grips, inspired by true grit. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Detective allies with killer against trafficking ring. Vigilante vengeance grips, inspired by true grit.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Blood Sisters.jpg" alt="Blood Sisters Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Blood Sisters.jpg" alt="Blood Sisters movie poster" loading="lazy">
+                        <figcaption class="sr-only">Blood Sisters (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Blood Sisters (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two sisters grapple with jealousy, infertility, and family secrets in a dramatic Nollywood tale of betrayal and reconciliation. Bonds tested, but blood proves thicker. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two sisters grapple with jealousy, infertility, and family secrets in a dramatic Nollywood tale of betrayal and reconciliation. Bonds tested, but blood proves thicker.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Jewel.jpg" alt="Jewel Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Jewel.jpg" alt="Jewel movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jewel (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jewel (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A photographer bonds with Sharpeville massacre survivors and young girls, exploring trauma and resilience. Poignant portraits, but narrative wanders. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A photographer bonds with Sharpeville massacre survivors and young girls, exploring trauma and resilience. Poignant portraits, but narrative wanders.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Billionaires Club.jpg" alt="Billionaires Club Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Billionaires Club.jpg" alt="Billionaires Club movie poster" loading="lazy">
+                        <figcaption class="sr-only">Billionaires Club (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Billionaires Club (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man tempted by ritual sacrifice for wealth faces moral meltdown. Dark Nollywood fable warns against greed's gruesome price. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man tempted by ritual sacrifice for wealth faces moral meltdown. Dark Nollywood fable warns against greed's gruesome price.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/african/Frank and Fearless.jpg" alt="Frank and Fearless Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/african/Frank and Fearless.jpg" alt="Frank and Fearless movie poster" loading="lazy">
+                        <figcaption class="sr-only">Frank and Fearless (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Frank and Fearless (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Boy and dog battle rhino poachers. Adventurous spirit soars, highlighting conservation with heart. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Boy and dog battle rhino poachers. Adventurous spirit soars, highlighting conservation with heart.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Historical and Biographical</h2>
-            <p>Biographical films and historical dramas capturing real events and influential figures.</p>
+        <!-- Historical and Biographical Section -->
+        <section class="movie-section" aria-labelledby="historical-heading">
+            <header class="section-header">
+                <h2 id="historical-heading">Historical and Biographical</h2>
+                <p>Biographical films and historical dramas capturing real events and influential figures.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/african/The Last King of Scotland.jpg" alt="The Last King of Scotland Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/african/The Last King of Scotland.jpg" alt="The Last King of Scotland movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Last King of Scotland (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Last King of Scotland (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A naive Scottish doctor becomes entangled in Ugandan dictator Idi Amin's tyrannical regime, witnessing horrors up close. Charisma cloaks cruelty in this chilling biopic. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A naive Scottish doctor becomes entangled in Ugandan dictator Idi Amin's tyrannical regime, witnessing horrors up close. Charisma cloaks cruelty in this chilling biopic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/The Power of One.jpg" alt="The Power of One Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/The Power of One.jpg" alt="The Power of One movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Power of One (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Power of One (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Boy boxes against apartheid, inspiring unity. Fists fight injustice, punching through division. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Boy boxes against apartheid, inspiring unity. Fists fight injustice, punching through division.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Mama Africa.jpg" alt="Mama Africa Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Mama Africa.jpg" alt="Mama Africa movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mama Africa (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mama Africa (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Miriam Makeba's life and activism through music. Melodic memoir sings, celebrating anti-apartheid voice. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Miriam Makeba's life and activism through music. Melodic memoir sings, celebrating anti-apartheid voice.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Nai, The Story of a Kung Woman.jpg" alt="N!ai, the Story of a !Kung Woman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Nai, The Story of a Kung Woman.jpg" alt="N!ai, the Story of a !Kung Woman movie poster" loading="lazy">
+                        <figcaption class="sr-only">N!ai, the Story of a !Kung Woman (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>N!ai, the Story of a !Kung Woman (1980)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>!Kung woman's life amid cultural shifts. Intimate portrait evolves, capturing tradition's twilight. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>!Kung woman's life amid cultural shifts. Intimate portrait evolves, capturing tradition's twilight.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Sun of the Soil.jpg" alt="Sun of the Soil Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Sun of the Soil.jpg" alt="Sun of the Soil movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sun of the Soil (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sun of the Soil (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mansa Musa's legacy as Mali's rich emperor. Golden history gleams, unearthing forgotten wealth. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mansa Musa's legacy as Mali's rich emperor. Golden history gleams, unearthing forgotten wealth.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Horror and Supernatural</h2>
-            <p>Chilling tales featuring horror, supernatural beings, and fantastical elements.</p>
+        <!-- Horror and Supernatural Section -->
+        <section class="movie-section" aria-labelledby="horror-heading">
+            <header class="section-header">
+                <h2 id="horror-heading">Horror and Supernatural</h2>
+                <p>Chilling tales featuring horror, supernatural beings, and fantastical elements.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/african/The Domestic.jpg" alt="The Domestic Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/The Domestic.jpg" alt="The Domestic movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Domestic (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Domestic (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Couple and maid haunted by supernatural tensions. Class chills creep, unraveling household horrors. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Couple and maid haunted by supernatural tensions. Class chills creep, unraveling household horrors.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/The Tokoloshe.jpg" alt="The Tokoloshe Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/The Tokoloshe.jpg" alt="The Tokoloshe movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Tokoloshe (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Tokoloshe (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Trauma-haunted cleaner battles Zulu demon in Joburg. Spirits stalk effectively, blending myth with mind. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Trauma-haunted cleaner battles Zulu demon in Joburg. Spirits stalk effectively, blending myth with mind.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/african/Ghetto Goblin.jpg" alt="Ghetto Goblin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/african/Ghetto Goblin.jpg" alt="Ghetto Goblin movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ghetto Goblin (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ghetto Goblin (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tokoloshe terrorizes township in creature horror. Folklore frights flicker, but scares lurk shallow. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tokoloshe terrorizes township in creature horror. Folklore frights flicker, but scares lurk shallow.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Science Fiction and Fantasy</h2>
-            <p>Imaginative films featuring sci-fi, aliens, or magical realism set in African contexts.</p>
+        <!-- Science Fiction and Fantasy Section -->
+        <section class="movie-section" aria-labelledby="sci-fi-heading">
+            <header class="section-header">
+                <h2 id="sci-fi-heading">Science Fiction and Fantasy</h2>
+                <p>Imaginative films featuring sci-fi, aliens, or magical realism set in African contexts.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-10">
-                    <img src="../img/african/The Burial of Kojo.jpg" alt="The Burial of Kojo Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/african/The Burial of Kojo.jpg" alt="The Burial of Kojo movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Burial of Kojo (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Burial of Kojo (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Girl dreams to save trapped father in Ghanaian mine. Magical realism mesmerizes, painting poetry in peril. Rating: 10/10.</p>
+                        <h4>Overview</h4>
+                        <p>Girl dreams to save trapped father in Ghanaian mine. Magical realism mesmerizes, painting poetry in peril.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-10">
-                    <img src="../img/african/Liyana.jpg" alt="Liyana Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/african/Liyana.jpg" alt="Liyana movie poster" loading="lazy">
+                        <figcaption class="sr-only">Liyana (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Liyana (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Orphans craft fable of girl's heroic journey. Blended doc-animation enchants, weaving hope from hardship. Rating: 10/10.</p>
+                        <h4>Overview</h4>
+                        <p>Orphans craft fable of girl's heroic journey. Blended doc-animation enchants, weaving hope from hardship.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/african/District 9.jpg" alt="District 9 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/african/District 9.jpg" alt="District 9 movie poster" loading="lazy">
+                        <figcaption class="sr-only">District 9 (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>District 9 (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aliens segregated in Joburg slum, agent transforms. Satirical sci-fi stings, exposing xenophobia sharply. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aliens segregated in Joburg slum, agent transforms. Satirical sci-fi stings, exposing xenophobia sharply.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/african/The Gods Must Be Crazy.jpg" alt="The Gods Must Be Crazy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/african/The Gods Must Be Crazy.jpg" alt="The Gods Must Be Crazy movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Gods Must Be Crazy (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Gods Must Be Crazy (1980)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bottle disrupts Bushman's life, quest to return it. Cultural comedy clashes cleverly, timeless absurdity endures. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bottle disrupts Bushman's life, quest to return it. Cultural comedy clashes cleverly, timeless absurdity endures.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Chappie.jpg" alt="Chappie Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Chappie.jpg" alt="Chappie movie poster" loading="lazy">
+                        <figcaption class="sr-only">Chappie (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Chappie (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>AI robot raised by gangsters in future Joburg. Sentient scrap sparks, blending heart with hardware. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>AI robot raised by gangsters in future Joburg. Sentient scrap sparks, blending heart with hardware.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/african/The Gods Must Be Crazy II.jpg" alt="The Gods Must Be Crazy II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/The Gods Must Be Crazy II.jpg" alt="The Gods Must Be Crazy II movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Gods Must Be Crazy II (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Gods Must Be Crazy II (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Children encounter poachers and strangers in desert mishaps. Sequel sustains silliness, adventuring with charm. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Children encounter poachers and strangers in desert mishaps. Sequel sustains silliness, adventuring with charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/african/Revolt.jpg" alt="Revolt Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/african/Revolt.jpg" alt="Revolt movie poster" loading="lazy">
+                        <figcaption class="sr-only">Revolt (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Revolt (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Soldier and aid worker survive African alien invasion. Resistance rallies, but effects eclipse emotion. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Soldier and aid worker survive African alien invasion. Resistance rallies, but effects eclipse emotion.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Sports</h2>
-            <p>Films centered on athletic pursuits, teamwork, and personal triumph in African contexts.</p>
+        <!-- Sports Section -->
+        <section class="movie-section" aria-labelledby="sports-heading">
+            <header class="section-header">
+                <h2 id="sports-heading">Sports</h2>
+                <p>Films centered on athletic pursuits, teamwork, and personal triumph in African contexts.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/african/The Queenstown Kings.jpg" alt="The Queenstown Kings Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/The Queenstown Kings.jpg" alt="The Queenstown Kings movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Queenstown Kings (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Queenstown Kings (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Washed-up footballer returns to rural roots, bonding with son through soccer dreams. Pitch-perfect redemption, kicking family ties into gear. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Washed-up footballer returns to rural roots, bonding with son through soccer dreams. Pitch-perfect redemption, kicking family ties into gear.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Other Stories</h2>
-            <p>A diverse collection of African films spanning unique narratives and genres.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/african/Babel.jpg" alt="Babel Cover">
-                    <div class="movie-title">
-                        <h3>Babel (2006)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Global lives interconnect through tragedy and miscommunication. Threads weave poignantly, echoing human disconnection. Rating: 7/10.</p>
-                    </div>
+        <!-- Other Stories Section -->
+        <section class="movie-section" aria-labelledby="other-stories-heading">
+            <header class="section-header">
+                <h2 id="other-stories-heading">Other Stories</h2>
+                <p>A diverse collection of African films spanning unique narratives and genres.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
                 </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/african/Babel.jpg" alt="Babel movie poster" loading="lazy">
+                        <figcaption class="sr-only">Babel (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Babel (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Global lives interconnect through tragedy and miscommunication. Threads weave poignantly, echoing human disconnection.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

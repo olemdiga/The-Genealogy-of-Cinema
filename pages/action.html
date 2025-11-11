@@ -3,24 +3,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Action</title>
+    <title>Action Movies - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing action movies I've watched, rated by color. Explore high-octane heists, martial arts, espionage and more.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
-        <h1>Action</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
+        <h1>Action Cinema</h1>
+        <p>Heart-pounding adventures, explosive stunts, and adrenaline-fueled stories that keep you on the edge of your seat.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 97 movies</span>
+            <span class="movie-count">9 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="action.html">Action</a></li>
+            <li><a href="action.html" aria-current="page">Action</a></li>
             <li><a href="african.html">African</a></li>
             <li><a href="ai-machines.html">AI & Machines</a></li>
             <li><a href="animation.html">Animation</a></li>
@@ -54,899 +59,1364 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>High-Octane Heists and Chases</h2>
-            <p>Adrenaline-pumping tales of fast cars, daring robberies, and relentless pursuits.</p>
+        <!-- High-Octane Heists and Chases Section -->
+        <section class="movie-section" aria-labelledby="heists-chases-heading">
+            <header class="section-header">
+                <h2 id="heists-chases-heading">High-Octane Heists and Chases</h2>
+                <p>Adrenaline-pumping tales of fast cars, daring robberies, and relentless pursuits.</p>
+                <div class="section-stats">
+                    <span class="movie-count">14 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/action/Fast & Furious 5 - Rio Heist.jpg" alt="Fast & Furious 5 - Rio Heist Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/action/Fast & Furious 5 - Rio Heist.jpg" alt="Fast & Furious 5 - Rio Heist movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fast & Furious 5 - Rio Heist (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fast & Furious 5 - Rio Heist (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cars roar, vaults fly, and Rio’s streets burn in this franchise peak. A heist so absurdly fun it defies physics, but the family vibes keep it grounded. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cars roar, vaults fly, and Rio's streets burn in this franchise peak. A heist so absurdly fun it defies physics, but the family vibes keep it grounded.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/Gone in 60 Seconds.jpg" alt="Gone in Sixty Seconds Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/Gone in 60 Seconds.jpg" alt="Gone in Sixty Seconds movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gone in Sixty Seconds (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Gone in Sixty Seconds (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stealing 50 cars in one night sounds cooler than it plays. Slick rides and a ticking clock deliver thrills, but the plot’s as thin as a joyride. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stealing 50 cars in one night sounds cooler than it plays. Slick rides and a ticking clock deliver thrills, but the plot's as thin as a joyride.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/The Transporter.jpg" alt="The Transporter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/The Transporter.jpg" alt="The Transporter movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Transporter (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Transporter (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A driver with strict rules delivers packages and punches. High-kick action shines, but the story’s just a vehicle for Statham’s scowl. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A driver with strict rules delivers packages and punches. High-kick action shines, but the story's just a vehicle for Statham's scowl.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Fast and Furious 2009.jpg" alt="Fast & Furious Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Fast and Furious 2009.jpg" alt="Fast & Furious movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fast & Furious (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fast & Furious (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Back to basics with street races and revenge. It’s got heart and horsepower, but the grit feels polished, missing the original’s raw edge. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Back to basics with street races and revenge. It's got heart and horsepower, but the grit feels polished, missing the original's raw edge.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Furious 7.jpg" alt="Furious 7 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Furious 7.jpg" alt="Furious 7 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Furious 7 (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Furious 7 (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cars parachute, skyscrapers crumble, and emotions run high in this tribute-heavy sequel. Over-the-top fun, but the logic’s left in the dust. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cars parachute, skyscrapers crumble, and emotions run high in this tribute-heavy sequel. Over-the-top fun, but the logic's left in the dust.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Transporter II.jpg" alt="Transporter 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Transporter II.jpg" alt="Transporter 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Transporter 2 (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Transporter 2 (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>More Statham, more stunts, less sense. The slick driver dodges bombs and bad guys, but the plot’s a flat tire compared to the original. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>More Statham, more stunts, less sense. The slick driver dodges bombs and bad guys, but the plot's a flat tire compared to the original.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/2 Fast 2 Furious.jpg" alt="2 Fast 2 Furious Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/2 Fast 2 Furious.jpg" alt="2 Fast 2 Furious movie poster" loading="lazy">
+                        <figcaption class="sr-only">2 Fast 2 Furious (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>2 Fast 2 Furious (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Miami’s neon glow can’t save this gear-grinding sequel. Cars and charisma rev it up, but the story’s stuck in neutral. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Miami's neon glow can't save this gear-grinding sequel. Cars and charisma rev it up, but the story's stuck in neutral.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Fast And Furious 6.jpg" alt="Fast & Furious 6 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Fast And Furious 6.jpg" alt="Fast & Furious 6 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fast & Furious 6 (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fast & Furious 6 (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tanks, planes, and endless runways fuel this chaotic crew. It’s absurdly entertaining, but the franchise bloat starts showing. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tanks, planes, and endless runways fuel this chaotic crew. It's absurdly entertaining, but the franchise bloat starts showing.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Need For Speed.jpg" alt="Need For Speed Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Need For Speed.jpg" alt="Need For Speed movie poster" loading="lazy">
+                        <figcaption class="sr-only">Need For Speed (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Need For Speed (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A racer seeks revenge on the road. Flashy cars can’t mask a generic plot that spins its wheels in cliché city. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A racer seeks revenge on the road. Flashy cars can't mask a generic plot that spins its wheels in cliché city.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/The Fast and the Furious.jpg" alt="The Fast and the Furious Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/The Fast and the Furious.jpg" alt="The Fast and the Furious movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Fast and the Furious (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Fast and the Furious (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Street racing’s gritty roots kick off a franchise with NOS-fueled dreams. Raw but dated, it’s a nostalgic ride that lacks polish. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Street racing's gritty roots kick off a franchise with NOS-fueled dreams. Raw but dated, it's a nostalgic ride that lacks polish.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/F9 - The Fast Saga.jpg" alt="F9 - The Fast Saga Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/F9 - The Fast Saga.jpg" alt="F9 - The Fast Saga movie poster" loading="lazy">
+                        <figcaption class="sr-only">F9 - The Fast Saga (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>F9 - The Fast Saga (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cars in space? Sure, why not. This franchise jumps the shark into orbit, fun but brain-dead, defying gravity and good sense. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cars in space? Sure, why not. This franchise jumps the shark into orbit, fun but brain-dead, defying gravity and good sense.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Fast & Furious Presents Hobbs & Shaw.jpg" alt="Fast & Furious Presents - Hobbs & Shaw Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Fast & Furious Presents Hobbs & Shaw.jpg" alt="Fast & Furious Presents - Hobbs & Shaw movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fast & Furious Presents - Hobbs & Shaw (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fast & Furious Presents - Hobbs & Shaw (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bickering bros punch a super-soldier in this loud spin-off. Big action, small brains - entertaining if you don’t think too hard. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bickering bros punch a super-soldier in this loud spin-off. Big action, small brains - entertaining if you don't think too hard.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/The Fast and the Furious - Tokyo Drift.jpg" alt="The Fast and the Furious - Tokyo Drift Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/The Fast and the Furious - Tokyo Drift.jpg" alt="The Fast and the Furious - Tokyo Drift movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Fast and the Furious - Tokyo Drift (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Fast and the Furious - Tokyo Drift (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Drifting in Tokyo sounds cool, but this side-story stalls with a weak lead and cultural clichés. The cars steal the show. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Drifting in Tokyo sounds cool, but this side-story stalls with a weak lead and cultural clichés. The cars steal the show.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/The Fate of the Furious.jpg" alt="The Fate of the Furious Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/The Fate of the Furious.jpg" alt="The Fate of the Furious movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Fate of the Furious (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Fate of the Furious (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Family betrayal and submarine chases push this saga to new lows of logic. Flashy chaos entertains, but it’s running on fumes. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Family betrayal and submarine chases push this saga to new lows of logic. Flashy chaos entertains, but it's running on fumes.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Lone Heroes and Vigilantes</h2>
-            <p>Solo warriors seeking justice or revenge against overwhelming odds.</p>
+        <!-- Lone Heroes and Vigilantes Section -->
+        <section class="movie-section" aria-labelledby="vigilantes-heading">
+            <header class="section-header">
+                <h2 id="vigilantes-heading">Lone Heroes and Vigilantes</h2>
+                <p>Solo warriors seeking justice or revenge against overwhelming odds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">17 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/action/Man on Fire.jpg" alt="Man on Fire Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/action/Man on Fire.jpg" alt="Man on Fire movie poster" loading="lazy">
+                        <figcaption class="sr-only">Man on Fire (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Man on Fire (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A broken man ignites Mexico City in a fiery quest for vengeance. Brutal and emotional, it’s a slow burn that explodes spectacularly. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A broken man ignites Mexico City in a fiery quest for vengeance. Brutal and emotional, it's a slow burn that explodes spectacularly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/action/Nobody.jpeg" alt="Nobody Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/action/Nobody.jpeg" alt="Nobody movie poster" loading="lazy">
+                        <figcaption class="sr-only">Nobody (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Nobody (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A suburban dad unleashes his inner badass on mobsters. Bloody, stylish, and wickedly fun, it’s John Wick with a minivan. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A suburban dad unleashes his inner badass on mobsters. Bloody, stylish, and wickedly fun, it's John Wick with a minivan.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/Desperado.jpeg" alt="Desperado Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/Desperado.jpeg" alt="Desperado movie poster" loading="lazy">
+                        <figcaption class="sr-only">Desperado (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Desperado (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A guitar-slinging avenger shoots up cartels with flair. Stylish chaos with a Latin beat, but the plot’s as thin as a tequila shot. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A guitar-slinging avenger shoots up cartels with flair. Stylish chaos with a Latin beat, but the plot's as thin as a tequila shot.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/Taken.jpg" alt="Taken Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/Taken.jpg" alt="Taken movie poster" loading="lazy">
+                        <figcaption class="sr-only">Taken (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Taken (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dad’s “particular set of skills” dismantles traffickers. Relentless and iconic, but the sequels prove it’s a one-hit wonder. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A dad's "particular set of skills" dismantles traffickers. Relentless and iconic, but the sequels prove it's a one-hit wonder.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/The Accountant.jpg" alt="The Accountant Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/The Accountant.jpg" alt="The Accountant movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Accountant (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Accountant (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A math savant with a gun crunches numbers and skulls. Clever premise, slick action, but the twists don’t always add up. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A math savant with a gun crunches numbers and skulls. Clever premise, slick action, but the twists don't always add up.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/Wrath of Man.jpg" alt="Wrath of Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/Wrath of Man.jpg" alt="Wrath of Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wrath of Man (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wrath of Man (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cash-truck guard dishes cold revenge. Gritty and intense, but its nonlinear style feels like a puzzle missing a few pieces. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cash-truck guard dishes cold revenge. Gritty and intense, but its nonlinear style feels like a puzzle missing a few pieces.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Falcon Rising.jpg" alt="Falcon Rising Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Falcon Rising.jpg" alt="Falcon Rising movie poster" loading="lazy">
+                        <figcaption class="sr-only">Falcon Rising (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Falcon Rising (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Marine tears through Rio’s slums for justice. Solid fights, but it’s a B-movie that doesn’t rise above its clichés. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Marine tears through Rio's slums for justice. Solid fights, but it's a B-movie that doesn't rise above its clichés.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Faster.jpg" alt="Faster Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Faster.jpg" alt="Faster movie poster" loading="lazy">
+                        <figcaption class="sr-only">Faster (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Faster (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An ex-con hunts his brother’s killers with grim focus. Lean and mean, but the vengeance train derails into forgettable territory. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>An ex-con hunts his brother's killers with grim focus. Lean and mean, but the vengeance train derails into forgettable territory.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Homefront.jpg" alt="Homefront Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Homefront.jpg" alt="Homefront movie poster" loading="lazy">
+                        <figcaption class="sr-only">Homefront (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Homefront (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A DEA agent faces small-town thugs. Statham does Statham, but the backwoods brawl feels like a script on autopilot. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A DEA agent faces small-town thugs. Statham does Statham, but the backwoods brawl feels like a script on autopilot.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/I Am Wrath.jpg" alt="I Am Wrath Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/I Am Wrath.jpg" alt="I Am Wrath movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Am Wrath (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Am Wrath (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man avenges his wife against corrupt cops. It’s gritty enough, but the execution’s as generic as a straight-to-DVD bin. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man avenges his wife against corrupt cops. It's gritty enough, but the execution's as generic as a straight-to-DVD bin.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Once Upon a Time in Mexico.jpg" alt="Once Upon a Time in Mexico Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Once Upon a Time in Mexico.jpg" alt="Once Upon a Time in Mexico movie poster" loading="lazy">
+                        <figcaption class="sr-only">Once Upon a Time in Mexico (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Once Upon a Time in Mexico (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Mariachi saga ends with a chaotic bang. Stylized shootouts dazzle, but the plot’s a messy tortilla of double-crosses. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Mariachi saga ends with a chaotic bang. Stylized shootouts dazzle, but the plot's a messy tortilla of double-crosses.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Peppermint.jpg" alt="Peppermint Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Peppermint.jpg" alt="Peppermint movie poster" loading="lazy">
+                        <figcaption class="sr-only">Peppermint (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Peppermint (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mom turns vigilante after tragedy. Bloody and straightforward, but it’s a revenge flick that forgets to bring fresh flavor. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mom turns vigilante after tragedy. Bloody and straightforward, but it's a revenge flick that forgets to bring fresh flavor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/The Foreigner.jpg" alt="The Foreigner Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/The Foreigner.jpg" alt="The Foreigner movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Foreigner (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Foreigner (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A grieving father hunts terrorists with quiet fury. Chan’s intensity elevates it, but the political intrigue feels half-baked. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A grieving father hunts terrorists with quiet fury. Chan's intensity elevates it, but the political intrigue feels half-baked.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Security.jpg" alt="Security Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Security.jpg" alt="Security movie poster" loading="lazy">
+                        <figcaption class="sr-only">Security (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Security (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mall cop battles traffickers to save a girl. Banderas brings grit, but it’s a low-budget Die Hard clone with no spark. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mall cop battles traffickers to save a girl. Banderas brings grit, but it's a low-budget Die Hard clone with no spark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/The Hunter's Prayer.jpg" alt="The Hunter's Prayer Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/The Hunter's Prayer.jpg" alt="The Hunter's Prayer movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hunter's Prayer (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hunter's Prayer (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A hitman protects a teen from assassins. Decent action, but the story’s a recycled blueprint with little soul. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A hitman protects a teen from assassins. Decent action, but the story's a recycled blueprint with little soul.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Abduction.jpg" alt="Abduction Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Abduction.jpg" alt="Abduction movie poster" loading="lazy">
+                        <figcaption class="sr-only">Abduction (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Abduction (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen discovers he’s a target in a spy game. It tries for Bourne, but lands in CW drama territory - flat and forgettable. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen discovers he's a target in a spy game. It tries for Bourne, but lands in CW drama territory - flat and forgettable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Wild Card.jpg" alt="Wild Card Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Wild Card.jpg" alt="Wild Card movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wild Card (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wild Card (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A gambler with fists takes on Vegas mobsters. Statham’s charm carries it, but the stakes feel lower than a bad poker hand. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A gambler with fists takes on Vegas mobsters. Statham's charm carries it, but the stakes feel lower than a bad poker hand.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Die Hard and Tactical Teams</h2>
-            <p>High-stakes missions with cops, soldiers, or teams facing impossible odds.</p>
+        <!-- Die Hard and Tactical Teams Section -->
+        <section class="movie-section" aria-labelledby="tactical-teams-heading">
+            <header class="section-header">
+                <h2 id="tactical-teams-heading">Die Hard and Tactical Teams</h2>
+                <p>High-stakes missions with cops, soldiers, or teams facing impossible odds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">14 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/action/Die Hard.jpg" alt="Die Hard Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/action/Die Hard.jpg" alt="Die Hard movie poster" loading="lazy">
+                        <figcaption class="sr-only">Die Hard (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Die Hard (1988)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A lone cop takes on terrorists in a skyscraper. Yippee-ki-yay, it’s the gold standard of action - tight, witty, and explosive. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A lone cop takes on terrorists in a skyscraper. Yippee-ki-yay, it's the gold standard of action - tight, witty, and explosive.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/action/Die Hard - With a Vengeance.webp" alt="Die Hard - With a Vengeance Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/action/Die Hard - With a Vengeance.webp" alt="Die Hard - With a Vengeance movie poster" loading="lazy">
+                        <figcaption class="sr-only">Die Hard: With a Vengeance (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Die Hard: With a Vengeance (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>McClane and a sidekick dodge bombs in NYC. Fast, fun, and chaotic, it’s a worthy sequel that just misses the original’s magic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>McClane and a sidekick dodge bombs in NYC. Fast, fun, and chaotic, it's a worthy sequel that just misses the original's magic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/Die Hard 2.jpg" alt="Die Hard 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/Die Hard 2.jpg" alt="Die Hard 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Die Hard 2 (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Die Hard 2 (1990)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>McClane battles airport terrorists on Christmas. Solid action, but it’s a rehash that doesn’t quite clear the runway. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>McClane battles airport terrorists on Christmas. Solid action, but it's a rehash that doesn't quite clear the runway.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/The A-Team.jpg" alt="The A-Team Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/The A-Team.jpg" alt="The A-Team movie poster" loading="lazy">
+                        <figcaption class="sr-only">The A-Team (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The A-Team (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mercenaries dodge explosions and bad plans. It’s a loud, goofy ride that leans hard into chaos but lacks the show’s charm. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mercenaries dodge explosions and bad plans. It's a loud, goofy ride that leans hard into chaos but lacks the show's charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/The Siege.jpg" alt="The Siege Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/The Siege.jpg" alt="The Siege movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Siege (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Siege (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Terrorist attacks spark martial law in NYC. Tense and topical, but its heavy-handed politics age like a 90s newsreel. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Terrorist attacks spark martial law in NYC. Tense and topical, but its heavy-handed politics age like a 90s newsreel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/6 Days.jpg" alt="6 Days Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/6 Days.jpg" alt="6 Days movie poster" loading="lazy">
+                        <figcaption class="sr-only">6 Days (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>6 Days (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A real-life embassy siege gets a taut retelling. Gritty and procedural, but it’s more history lesson than pulse-pounder. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A real-life embassy siege gets a taut retelling. Gritty and procedural, but it's more history lesson than pulse-pounder.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/7 Days in Entebbe.jpg" alt="Entebbe Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/7 Days in Entebbe.jpg" alt="Entebbe movie poster" loading="lazy">
+                        <figcaption class="sr-only">Entebbe (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Entebbe (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A hijacking rescue mission unfolds with tension but trips on clunky execution. History’s gripping; the film, less so. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A hijacking rescue mission unfolds with tension but trips on clunky execution. History's gripping; the film, less so.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Hotel Mumbai.jpg" alt="Hotel Mumbai Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Hotel Mumbai.jpg" alt="Hotel Mumbai movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hotel Mumbai (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hotel Mumbai (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A terrorist siege in a luxury hotel is grimly real. Intense and harrowing, but it leans too hard on tragedy porn. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A terrorist siege in a luxury hotel is grimly real. Intense and harrowing, but it leans too hard on tragedy porn.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/White House Down.jpg" alt="White House Down Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/White House Down.jpg" alt="White House Down movie poster" loading="lazy">
+                        <figcaption class="sr-only">White House Down (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>White House Down (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The White House falls to mercenaries, saved by a cop. Big, dumb fun, but it’s Die Hard in D.C. with less wit. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>The White House falls to mercenaries, saved by a cop. Big, dumb fun, but it's Die Hard in D.C. with less wit.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Angel Has Fallen.jpg" alt="Angel Has Fallen Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Angel Has Fallen.jpg" alt="Angel Has Fallen movie poster" loading="lazy">
+                        <figcaption class="sr-only">Angel Has Fallen (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Angel Has Fallen (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Secret Service man clears his name amid explosions. It’s serviceable action, but the formula’s as tired as a D.C. intern. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Secret Service man clears his name amid explosions. It's serviceable action, but the formula's as tired as a D.C. intern.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/London Has Fallen.jpg" alt="London Has Fallen Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/London Has Fallen.jpg" alt="London Has Fallen movie poster" loading="lazy">
+                        <figcaption class="sr-only">London Has Fallen (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>London Has Fallen (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>London’s blown up, and Butler saves the day. Loud and jingoistic, it’s a sequel that forgets why the first worked. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>London's blown up, and Butler saves the day. Loud and jingoistic, it's a sequel that forgets why the first worked.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Mile 22.jpg" alt="Mile 22 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Mile 22.jpg" alt="Mile 22 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mile 22 (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mile 22 (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A CIA squad escorts a target through chaos. Frantic action can’t save a choppy mess that feels like a trailer, not a movie. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A CIA squad escorts a target through chaos. Frantic action can't save a choppy mess that feels like a trailer, not a movie.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Skyscraper.jpg" alt="Skyscraper Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Skyscraper.jpg" alt="Skyscraper movie poster" loading="lazy">
+                        <figcaption class="sr-only">Skyscraper (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Skyscraper (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A burning building, a one-legged hero, and pure absurdity. It’s Die Hard on steroids, but dumber than a bag of hammers. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A burning building, a one-legged hero, and pure absurdity. It's Die Hard on steroids, but dumber than a bag of hammers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Diplomatic Siege.jpg" alt="Diplomatic Siege Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Diplomatic Siege.jpg" alt="Diplomatic Siege movie poster" loading="lazy">
+                        <figcaption class="sr-only">Diplomatic Siege (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Diplomatic Siege (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Terrorists seize an embassy, and a tech guy saves it. Low-budget cheese with 90s charm, but it’s no Nakatomi Plaza. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Terrorists seize an embassy, and a tech guy saves it. Low-budget cheese with 90s charm, but it's no Nakatomi Plaza.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Westerns and Outlaws</h2>
-            <p>Gritty tales of gunslingers, justice, and frontier chaos.</p>
+        <!-- Westerns and Outlaws Section -->
+        <section class="movie-section" aria-labelledby="westerns-heading">
+            <header class="section-header">
+                <h2 id="westerns-heading">Westerns and Outlaws</h2>
+                <p>Gritty tales of gunslingers, justice, and frontier chaos.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/action/The Good, the Bad and the Ugly.jpg" alt="The Good, the Bad and the Ugly Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/action/The Good, the Bad and the Ugly.jpg" alt="The Good, the Bad and the Ugly movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Good, the Bad and the Ugly (1966)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Good, the Bad and the Ugly (1966)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Three outlaws chase gold in a Civil War wasteland. Epic standoffs and Morricone’s score make it legendary, though it’s a long trail. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Three outlaws chase gold in a Civil War wasteland. Epic standoffs and Morricone's score make it legendary, though it's a long trail.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/action/The Assassination of Jesse James by the Coward Robert Ford.webp" alt="The Assassination of Jesse James by the Coward Robert Ford Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/action/The Assassination of Jesse James by the Coward Robert Ford.webp" alt="The Assassination of Jesse James by the Coward Robert Ford movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Assassination of Jesse James by the Coward Robert Ford (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Assassination of Jesse James by the Coward Robert Ford (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A poetic take on an outlaw’s final days. Haunting and gorgeous, but its slow drawl might test your trigger finger. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A poetic take on an outlaw's final days. Haunting and gorgeous, but its slow drawl might test your trigger finger.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/310 to Yuma.jpg" alt="3:10 to Yuma Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/310 to Yuma.jpg" alt="3:10 to Yuma movie poster" loading="lazy">
+                        <figcaption class="sr-only">3:10 to Yuma (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>3:10 to Yuma (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rancher escorts a cunning outlaw to a train. Tense and morally gray, it’s a Western revival that hits but doesn’t reinvent. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rancher escorts a cunning outlaw to a train. Tense and morally gray, it's a Western revival that hits but doesn't reinvent.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/The Magnificent Seven.jpg" alt="The Magnificent Seven Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/The Magnificent Seven.jpg" alt="The Magnificent Seven movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Magnificent Seven (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Magnificent Seven (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gunslingers defend a town from a greedy baron. A solid remake with big shootouts, but it lacks the original’s soul. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Gunslingers defend a town from a greedy baron. A solid remake with big shootouts, but it lacks the original's soul.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Hang 'em High.jpg" alt="Hang 'em High Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Hang 'em High.jpg" alt="Hang 'em High movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hang 'em High (1968)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hang 'em High (1968)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A wronged marshal seeks justice in the Old West. Classic Eastwood grit, but it’s a dusty trail that feels a bit worn. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A wronged marshal seeks justice in the Old West. Classic Eastwood grit, but it's a dusty trail that feels a bit worn.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Hangmen.jpg" alt="Hangmen Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Hangmen.jpg" alt="Hangmen movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hangmen (1987)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hangmen (1987)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rogue CIA agent stirs up a Western-flavored mess. It’s a low-budget oddity that tries hard but lands in the saloon’s spittoon. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rogue CIA agent stirs up a Western-flavored mess. It's a low-budget oddity that tries hard but lands in the saloon's spittoon.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Swashbucklers and Swordsmen</h2>
-            <p>Heroic rogues wielding blades and bravado in historical settings.</p>
+        <!-- Swashbucklers and Swordsmen Section -->
+        <section class="movie-section" aria-labelledby="swashbucklers-heading">
+            <header class="section-header">
+                <h2 id="swashbucklers-heading">Swashbucklers and Swordsmen</h2>
+                <p>Heroic rogues wielding blades and bravado in historical settings.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/action/The Mask of Zorro.jpg" alt="The Mask of Zorro Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/The Mask of Zorro.jpg" alt="The Mask of Zorro movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Mask of Zorro (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Mask of Zorro (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A masked avenger carves justice with a Z. Swashbuckling charm and romance ignite, but it’s a touch too Hollywood glossy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A masked avenger carves justice with a Z. Swashbuckling charm and romance ignite, but it's a touch too Hollywood glossy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Robin Hood.jpg" alt="Robin Hood Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Robin Hood.jpg" alt="Robin Hood movie poster" loading="lazy">
+                        <figcaption class="sr-only">Robin Hood (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Robin Hood (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Archers and rebels take on medieval tyrants. Gritty visuals clash with a bloated script that misses the bullseye. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Archers and rebels take on medieval tyrants. Gritty visuals clash with a bloated script that misses the bullseye.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/The Legend of Zorro.jpg" alt="The Legend of Zorro Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/The Legend of Zorro.jpg" alt="The Legend of Zorro movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Legend of Zorro (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Legend of Zorro (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Zorro returns with family drama and swordplay. The charm’s faded, and the plot’s as creaky as an old saddle. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Zorro returns with family drama and swordplay. The charm's faded, and the plot's as creaky as an old saddle.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Martial Arts and Street Fights</h2>
-            <p>Brawls and acrobatic combat in urban or dystopian settings.</p>
+        <!-- Martial Arts and Street Fights Section -->
+        <section class="movie-section" aria-labelledby="martial-arts-heading">
+            <header class="section-header">
+                <h2 id="martial-arts-heading">Martial Arts and Street Fights</h2>
+                <p>Brawls and acrobatic combat in urban or dystopian settings.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/action/District B13.jpg" alt="District B13 Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/District B13.jpg" alt="District B13 movie poster" loading="lazy">
+                        <figcaption class="sr-only">District B13 (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>District B13 (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Parkour and punches clean up a dystopian slum. Kinetic and raw, it’s a French action gem with a barebones story. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Parkour and punches clean up a dystopian slum. Kinetic and raw, it's a French action gem with a barebones story.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/action/Equilibrium.jpg" alt="Equilibrium Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/Equilibrium.jpg" alt="Equilibrium movie poster" loading="lazy">
+                        <figcaption class="sr-only">Equilibrium (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Equilibrium (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gun-kata and rebellion in a dystopian future. Stylish fights elevate a Matrix wannabe, but the world-building’s shaky. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Gun-kata and rebellion in a dystopian future. Stylish fights elevate a Matrix wannabe, but the world-building's shaky.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Boy Kills World.jpg" alt="Boy Kills World Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Boy Kills World.jpg" alt="Boy Kills World movie poster" loading="lazy">
+                        <figcaption class="sr-only">Boy Kills World (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Boy Kills World (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mute avenger slices through a brutal regime. Gory and stylish, but the hyper-violent chaos drowns out its heart. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mute avenger slices through a brutal regime. Gory and stylish, but the hyper-violent chaos drowns out its heart.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Triple Threat.jpg" alt="Triple Threat Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Triple Threat.jpg" alt="Triple Threat movie poster" loading="lazy">
+                        <figcaption class="sr-only">Triple Threat (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Triple Threat (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Martial arts stars collide in a flurry of fists. The kicks land hard, but the plot’s a punching bag of clichés. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Martial arts stars collide in a flurry of fists. The kicks land hard, but the plot's a punching bag of clichés.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Cradle 2 the Grave.jpg" alt="Cradle 2 the Grave Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Cradle 2 the Grave.jpg" alt="Cradle 2 the Grave movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cradle 2 the Grave (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cradle 2 the Grave (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A thief and a cop team up for a diamond heist. Jet Li’s moves shine, but the story’s a knockoff with no punch. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A thief and a cop team up for a diamond heist. Jet Li's moves shine, but the story's a knockoff with no punch.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Double Impact.jpg" alt="Double Impact Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Double Impact.jpg" alt="Double Impact movie poster" loading="lazy">
+                        <figcaption class="sr-only">Double Impact (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Double Impact (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Van Damme plays twins fighting crime. Double the kicks, half the plot - 90s cheese that’s fun but flimsy. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Van Damme plays twins fighting crime. Double the kicks, half the plot - 90s cheese that's fun but flimsy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Double Team.jpg" alt="Double Team Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Double Team.jpg" alt="Double Team movie poster" loading="lazy">
+                        <figcaption class="sr-only">Double Team (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Double Team (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Van Damme and Rodman dodge explosions. It’s a 90s fever dream of bad action and worse hair. Entertaining trash. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Van Damme and Rodman dodge explosions. It's a 90s fever dream of bad action and worse hair. Entertaining trash.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Street Fighter.jpg" alt="Street Fighter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Street Fighter.jpg" alt="Street Fighter movie poster" loading="lazy">
+                        <figcaption class="sr-only">Street Fighter (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Street Fighter (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A game adaptation with punches and camp. It’s a nostalgic mess that’s more Hadouken than high art. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A game adaptation with punches and camp. It's a nostalgic mess that's more Hadouken than high art.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/action/The One-Armed Executioner.jpg" alt="The One-Armed Executioner Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/action/The One-Armed Executioner.jpg" alt="The One-Armed Executioner movie poster" loading="lazy">
+                        <figcaption class="sr-only">The One-Armed Executioner (1981)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The One-Armed Executioner (1981)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A one-armed vigilante fights drug lords. Pure 80s exploitation with heart, but it’s too cheap to land many punches. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A one-armed vigilante fights drug lords. Pure 80s exploitation with heart, but it's too cheap to land many punches.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Espionage and Covert Ops</h2>
-            <p>Secret agents and covert missions in high-stakes global conflicts.</p>
+        <!-- Espionage and Covert Ops Section -->
+        <section class="movie-section" aria-labelledby="espionage-heading">
+            <header class="section-header">
+                <h2 id="espionage-heading">Espionage and Covert Ops</h2>
+                <p>Secret agents and covert missions in high-stakes global conflicts.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/action/Face-Off.jpg" alt="Face-Off Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/action/Face-Off.jpg" alt="Face-Off movie poster" loading="lazy">
+                        <figcaption class="sr-only">Face/Off (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Face/Off (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cop and criminal swap faces in a wild identity clash. Over-the-top and thrilling, it’s Woo’s masterpiece of absurd action. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cop and criminal swap faces in a wild identity clash. Over-the-top and thrilling, it's Woo's masterpiece of absurd action.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/Operation Fortune.jpg" alt="Operation Fortune Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/Operation Fortune.jpg" alt="Operation Fortune movie poster" loading="lazy">
+                        <figcaption class="sr-only">Operation Fortune (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Operation Fortune (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A suave spy chases a deadly deal. Stylish and quippy, but it’s a Guy Ritchie joint that feels like a lesser rerun. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A suave spy chases a deadly deal. Stylish and quippy, but it's a Guy Ritchie joint that feels like a lesser rerun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/The Commuter.jpg" alt="The Commuter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/The Commuter.jpg" alt="The Commuter movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Commuter (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Commuter (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A train ride turns deadly with a conspiracy. Neeson punches above the script’s weight, but it’s a familiar commute. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A train ride turns deadly with a conspiracy. Neeson punches above the script's weight, but it's a familiar commute.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Cat Run.jpg" alt="Cat Run Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Cat Run.jpg" alt="Cat Run movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cat Run (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cat Run (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>PIs stumble into a sexy conspiracy. It aims for gritty fun but lands in a sleazy ditch of half-baked action. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>PIs stumble into a sexy conspiracy. It aims for gritty fun but lands in a sleazy ditch of half-baked action.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Close.jpg" alt="Close Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Close.jpg" alt="Close movie poster" loading="lazy">
+                        <figcaption class="sr-only">Close (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Close (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bodyguard protects a heiress from kidnappers. Tough and gritty, but it’s a generic thriller that fades fast. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bodyguard protects a heiress from kidnappers. Tough and gritty, but it's a generic thriller that fades fast.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Erased.jpg" alt="Erased Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Erased.jpg" alt="Erased movie poster" loading="lazy">
+                        <figcaption class="sr-only">Erased (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Erased (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A CIA operative fights to save his daughter. It tries for Bourne’s grit but lands in straight-to-streaming limbo. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A CIA operative fights to save his daughter. It tries for Bourne's grit but lands in straight-to-streaming limbo.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/The Rhythm Section.jpg" alt="The Rhythm Section Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/The Rhythm Section.jpg" alt="The Rhythm Section movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Rhythm Section (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Rhythm Section (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A woman trains for revenge after a plane crash. Dark and moody, but it fumbles the spy-thriller rhythm badly. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A woman trains for revenge after a plane crash. Dark and moody, but it fumbles the spy-thriller rhythm badly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Cat Run 2.jpg" alt="Cat Run 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Cat Run 2.jpg" alt="Cat Run 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cat Run 2 (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cat Run 2 (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>More PIs, more conspiracies, less quality. It’s a sequel that doubles down on sleaze and forgets the action. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>More PIs, more conspiracies, less quality. It's a sequel that doubles down on sleaze and forgets the action.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Military and Survival</h2>
-            <p>Battle-hardened soldiers or unlikely heroes in life-or-death struggles.</p>
+        <!-- Military and Survival Section -->
+        <section class="movie-section" aria-labelledby="military-heading">
+            <header class="section-header">
+                <h2 id="military-heading">Military and Survival</h2>
+                <p>Battle-hardened soldiers or unlikely heroes in life-or-death struggles.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/action/Unstoppable.jpg" alt="Unstoppable Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/action/Unstoppable.jpg" alt="Unstoppable movie poster" loading="lazy">
+                        <figcaption class="sr-only">Unstoppable (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Unstoppable (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A runaway train barrels toward disaster, stopped by blue-collar grit. Tense and lean, it’s a thrill ride with heart but no frills. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A runaway train barrels toward disaster, stopped by blue-collar grit. Tense and lean, it's a thrill ride with heart but no frills.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/action/The Rundown.jpg" alt="The Rundown Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/The Rundown.jpg" alt="The Rundown movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Rundown (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Rundown (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bounty hunter chases a target in the jungle. Rock-solid action with humor, but it’s a forgettable trek through familiar terrain. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bounty hunter chases a target in the jungle. Rock-solid action with humor, but it's a forgettable trek through familiar terrain.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Big Game.jpg" alt="Big Game Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Big Game.jpg" alt="Big Game movie poster" loading="lazy">
+                        <figcaption class="sr-only">Big Game (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Big Game (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A kid helps the President survive a forest ambush. It’s a quirky premise that crashes with shaky execution and budget cuts. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A kid helps the President survive a forest ambush. It's a quirky premise that crashes with shaky execution and budget cuts.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Operator.jpg" alt="Operator Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Operator.jpg" alt="Operator movie poster" loading="lazy">
+                        <figcaption class="sr-only">Operator (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Operator (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A 911 operator faces a personal crisis amid chaos. Tense moments fizzle in a low-budget script that dials the wrong number. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A 911 operator faces a personal crisis amid chaos. Tense moments fizzle in a low-budget script that dials the wrong number.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/Survive or Die.jpg" alt="Survive or Die Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/Survive or Die.jpg" alt="Survive or Die movie poster" loading="lazy">
+                        <figcaption class="sr-only">Survive or Die (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Survive or Die (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A survivalist battles mercenaries in the wild. Gritty effort, but it’s a low-rent Rambo knockoff with more heart than polish. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A survivalist battles mercenaries in the wild. Gritty effort, but it's a low-rent Rambo knockoff with more heart than polish.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/The Marine.png" alt="The Marine Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/The Marine.png" alt="The Marine movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Marine (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Marine (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A soldier rescues his wife from thugs. WWE-fueled action with zero subtlety - it’s loud, proud, and painfully generic. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A soldier rescues his wife from thugs. WWE-fueled action with zero subtlety - it's loud, proud, and painfully generic.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Over-the-Top Action</h2>
-            <p>Explosive, absurd spectacles that push action to the extreme.</p>
+        <!-- Over-the-Top Action Section -->
+        <section class="movie-section" aria-labelledby="over-the-top-heading">
+            <header class="section-header">
+                <h2 id="over-the-top-heading">Over-the-Top Action</h2>
+                <p>Explosive, absurd spectacles that push action to the extreme.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/action/6 Underground.jpg" alt="6 Underground Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/action/6 Underground.jpg" alt="6 Underground movie poster" loading="lazy">
+                        <figcaption class="sr-only">6 Underground (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>6 Underground (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Vigilantes fake their deaths for global chaos. Bay’s bombast delivers wild stunts, but the plot’s a casualty of the explosion fest. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Vigilantes fake their deaths for global chaos. Bay's bombast delivers wild stunts, but the plot's a casualty of the explosion fest.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/action/G.I. Joe - The Rise of Cobra.jpg" alt="G.I. Joe - The Rise of Cobra Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/action/G.I. Joe - The Rise of Cobra.jpg" alt="G.I. Joe - The Rise of Cobra movie poster" loading="lazy">
+                        <figcaption class="sr-only">G.I. Joe - The Rise of Cobra (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>G.I. Joe - The Rise of Cobra (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Elite soldiers battle a cartoonish villain. Flashy CGI and big booms entertain, but it’s a toy commercial with no brain. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Elite soldiers battle a cartoonish villain. Flashy CGI and big booms entertain, but it's a toy commercial with no brain.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Absolon.jpg" alt="Absolon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Absolon.jpg" alt="Absolon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Absolon (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Absolon (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A virus cure sparks a sci-fi chase. Ambitious but cheap, it’s a B-movie that swings big and misses bigger. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A virus cure sparks a sci-fi chase. Ambitious but cheap, it's a B-movie that swings big and misses bigger.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/action/Bulletproof.jpg" alt="Bulletproof Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/action/Bulletproof.jpg" alt="Bulletproof movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bulletproof (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bulletproof (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cop and crook buddy up amid gunfire. 90s comedy-action vibes are fun, but it’s a forgettable shot in the dark. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cop and crook buddy up amid gunfire. 90s comedy-action vibes are fun, but it's a forgettable shot in the dark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/action/The Pacifier.jpg" alt="The Pacifier Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/action/The Pacifier.jpg" alt="The Pacifier movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Pacifier (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Pacifier (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Navy SEAL babysits kids and fights spies. It’s Diesel in diapers, a silly premise that’s more cringe than bang. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Navy SEAL babysits kids and fights spies. It's Diesel in diapers, a silly premise that's more cringe than bang.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>
