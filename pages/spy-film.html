@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spy Films</title>
+    <title>Spy Films - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="description" content="Showcasing spy movies sorted by theme, with razor-sharp, witty overviews and objective ratings based on Rotten Tomatoes consensus.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Spy Films</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Covert operations, international intrigue, and high-stakes espionage across classic Bond, modern thrillers, and stylish action adventures.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 49 movies</span>
+            <span class="movie-count">6 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -50,521 +55,789 @@
             <li><a href="serial-killers.html">Serial Killers</a></li>
             <li><a href="series-films.html">Series Films</a></li>
             <li><a href="sports.html">Sports</a></li>
+            <li><a href="spy-film.html" aria-current="page">Spy Film</a></li>
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Classic Bond</h2>
-            <p>007’s golden era of martinis, gadgets, and world-saving swagger.</p>
+        <!-- Classic Bond Section -->
+        <section class="movie-section" aria-labelledby="classic-bond-heading">
+            <header class="section-header">
+                <h2 id="classic-bond-heading">Classic Bond</h2>
+                <p>007's golden era of martinis, gadgets, and world-saving swagger.</p>
+                <div class="section-stats">
+                    <span class="movie-count">24 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/spy-film/Casino Royale.jpg" alt="Casino Royale Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/spy-film/Casino Royale.jpg" alt="Casino Royale movie poster" loading="lazy">
+                        <figcaption class="sr-only">Casino Royale (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Casino Royale (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Craig’s gritty Bond reboots with poker-faced intensity and parkour chases. Some miss the camp, but this raw, emotional 007 deals a royal flush. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Craig's gritty Bond reboots with poker-faced intensity and parkour chases. Some miss the camp, but this raw, emotional 007 deals a royal flush.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/spy-film/Skyfall.jpg" alt="Skyfall Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/spy-film/Skyfall.jpg" alt="Skyfall movie poster" loading="lazy">
+                        <figcaption class="sr-only">Skyfall (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Skyfall (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond hunts a cyber-ghost while facing MI6’s past. Naysayers nitpick the plot holes, but Mendes’ sleek visuals and Bardem’s creepy flair make it a license to thrill. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond hunts a cyber-ghost while facing MI6's past. Naysayers nitpick the plot holes, but Mendes' sleek visuals and Bardem's creepy flair make it a license to thrill.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/spy-film/Goldfinger.jpg" alt="Goldfinger Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/spy-film/Goldfinger.jpg" alt="Goldfinger movie poster" loading="lazy">
+                        <figcaption class="sr-only">Goldfinger (1964)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Goldfinger (1964)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Connery’s Bond foils a gold-obsessed baddie with laser beams and Aston Martins. Dated sexism stings, but the suave charm and iconic lines are pure bullion. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Connery's Bond foils a gold-obsessed baddie with laser beams and Aston Martins. Dated sexism stings, but the suave charm and iconic lines are pure bullion.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/spy-film/From Russia with Love.jpg" alt="From Russia with Love Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/spy-film/From Russia with Love.jpg" alt="From Russia with Love movie poster" loading="lazy">
+                        <figcaption class="sr-only">From Russia with Love (1963)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>From Russia with Love (1963)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond navigates Cold War traps and a deadly femme fatale. Some call it slow, but the gritty espionage and train-fight grit keep it a vodka-soaked classic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond navigates Cold War traps and a deadly femme fatale. Some call it slow, but the gritty espionage and train-fight grit keep it a vodka-soaked classic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/spy-film/GoldenEye.webp" alt="GoldenEye Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/spy-film/GoldenEye.webp" alt="GoldenEye movie poster" loading="lazy">
+                        <figcaption class="sr-only">GoldenEye (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>GoldenEye (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Brosnan’s Bond battles a rogue 007 with tanks and tech. Dated effects and cheesy quips irk some, but the N64 nostalgia and action zing keep it golden. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Brosnan's Bond battles a rogue 007 with tanks and tech. Dated effects and cheesy quips irk some, but the N64 nostalgia and action zing keep it golden.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/spy-film/Dr. No.jpg" alt="Dr. No Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/spy-film/Dr. No.jpg" alt="Dr. No movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dr. No (1962)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dr. No (1962)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Connery’s debut Bond hunts a Caribbean madman. Pacing drags for modern eyes, but the suave swagger and exotic vibe launch the franchise with a bang. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Connery's debut Bond hunts a Caribbean madman. Pacing drags for modern eyes, but the suave swagger and exotic vibe launch the franchise with a bang.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/No Time to Die.jpg" alt="No Time to Die Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/No Time to Die.jpg" alt="No Time to Die movie poster" loading="lazy">
+                        <figcaption class="sr-only">No Time to Die (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>No Time to Die (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Craig’s final Bond faces a bio-weapon baddie and personal ghosts. Bloated runtime and soap-opera vibes irk fans, but the emotional farewell lands some punches. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Craig's final Bond faces a bio-weapon baddie and personal ghosts. Bloated runtime and soap-opera vibes irk fans, but the emotional farewell lands some punches.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/The Spy Who Loved Me.jpg" alt="The Spy Who Loved Me Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/The Spy Who Loved Me.jpg" alt="The Spy Who Loved Me movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Spy Who Loved Me (1977)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Spy Who Loved Me (1977)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Moore’s Bond teams with a Soviet stunner to sink a sub-stealing villain. Campy excess annoys purists, but the Lotus sub and Jaws chomp hard. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Moore's Bond teams with a Soviet stunner to sink a sub-stealing villain. Campy excess annoys purists, but the Lotus sub and Jaws chomp hard.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Thunderball.jpg" alt="Thunderball Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Thunderball.jpg" alt="Thunderball movie poster" loading="lazy">
+                        <figcaption class="sr-only">Thunderball (1965)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Thunderball (1965)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond dives for stolen nukes in a Bahamas showdown. Waterlogged pacing drowns some, but the underwater action and Connery’s cool keep it afloat. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond dives for stolen nukes in a Bahamas showdown. Waterlogged pacing drowns some, but the underwater action and Connery's cool keep it afloat.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/For Your Eyes Only.jpg" alt="For Your Eyes Only Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/For Your Eyes Only.jpg" alt="For Your Eyes Only movie poster" loading="lazy">
+                        <figcaption class="sr-only">For Your Eyes Only (1981)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>For Your Eyes Only (1981)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Moore’s Bond chases a missile gizmo with ski stunts and grit. Uneven tone trips some, but the grounded spy game and action zing keep it sharp. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Moore's Bond chases a missile gizmo with ski stunts and grit. Uneven tone trips some, but the grounded spy game and action zing keep it sharp.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/Live and Let Die.jpg" alt="Live and Let Die Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/Live and Let Die.jpg" alt="Live and Let Die movie poster" loading="lazy">
+                        <figcaption class="sr-only">Live and Let Die (1973)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Live and Let Die (1973)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Moore’s Bond dives into voodoo and drug-lord danger. Blaxploitation clichés and campy boats irk, but the bayou vibe and Wings theme song slink along. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Moore's Bond dives into voodoo and drug-lord danger. Blaxploitation clichés and campy boats irk, but the bayou vibe and Wings theme song slink along.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/Spectre.webp" alt="Spectre Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/Spectre.webp" alt="Spectre movie poster" loading="lazy">
+                        <figcaption class="sr-only">Spectre (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spectre (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond hunts a shadowy cabal tying his past. Fans slam the forced retcons and dull villain, but Craig’s grit and slick setpieces save it from self-destruct. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond hunts a shadowy cabal tying his past. Fans slam the forced retcons and dull villain, but Craig's grit and slick setpieces save it from self-destruct.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/You Only Live Twice.jpg" alt="You Only Live Twice Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/You Only Live Twice.jpg" alt="You Only Live Twice movie poster" loading="lazy">
+                        <figcaption class="sr-only">You Only Live Twice (1967)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>You Only Live Twice (1967)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond fakes death to stop a volcano-lair villain. Goofy excess and dated tropes irk, but the ninja action and Connery’s charm keep it twice as nice. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond fakes death to stop a volcano-lair villain. Goofy excess and dated tropes irk, but the ninja action and Connery's charm keep it twice as nice.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/Diamonds Are Forever.jpg" alt="Diamonds Are Forever Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/Diamonds Are Forever.jpg" alt="Diamonds Are Forever movie poster" loading="lazy">
+                        <figcaption class="sr-only">Diamonds Are Forever (1971)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Diamonds Are Forever (1971)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Connery’s back to chase diamonds and Blofeld. Silly Vegas vibes and tired gags dim the shine, but the glitzy action still sparkles faintly. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Connery's back to chase diamonds and Blofeld. Silly Vegas vibes and tired gags dim the shine, but the glitzy action still sparkles faintly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/Never Say Never Again.jpg" alt="Never Say Never Again Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/Never Say Never Again.jpg" alt="Never Say Never Again movie poster" loading="lazy">
+                        <figcaption class="sr-only">Never Say Never Again (1983)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Never Say Never Again (1983)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Connery’s rogue Bond redo of Thunderball feels creaky. Fans hate the knockoff vibe, but the elder 007’s charm keeps this non-canon caper watchable. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Connery's rogue Bond redo of Thunderball feels creaky. Fans hate the knockoff vibe, but the elder 007's charm keeps this non-canon caper watchable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/The Man with the Golden Gun.jpg" alt="The Man with the Golden Gun Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/The Man with the Golden Gun.jpg" alt="The Man with the Golden Gun movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Man with the Golden Gun (1974)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Man with the Golden Gun (1974)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Moore’s Bond hunts a hitman with a shiny pistol. Cartoonish villains and dated kung-fu flop, but Lee’s icy menace gives it a golden glint. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Moore's Bond hunts a hitman with a shiny pistol. Cartoonish villains and dated kung-fu flop, but Lee's icy menace gives it a golden glint.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/Tomorrow Never Dies.jpg" alt="Tomorrow Never Dies Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/Tomorrow Never Dies.jpg" alt="Tomorrow Never Dies movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tomorrow Never Dies (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Tomorrow Never Dies (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Brosnan’s Bond battles a media mogul’s war plot. Generic action and weak villains bore, but Yeoh’s kicks and boat chases keep it from sinking. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Brosnan's Bond battles a media mogul's war plot. Generic action and weak villains bore, but Yeoh's kicks and boat chases keep it from sinking.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/Quantum of Solace 2008.jpg" alt="Quantum of Solace Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/Quantum of Solace 2008.jpg" alt="Quantum of Solace movie poster" loading="lazy">
+                        <figcaption class="sr-only">Quantum of Solace (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Quantum of Solace (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond’s revenge quest chases a water-hoarding creep. Choppy editing and thin plot tank it, but Craig’s feral energy keeps this shaken, not stirred. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond's revenge quest chases a water-hoarding creep. Choppy editing and thin plot tank it, but Craig's feral energy keeps this shaken, not stirred.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/Licence to Kill.jpg" alt="Licence to Kill Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/Licence to Kill.jpg" alt="Licence to Kill movie poster" loading="lazy">
+                        <figcaption class="sr-only">Licence to Kill (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Licence to Kill (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Dalton’s dark Bond goes rogue for drug-lord revenge. Gritty shift alienates fans of camp, but the raw action makes it a bloody outlier. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Dalton's dark Bond goes rogue for drug-lord revenge. Gritty shift alienates fans of camp, but the raw action makes it a bloody outlier.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/The World Is Not Enough.jpg" alt="The World Is Not Enough Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/The World Is Not Enough.jpg" alt="The World Is Not Enough movie poster" loading="lazy">
+                        <figcaption class="sr-only">The World Is Not Enough (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The World Is Not Enough (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Brosnan’s Bond guards oil heiresses from a scarred assassin. Messy plot and weak twists fizzle, but the action and Dench’s M keep it ticking. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Brosnan's Bond guards oil heiresses from a scarred assassin. Messy plot and weak twists fizzle, but the action and Dench's M keep it ticking.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/spy-film/A View to a Kill.jpg" alt="A View to a Kill Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/spy-film/A View to a Kill.jpg" alt="A View to a Kill movie poster" loading="lazy">
+                        <figcaption class="sr-only">A View to a Kill (1985)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A View to a Kill (1985)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Moore’s aging Bond battles Walken’s psycho tech bro. Creaky pacing and absurd plots crash, but the villain’s cackle keeps it from total wipeout. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Moore's aging Bond battles Walken's psycho tech bro. Creaky pacing and absurd plots crash, but the villain's cackle keeps it from total wipeout.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/spy-film/Octopussy.jpg" alt="Octopussy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/spy-film/Octopussy.jpg" alt="Octopussy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Octopussy (1983)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Octopussy (1983)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond chases nukes through circuses and Indian intrigue. Goofy title and silliness bomb, but Moore’s charm and exotic stunts juggle some fun. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond chases nukes through circuses and Indian intrigue. Goofy title and silliness bomb, but Moore's charm and exotic stunts juggle some fun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/spy-film/Moonraker.jpg" alt="Moonraker Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/spy-film/Moonraker.jpg" alt="Moonraker movie poster" loading="lazy">
+                        <figcaption class="sr-only">Moonraker (1979)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Moonraker (1979)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bond blasts to space for a Star Wars knockoff. Ludicrous lasers and campy excess crash-land, but the sheer audacity keeps it oddly watchable. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bond blasts to space for a Star Wars knockoff. Ludicrous lasers and campy excess crash-land, but the sheer audacity keeps it oddly watchable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/spy-film/Die Another Day.jpeg" alt="Die Another Day Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/spy-film/Die Another Day.jpeg" alt="Die Another Day movie poster" loading="lazy">
+                        <figcaption class="sr-only">Die Another Day (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Die Another Day (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Brosnan’s Bond surfs through CGI ice and invisible cars. Fans shred the cartoonish excess, but the sword fight and Berry’s strut give it faint pulse. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Brosnan's Bond surfs through CGI ice and invisible cars. Fans shred the cartoonish excess, but the sword fight and Berry's strut give it faint pulse.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Modern Spy Thrillers</h2>
-            <p>Gritty, grounded espionage with high stakes and higher body counts.</p>
+        <!-- Modern Spy Thrillers Section -->
+        <section class="movie-section" aria-labelledby="modern-thrillers-heading">
+            <header class="section-header">
+                <h2 id="modern-thrillers-heading">Modern Spy Thrillers</h2>
+                <p>Gritty, grounded espionage with high stakes and higher body counts.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/spy-film/The Bourne Identity.jpg" alt="The Bourne Identity Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/spy-film/The Bourne Identity.jpg" alt="The Bourne Identity movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Bourne Identity (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Bourne Identity (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Amnesiac assassin Bourne outruns his past with shaky-cam swagger. Some balk at the grit shift, but Damon’s intensity and tight action redefine spy cool. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Amnesiac assassin Bourne outruns his past with shaky-cam swagger. Some balk at the grit shift, but Damon's intensity and tight action redefine spy cool.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/spy-film/The Bourne Supremacy.jpg" alt="The Bourne Supremacy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/spy-film/The Bourne Supremacy.jpg" alt="The Bourne Supremacy movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Bourne Supremacy (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Bourne Supremacy (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bourne’s revenge chase amps the stakes and car crashes. Complex plot confuses some, but Greengrass’ kinetic chaos keeps it a pulse-pounding win. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bourne's revenge chase amps the stakes and car crashes. Complex plot confuses some, but Greengrass' kinetic chaos keeps it a pulse-pounding win.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/spy-film/Atomic Blonde.jpg" alt="Atomic Blonde Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/spy-film/Atomic Blonde.jpg" alt="Atomic Blonde movie poster" loading="lazy">
+                        <figcaption class="sr-only">Atomic Blonde (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Atomic Blonde (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Theron’s MI6 badass kicks Cold War ass in neon Berlin. Style-over-substance gripes linger, but the bone-crunching fights and '80s vibe slay. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Theron's MI6 badass kicks Cold War ass in neon Berlin. Style-over-substance gripes linger, but the bone-crunching fights and '80s vibe slay.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Safe House.jpg" alt="Safe House Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Safe House.jpg" alt="Safe House movie poster" loading="lazy">
+                        <figcaption class="sr-only">Safe House (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Safe House (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Washington’s rogue spy schools a CIA rookie in Cape Town chaos. Generic twists bore some, but Denzel’s charisma and gritty action keep it locked. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Washington's rogue spy schools a CIA rookie in Cape Town chaos. Generic twists bore some, but Denzel's charisma and gritty action keep it locked.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Salt.jpg" alt="Salt Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Salt.jpg" alt="Salt movie poster" loading="lazy">
+                        <figcaption class="sr-only">Salt (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Salt (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jolie’s CIA agent dodges double-crosses in a twisty sprint. Absurd plot holes irk, but the relentless pace and Angie’s steel keep it salty. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jolie's CIA agent dodges double-crosses in a twisty sprint. Absurd plot holes irk, but the relentless pace and Angie's steel keep it salty.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Spy Comedy</h2>
-            <p>Spoofs and lighthearted takes on espionage antics.</p>
+        <!-- Spy Comedy Section -->
+        <section class="movie-section" aria-labelledby="spy-comedy-heading">
+            <header class="section-header">
+                <h2 id="spy-comedy-heading">Spy Comedy</h2>
+                <p>Spoofs and lighthearted takes on espionage antics.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/spy-film/Spy.jpg" alt="Spy Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/spy-film/Spy.jpg" alt="Spy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Spy (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spy (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>McCarthy’s desk-jockey spy bumbles into badassery. Some tire of the fat jokes, but the sharp gags and action-comedy zing make it a covert hoot. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>McCarthy's desk-jockey spy bumbles into badassery. Some tire of the fat jokes, but the sharp gags and action-comedy zing make it a covert hoot.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/spy-film/Austin Powers - The Spy Who Shagged Me.jpg" alt="Austin Powers: The Spy Who Shagged Me Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/spy-film/Austin Powers - The Spy Who Shagged Me.jpg" alt="Austin Powers: The Spy Who Shagged Me movie poster" loading="lazy">
+                        <figcaption class="sr-only">Austin Powers: The Spy Who Shagged Me (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Austin Powers: The Spy Who Shagged Me (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Groovy Austin time-travels to foil Dr. Evil’s moon base. Juvenile gags wear thin, but Myers’ manic energy and '60s spoof keep it shagadelic. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Groovy Austin time-travels to foil Dr. Evil's moon base. Juvenile gags wear thin, but Myers' manic energy and '60s spoof keep it shagadelic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Johnny English.jpg" alt="Johnny English Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Johnny English.jpg" alt="Johnny English movie poster" loading="lazy">
+                        <figcaption class="sr-only">Johnny English (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Johnny English (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Atkinson’s bumbling spy saves Britain from a French plot. Slapstick misses some marks, but Bean’s pratfalls and goofy charm keep it covertly fun. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Atkinson's bumbling spy saves Britain from a French plot. Slapstick misses some marks, but Bean's pratfalls and goofy charm keep it covertly fun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Central Intelligence.jpg" alt="Central Intelligence Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Central Intelligence.jpg" alt="Central Intelligence movie poster" loading="lazy">
+                        <figcaption class="sr-only">Central Intelligence (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Central Intelligence (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hart’s accountant joins The Rock’s rogue spy for laughs and bullets. Formulaic buddy shtick drags, but the odd-couple chemistry sparks just enough. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Hart's accountant joins The Rock's rogue spy for laughs and bullets. Formulaic buddy shtick drags, but the odd-couple chemistry sparks just enough.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/Johnny English Reborn.jpg" alt="Johnny English Reborn Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/Johnny English Reborn.jpg" alt="Johnny English Reborn movie poster" loading="lazy">
+                        <figcaption class="sr-only">Johnny English Reborn (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Johnny English Reborn (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>English fumbles a global conspiracy with kung-fu monks. Recycled gags bore, but Atkinson’s rubber-faced antics keep this sequel from total wipeout. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>English fumbles a global conspiracy with kung-fu monks. Recycled gags bore, but Atkinson's rubber-faced antics keep this sequel from total wipeout.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/Johnny English Strikes Again.jpg" alt="Johnny English Strikes Again Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/Johnny English Strikes Again.jpg" alt="Johnny English Strikes Again movie poster" loading="lazy">
+                        <figcaption class="sr-only">Johnny English Strikes Again (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Johnny English Strikes Again (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>English bungles a cyberattack probe with analog antics. Tired formula and weak laughs crash, but Atkinson’s earnest idiocy ekes out a chuckle. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>English bungles a cyberattack probe with analog antics. Tired formula and weak laughs crash, but Atkinson's earnest idiocy ekes out a chuckle.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/The Spy Next Door.webp" alt="The Spy Next Door Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/The Spy Next Door.webp" alt="The Spy Next Door movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Spy Next Door (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Spy Next Door (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chan’s spy babysits kids while dodging Russian goons. Clichéd family fluff flops, but Jackie’s stunts and charm keep this kiddie caper kicking. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chan's spy babysits kids while dodging Russian goons. Clichéd family fluff flops, but Jackie's stunts and charm keep this kiddie caper kicking.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Stylized Spy Action</h2>
-            <p>Over-the-top espionage with comic-book flair and wild visuals.</p>
+        <!-- Stylized Spy Action Section -->
+        <section class="movie-section" aria-labelledby="stylized-action-heading">
+            <header class="section-header">
+                <h2 id="stylized-action-heading">Stylized Spy Action</h2>
+                <p>Over-the-top espionage with comic-book flair and wild visuals.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/spy-film/Kingsman - The Secret Service.jpg" alt="Kingsman - The Secret Service Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/spy-film/Kingsman - The Secret Service.jpg" alt="Kingsman: The Secret Service movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kingsman: The Secret Service (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kingsman: The Secret Service (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A street kid joins posh spies to stop a tech tyrant. Ultraviolent excess splits fans, but Vaughn’s slick style and Firth’s suave carnage pop off. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A street kid joins posh spies to stop a tech tyrant. Ultraviolent excess splits fans, but Vaughn's slick style and Firth's suave carnage pop off.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Kingsman - The Golden Circle.jpg" alt="Kingsman - The Golden Circle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Kingsman - The Golden Circle.jpg" alt="Kingsman: The Golden Circle movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kingsman: The Golden Circle (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kingsman: The Golden Circle (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Eggsy teams with Yanks to fight a drug-lord diva. Bloated chaos and tonal whiplash irk, but the bonkers action keeps this sequel sharply dressed. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Eggsy teams with Yanks to fight a drug-lord diva. Bloated chaos and tonal whiplash irk, but the bonkers action keeps this sequel sharply dressed.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/The Kings Man.jpg" alt="The King's Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/The Kings Man.jpg" alt="The King's Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">The King's Man (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The King's Man (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>WWI prequel births the Kingsman with historical hijinks. Uneven tone and weird history lessons flop, but Fiennes’ class and war action keep it dapper. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>WWI prequel births the Kingsman with historical hijinks. Uneven tone and weird history lessons flop, but Fiennes' class and war action keep it dapper.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/XXX.jpg" alt="XXX Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/XXX.jpg" alt="XXX movie poster" loading="lazy">
+                        <figcaption class="sr-only">XXX (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>XXX (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Diesel’s extreme spy snowboard-fights anarchists. Dated X-Games vibes and cheesy lines crash, but the stunt-heavy chaos keeps it barely rad. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Diesel's extreme spy snowboard-fights anarchists. Dated X-Games vibes and cheesy lines crash, but the stunt-heavy chaos keeps it barely rad.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/XXX - Return of Xander Cage.jpg" alt="XXX: Return of Xander Cage Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/XXX - Return of Xander Cage.jpg" alt="XXX: Return of Xander Cage movie poster" loading="lazy">
+                        <figcaption class="sr-only">XXX: Return of Xander Cage (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>XXX: Return of Xander Cage (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Diesel’s back for more stunt-spy nonsense. Brainless excess and weak plot nosedive, but the global crew and absurd action scrape a pulse. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Diesel's back for more stunt-spy nonsense. Brainless excess and weak plot nosedive, but the global crew and absurd action scrape a pulse.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Female-Led Spy</h2>
-            <p>Badass women flipping the espionage game with style.</p>
+        <!-- Female-Led Spy Section -->
+        <section class="movie-section" aria-labelledby="female-led-heading">
+            <header class="section-header">
+                <h2 id="female-led-heading">Female-Led Spy</h2>
+                <p>Badass women flipping the espionage game with style.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Charlies Angels.jpg" alt="Charlie's Angels (2000) Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Charlies Angels.jpg" alt="Charlie's Angels (2000) movie poster" loading="lazy">
+                        <figcaption class="sr-only">Charlie's Angels (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Charlie's Angels (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Trio of glam spies kick butt for a mystery boss. Campy fluff and dated pop vibes irk, but Diaz, Barrymore, and Liu’s charisma keep it angelically fun. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Trio of glam spies kick butt for a mystery boss. Campy fluff and dated pop vibes irk, but Diaz, Barrymore, and Liu's charisma keep it angelically fun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/Charlie's Angels.png" alt="Charlie's Angels (2019) Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/Charlie's Angels.png" alt="Charlie's Angels (2019) movie poster" loading="lazy">
+                        <figcaption class="sr-only">Charlie's Angels (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Charlie's Angels (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>New Angels fight tech baddies with girl-power gusto. Forced feminism and weak script crash, but Stewart’s spark keeps this reboot from total sabotage. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>New Angels fight tech baddies with girl-power gusto. Forced feminism and weak script crash, but Stewart's spark keeps this reboot from total sabotage.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Kid-Friendly Spy</h2>
-            <p>Family-safe espionage with pint-sized heroes.</p>
+        <!-- Kid-Friendly Spy Section -->
+        <section class="movie-section" aria-labelledby="kid-friendly-heading">
+            <header class="section-header">
+                <h2 id="kid-friendly-heading">Kid-Friendly Spy</h2>
+                <p>Family-safe espionage with pint-sized heroes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/spy-film/Spy Kids.jpg" alt="Spy Kids Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/spy-film/Spy Kids.jpg" alt="Spy Kids movie poster" loading="lazy">
+                        <figcaption class="sr-only">Spy Kids (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spy Kids (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Kids save their spy parents with wacky gadgets. Over-the-top silliness bugs adults, but Rodriguez’s colorful chaos is a kid’s covert dream. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Kids save their spy parents with wacky gadgets. Over-the-top silliness bugs adults, but Rodriguez's colorful chaos is a kid's covert dream.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/spy-film/Spy Kids 2 - The Island of Lost Dreams.jpg" alt="Spy Kids 2: The Island of Lost Dreams Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/spy-film/Spy Kids 2 - The Island of Lost Dreams.jpg" alt="Spy Kids 2: The Island of Lost Dreams movie poster" loading="lazy">
+                        <figcaption class="sr-only">Spy Kids 2: The Island of Lost Dreams (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spy Kids 2: The Island of Lost Dreams (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Spy sibs battle mutants and rival kids on a weird island. Cluttered plot loses steam, but the quirky gadgets keep young agents entertained. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Spy sibs battle mutants and rival kids on a weird island. Cluttered plot loses steam, but the quirky gadgets keep young agents entertained.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/spy-film/Stormbreaker.jpg" alt="Stormbreaker Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/spy-film/Stormbreaker.jpg" alt="Stormbreaker movie poster" loading="lazy">
+                        <figcaption class="sr-only">Stormbreaker (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Stormbreaker (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teen spy Alex Rider tackles a tech villain. Generic YA vibes and low stakes flop, but the breezy action keeps this junior Bond barely afloat. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Teen spy Alex Rider tackles a tech villain. Generic YA vibes and low stakes flop, but the breezy action keeps this junior Bond barely afloat.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

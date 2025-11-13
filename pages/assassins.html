@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assassins</title>
+    <title>Assassins - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing assassin movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing assassin movies I've watched, rated by color. Explore classic assassin tales, action-packed sagas, modern thrillers, and assassin comedies.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Assassins</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Skilled killers, high-stakes contracts, and deadly missions featuring classic hitmen, action-packed sagas, modern thrillers, and dark comedies.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 37 movies</span>
+            <span class="movie-count">4 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -25,7 +30,7 @@
             <li><a href="ai-machines.html">AI & Machines</a></li>
             <li><a href="animation.html">Animation</a></li>
             <li><a href="apocalyptic.html">Apocalyptic</a></li>
-            <li><a href="assassins.html">Assassins</a></li>
+            <li><a href="assassins.html" aria-current="page">Assassins</a></li>
             <li><a href="black-lives.html">Black Lives</a></li>
             <li><a href="christmas-family.html">Christmas & Family</a></li>
             <li><a href="comedy.html">Comedy</a></li>
@@ -54,364 +59,549 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Classic Assassin Tales</h2>
-            <p>Timeless stories of skilled assassins on high-stakes missions.</p>
+        <!-- Action-Packed Assassin Sagas Section -->
+        <section class="movie-section" aria-labelledby="action-sagas-heading">
+            <header class="section-header">
+                <h2 id="action-sagas-heading">Action-Packed Assassin Sagas</h2>
+                <p>High-octane series featuring relentless assassins and epic battles.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/24 Hours to Live.jpg" alt="24 Hours to Live Cover">
-                    <div class="movie-title">
-                        <h3>24 Hours to Live (2017)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dead hitman gets a second shot at life and bullets fly in a conspiracy unraveling frenzy. Resurrection meets retribution, but the plot twists might leave you undead bored. Rating: 7/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/Léon - The Professional.webp" alt="Léon - The Professional Cover">
-                    <div class="movie-title">
-                        <h3>Léon: The Professional (1994)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A stoic cleaner takes in a vengeful orphan, turning hits into heartfelt lessons. Bullets and bonds form an odd alliance, though the ethics raise eyebrows. Rating: 7/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/3 Days to Kill.jpg" alt="3 Days to Kill Cover">
-                    <div class="movie-title">
-                        <h3>3 Days to Kill (2014)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A terminal spy juggles family drama with one final explosive gig. Espionage and emotion clash, though the cures feel as experimental as the action. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/No Country for Old Men.jpg" alt="No Country for Old Men Cover">
-                    <div class="movie-title">
-                        <h3>No Country for Old Men (2007)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A botched deal unleashes a psychopathic pursuer on a cash-grabbing everyman. Fate and firearms collide in dusty despair, but the philosophy feels heavier than the suitcase. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/assassins/Diary of a Hitman.jpg" alt="Diary Of A Hitman Cover">
-                    <div class="movie-title">
-                        <h3>Diary Of A Hitman (1991)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A contract killer pens his thoughts while lining up his last mark. Introspective kills meet moral quandaries, but the diary entries hit more misses than targets. Rating: 5/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="movie-section">
-            <h2>Action-Packed Assassin Sagas</h2>
-            <p>High-octane series featuring relentless assassins and epic battles.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/assassins/John Wick.webp" alt="John Wick Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/assassins/John Wick.webp" alt="John Wick movie poster" loading="lazy">
+                        <figcaption class="sr-only">John Wick (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>John Wick (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A grieving widower revives his lethal skills over a pooch and a ride. Stylish slaughter ensues, turning grief into a gun-fu ballet of badassery. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A grieving widower revives his lethal skills over a pooch and a ride. Stylish slaughter ensues, turning grief into a gun-fu ballet of badassery.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/assassins/John Wick - Chapter 2.jpg" alt="John Wick - Chapter 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/assassins/John Wick - Chapter 2.jpg" alt="John Wick - Chapter 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">John Wick: Chapter 2 (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>John Wick: Chapter 2 (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An oath pulls the boogeyman back into the shadows for more headshot havoc. World-building widens the kill count, but oaths are as binding as bullet wounds. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>An oath pulls the boogeyman back into the shadows for more headshot havoc. World-building widens the kill count, but oaths are as binding as bullet wounds.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/assassins/John Wick - Chapter 3 - Parabellum.jpg" alt="John Wick - Chapter 3 - Parabellum Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/assassins/John Wick - Chapter 3 - Parabellum.jpg" alt="John Wick - Chapter 3 - Parabellum movie poster" loading="lazy">
+                        <figcaption class="sr-only">John Wick: Chapter 3 - Parabellum (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>John Wick: Chapter 3 - Parabellum (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Excommunicated and hunted, Wick turns the world into his personal war zone. Alliances shift like sands, delivering chaos that's equal parts clever and carnage. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Excommunicated and hunted, Wick turns the world into his personal war zone. Alliances shift like sands, delivering chaos that's equal parts clever and carnage.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/assassins/John Wick - Chapter 4.jpg" alt="John Wick - Chapter 4 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/assassins/John Wick - Chapter 4.jpg" alt="John Wick - Chapter 4 movie poster" loading="lazy">
+                        <figcaption class="sr-only">John Wick: Chapter 4 (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>John Wick: Chapter 4 (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The table gets flipped as Wick globe-trots for freedom from the assassin's code. Epic duels and betrayals abound, pushing the myth to legendary heights. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>The table gets flipped as Wick globe-trots for freedom from the assassin's code. Epic duels and betrayals abound, pushing the myth to legendary heights.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/Kill Bill - Vol. 1.jpg" alt="Kill Bill Vol. 1 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/Kill Bill - Vol. 1.jpg" alt="Kill Bill Vol. 1 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kill Bill Vol. 1 (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kill Bill Vol. 1 (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A comatose bride awakens to slice through her wedding massacre culprits. Homages and hemoglobin splash across a revenge canvas that's pure pulp poetry. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A comatose bride awakens to slice through her wedding massacre culprits. Homages and hemoglobin splash across a revenge canvas that's pure pulp poetry.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Modern Assassin Thrillers</h2>
-            <p>Contemporary hits with sleek assassins and intricate plots.</p>
+        <!-- Modern Assassin Thrillers Section -->
+        <section class="movie-section" aria-labelledby="modern-thrillers-heading">
+            <header class="section-header">
+                <h2 id="modern-thrillers-heading">Modern Assassin Thrillers</h2>
+                <p>Contemporary hits with sleek assassins and intricate plots.</p>
+                <div class="section-stats">
+                    <span class="movie-count">11 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/Hitman.jpg" alt="Hitman Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/Hitman.jpg" alt="Hitman movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hitman (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hitman (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A barcode-branded killer dodges a web of international intrigue. Stealth and shootouts blend, turning adaptation into a game of fatal chess. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A barcode-branded killer dodges a web of international intrigue. Stealth and shootouts blend, turning adaptation into a game of fatal chess.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/Mr. & Mrs. Smith.jpg" alt="Mr. & Mrs. Smith Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/Mr. & Mrs. Smith.jpg" alt="Mr. & Mrs. Smith movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mr. & Mrs. Smith (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mr. & Mrs. Smith (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Spousal spies discover each other's secrets in a marital shootout. Domestic bliss explodes into action, redefining couples therapy with firepower. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Spousal spies discover each other's secrets in a marital shootout. Domestic bliss explodes into action, redefining couples therapy with firepower.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/Wanted.jpg" alt="Wanted Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/Wanted.jpg" alt="Wanted movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wanted (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wanted (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cubicle drone unlocks super-assassin genes in a loom-of-fate frenzy. Bullet-curving absurdity elevates the ordinary to over-the-top opera. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cubicle drone unlocks super-assassin genes in a loom-of-fate frenzy. Bullet-curving absurdity elevates the ordinary to over-the-top opera.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/American Assassin.jpg" alt="American Assassin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/American Assassin.jpg" alt="American Assassin movie poster" loading="lazy">
+                        <figcaption class="sr-only">American Assassin (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>American Assassin (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A vengeful recruit hunts terrorists with CIA grit and gadgets. Patriotism packs a punch, but the tropes are as recycled as spent casings. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A vengeful recruit hunts terrorists with CIA grit and gadgets. Patriotism packs a punch, but the tropes are as recycled as spent casings.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Colombiana.jpg" alt="Colombiana Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Colombiana.jpg" alt="Colombiana movie poster" loading="lazy">
+                        <figcaption class="sr-only">Colombiana (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Colombiana (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An orphaned girl grows into a deadly avenger targeting her family's killers. Cartel chaos ensues, but the vengeance arc bends toward the predictable. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>An orphaned girl grows into a deadly avenger targeting her family's killers. Cartel chaos ensues, but the vengeance arc bends toward the predictable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Hitman - Agent 47.jpg" alt="Hitman - Agent 47 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Hitman - Agent 47.jpg" alt="Hitman - Agent 47 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hitman: Agent 47 (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hitman: Agent 47 (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cloned assassin protects a woman from a syndicate's sinister plans. Genetic thrills meet corporate kills, though the formula feels engineered for mediocrity. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cloned assassin protects a woman from a syndicate's sinister plans. Genetic thrills meet corporate kills, though the formula feels engineered for mediocrity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Killer Elite.jpg" alt="Killer Elite Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Killer Elite.jpg" alt="Killer Elite movie poster" loading="lazy">
+                        <figcaption class="sr-only">Killer Elite (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Killer Elite (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Retired mercs clash with SAS in a vendetta-fueled showdown. Oil wars and old grudges ignite, but the elite status gets lost in the fray. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Retired mercs clash with SAS in a vendetta-fueled showdown. Oil wars and old grudges ignite, but the elite status gets lost in the fray.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Mechanic - Resurrection.webp" alt="Mechanic - Resurrection Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Mechanic - Resurrection.webp" alt="Mechanic - Resurrection movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mechanic: Resurrection (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mechanic: Resurrection (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Forced hits pull a retired killer into exotic executions for love's sake. Globetrotting gadgets galore, but the resurrection lacks fresh spark. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Forced hits pull a retired killer into exotic executions for love's sake. Globetrotting gadgets galore, but the resurrection lacks fresh spark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/The Mechanic.jpeg" alt="The Mechanic Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/The Mechanic.jpeg" alt="The Mechanic movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Mechanic (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Mechanic (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pro assassin mentors a hothead in the art of engineered deaths. Betrayal brews in the workshop, though the mechanics feel a tad rusty. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pro assassin mentors a hothead in the art of engineered deaths. Betrayal brews in the workshop, though the mechanics feel a tad rusty.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/assassins/Bangkok Dangerous.jpg" alt="Bangkok Dangerous Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/assassins/Bangkok Dangerous.jpg" alt="Bangkok Dangerous movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bangkok Dangerous (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bangkok Dangerous (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A lone gunman in Thailand finds love amid lethal assignments. Exotic kills meet existential crisis, though the romance fizzles like a dud grenade. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A lone gunman in Thailand finds love amid lethal assignments. Exotic kills meet existential crisis, though the romance fizzles like a dud grenade.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/assassins/Killers.jpg" alt="Killers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/assassins/Killers.jpg" alt="Killers movie poster" loading="lazy">
+                        <figcaption class="sr-only">Killers (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Killers (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A suburban hubby reveals his spy past to a shocked wife amid attacks. Matrimony meets mayhem, though the comedy kills more laughs than foes. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A suburban hubby reveals his spy past to a shocked wife amid attacks. Matrimony meets mayhem, though the comedy kills more laughs than foes.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Assassin Comedy and Drama</h2>
-            <p>Unique blends of humor and drama in assassin narratives.</p>
+        <!-- Assassin Comedy and Drama Section -->
+        <section class="movie-section" aria-labelledby="comedy-drama-heading">
+            <header class="section-header">
+                <h2 id="comedy-drama-heading">Assassin Comedy and Drama</h2>
+                <p>Unique blends of humor and drama in assassin narratives.</p>
+                <div class="section-stats">
+                    <span class="movie-count">11 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/The Hitmans Bodyguard.jpg" alt="The Hitman's Bodyguard Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/The Hitmans Bodyguard.jpg" alt="The Hitman's Bodyguard movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hitman's Bodyguard (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hitman's Bodyguard (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rivals team up to testify against a tyrant amid ambushes and insults. Buddy-cop assassin style delivers quips with the quick-draw action. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rivals team up to testify against a tyrant amid ambushes and insults. Buddy-cop assassin style delivers quips with the quick-draw action.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/assassins/In Bruges.jpg" alt="In Bruges Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/In Bruges.jpg" alt="In Bruges movie poster" loading="lazy">
+                        <figcaption class="sr-only">In Bruges (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>In Bruges (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hitmen hiding in a fairy-tale town, trading dark laughs and existential dread. It’s a bloody good time, but the pacing’s as slow as a canal boat. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Hitmen hiding in a fairy-tale town, trading dark laughs and existential dread. It's a bloody good time, but the pacing's as slow as a canal boat.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Accident Man.jpg" alt="Accident Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Accident Man.jpg" alt="Accident Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">Accident Man (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Accident Man (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A killer who fakes mishaps faces a hit on his own heartstrings. Comic-book carnage meets club of cutthroats, though the accidents aren't always intentional laughs. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A killer who fakes mishaps faces a hit on his own heartstrings. Comic-book carnage meets club of cutthroats, though the accidents aren't always intentional laughs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Accident Man - Hitmans Holiday.jpg" alt="Accident Man - Hitman's Holiday Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Accident Man - Hitmans Holiday.jpg" alt="Accident Man - Hitman's Holiday movie poster" loading="lazy">
+                        <figcaption class="sr-only">Accident Man: Hitman's Holiday (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Accident Man: Hitman's Holiday (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Vacation turns vicious as the mishap master protects a mafia brat. Sunny shores soak in blood, but the holiday vibes clash with the hits. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Vacation turns vicious as the mishap master protects a mafia brat. Sunny shores soak in blood, but the holiday vibes clash with the hits.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Hitmans Wifes Bodyguard.jpg" alt="Hitman's Wife's Bodyguard Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Hitmans Wifes Bodyguard.jpg" alt="Hitman's Wife's Bodyguard movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hitman's Wife's Bodyguard (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hitman's Wife's Bodyguard (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A trio of chaos magnets thwart a cyber plot with banter and blasts. Marital mayhem multiplies, though the protection detail wears thin on originality. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A trio of chaos magnets thwart a cyber plot with banter and blasts. Marital mayhem multiplies, though the protection detail wears thin on originality.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Mr. Right.jpg" alt="Mr. Right Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Mr. Right.jpg" alt="Mr. Right movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mr. Right (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mr. Right (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A quirky girl dates a hitman who flips the script on contracts. Romance dances with death, but the whimsy occasionally misfires. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A quirky girl dates a hitman who flips the script on contracts. Romance dances with death, but the whimsy occasionally misfires.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/Proud Mary.jpg" alt="Proud Mary Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/Proud Mary.jpg" alt="Proud Mary movie poster" loading="lazy">
+                        <figcaption class="sr-only">Proud Mary (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Proud Mary (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mob enforcer adopts an orphan, triggering a turf war tantrum. Blaxploitation echoes with empowerment, but the pride prides itself on clichés. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mob enforcer adopts an orphan, triggering a turf war tantrum. Blaxploitation echoes with empowerment, but the pride prides itself on clichés.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/The Beekeeper.jpg" alt="The Beekeeper Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/The Beekeeper.jpg" alt="The Beekeeper movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Beekeeper (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Beekeeper (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A quiet apiarist buzzes into action against scammers who stung his friend. Hive-mind justice stings sharp, but the bee metaphors swarm excessively. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A quiet apiarist buzzes into action against scammers who stung his friend. Hive-mind justice stings sharp, but the bee metaphors swarm excessively.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/The Hit List.jpg" alt="The Hit List Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/The Hit List.jpg" alt="The Hit List movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hit List (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hit List (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A drunken list becomes a deadly checklist for a mysterious enforcer. Regret racks up with the body count, but the premise lists toward the absurd. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A drunken list becomes a deadly checklist for a mysterious enforcer. Regret racks up with the body count, but the premise lists toward the absurd.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/assassins/The Virtuoso.jpg" alt="The Virtuoso Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/The Virtuoso.jpg" alt="The Virtuoso movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Virtuoso (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Virtuoso (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A precise killer deciphers cryptic clues for his next mark in isolation. Noir notes hit high, though the virtuosity veers into vagueness. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A precise killer deciphers cryptic clues for his next mark in isolation. Noir notes hit high, though the virtuosity veers into vagueness.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/assassins/Standoff.jpg" alt="Standoff Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/assassins/Standoff.jpg" alt="Standoff movie poster" loading="lazy">
+                        <figcaption class="sr-only">Standoff (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Standoff (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A witness kid holes up from a killer in a cemetery showdown. Cat-and-mouse tension builds, though the standoff stalls on simplicity. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A witness kid holes up from a killer in a cemetery showdown. Cat-and-mouse tension builds, though the standoff stalls on simplicity.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
+
+        <!-- Classic Assassin Tales Section -->
+        <section class="movie-section" aria-labelledby="classic-tales-heading">
+            <header class="section-header">
+                <h2 id="classic-tales-heading">Classic Assassin Tales</h2>
+                <p>Timeless stories of skilled assassins on high-stakes missions.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/Léon - The Professional.webp" alt="Léon - The Professional movie poster" loading="lazy">
+                        <figcaption class="sr-only">Léon: The Professional (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Léon: The Professional (1994)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A stoic cleaner takes in a vengeful orphan, turning hits into heartfelt lessons. Bullets and bonds form an odd alliance, though the ethics raise eyebrows.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/assassins/24 Hours to Live.jpg" alt="24 Hours to Live movie poster" loading="lazy">
+                        <figcaption class="sr-only">24 Hours to Live (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>24 Hours to Live (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A dead hitman gets a second shot at life and bullets fly in a conspiracy unraveling frenzy. Resurrection meets retribution, but the plot twists might leave you undead bored.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/3 Days to Kill.jpg" alt="3 Days to Kill movie poster" loading="lazy">
+                        <figcaption class="sr-only">3 Days to Kill (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>3 Days to Kill (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A terminal spy juggles family drama with one final explosive gig. Espionage and emotion clash, though the cures feel as experimental as the action.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/assassins/No Country for Old Men.jpg" alt="No Country for Old Men movie poster" loading="lazy">
+                        <figcaption class="sr-only">No Country for Old Men (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>No Country for Old Men (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A botched deal unleashes a psychopathic pursuer on a cash-grabbing everyman. Fate and firearms collide in dusty despair, but the philosophy feels heavier than the suitcase.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/assassins/Diary of a Hitman.jpg" alt="Diary Of A Hitman movie poster" loading="lazy">
+                        <figcaption class="sr-only">Diary Of A Hitman (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Diary Of A Hitman (1991)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A contract killer pens his thoughts while lining up his last mark. Introspective kills meet moral quandaries, but the diary entries hit more misses than targets.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

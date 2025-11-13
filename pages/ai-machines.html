@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AI & Machines</title>
+    <title>AI & Machines - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing AI and machine-themed movies sorted by theme, with witty, insightful overviews and objective ratings based on Rotten Tomatoes consensus, factoring in negative reviews.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>AI & Machines</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Exploring artificial intelligence, sentient machines, and the blurred lines between humanity and technology.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 36 movies</span>
+            <span class="movie-count">5 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -53,351 +58,532 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>AI Consciousness & Humanity</h2>
-            <p>Films delving into AI developing emotions, self-awareness, and blurring lines with human existence.</p>
+        <!-- AI Consciousness & Humanity Section -->
+        <section class="movie-section" aria-labelledby="ai-consciousness-heading">
+            <header class="section-header">
+                <h2 id="ai-consciousness-heading">AI Consciousness & Humanity</h2>
+                <p>Films delving into AI developing emotions, self-awareness, and blurring lines with human existence.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/ai-machines/Ex Machina.jpeg" alt="Ex Machina Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/ai-machines/Ex Machina.jpeg" alt="Ex Machina Cover" loading="lazy">
+                        <figcaption class="sr-only">Ex Machina (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ex Machina (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A reclusive tech genius tests his seductive AI on a naive programmer, sparking a cerebral cat-and-mouse game of wits and desire. Sleek visuals and sharp twists elevate it, though some find its philosophy a tad pretentious. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A reclusive tech genius tests his seductive AI on a naive programmer, sparking a cerebral cat-and-mouse game of wits and desire. Sleek visuals and sharp twists elevate it, though some find its philosophy a tad pretentious.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/ai-machines/I Am Mother.jpg" alt="I Am Mother Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/ai-machines/I Am Mother.jpg" alt="I Am Mother Cover" loading="lazy">
+                        <figcaption class="sr-only">I Am Mother (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Am Mother (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A girl raised by a nurturing robot in a bunker questions her mechanical mom's motives when a stranger arrives. Tense isolation drama with clever reveals, but predictable turns and limited scope hold it back. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A girl raised by a nurturing robot in a bunker questions her mechanical mom's motives when a stranger arrives. Tense isolation drama with clever reveals, but predictable turns and limited scope hold it back.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/ai-machines/A.I. Artificial Intelligence.jpg" alt="A.I. Artificial Intelligence Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/ai-machines/A.I. Artificial Intelligence.jpg" alt="A.I. Artificial Intelligence Cover" loading="lazy">
+                        <figcaption class="sr-only">A.I. Artificial Intelligence (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A.I. Artificial Intelligence (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A robotic boy programmed to love quests for humanity in a fairy-tale sci-fi odyssey. Spielberg's sentimental touch clashes with Kubrick's cold vision, resulting in uneven tone despite poignant moments. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A robotic boy programmed to love quests for humanity in a fairy-tale sci-fi odyssey. Spielberg's sentimental touch clashes with Kubrick's cold vision, resulting in uneven tone despite poignant moments.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/ai-machines/AI Rising.jpg" alt="A.I. Rising Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/ai-machines/AI Rising.jpg" alt="A.I. Rising Cover" loading="lazy">
+                        <figcaption class="sr-only">A.I. Rising (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A.I. Rising (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An astronaut's mission to Alpha Centauri heats up with his seductive android companion. Erotic sci-fi with philosophical undertones, but clunky dialogue and low production values undermine its ambitions. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>An astronaut's mission to Alpha Centauri heats up with his seductive android companion. Erotic sci-fi with philosophical undertones, but clunky dialogue and low production values undermine its ambitions.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/ai-machines/Simone.jpg" alt="Simone Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/ai-machines/Simone.jpg" alt="Simone Cover" loading="lazy">
+                        <figcaption class="sr-only">S1m0ne (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>S1m0ne (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A desperate director creates a digital starlet who becomes a sensation, exposing Hollywood's shallowness. Satirical premise fizzles with dated effects and uneven humor, though Pacino's charm saves some scenes. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A desperate director creates a digital starlet who becomes a sensation, exposing Hollywood's shallowness. Satirical premise fizzles with dated effects and uneven humor, though Pacino's charm saves some scenes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/ai-machines/Bicentennial Man.jpg" alt="Bicentennial Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/ai-machines/Bicentennial Man.jpg" alt="Bicentennial Man Cover" loading="lazy">
+                        <figcaption class="sr-only">Bicentennial Man (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bicentennial Man (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A household robot evolves over centuries, yearning for humanity and love. Williams' earnest performance can't overcome sappy scripting and sluggish pace, making it a forgettable feel-good fable. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A household robot evolves over centuries, yearning for humanity and love. Williams' earnest performance can't overcome sappy scripting and sluggish pace, making it a forgettable feel-good fable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/ai-machines/Transcendence.jpg" alt="Transcendence Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/ai-machines/Transcendence.jpg" alt="Transcendence Cover" loading="lazy">
+                        <figcaption class="sr-only">Transcendence (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Transcendence (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dying scientist uploads his mind to become omnipotent AI, sparking techno-fear. Ambitious ideas drown in convoluted plot and wooden acting, wasting Depp's star power on a dull thriller. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>A dying scientist uploads his mind to become omnipotent AI, sparking techno-fear. Ambitious ideas drown in convoluted plot and wooden acting, wasting Depp's star power on a dull thriller.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/ai-machines/Amelia 2.0.jpg" alt="Amelia 2.0 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/ai-machines/Amelia 2.0.jpg" alt="Amelia 2.0 Cover" loading="lazy">
+                        <figcaption class="sr-only">Amelia 2.0 (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Amelia 2.0 (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A comatose woman's consciousness is transferred to an android body. Low-budget philosophizing hampered by stiff performances and cheap effects, failing to explore its intriguing premise deeply. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>A comatose woman's consciousness is transferred to an android body. Low-budget philosophizing hampered by stiff performances and cheap effects, failing to explore its intriguing premise deeply.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Dystopian AI Worlds</h2>
-            <p>Stories of AI overlords, virtual realities, and cybernetic societies challenging human freedom.</p>
+        <!-- Dystopian AI Worlds Section -->
+        <section class="movie-section" aria-labelledby="dystopian-ai-heading">
+            <header class="section-header">
+                <h2 id="dystopian-ai-heading">Dystopian AI Worlds</h2>
+                <p>Stories of AI overlords, virtual realities, and cybernetic societies challenging human freedom.</p>
+                <div class="section-stats">
+                    <span class="movie-count">10 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/ai-machines/RoboCop.jpg" alt="RoboCop Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/ai-machines/RoboCop.jpg" alt="RoboCop Cover" loading="lazy">
+                        <figcaption class="sr-only">RoboCop (1987)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>RoboCop (1987)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A murdered cop rebuilt as cyborg enforcer battles corporate corruption in dystopian Detroit. Savage satire and ultra-violence mask sharp commentary, though gore overloads desensitize some viewers. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A murdered cop rebuilt as cyborg enforcer battles corporate corruption in dystopian Detroit. Savage satire and ultra-violence mask sharp commentary, though gore overloads desensitize some viewers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/ai-machines/The Matrix.jpg" alt="The Matrix Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/ai-machines/The Matrix.jpg" alt="The Matrix Cover" loading="lazy">
+                        <figcaption class="sr-only">The Matrix (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Matrix (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A hacker awakens to humanity's enslavement in simulated reality, mastering code to fight back. Revolutionary effects and philosophy thrill, but sequels' bloat highlights its occasional pretension. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A hacker awakens to humanity's enslavement in simulated reality, mastering code to fight back. Revolutionary effects and philosophy thrill, but sequels' bloat highlights its occasional pretension.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/ai-machines/The Matrix Reloaded.jpg" alt="The Matrix Reloaded Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/ai-machines/The Matrix Reloaded.jpg" alt="The Matrix Reloaded Cover" loading="lazy">
+                        <figcaption class="sr-only">The Matrix Reloaded (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Matrix Reloaded (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Neo delves deeper into the Matrix's secrets amid escalating war with machines. Spectacular set-pieces dazzle, but convoluted lore and filler bloat dilute the original's punch. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Neo delves deeper into the Matrix's secrets amid escalating war with machines. Spectacular set-pieces dazzle, but convoluted lore and filler bloat dilute the original's punch.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/ai-machines/Alita - Battle Angel.jpg" alt="Alita - Battle Angel Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/ai-machines/Alita - Battle Angel.jpg" alt="Alita - Battle Angel Cover" loading="lazy">
+                        <figcaption class="sr-only">Alita: Battle Angel (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Alita: Battle Angel (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A revived cyborg girl uncovers her warrior past in a stratified future world. Stunning visuals and action shine, but rushed storytelling and weak script leave it feeling incomplete. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A revived cyborg girl uncovers her warrior past in a stratified future world. Stunning visuals and action shine, but rushed storytelling and weak script leave it feeling incomplete.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/ai-machines/I, Robot.jpg" alt="I, Robot Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/ai-machines/I, Robot.jpg" alt="I, Robot Cover" loading="lazy">
+                        <figcaption class="sr-only">I, Robot (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I, Robot (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A robot-hating detective investigates a murder that challenges Asimov's laws in a robo-dependent society. Slick effects and Smith’s charisma entertain, but loose adaptation and formulaic plot disappoint purists. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A robot-hating detective investigates a murder that challenges Asimov's laws in a robo-dependent society. Slick effects and Smith's charisma entertain, but loose adaptation and formulaic plot disappoint purists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/ai-machines/The Matrix Resurrections.jpg" alt="The Matrix Resurrections Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/ai-machines/The Matrix Resurrections.jpg" alt="The Matrix Resurrections Cover" loading="lazy">
+                        <figcaption class="sr-only">The Matrix Resurrections (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Matrix Resurrections (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Neo reboots in a meta sequel questioning legacy and reboots themselves. Witty self-awareness refreshes, but uneven pacing and lesser action make it a glitchy return. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Neo reboots in a meta sequel questioning legacy and reboots themselves. Witty self-awareness refreshes, but uneven pacing and lesser action make it a glitchy return.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/ai-machines/Robocop - 2014.jpg" alt="RoboCop reboot Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/ai-machines/Robocop - 2014.jpg" alt="RoboCop reboot Cover" loading="lazy">
+                        <figcaption class="sr-only">RoboCop (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>RoboCop (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A drone debate wrapped in a cyborg cop remake, critiquing surveillance state. Updated themes intrigue, but sanitized violence and bland execution pale against the original's bite. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A drone debate wrapped in a cyborg cop remake, critiquing surveillance state. Updated themes intrigue, but sanitized violence and bland execution pale against the original's bite.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/ai-machines/Ghost in the Shell.jpg" alt="Ghost in the Shell Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/ai-machines/Ghost in the Shell.jpg" alt="Ghost in the Shell Cover" loading="lazy">
+                        <figcaption class="sr-only">Ghost in the Shell (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ghost in the Shell (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cyber-enhanced agent hunts hackers in a neon-drenched future, grappling with her identity. Gorgeous visuals homage the anime, but whitewashing controversy and shallow philosophy short-circuit its potential. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cyber-enhanced agent hunts hackers in a neon-drenched future, grappling with her identity. Gorgeous visuals homage the anime, but whitewashing controversy and shallow philosophy short-circuit its potential.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/ai-machines/The Matrix Revolutions.jpg" alt="The Matrix Revolutions Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/ai-machines/The Matrix Revolutions.jpg" alt="The Matrix Revolutions Cover" loading="lazy">
+                        <figcaption class="sr-only">The Matrix Revolutions (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Matrix Revolutions (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The trilogy concludes with epic battles but fizzles on philosophy and resolution. Grand spectacle overwhelms, leaving character arcs and lore unresolved in a muddled finale. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>The trilogy concludes with epic battles but fizzles on philosophy and resolution. Grand spectacle overwhelms, leaving character arcs and lore unresolved in a muddled finale.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/ai-machines/Virtuosity 1995.jpg" alt="Virtuosity Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/ai-machines/Virtuosity 1995.jpg" alt="Virtuosity Cover" loading="lazy">
+                        <figcaption class="sr-only">Virtuosity (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Virtuosity (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A virtual serial killer escapes into reality, pursued by a disgraced cop. '90s cheese with dated VR effects, squandering Washington's talent on silly chases and hammy villainy. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A virtual serial killer escapes into reality, pursued by a disgraced cop. '90s cheese with dated VR effects, squandering Washington's talent on silly chases and hammy villainy.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Terminator Saga</h2>
-            <p>Time-traveling cyborg assassins in a relentless war between humans and Skynet AI.</p>
+        <!-- Terminator Saga Section -->
+        <section class="movie-section" aria-labelledby="terminator-saga-heading">
+            <header class="section-header">
+                <h2 id="terminator-saga-heading">Terminator Saga</h2>
+                <p>Time-traveling cyborg assassins in a relentless war between humans and Skynet AI.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-10">
-                    <img src="../img/ai-machines/The Terminator.jpg" alt="The Terminator Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/ai-machines/The Terminator.jpg" alt="The Terminator Cover" loading="lazy">
+                        <figcaption class="sr-only">The Terminator (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Terminator (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A relentless cyborg hunts a woman key to humanity's future resistance. Lean, mean thriller with iconic villainy, though low budget shows in spots—still a genre-defining powerhouse. Rating: 10/10.</p>
+                        <h4>Overview</h4>
+                        <p>A relentless cyborg hunts a woman key to humanity's future resistance. Lean, mean thriller with iconic villainy, though low budget shows in spots—still a genre-defining powerhouse.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/ai-machines/Terminator 2 - Judgment Day.jpg" alt="Terminator 2 - Judgment Day Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/ai-machines/Terminator 2 - Judgment Day.jpg" alt="Terminator 2 - Judgment Day Cover" loading="lazy">
+                        <figcaption class="sr-only">Terminator 2: Judgment Day (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Terminator 2: Judgment Day (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A reprogrammed Terminator protects young John Connor from a liquid-metal upgrade. Groundbreaking effects and heart-pounding action elevate it, but sentimental shifts irk some purists. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A reprogrammed Terminator protects young John Connor from a liquid-metal upgrade. Groundbreaking effects and heart-pounding action elevate it, but sentimental shifts irk some purists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/ai-machines/Terminator - Dark Fate.jpg" alt="Terminator - Dark Fate Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/ai-machines/Terminator - Dark Fate.jpg" alt="Terminator - Dark Fate Cover" loading="lazy">
+                        <figcaption class="sr-only">Terminator: Dark Fate (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Terminator: Dark Fate (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Veteran Sarah Connor teams with a hybrid protector against a new dual-form Terminator. Nostalgic returns boost it, but retconning past entries and formula fatigue dim the spark. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Veteran Sarah Connor teams with a hybrid protector against a new dual-form Terminator. Nostalgic returns boost it, but retconning past entries and formula fatigue dim the spark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/ai-machines/Terminator Genisys.jpg" alt="Terminator Genisys Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/ai-machines/Terminator Genisys.jpg" alt="Terminator Genisys Cover" loading="lazy">
+                        <figcaption class="sr-only">Terminator Genisys (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Terminator Genisys (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Timeline twists send Kyle Reese to a rebooted 1984 with aged Terminator guardian. Ambitious resets confuse, drowning in convoluted plots and lackluster action despite Schwarzenegger's charm. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Timeline twists send Kyle Reese to a rebooted 1984 with aged Terminator guardian. Ambitious resets confuse, drowning in convoluted plots and lackluster action despite Schwarzenegger's charm.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Transformers Universe</h2>
-            <p>Alien robots disguised as vehicles battle on Earth, blending spectacle with vehicular chaos.</p>
+        <!-- Transformers Universe Section -->
+        <section class="movie-section" aria-labelledby="transformers-universe-heading">
+            <header class="section-header">
+                <h2 id="transformers-universe-heading">Transformers Universe</h2>
+                <p>Alien robots disguised as vehicles battle on Earth, blending spectacle with vehicular chaos.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/ai-machines/Bumblebee.png" alt="Bumblebee Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/ai-machines/Bumblebee.png" alt="Bumblebee Cover" loading="lazy">
+                        <figcaption class="sr-only">Bumblebee (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bumblebee (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen bonds with amnesiac Autobot scout in '80s California, evading Decepticons. Heartfelt coming-of-age revives franchise charm, though familiar beats remind it's still robots in disguise. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen bonds with amnesiac Autobot scout in '80s California, evading Decepticons. Heartfelt coming-of-age revives franchise charm, though familiar beats remind it's still robots in disguise.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/ai-machines/Transformers.jpg" alt="Transformers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/ai-machines/Transformers.jpg" alt="Transformers Cover" loading="lazy">
+                        <figcaption class="sr-only">Transformers (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Transformers (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A boy and his car join interstellar robot war over ancient artifact. Explosive Bayhem introduces bots entertainingly, but juvenile humor and chaotic editing overwhelm substance. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A boy and his car join interstellar robot war over ancient artifact. Explosive Bayhem introduces bots entertainingly, but juvenile humor and chaotic editing overwhelm substance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/ai-machines/Transformers - Dark of the Moon.jpg" alt="Transformers - Dark of the Moon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/ai-machines/Transformers - Dark of the Moon.jpg" alt="Transformers - Dark of the Moon Cover" loading="lazy">
+                        <figcaption class="sr-only">Transformers: Dark of the Moon (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Transformers: Dark of the Moon (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Apollo secrets ignite Chicago-destroying bot invasion. Bigger booms than predecessors, but misogynistic gags and endless destruction numb rather than thrill. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Apollo secrets ignite Chicago-destroying bot invasion. Bigger booms than predecessors, but misogynistic gags and endless destruction numb rather than thrill.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/ai-machines/Transformers - Revenge of the Fallen.jpg" alt="Transformers - Revenge of the Fallen Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/ai-machines/Transformers - Revenge of the Fallen.jpg" alt="Transformers - Revenge of the Fallen Cover" loading="lazy">
+                        <figcaption class="sr-only">Transformers: Revenge of the Fallen (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Transformers: Revenge of the Fallen (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ancient Egyptian bots awaken for globe-trotting mayhem. Crass humor and incoherent action bury any fun, making it a noisy endurance test. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ancient Egyptian bots awaken for globe-trotting mayhem. Crass humor and incoherent action bury any fun, making it a noisy endurance test.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/ai-machines/Transformers - Age of Extinction.png" alt="Transformers - Age of Extinction Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/ai-machines/Transformers - Age of Extinction.png" alt="Transformers - Age of Extinction Cover" loading="lazy">
+                        <figcaption class="sr-only">Transformers: Age of Extinction (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Transformers: Age of Extinction (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Dinobots join hunted Autobots against human-made threats. Bloated runtime and product placement galore amplify franchise flaws without innovation. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Dinobots join hunted Autobots against human-made threats. Bloated runtime and product placement galore amplify franchise flaws without innovation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/ai-machines/Transformers - The Last Knight.jpg" alt="Transformers - The Last Knight Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/ai-machines/Transformers - The Last Knight.jpg" alt="Transformers - The Last Knight Cover" loading="lazy">
+                        <figcaption class="sr-only">Transformers: The Last Knight (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Transformers: The Last Knight (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Arthurian legends collide with bot apocalypse. Incomprehensible plot and exhausting excess mark a franchise nadir, begging for mercy. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Arthurian legends collide with bot apocalypse. Incomprehensible plot and exhausting excess mark a franchise nadir, begging for mercy.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Machine Apocalypses</h2>
-            <p>Visions of worlds ravaged or ruled by advanced machines and AI uprisings.</p>
+        <!-- Machine Apocalypses Section -->
+        <section class="movie-section" aria-labelledby="machine-apocalypses-heading">
+            <header class="section-header">
+                <h2 id="machine-apocalypses-heading">Machine Apocalypses</h2>
+                <p>Visions of worlds ravaged or ruled by advanced machines and AI uprisings.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/ai-machines/The Creator.jpg" alt="The Creator Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/ai-machines/The Creator.jpg" alt="The Creator Cover" loading="lazy">
+                        <figcaption class="sr-only">The Creator (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Creator (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A soldier hunts a childlike AI weapon in a war-torn future Asia. Stunning visuals on a budget impress, but derivative story and shallow themes limit its impact. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A soldier hunts a childlike AI weapon in a war-torn future Asia. Stunning visuals on a budget impress, but derivative story and shallow themes limit its impact.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/ai-machines/Mortal Engines.jpg" alt="Mortal Engines Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/ai-machines/Mortal Engines.jpg" alt="Mortal Engines Cover" loading="lazy">
+                        <figcaption class="sr-only">Mortal Engines (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mortal Engines (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Giant mobile cities devour resources in steampunk wasteland. Ambitious world-building collapses under clunky scripting and underdeveloped characters. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Giant mobile cities devour resources in steampunk wasteland. Ambitious world-building collapses under clunky scripting and underdeveloped characters.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

@@ -3,24 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Animation</title>
+    <title>Animation - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing Animation movies I've watched.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing Animation movies I've watched, rated by color. Explore Pixar adventures, Disney classics, DreamWorks epics, anime masterpieces, and more.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
+
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Animation</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>From heartwarming Pixar adventures and timeless Disney classics to intense anime epics and hilarious DreamWorks escapades - exploring the boundless creativity of animated storytelling.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 108 movies</span>
+            <span class="movie-count">12 Categories</span>
+        </div>
     </header>
-    <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
             <li><a href="african.html">African</a></li>
             <li><a href="ai-machines.html">AI & Machines</a></li>
+            <li><a href="animation.html" aria-current="page">Animation</a></li>
             <li><a href="apocalyptic.html">Apocalyptic</a></li>
             <li><a href="assassins.html">Assassins</a></li>
             <li><a href="black-lives.html">Black Lives</a></li>
@@ -51,1164 +59,1800 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
-<main>
-<div class="movie-section">
-<h2>Pixar Adventures</h2>
-<p>Heartfelt stories blending innovation, emotion, and stunning animation from the pioneers at Pixar.</p>
-<div class="movie-grid">
-<div class="movie-card rating-10">
-<img src="../img/animation/Toy Story.jpg" alt="Toy Story Cover">
-<div class="movie-title">
-<h3>Toy Story (1995)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Groundbreaking toy tale that redefined animation, though Woody's jealousy feels all too human for plastic pals. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Toy Story 2.jpg" alt="Toy Story 2 Cover">
-<div class="movie-title">
-<h3>Toy Story 2 (1999)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Woody's identity crisis elevates the sequel game, but airport chase feels like a toy store fever dream. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Toy Story 3.jpg" alt="Toy Story 3 Cover">
-<div class="movie-title">
-<h3>Toy Story 3 (2010)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Existential toy purgatory masterpiece, though daycare politics hit too close to corporate bureaucracy. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Finding Nemo.jpg" alt="Finding Nemo Cover">
-<div class="movie-title">
-<h3>Finding Nemo (2003)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Ocean epic that's fin-credible, but Dory's memory loss makes you question fish schooling systems. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Up.jpg" alt="Up Cover">
-<div class="movie-title">
-<h3>Up (2009)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Balloon-powered grief journey that's gut-wrenching, though bird-napping subplot feels wildly adventurous. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Coco.jpg" alt="Coco Cover">
-<div class="movie-title">
-<h3>Coco (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Mexican afterlife celebration that's soul-stirring, but family secrets cut deeper than marigold petals. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/The Incredibles.jpg" alt="The Incredibles Cover">
-<div class="movie-title">
-<h3>The Incredibles (2004)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Superhero family satire that's caped perfection, though suburban superhero angst rings too true. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Ratatouille.jpg" alt="Ratatouille Cover">
-<div class="movie-title">
-<h3>Ratatouille (2007)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Rodent chef revolution that's deliciously subversive, but kitchen rat hygiene sparks sanitation debates. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Monsters, Inc.jpg" alt="Monsters, Inc. Cover">
-<div class="movie-title">
-<h3>Monsters, Inc. (2001)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Monster energy crisis comedy gold, though child door portals suggest interdimensional OSHA violations. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Soul.webp" alt="Soul Cover">
-<div class="movie-title">
-<h3>Soul (2020)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Jazz afterlife philosophy that's profound, but Great Before bureaucracy feels like DMV existentialism. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Turning Red.jpg" alt="Turning Red Cover">
-<div class="movie-title">
-<h3>Turning Red (2022)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Puberty panda chaos that's hysterically relatable, though mom-daughter panda wars hit generational sore spots. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Luca.jpg" alt="Luca Cover">
-<div class="movie-title">
-<h3>Luca (2021)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Sea monster Italian summer idyll, but human disguise fails make you question coastal real estate values. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/A Bugs Life.jpg" alt="A Bug's Life Cover">
-<div class="movie-title">
-<h3>A Bug's Life (1998)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Insect revolution that's ant-ically charming, though grasshopper mob feels like picnic protection racket. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Onward.jpg" alt="Onward Cover">
-<div class="movie-title">
-<h3>Onward (2020)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Half-dad magical quest that's heartfelt, but elf brothers' grief journey tugs awkwardly. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Brave.webp" alt="Brave Cover">
-<div class="movie-title">
-<h3>Brave (2012)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Scottish bear curse archery tale, but mother-daughter bear bonding gets furriously complicated. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Cars.webp" alt="Cars Cover">
-<div class="movie-title">
-<h3>Cars (2006)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Racing redemption road trip, but anthropomorphic car culture glorifies fossil fuels suspiciously. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Cars 3.jpg" alt="Cars 3 Cover">
-<div class="movie-title">
-<h3>Cars 3 (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Lightning's mentor redemption lap, but franchise fatigue sputters more than the engines. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-4">
-<img src="../img/animation/Cars 2.jpg" alt="Cars 2 Cover">
-<div class="movie-title">
-<h3>Cars 2 (2011)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Spy car misadventure that's critically reviled, proving sequels can crash spectacularly. 4/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Disney Classics</h2>
-<p>Iconic tales of magic, heroism, and discovery from Disney's golden era of animation.</p>
-<div class="movie-grid">
-<div class="movie-card rating-10">
-<img src="../img/animation/Aladdin.jpg" alt="Aladdin Cover">
-<div class="movie-title">
-<h3>Aladdin (1992)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Genie-powered wish fulfillment extravaganza, but street rat social climbing raises eyebrows. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/The Jungle Book.jpg" alt="The Jungle Book Cover">
-<div class="movie-title">
-<h3>The Jungle Book (1967)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Jungle upbringing swings with rhythm, but bare necessities philosophy masks survival struggles. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/One Hundred and One Dalmatians.jpg" alt="One Hundred and One Dalmatians Cover">
-<div class="movie-title">
-<h3>One Hundred and One Dalmatians (1961)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Spotty puppy heist that's tail-waggingly brilliant, but Cruella's fashion crimes are fur-ocious. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Cinderella.webp" alt="Cinderella Cover">
-<div class="movie-title">
-<h3>Cinderella (1950)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Classic rags-to-riches fairy tale sparkles, but stepsister foot mutilation vibes lurk dark. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Beauty and the Beast.jpg" alt="Beauty and the Beast Cover">
-<div class="movie-title">
-<h3>Beauty and the Beast (1991)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Stockholm syndrome musical masterpiece, but enchanted dishware drama steals the show. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/The Lion King.jpg" alt="The Lion King Cover">
-<div class="movie-title">
-<h3>The Lion King (1994)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Hamlet with lions that's roar-some, though uncle betrayal hits Shakespearean family tragedy notes. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Mulan.jpg" alt="Mulan Cover">
-<div class="movie-title">
-<h3>Mulan (1998)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Gender-bending warrior epic that's empowering, but dragon sidekick steals every battle scene. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/The Emperors New Groove.jpg" alt="The Emperor's New Groove Cover">
-<div class="movie-title">
-<h3>The Emperor's New Groove (2000)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Inca buddy comedy defies Disney formula, but llama transformation curse needs better PR. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Tarzan.jpg" alt="Tarzan Cover">
-<div class="movie-title">
-<h3>Tarzan (1999)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Vine-swinging orphan tale grooves with energy, but gorilla family dynamics swing wildly. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/DuckTales - The Movie - Treasure of the Lost Lamp.jpg" alt="DuckTales: The Movie - Treasure of the Lost Lamp Cover">
-<div class="movie-title">
-<h3>DuckTales: The Movie - Treasure of the Lost Lamp (1990)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Avian treasure hunt quacks with adventure, but genie lamp economy inflates wishful thinking. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/The Lion King 1-2.jpg" alt="The Lion King 1½ Cover">
-<div class="movie-title">
-<h3>The Lion King 1½ (2004)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Sidekick prequel rewinds the circle, but meerkat-warthog bromance hogs the spotlight hilariously. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/The Hunchback of Notre Dame.jpg" alt="The Hunchback of Notre Dame Cover">
-<div class="movie-title">
-<h3>The Hunchback of Notre Dame (1996)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Bell-ringer outcast drama tolls with depth, but gargoyle comedy clashes with gothic gloom. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/The Lion King II - Simba's Pride.jpg" alt="The Lion King II: Simba's Pride Cover">
-<div class="movie-title">
-<h3>The Lion King II: Simba's Pride (1998)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Romeo and Juliet with lions roars familiar, but pride division scratches surface tensions. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Aladdin 2 - The Return of Jafar.jpg" alt="Aladdin 2 - The Return of Jafar Cover">
-<div class="movie-title">
-<h3>Aladdin 2 - The Return of Jafar (1994)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Direct-to-video sequel recycles magic, but Genie's stand-up routine needs fresh material. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Aladdin and the King of Thieves.jpg" alt="Aladdin and the King of Thieves Cover">
-<div class="movie-title">
-<h3>Aladdin and the King of Thieves (1996)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Thieves' guild family reunion rubs lamps, but recycled wishes dim the magic carpet ride. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Dinosaur.jpg" alt="Dinosaur Cover">
-<div class="movie-title">
-<h3>Dinosaur (2000)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Prehistoric migration odyssey stomps visually, but dino dialogue evolves slowly. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Pocahontas.jpg" alt="Pocahontas Cover">
-<div class="movie-title">
-<h3>Pocahontas (1995)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Colonial romance whitewashes history, though talking tree wisdom feels authentically mystical. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Atlantis - The Lost Empire.jpg" alt="Atlantis: The Lost Empire Cover">
-<div class="movie-title">
-<h3>Atlantis: The Lost Empire (2001)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Submarine expedition uncovers ancient tech, but expedition ethics sink under imperialism waves. 5/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Disney Modern Tales</h2>
-<p>Contemporary Disney stories exploring identity, family, and society with vibrant animation.</p>
-<div class="movie-grid">
-<div class="movie-card rating-10">
-<img src="../img/animation/Zootopia.jpg" alt="Zootopia Cover">
-<div class="movie-title">
-<h3>Zootopia (2016)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Animal metropolis prejudice bust, where bunny cop hops through bias like urban jungle gym. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-10">
-<img src="../img/animation/Moana.jpg" alt="Moana Cover">
-<div class="movie-title">
-<h3>Moana (2016)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Polynesian ocean quest that's wave-riding spectacular, but demigod coconut antics get rocky. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Tangled.jpg" alt="Tangled Cover">
-<div class="movie-title">
-<h3>Tangled (2010)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Rapunzel tower escape adventure glows, though frying pan diplomacy seems impractical. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/The Princess and the Frog.jpg" alt="The Princess and the Frog Cover">
-<div class="movie-title">
-<h3>The Princess and the Frog (2009)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>New Orleans voodoo frog romance brews magic, though amphibian dating pool looks slimy. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Encanto.jpg" alt="Encanto Cover">
-<div class="movie-title">
-<h3>Encanto (2021)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Magical family pressure cooker bursts with songs, but giftless sibling syndrome resonates deeply. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Bolt.jpg" alt="Bolt Cover">
-<div class="movie-title">
-<h3>Bolt (2008)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Super-dog reality check road trip barks truth, but Hollywood illusion shatters paw-sitively. 9/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>DreamWorks Epics</h2>
-<p>Daring quests and humorous exploits from DreamWorks' bold animated worlds.</p>
-<div class="movie-grid">
-<div class="movie-card rating-10">
-<img src="../img/animation/Puss in Boots - The Last Wish.jpg" alt="Puss in Boots: The Last Wish Cover">
-<div class="movie-title">
-<h3>Puss in Boots: The Last Wish (2022)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Cat mortality crisis animation gem, though nine lives anxiety hits feline existential dread. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/How to Train Your Dragon 2.jpg" alt="How to Train Your Dragon 2 Cover">
-<div class="movie-title">
-<h3>How to Train Your Dragon 2 (2014)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Dragon family expansion soars, though succession drama crashes into franchise fatigue territory. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Captain Underpants - The First Epic Movie.jpg" alt="Captain Underpants: The First Epic Movie Cover">
-<div class="movie-title">
-<h3>Captain Underpants: The First Epic Movie (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Underwear superhero absurdity flips pages, but school prank wars escalate hilariously. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Shrek.jpg" alt="Shrek Cover">
-<div class="movie-title">
-<h3>Shrek (2001)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Fairy tale deconstruction masterpiece that ogre-achieves perfection through pop culture satire. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Kung Fu Panda.jpg" alt="Kung Fu Panda Cover">
-<div class="movie-title">
-<h3>Kung Fu Panda (2008)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Panda martial arts underdog story kicks ass, though noodle destiny feels spiritually delicious. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Kung Fu Panda 3.jpg" alt="Kung Fu Panda 3 Cover">
-<div class="movie-title">
-<h3>Kung Fu Panda 3 (2016)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Panda dad reunion stretches formula, but spirit realm training montage saves the scroll. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Kung Fu Panda 2.jpg" alt="Kung Fu Panda 2 Cover">
-<div class="movie-title">
-<h3>Kung Fu Panda 2 (2011)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Panda origin story packs emotional punch, but cannon fire backstory needs trigger warnings. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Madagascar 3 - Europe's Most Wanted.jpg" alt="Madagascar 3: Europe's Most Wanted Cover">
-<div class="movie-title">
-<h3>Madagascar 3: Europe's Most Wanted (2012)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Circus escape extravaganza dazzles, but animal Interpol pursuit stretches credibility wildly. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Megamind.jpg" alt="Megamind Cover">
-<div class="movie-title">
-<h3>Megamind (2010)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Supervillain midlife crisis flips tropes, but hero creation scheme backfires spectacularly. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/The Croods.jpg" alt="The Croods Cover">
-<div class="movie-title">
-<h3>The Croods (2013)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Caveman family evolution trek innovates, but prehistoric inventions spark survival debates. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Penguins of Madagascar.jpg" alt="Penguins of Madagascar Cover">
-<div class="movie-title">
-<h3>Penguins of Madagascar (2014)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Spy penguin origin waddles espionage, but octopus villain inks chaotic revenge plots. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Turbo.jpg" alt="Turbo Cover">
-<div class="movie-title">
-<h3>Turbo (2013)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Snail racing dream accelerates absurdity, but garden underdog story shells out inspiration. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Rise of the Guardians.jpg" alt="Rise of the Guardians Cover">
-<div class="movie-title">
-<h3>Rise of the Guardians (2012)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Mythical hero team-up guards childhood, but fear boogeyman spreads nightmare fuel effectively. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Flushed Away.jpg" alt="Flushed Away Cover">
-<div class="movie-title">
-<h3>Flushed Away (2006)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Sewer rat class clash flushes privilege, but underground London floods with British wit. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Madagascar.jpg" alt="Madagascar Cover">
-<div class="movie-title">
-<h3>Madagascar (2005)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Zoo escape pop musical bursts energy, though lion therapy sessions needed post-wildlife. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Shrek Forever After.jpg" alt="Shrek Forever After Cover">
-<div class="movie-title">
-<h3>Shrek Forever After (2010)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Midlife crisis ogre contract gone wrong, though Rumpelstiltskin real estate scam impresses. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/The Boss Baby.jpg" alt="The Boss Baby Cover">
-<div class="movie-title">
-<h3>The Boss Baby (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Infant corporate conspiracy confuses, though baby suit fashion inspires tiny executives. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/The Boss Baby - Family Business.jpg" alt="The Boss Baby: Family Business Cover">
-<div class="movie-title">
-<h3>The Boss Baby: Family Business (2021)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Sibling CEO rivalry expands empire, but baby formula plot milks franchise dry. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Bee Movie.jpg" alt="Bee Movie Cover">
-<div class="movie-title">
-<h3>Bee Movie (2007)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Insect lawsuit buzzes absurdity, but pollination crisis stings ecological awareness oddly. 5/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Illumination Fun</h2>
-<p>Chaotic and colorful escapades from Illumination's quirky characters and worlds.</p>
-<div class="movie-grid">
-<div class="movie-card rating-8">
-<img src="../img/animation/Despicable Me.jpg" alt="Despicable Me Cover">
-<div class="movie-title">
-<h3>Despicable Me (2010)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Villain adoption comedy gold, though minion language requires UN translation services. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Despicable Me 2.jpg" alt="Despicable Me 2 Cover">
-<div class="movie-title">
-<h3>Despicable Me 2 (2013)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Villain dating spy farce bubbles fun, but banana obsession borders on fruit cult territory. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Minions - The Rise of Gru.jpg" alt="Minions: The Rise of Gru Cover">
-<div class="movie-title">
-<h3>Minions: The Rise of Gru (2022)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>70s villain origin pops style, but kid Gru power fantasy overstays apprenticeship. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Minions.jpg" alt="Minions Cover">
-<div class="movie-title">
-<h3>Minions (2015)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Prequel chaos revelry entertains kids, though adult dialogue drought starves conversation. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Despicable Me 3.jpg" alt="Despicable Me 3 Cover">
-<div class="movie-title">
-<h3>Despicable Me 3 (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Twin brother plot stalls momentum, though 80s villain nostalgia saves vacation vibes. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/The Secret Life of Pets 2.jpg" alt="The Secret Life of Pets 2 Cover">
-<div class="movie-title">
-<h3>The Secret Life of Pets 2 (2019)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Pet anxiety therapy romps chaotically, but animal neuroses mirror human pet peeves amusingly. 6/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Blue Sky Studios</h2>
-<p>Whimsical journeys and prehistoric antics from Blue Sky's lively animated lineup.</p>
-<div class="movie-grid">
-<div class="movie-card rating-8">
-<img src="../img/animation/Horton Hears a Who!.jpg" alt="Horton Hears a Who! Cover">
-<div class="movie-title">
-<h3>Horton Hears a Who! (2008)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Elephant speck salvation trumpets loyalty, but microscopic world politics dust up debates. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Ice Age.jpg" alt="Ice Age Cover">
-<div class="movie-title">
-<h3>Ice Age (2002)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Mammoth family road trip charms, though squirrel acorn obsession steals every ice scene. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Rio.jpg" alt="Rio Cover">
-<div class="movie-title">
-<h3>Rio (2011)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Blue macaw samba romance soars, but smuggling rings clip exotic bird freedom wings. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Ice Age 2 The Meltdown.jpg" alt="Ice Age 2: The Meltdown Cover">
-<div class="movie-title">
-<h3>Ice Age 2: The Meltdown (2006)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Flood survival musical numbers, but prehistoric dating pool looks dangerously shallow. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Ice Age Dawn of the Dinosaurs.jpg" alt="Ice Age: Dawn of the Dinosaurs Cover">
-<div class="movie-title">
-<h3>Ice Age: Dawn of the Dinosaurs (2009)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Dino underground adventure expands, though franchise formula starts showing extinction signs. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-4">
-<img src="../img/animation/Ice Age 4 - Continental Drift.jpg" alt="Ice Age: Continental Drift Cover">
-<div class="movie-title">
-<h3>Ice Age: Continental Drift (2012)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Pirate ice float musical drifts aimlessly, proving sequels can reach glacial pacing. 4/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Sony Animation</h2>
-<p>Energetic and offbeat tales from Sony's diverse animated collection.</p>
-<div class="movie-grid">
-<div class="movie-card rating-8">
-<img src="../img/animation/Sausage Party.jpg" alt="Sausage Party Cover">
-<div class="movie-title">
-<h3>Sausage Party (2016)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Grocery existential crisis raunches up, but food orgy apocalypse consumes taboos voraciously. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/The Angry Birds Movie 2.jpg" alt="The Angry Birds Movie 2 Cover">
-<div class="movie-title">
-<h3>The Angry Birds Movie 2 (2019)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Avian-pig truce launches teamwork, but eagle island invasion feathers ruffled alliances. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Hotel Transylvania 3 - Summer Vacation.jpg" alt="Hotel Transylvania 3: Summer Vacation Cover">
-<div class="movie-title">
-<h3>Hotel Transylvania 3: Summer Vacation (2018)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Monster cruise romance sails choppy, but Van Helsing grudge anchors monster hunter drama. 5/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Anime Epics</h2>
-<p>Intense and philosophical journeys from Japanese anime masterpieces.</p>
-<div class="movie-grid">
-<div class="movie-card rating-8">
-<img src="../img/animation/Berserk - The Golden Age Arc I - The Egg of the King.jpg" alt="Berserk: The Golden Age Arc I - The Egg of the King Cover">
-<div class="movie-title">
-<h3>Berserk: The Golden Age Arc I - The Egg of the King (2012)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Mercenary ambition forges bonds, but demonic fate eclipses medieval dreams brutally. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Berserk - The Golden Age Arc II - The Battle for Doldrey.jpg" alt="Berserk: The Golden Age Arc II - The Battle for Doldrey Cover">
-<div class="movie-title">
-<h3>Berserk: The Golden Age Arc II - The Battle for Doldrey (2012)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Fortress siege escalates warfare, but knight loyalties fracture under ambition's weight. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Berserk - The Golden Age Arc III - The Advent.jpg" alt="Berserk: The Golden Age Arc III - The Advent Cover">
-<div class="movie-title">
-<h3>Berserk: The Golden Age Arc III - The Advent (2013)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Eclipse betrayal shatters brotherhood, unleashing hellish horrors on mortal ambitions. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Boruto - The Naruto Movie.jpg" alt="Boruto: Naruto the Movie Cover">
-<div class="movie-title">
-<h3>Boruto: Naruto the Movie (2015)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Ninja legacy passes torch, but generational clashes ignite chakra-fueled family drama. 8/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Other Studio Adventures</h2>
-<p>Eclectic animated tales from various studios, full of creativity and surprises.</p>
-<div class="movie-grid">
-<div class="movie-card rating-10">
-<img src="../img/animation/The Lego Movie.jpg" alt="The Lego Movie Cover">
-<div class="movie-title">
-<h3>The Lego Movie (2014)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Brick-built multiverse madness assembles satire, though corporate product placement stacks suspiciously. 10/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Rango.jpg" alt="Rango Cover">
-<div class="movie-title">
-<h3>Rango (2011)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Chameleon identity crisis in desert western, blending absurdity with gritty spaghetti references. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-9">
-<img src="../img/animation/Puss in Boots.jpg" alt="Puss in Boots Cover">
-<div class="movie-title">
-<h3>Puss in Boots (2011)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Feline outlaw beanstalk heist purrs charm, but golden egg pursuit hatches betrayal. 9/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Happy Feet.jpg" alt="Happy Feet Cover">
-<div class="movie-title">
-<h3>Happy Feet (2006)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Penguin tap-dance outcast grooves acceptance, but ecological crisis chills Antarctic harmony. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/The Son of Bigfoot.jpg" alt="The Son of Bigfoot Cover">
-<div class="movie-title">
-<h3>The Son of Bigfoot (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Sasquatch family reunion stomps myths, but corporate hair hunt combs for DNA profits. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-8">
-<img src="../img/animation/Next Gen.jpg" alt="Next Gen Cover">
-<div class="movie-title">
-<h3>Next Gen (2018)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Robot friendship reboots loneliness, but AI rebellion hacks corporate control systems. 8/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Killer Bean Forever.jpg" alt="Killer Bean Forever Cover">
-<div class="movie-title">
-<h3>Killer Bean Forever (2008)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Coffee bean assassin brews vengeance, percolating action in bean underworld intrigue. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-7">
-<img src="../img/animation/Asterix and the Vikings.jpg" alt="Asterix and the Vikings Cover">
-<div class="movie-title">
-<h3>Asterix and the Vikings (2006)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Gallic potion-powered Viking raid resists, but fear-flying lessons sail comically awry. 7/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/The Ant Bully.jpg" alt="The Ant Bully Cover">
-<div class="movie-title">
-<h3>The Ant Bully (2006)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Shrunk kid ant colony immersion teaches empathy, but insect court trials mandate teamwork. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/Gnome Alone.jpg" alt="Gnome Alone Cover">
-<div class="movie-title">
-<h3>Gnome Alone (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Garden gnome portal defense gardens chaos, but teen relocation uproots supernatural secrets. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/The Snow Queen 3 - Fire and Ice.jpg" alt="The Snow Queen 3: Fire and Ice Cover">
-<div class="movie-title">
-<h3>The Snow Queen 3: Fire and Ice (2016)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Elemental sibling curse freezes relations, but fairy tale quest thaws family bonds. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-6">
-<img src="../img/animation/9.jpg" alt="9 Cover">
-<div class="movie-title">
-<h3>9 (2009)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Stitchpunk apocalypse survivors thread fate, but machine overlords sew dystopian despair. 6/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Astro Boy.jpg" alt="Astro Boy Cover">
-<div class="movie-title">
-<h3>Astro Boy (2009)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Robotic child hero jets identity, but human-robot divide powers ethical circuits. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Rodencia and the Princess Tooth.jpg" alt="Rodencia and the Princess Tooth Cover">
-<div class="movie-title">
-<h3>Rodencia and the Princess Tooth (2012)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Rodent kingdom tooth quest gnaws adventure, but wizard apprenticeship bites off challenges. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/My Sweet Monster.jpg" alt="My Sweet Monster Cover">
-<div class="movie-title">
-<h3>My Sweet Monster (2021)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Princess monster romance howls fairy tale, but postal delivery uncovers beastly secrets. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-4">
-<img src="../img/animation/Everyones Hero.jpg" alt="Everyone's Hero Cover">
-<div class="movie-title">
-<h3>Everyone's Hero (2006)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Baseball bat quest swings history, but Depression-era kid adventure bases loaded dreams. 4/10</p>
-</div>
-</div>
-<div class="movie-card rating-3">
-<img src="../img/animation/Valiant.jpg" alt="Valiant Cover">
-<div class="movie-title">
-<h3>Valiant (2005)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Pigeon WWII messenger coos heroism, but avian boot camp feathers ruffled recruits. 3/10</p>
-</div>
-</div>
-<div class="movie-card rating-2">
-<img src="../img/animation/Alpha and Omega.jpg" alt="Alpha and Omega Cover">
-<div class="movie-title">
-<h3>Alpha and Omega (2010)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Wolf pack relocation howls romance, but alpha-omega hierarchy snarls social norms. 2/10</p>
-</div>
-</div>
-<div class="movie-card rating-2">
-<img src="../img/animation/Tad the Lost Explorer and the Secret of King Midas.jpg" alt="Tad the Lost Explorer and the Secret of King Midas Cover">
-<div class="movie-title">
-<h3>Tad the Lost Explorer and the Secret of King Midas (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Archaeologist mishap quests artifacts, but Midas touch curse gilds perilous pursuits. 2/10</p>
-</div>
-</div>
-<div class="movie-card rating-2">
-<img src="../img/animation/Homeward.jpg" alt="Homeward Cover">
-<div class="movie-title">
-<h3>Homeward (2020)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Orphaned bunny road trip hops homeward, but magical mishaps carrot-stick the journey. 2/10</p>
-</div>
-</div>
-<div class="movie-card rating-1">
-<img src="../img/animation/Maya the Bee - The Honey Games.jpg" alt="Maya the Bee: The Honey Games Cover">
-<div class="movie-title">
-<h3>Maya the Bee: The Honey Games (2018)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Bee Olympic competition buzzes teamwork, but hive rivalry stings inter-species harmony. 1/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Disney Remakes</h2>
-<p>Modern retellings of classic tales with cutting-edge visuals and fresh perspectives.</p>
-<div class="movie-grid">
-<div class="movie-card rating-5">
-<img src="../img/animation/The Lion King 2019.jpg" alt="The Lion King (2019) Cover">
-<div class="movie-title">
-<h3>The Lion King (2019)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Photorealistic Pride Lands remake roars visually stunning, but soulless CGI lions circle the same story without fresh paw prints. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-5">
-<img src="../img/animation/Aladdin 2019.jpg" alt="Aladdin (2019) Cover">
-<div class="movie-title">
-<h3>Aladdin (2019)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Live-action magic carpet ride dazzles with spectacle, but recycled wishes can't outshine the original's animated charm. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-4">
-<img src="../img/animation/101 Dalmatians.jpg" alt="101 Dalmatians (1996) Cover">
-<div class="movie-title">
-<h3>101 Dalmatians (1996)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Live-action puppy pandemonium where Cruella's fur obsession drives dognapping chaos, but spotty script leaves tails wagging half-heartedly. 4/10</p>
-</div>
-</div>
-</div>
-</div>
-<div class="movie-section">
-<h2>Crash & Burn Flops</h2>
-<p>Ambitious but flawed animations that stumbled at the box office or with critics.</p>
-<div class="movie-grid">
-<div class="movie-card rating-5">
-<img src="../img/animation/Luck.jpg" alt="Luck Cover">
-<div class="movie-title">
-<h3>Luck (2022)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Fortune factory premise squanders potential, proving luck can't fix lazy storytelling. 5/10</p>
-</div>
-</div>
-<div class="movie-card rating-2">
-<img src="../img/animation/Cats.jpg" alt="Cats Cover">
-<div class="movie-title">
-<h3>Cats (2019)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Uncanny valley feline nightmare fuel, where CGI fur budget vanished into litter box. 2/10</p>
-</div>
-</div>
-<div class="movie-card rating-1">
-<img src="../img/animation/The Emoji Movie.jpg" alt="The Emoji Movie Cover">
-<div class="movie-title">
-<h3>The Emoji Movie (2017)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Texting metaphor disaster that's unwatchably bad, proving emojis need no cinematic emancipation. 1/10</p>
-</div>
-</div>
-<div class="movie-card rating-1">
-<img src="../img/animation/The Queens Corgi.jpg" alt="The Queen's Corgi Cover">
-<div class="movie-title">
-<h3>The Queen's Corgi (2019)</h3>
-</div>
-<div class="overview">
-<h3>Overview</h3>
-<p>Royal dog animation embarrassment, where British accents mask continental quality control failure. 1/10</p>
-</div>
-</div>
-</div>
-</div>
-</main>
-<footer>
-<p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
-</footer>
-<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-<path d="M12 19V5M5 12l7-7 7 7"/>
-</svg>
-</button>
-<script src="../js/app.js"></script>
+    </nav>
+
+    <main>
+        <!-- Pixar Adventures Section -->
+        <section class="movie-section" aria-labelledby="pixar-adventures-heading">
+            <header class="section-header">
+                <h2 id="pixar-adventures-heading">Pixar Adventures</h2>
+                <p>Heartfelt stories blending innovation, emotion, and stunning animation from the pioneers at Pixar.</p>
+                <div class="section-stats">
+                    <span class="movie-count">18 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Toy Story.jpg" alt="Toy Story movie poster" loading="lazy">
+                        <figcaption class="sr-only">Toy Story (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Toy Story (1995)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Groundbreaking toy tale that redefined animation, though Woody's jealousy feels all too human for plastic pals.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Toy Story 2.jpg" alt="Toy Story 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Toy Story 2 (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Toy Story 2 (1999)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Woody's identity crisis elevates the sequel game, but airport chase feels like a toy store fever dream.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Toy Story 3.jpg" alt="Toy Story 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Toy Story 3 (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Toy Story 3 (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Existential toy purgatory masterpiece, though daycare politics hit too close to corporate bureaucracy.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Finding Nemo.jpg" alt="Finding Nemo movie poster" loading="lazy">
+                        <figcaption class="sr-only">Finding Nemo (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Finding Nemo (2003)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Ocean epic that's fin-credible, but Dory's memory loss makes you question fish schooling systems.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Up.jpg" alt="Up movie poster" loading="lazy">
+                        <figcaption class="sr-only">Up (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Up (2009)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Balloon-powered grief journey that's gut-wrenching, though bird-napping subplot feels wildly adventurous.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Coco.jpg" alt="Coco movie poster" loading="lazy">
+                        <figcaption class="sr-only">Coco (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Coco (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Mexican afterlife celebration that's soul-stirring, but family secrets cut deeper than marigold petals.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/The Incredibles.jpg" alt="The Incredibles movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Incredibles (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Incredibles (2004)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Superhero family satire that's caped perfection, though suburban superhero angst rings too true.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Ratatouille.jpg" alt="Ratatouille movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ratatouille (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Ratatouille (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Rodent chef revolution that's deliciously subversive, but kitchen rat hygiene sparks sanitation debates.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Monsters, Inc.jpg" alt="Monsters, Inc. movie poster" loading="lazy">
+                        <figcaption class="sr-only">Monsters, Inc. (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Monsters, Inc. (2001)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Monster energy crisis comedy gold, though child door portals suggest interdimensional OSHA violations.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Soul.webp" alt="Soul movie poster" loading="lazy">
+                        <figcaption class="sr-only">Soul (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Soul (2020)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Jazz afterlife philosophy that's profound, but Great Before bureaucracy feels like DMV existentialism.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Turning Red.jpg" alt="Turning Red movie poster" loading="lazy">
+                        <figcaption class="sr-only">Turning Red (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Turning Red (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Puberty panda chaos that's hysterically relatable, though mom-daughter panda wars hit generational sore spots.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Luca.jpg" alt="Luca movie poster" loading="lazy">
+                        <figcaption class="sr-only">Luca (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Luca (2021)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sea monster Italian summer idyll, but human disguise fails make you question coastal real estate values.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/A Bugs Life.jpg" alt="A Bug's Life movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Bug's Life (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>A Bug's Life (1998)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Insect revolution that's ant-ically charming, though grasshopper mob feels like picnic protection racket.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Onward.jpg" alt="Onward movie poster" loading="lazy">
+                        <figcaption class="sr-only">Onward (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Onward (2020)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Half-dad magical quest that's heartfelt, but elf brothers' grief journey tugs awkwardly.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Brave.webp" alt="Brave movie poster" loading="lazy">
+                        <figcaption class="sr-only">Brave (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Brave (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Scottish bear curse archery tale, but mother-daughter bear bonding gets furriously complicated.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Cars.webp" alt="Cars movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cars (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cars (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Racing redemption road trip, but anthropomorphic car culture glorifies fossil fuels suspiciously.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Cars 3.jpg" alt="Cars 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cars 3 (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cars 3 (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Lightning's mentor redemption lap, but franchise fatigue sputters more than the engines.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/animation/Cars 2.jpg" alt="Cars 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cars 2 (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cars 2 (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Spy car misadventure that's critically reviled, proving sequels can crash spectacularly.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Disney Classics Section -->
+        <section class="movie-section" aria-labelledby="disney-classics-heading">
+            <header class="section-header">
+                <h2 id="disney-classics-heading">Disney Classics</h2>
+                <p>Iconic tales of magic, heroism, and discovery from Disney's golden era of animation.</p>
+                <div class="section-stats">
+                    <span class="movie-count">18 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Aladdin.jpg" alt="Aladdin movie poster" loading="lazy">
+                        <figcaption class="sr-only">Aladdin (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Aladdin (1992)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Genie-powered wish fulfillment extravaganza, but street rat social climbing raises eyebrows.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/The Jungle Book.jpg" alt="The Jungle Book movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Jungle Book (1967)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Jungle Book (1967)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Jungle upbringing swings with rhythm, but bare necessities philosophy masks survival struggles.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/One Hundred and One Dalmatians.jpg" alt="One Hundred and One Dalmatians movie poster" loading="lazy">
+                        <figcaption class="sr-only">One Hundred and One Dalmatians (1961)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>One Hundred and One Dalmatians (1961)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Spotty puppy heist that's tail-waggingly brilliant, but Cruella's fashion crimes are fur-ocious.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Cinderella.webp" alt="Cinderella movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cinderella (1950)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cinderella (1950)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Classic rags-to-riches fairy tale sparkles, but stepsister foot mutilation vibes lurk dark.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Beauty and the Beast.jpg" alt="Beauty and the Beast movie poster" loading="lazy">
+                        <figcaption class="sr-only">Beauty and the Beast (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Beauty and the Beast (1991)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Stockholm syndrome musical masterpiece, but enchanted dishware drama steals the show.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/The Lion King.jpg" alt="The Lion King movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lion King (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Lion King (1994)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Hamlet with lions that's roar-some, though uncle betrayal hits Shakespearean family tragedy notes.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Mulan.jpg" alt="Mulan movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mulan (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Mulan (1998)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Gender-bending warrior epic that's empowering, but dragon sidekick steals every battle scene.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/The Emperors New Groove.jpg" alt="The Emperor's New Groove movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Emperor's New Groove (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Emperor's New Groove (2000)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Inca buddy comedy defies Disney formula, but llama transformation curse needs better PR.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Tarzan.jpg" alt="Tarzan movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tarzan (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Tarzan (1999)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Vine-swinging orphan tale grooves with energy, but gorilla family dynamics swing wildly.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/DuckTales - The Movie - Treasure of the Lost Lamp.jpg" alt="DuckTales: The Movie - Treasure of the Lost Lamp movie poster" loading="lazy">
+                        <figcaption class="sr-only">DuckTales: The Movie - Treasure of the Lost Lamp (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>DuckTales: The Movie - Treasure of the Lost Lamp (1990)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Avian treasure hunt quacks with adventure, but genie lamp economy inflates wishful thinking.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/The Lion King 1-2.jpg" alt="The Lion King 1½ movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lion King 1½ (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Lion King 1½ (2004)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sidekick prequel rewinds the circle, but meerkat-warthog bromance hogs the spotlight hilariously.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/The Hunchback of Notre Dame.jpg" alt="The Hunchback of Notre Dame movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hunchback of Notre Dame (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Hunchback of Notre Dame (1996)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Bell-ringer outcast drama tolls with depth, but gargoyle comedy clashes with gothic gloom.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/The Lion King II - Simba's Pride.jpg" alt="The Lion King II: Simba's Pride movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lion King II: Simba's Pride (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Lion King II: Simba's Pride (1998)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Romeo and Juliet with lions roars familiar, but pride division scratches surface tensions.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Aladdin 2 - The Return of Jafar.jpg" alt="Aladdin 2 - The Return of Jafar movie poster" loading="lazy">
+                        <figcaption class="sr-only">Aladdin 2 - The Return of Jafar (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Aladdin 2 - The Return of Jafar (1994)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Direct-to-video sequel recycles magic, but Genie's stand-up routine needs fresh material.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Aladdin and the King of Thieves.jpg" alt="Aladdin and the King of Thieves movie poster" loading="lazy">
+                        <figcaption class="sr-only">Aladdin and the King of Thieves (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Aladdin and the King of Thieves (1996)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Thieves' guild family reunion rubs lamps, but recycled wishes dim the magic carpet ride.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Dinosaur.jpg" alt="Dinosaur movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dinosaur (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dinosaur (2000)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Prehistoric migration odyssey stomps visually, but dino dialogue evolves slowly.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Pocahontas.jpg" alt="Pocahontas movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pocahontas (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Pocahontas (1995)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Colonial romance whitewashes history, though talking tree wisdom feels authentically mystical.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Atlantis - The Lost Empire.jpg" alt="Atlantis: The Lost Empire movie poster" loading="lazy">
+                        <figcaption class="sr-only">Atlantis: The Lost Empire (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Atlantis: The Lost Empire (2001)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Submarine expedition uncovers ancient tech, but expedition ethics sink under imperialism waves.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Disney Modern Tales Section -->
+        <section class="movie-section" aria-labelledby="disney-modern-heading">
+            <header class="section-header">
+                <h2 id="disney-modern-heading">Disney Modern Tales</h2>
+                <p>Contemporary Disney stories exploring identity, family, and society with vibrant animation.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Zootopia.jpg" alt="Zootopia movie poster" loading="lazy">
+                        <figcaption class="sr-only">Zootopia (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Zootopia (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Animal metropolis prejudice bust, where bunny cop hops through bias like urban jungle gym.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Moana.jpg" alt="Moana movie poster" loading="lazy">
+                        <figcaption class="sr-only">Moana (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Moana (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Polynesian ocean quest that's wave-riding spectacular, but demigod coconut antics get rocky.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Tangled.jpg" alt="Tangled movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tangled (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Tangled (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Rapunzel tower escape adventure glows, though frying pan diplomacy seems impractical.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/The Princess and the Frog.jpg" alt="The Princess and the Frog movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Princess and the Frog (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Princess and the Frog (2009)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>New Orleans voodoo frog romance brews magic, though amphibian dating pool looks slimy.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Encanto.jpg" alt="Encanto movie poster" loading="lazy">
+                        <figcaption class="sr-only">Encanto (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Encanto (2021)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Magical family pressure cooker bursts with songs, but giftless sibling syndrome resonates deeply.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Bolt.jpg" alt="Bolt movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bolt (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Bolt (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Super-dog reality check road trip barks truth, but Hollywood illusion shatters paw-sitively.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DreamWorks Epics Section -->
+        <section class="movie-section" aria-labelledby="dreamworks-epics-heading">
+            <header class="section-header">
+                <h2 id="dreamworks-epics-heading">DreamWorks Epics</h2>
+                <p>Daring quests and humorous exploits from DreamWorks' bold animated worlds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">19 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Puss in Boots - The Last Wish.jpg" alt="Puss in Boots: The Last Wish movie poster" loading="lazy">
+                        <figcaption class="sr-only">Puss in Boots: The Last Wish (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Puss in Boots: The Last Wish (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Cat mortality crisis animation gem, though nine lives anxiety hits feline existential dread.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/How to Train Your Dragon 2.jpg" alt="How to Train Your Dragon 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">How to Train Your Dragon 2 (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>How to Train Your Dragon 2 (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Dragon family expansion soars, though succession drama crashes into franchise fatigue territory.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Captain Underpants - The First Epic Movie.jpg" alt="Captain Underpants: The First Epic Movie movie poster" loading="lazy">
+                        <figcaption class="sr-only">Captain Underpants: The First Epic Movie (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Captain Underpants: The First Epic Movie (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Underwear superhero absurdity flips pages, but school prank wars escalate hilariously.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Shrek.jpg" alt="Shrek movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shrek (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Shrek (2001)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Fairy tale deconstruction masterpiece that ogre-achieves perfection through pop culture satire.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Kung Fu Panda.jpg" alt="Kung Fu Panda movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kung Fu Panda (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Kung Fu Panda (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Panda martial arts underdog story kicks ass, though noodle destiny feels spiritually delicious.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Kung Fu Panda 3.jpg" alt="Kung Fu Panda 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kung Fu Panda 3 (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Kung Fu Panda 3 (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Panda dad reunion stretches formula, but spirit realm training montage saves the scroll.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Kung Fu Panda 2.jpg" alt="Kung Fu Panda 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kung Fu Panda 2 (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Kung Fu Panda 2 (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Panda origin story packs emotional punch, but cannon fire backstory needs trigger warnings.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Madagascar 3 - Europe's Most Wanted.jpg" alt="Madagascar 3: Europe's Most Wanted movie poster" loading="lazy">
+                        <figcaption class="sr-only">Madagascar 3: Europe's Most Wanted (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Madagascar 3: Europe's Most Wanted (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Circus escape extravaganza dazzles, but animal Interpol pursuit stretches credibility wildly.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Megamind.jpg" alt="Megamind movie poster" loading="lazy">
+                        <figcaption class="sr-only">Megamind (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Megamind (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Supervillain midlife crisis flips tropes, but hero creation scheme backfires spectacularly.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/The Croods.jpg" alt="The Croods movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Croods (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Croods (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Caveman family evolution trek innovates, but prehistoric inventions spark survival debates.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Penguins of Madagascar.jpg" alt="Penguins of Madagascar movie poster" loading="lazy">
+                        <figcaption class="sr-only">Penguins of Madagascar (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Penguins of Madagascar (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Spy penguin origin waddles espionage, but octopus villain inks chaotic revenge plots.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Turbo.jpg" alt="Turbo movie poster" loading="lazy">
+                        <figcaption class="sr-only">Turbo (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Turbo (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Snail racing dream accelerates absurdity, but garden underdog story shells out inspiration.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Rise of the Guardians.jpg" alt="Rise of the Guardians movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rise of the Guardians (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rise of the Guardians (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Mythical hero team-up guards childhood, but fear boogeyman spreads nightmare fuel effectively.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Flushed Away.jpg" alt="Flushed Away movie poster" loading="lazy">
+                        <figcaption class="sr-only">Flushed Away (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Flushed Away (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sewer rat class clash flushes privilege, but underground London floods with British wit.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Madagascar.jpg" alt="Madagascar movie poster" loading="lazy">
+                        <figcaption class="sr-only">Madagascar (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Madagascar (2005)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Zoo escape pop musical bursts energy, though lion therapy sessions needed post-wildlife.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Shrek Forever After.jpg" alt="Shrek Forever After movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shrek Forever After (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Shrek Forever After (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Midlife crisis ogre contract gone wrong, though Rumpelstiltskin real estate scam impresses.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/The Boss Baby.jpg" alt="The Boss Baby movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Boss Baby (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Boss Baby (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Infant corporate conspiracy confuses, though baby suit fashion inspires tiny executives.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/The Boss Baby - Family Business.jpg" alt="The Boss Baby: Family Business movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Boss Baby: Family Business (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Boss Baby: Family Business (2021)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sibling CEO rivalry expands empire, but baby formula plot milks franchise dry.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Bee Movie.jpg" alt="Bee Movie movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bee Movie (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Bee Movie (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Insect lawsuit buzzes absurdity, but pollination crisis stings ecological awareness oddly.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Illumination Fun Section -->
+        <section class="movie-section" aria-labelledby="illumination-fun-heading">
+            <header class="section-header">
+                <h2 id="illumination-fun-heading">Illumination Fun</h2>
+                <p>Chaotic and colorful escapades from Illumination's quirky characters and worlds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Despicable Me.jpg" alt="Despicable Me movie poster" loading="lazy">
+                        <figcaption class="sr-only">Despicable Me (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Despicable Me (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Villain adoption comedy gold, though minion language requires UN translation services.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Despicable Me 2.jpg" alt="Despicable Me 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Despicable Me 2 (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Despicable Me 2 (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Villain dating spy farce bubbles fun, but banana obsession borders on fruit cult territory.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Minions - The Rise of Gru.jpg" alt="Minions: The Rise of Gru movie poster" loading="lazy">
+                        <figcaption class="sr-only">Minions: The Rise of Gru (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Minions: The Rise of Gru (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>70s villain origin pops style, but kid Gru power fantasy overstays apprenticeship.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Minions.jpg" alt="Minions movie poster" loading="lazy">
+                        <figcaption class="sr-only">Minions (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Minions (2015)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Prequel chaos revelry entertains kids, though adult dialogue drought starves conversation.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Despicable Me 3.jpg" alt="Despicable Me 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Despicable Me 3 (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Despicable Me 3 (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Twin brother plot stalls momentum, though 80s villain nostalgia saves vacation vibes.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/The Secret Life of Pets 2.jpg" alt="The Secret Life of Pets 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Secret Life of Pets 2 (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Secret Life of Pets 2 (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Pet anxiety therapy romps chaotically, but animal neuroses mirror human pet peeves amusingly.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blue Sky Studios Section -->
+        <section class="movie-section" aria-labelledby="blue-sky-studios-heading">
+            <header class="section-header">
+                <h2 id="blue-sky-studios-heading">Blue Sky Studios</h2>
+                <p>Whimsical journeys and prehistoric antics from Blue Sky's lively animated lineup.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Horton Hears a Who!.jpg" alt="Horton Hears a Who! movie poster" loading="lazy">
+                        <figcaption class="sr-only">Horton Hears a Who! (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Horton Hears a Who! (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Elephant speck salvation trumpets loyalty, but microscopic world politics dust up debates.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Ice Age.jpg" alt="Ice Age movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ice Age (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Ice Age (2002)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Mammoth family road trip charms, though squirrel acorn obsession steals every ice scene.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Rio.jpg" alt="Rio movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rio (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rio (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Blue macaw samba romance soars, but smuggling rings clip exotic bird freedom wings.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Ice Age 2 The Meltdown.jpg" alt="Ice Age 2: The Meltdown movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ice Age 2: The Meltdown (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Ice Age 2: The Meltdown (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Flood survival musical numbers, but prehistoric dating pool looks dangerously shallow.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Ice Age Dawn of the Dinosaurs.jpg" alt="Ice Age: Dawn of the Dinosaurs movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ice Age: Dawn of the Dinosaurs (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Ice Age: Dawn of the Dinosaurs (2009)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Dino underground adventure expands, though franchise formula starts showing extinction signs.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/animation/Ice Age 4 - Continental Drift.jpg" alt="Ice Age: Continental Drift movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ice Age: Continental Drift (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Ice Age: Continental Drift (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Pirate ice float musical drifts aimlessly, proving sequels can reach glacial pacing.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sony Animation Section -->
+        <section class="movie-section" aria-labelledby="sony-animation-heading">
+            <header class="section-header">
+                <h2 id="sony-animation-heading">Sony Animation</h2>
+                <p>Energetic and offbeat tales from Sony's diverse animated collection.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Sausage Party.jpg" alt="Sausage Party movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sausage Party (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Sausage Party (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Grocery existential crisis raunches up, but food orgy apocalypse consumes taboos voraciously.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/The Angry Birds Movie 2.jpg" alt="The Angry Birds Movie 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Angry Birds Movie 2 (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Angry Birds Movie 2 (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Avian-pig truce launches teamwork, but eagle island invasion feathers ruffled alliances.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Hotel Transylvania 3 - Summer Vacation.jpg" alt="Hotel Transylvania 3: Summer Vacation movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hotel Transylvania 3: Summer Vacation (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Hotel Transylvania 3: Summer Vacation (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Monster cruise romance sails choppy, but Van Helsing grudge anchors monster hunter drama.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Anime Epics Section -->
+        <section class="movie-section" aria-labelledby="anime-epics-heading">
+            <header class="section-header">
+                <h2 id="anime-epics-heading">Anime Epics</h2>
+                <p>Intense and philosophical journeys from Japanese anime masterpieces.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/Grave of the Fireflies.jpg" alt="Grave of the Fireflies movie poster" loading="lazy">
+                        <figcaption class="sr-only">Grave of the Fireflies (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Grave of the Fireflies (1988)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Two siblings struggle to survive in Japan during World War II. Devastating masterpiece of human resilience and the tragic cost of war that will shatter your heart and linger forever.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Berserk - The Golden Age Arc I - The Egg of the King.jpg" alt="Berserk: The Golden Age Arc I - The Egg of the King movie poster" loading="lazy">
+                        <figcaption class="sr-only">Berserk: The Golden Age Arc I - The Egg of the King (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Berserk: The Golden Age Arc I - The Egg of the King (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Mercenary ambition forges bonds, but demonic fate eclipses medieval dreams brutally.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Berserk - The Golden Age Arc II - The Battle for Doldrey.jpg" alt="Berserk: The Golden Age Arc II - The Battle for Doldrey movie poster" loading="lazy">
+                        <figcaption class="sr-only">Berserk: The Golden Age Arc II - The Battle for Doldrey (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Berserk: The Golden Age Arc II - The Battle for Doldrey (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Fortress siege escalates warfare, but knight loyalties fracture under ambition's weight.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Berserk - The Golden Age Arc III - The Advent.jpg" alt="Berserk: The Golden Age Arc III - The Advent movie poster" loading="lazy">
+                        <figcaption class="sr-only">Berserk: The Golden Age Arc III - The Advent (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Berserk: The Golden Age Arc III - The Advent (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Eclipse betrayal shatters brotherhood, unleashing hellish horrors on mortal ambitions.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Boruto - The Naruto Movie.jpg" alt="Boruto: Naruto the Movie movie poster" loading="lazy">
+                        <figcaption class="sr-only">Boruto: Naruto the Movie (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Boruto: Naruto the Movie (2015)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Ninja legacy passes torch, but generational clashes ignite chakra-fueled family drama.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Other Studio Adventures Section -->
+        <section class="movie-section" aria-labelledby="other-studios-heading">
+            <header class="section-header">
+                <h2 id="other-studios-heading">Other Studio Adventures</h2>
+                <p>Eclectic animated tales from various studios, full of creativity and surprises.</p>
+                <div class="section-stats">
+                    <span class="movie-count">19 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/animation/The Lego Movie.jpg" alt="The Lego Movie movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lego Movie (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Lego Movie (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Brick-built multiverse madness assembles satire, though corporate product placement stacks suspiciously.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Rango.jpg" alt="Rango movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rango (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rango (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Chameleon identity crisis in desert western, blending absurdity with gritty spaghetti references.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/animation/Puss in Boots.jpg" alt="Puss in Boots movie poster" loading="lazy">
+                        <figcaption class="sr-only">Puss in Boots (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Puss in Boots (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Feline outlaw beanstalk heist purrs charm, but golden egg pursuit hatches betrayal.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Happy Feet.jpg" alt="Happy Feet movie poster" loading="lazy">
+                        <figcaption class="sr-only">Happy Feet (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Happy Feet (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Penguin tap-dance outcast grooves acceptance, but ecological crisis chills Antarctic harmony.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/The Son of Bigfoot.jpg" alt="The Son of Bigfoot movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Son of Bigfoot (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Son of Bigfoot (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sasquatch family reunion stomps myths, but corporate hair hunt combs for DNA profits.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/animation/Next Gen.jpg" alt="Next Gen movie poster" loading="lazy">
+                        <figcaption class="sr-only">Next Gen (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Next Gen (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Robot friendship reboots loneliness, but AI rebellion hacks corporate control systems.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Killer Bean Forever.jpg" alt="Killer Bean Forever movie poster" loading="lazy">
+                        <figcaption class="sr-only">Killer Bean Forever (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Killer Bean Forever (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Coffee bean assassin brews vengeance, percolating action in bean underworld intrigue.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/animation/Asterix and the Vikings.jpg" alt="Asterix and the Vikings movie poster" loading="lazy">
+                        <figcaption class="sr-only">Asterix and the Vikings (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Asterix and the Vikings (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Gallic potion-powered Viking raid resists, but fear-flying lessons sail comically awry.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/The Ant Bully.jpg" alt="The Ant Bully movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Ant Bully (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Ant Bully (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Shrunk kid ant colony immersion teaches empathy, but insect court trials mandate teamwork.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/Gnome Alone.jpg" alt="Gnome Alone movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gnome Alone (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Gnome Alone (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Garden gnome portal defense gardens chaos, but teen relocation uproots supernatural secrets.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/The Snow Queen 3 - Fire and Ice.jpg" alt="The Snow Queen 3: Fire and Ice movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Snow Queen 3: Fire and Ice (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Snow Queen 3: Fire and Ice (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Elemental sibling curse freezes relations, but fairy tale quest thaws family bonds.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/animation/9.jpg" alt="9 movie poster" loading="lazy">
+                        <figcaption class="sr-only">9 (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>9 (2009)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Stitchpunk apocalypse survivors thread fate, but machine overlords sew dystopian despair.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Astro Boy.jpg" alt="Astro Boy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Astro Boy (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Astro Boy (2009)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Robotic child hero jets identity, but human-robot divide powers ethical circuits.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Rodencia and the Princess Tooth.jpg" alt="Rodencia and the Princess Tooth movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rodencia and the Princess Tooth (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rodencia and the Princess Tooth (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Rodent kingdom tooth quest gnaws adventure, but wizard apprenticeship bites off challenges.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/My Sweet Monster.jpg" alt="My Sweet Monster movie poster" loading="lazy">
+                        <figcaption class="sr-only">My Sweet Monster (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>My Sweet Monster (2021)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Princess monster romance howls fairy tale, but postal delivery uncovers beastly secrets.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/animation/Everyones Hero.jpg" alt="Everyone's Hero movie poster" loading="lazy">
+                        <figcaption class="sr-only">Everyone's Hero (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Everyone's Hero (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Baseball bat quest swings history, but Depression-era kid adventure bases loaded dreams.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/animation/Valiant.jpg" alt="Valiant movie poster" loading="lazy">
+                        <figcaption class="sr-only">Valiant (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Valiant (2005)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Pigeon WWII messenger coos heroism, but avian boot camp feathers ruffled recruits.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/animation/Alpha and Omega.jpg" alt="Alpha and Omega movie poster" loading="lazy">
+                        <figcaption class="sr-only">Alpha and Omega (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Alpha and Omega (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Wolf pack relocation howls romance, but alpha-omega hierarchy snarls social norms.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/animation/Tad the Lost Explorer and the Secret of King Midas.jpg" alt="Tad the Lost Explorer and the Secret of King Midas movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tad the Lost Explorer and the Secret of King Midas (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Tad the Lost Explorer and the Secret of King Midas (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Archaeologist mishap quests artifacts, but Midas touch curse gilds perilous pursuits.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/animation/Homeward.jpg" alt="Homeward movie poster" loading="lazy">
+                        <figcaption class="sr-only">Homeward (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Homeward (2020)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Orphaned bunny road trip hops homeward, but magical mishaps carrot-stick the journey.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/animation/Maya the Bee - The Honey Games.jpg" alt="Maya the Bee: The Honey Games movie poster" loading="lazy">
+                        <figcaption class="sr-only">Maya the Bee: The Honey Games (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Maya the Bee: The Honey Games (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Bee Olympic competition buzzes teamwork, but hive rivalry stings inter-species harmony.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Disney Remakes Section -->
+        <section class="movie-section" aria-labelledby="disney-remakes-heading">
+            <header class="section-header">
+                <h2 id="disney-remakes-heading">Disney Remakes</h2>
+                <p>Modern retellings of classic tales with cutting-edge visuals and fresh perspectives.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/The Lion King 2019.jpg" alt="The Lion King (2019) movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lion King (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Lion King (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Photorealistic Pride Lands remake roars visually stunning, but soulless CGI lions circle the same story without fresh paw prints.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Aladdin 2019.jpg" alt="Aladdin (2019) movie poster" loading="lazy">
+                        <figcaption class="sr-only">Aladdin (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Aladdin (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Live-action magic carpet ride dazzles with spectacle, but recycled wishes can't outshine the original's animated charm.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/animation/101 Dalmatians.jpg" alt="101 Dalmatians (1996) movie poster" loading="lazy">
+                        <figcaption class="sr-only">101 Dalmatians (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>101 Dalmatians (1996)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Live-action puppy pandemonium where Cruella's fur obsession drives dognapping chaos, but spotty script leaves tails wagging half-heartedly.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Crash & Burn Flops Section -->
+        <section class="movie-section" aria-labelledby="crash-burn-heading">
+            <header class="section-header">
+                <h2 id="crash-burn-heading">Crash & Burn Flops</h2>
+                <p>Ambitious but flawed animations that stumbled at the box office or with critics.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/animation/Luck.jpg" alt="Luck movie poster" loading="lazy">
+                        <figcaption class="sr-only">Luck (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Luck (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Fortune factory premise squanders potential, proving luck can't fix lazy storytelling.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/animation/Cats.jpg" alt="Cats movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cats (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cats (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Uncanny valley feline nightmare fuel, where CGI fur budget vanished into litter box.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/animation/The Emoji Movie.jpg" alt="The Emoji Movie movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Emoji Movie (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Emoji Movie (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Texting metaphor disaster that's unwatchably bad, proving emojis need no cinematic emancipation.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/animation/The Queens Corgi.jpg" alt="The Queen's Corgi movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Queen's Corgi (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Queen's Corgi (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Royal dog animation embarrassment, where British accents mask continental quality control failure.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
+    </footer>
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>

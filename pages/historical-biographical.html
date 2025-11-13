@@ -3,435 +3,660 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Historical & Biographical</title>
+    <title>Historical & Biographical - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing historical and biographical movies I've watched, rated by authenticity. Explore ancient epics, scientific breakthroughs, business innovations, and true stories of human achievement.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Historical & Biographical</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Epic tales from ancient civilizations, groundbreaking scientific discoveries, business innovations, and true stories of human achievement that shaped our world.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 32 movies</span>
+            <span class="movie-count">9 Categories</span>
+        </div>
     </header>
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="action.html">Action</a></li>
-        <li><a href="african.html">African</a></li>
-        <li><a href="ai-machines.html">AI & Machines</a></li>
-        <li><a href="animation.html">Animation</a></li>
-        <li><a href="apocalyptic.html">Apocalyptic</a></li>
-        <li><a href="assassins.html">Assassins</a></li>
-        <li><a href="black-lives.html">Black Lives</a></li>
-        <li><a href="christmas-family.html">Christmas & Family</a></li>
-        <li><a href="comedy.html">Comedy</a></li>
-        <li><a href="computer-crimes.html">Computer Crimes</a></li>
-        <li><a href="computers.html">Computers</a></li>
-        <li><a href="crime.html">Crime</a></li>
-        <li><a href="documentary.html">Documentary</a></li>
-        <li><a href="drama.html">Drama</a></li>
-        <li><a href="fantasy-adventure.html">Fantasy & Adventure</a></li>
-        <li><a href="financial.html">Financial</a></li>
-        <li><a href="heists.html">Heists</a></li>
-        <li><a href="horror.html">Horror</a></li>
-        <li><a href="literature.html">Literature</a></li>
-        <li><a href="martial-arts.html">Martial Arts</a></li>
-        <li><a href="monsters-aliens.html">Monsters & Aliens</a></li>
-        <li><a href="music-dance.html">Music & Dance</a></li>
-        <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
-        <li><a href="relationships.html">Relationships</a></li>
-        <li><a href="religion-mythology.html">Religion & Mythology</a></li>
-        <li><a href="sci-fi.html">Sci-Fi</a></li>
-        <li><a href="serial-killers.html">Serial Killers</a></li>
-        <li><a href="series-films.html">Series Films</a></li>
-        <li><a href="sports.html">Sports</a></li>
-        <li><a href="spy-film.html">Spy Film</a></li>
-        <li><a href="stand-up.html">Stand-up</a></li>
-        <li><a href="superheroes.html">Superheroes</a></li>
-        <li><a href="war-soldiers.html">War & Soldiers</a></li>
-    </ul>
-</div>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="action.html">Action</a></li>
+            <li><a href="african.html">African</a></li>
+            <li><a href="ai-machines.html">AI & Machines</a></li>
+            <li><a href="animation.html">Animation</a></li>
+            <li><a href="apocalyptic.html">Apocalyptic</a></li>
+            <li><a href="assassins.html">Assassins</a></li>
+            <li><a href="black-lives.html">Black Lives</a></li>
+            <li><a href="christmas-family.html">Christmas & Family</a></li>
+            <li><a href="comedy.html">Comedy</a></li>
+            <li><a href="computer-crimes.html">Computer Crimes</a></li>
+            <li><a href="computers.html">Computers</a></li>
+            <li><a href="crime.html">Crime</a></li>
+            <li><a href="documentary.html">Documentary</a></li>
+            <li><a href="drama.html">Drama</a></li>
+            <li><a href="fantasy-adventure.html">Fantasy & Adventure</a></li>
+            <li><a href="financial.html">Financial</a></li>
+            <li><a href="heists.html">Heists</a></li>
+            <li><a href="historical-biographical.html" aria-current="page">Historical & Biographical</a></li>
+            <li><a href="horror.html">Horror</a></li>
+            <li><a href="literature.html">Literature</a></li>
+            <li><a href="martial-arts.html">Martial Arts</a></li>
+            <li><a href="monsters-aliens.html">Monsters & Aliens</a></li>
+            <li><a href="music-dance.html">Music & Dance</a></li>
+            <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
+            <li><a href="relationships.html">Relationships</a></li>
+            <li><a href="religion-mythology.html">Religion & Mythology</a></li>
+            <li><a href="sci-fi.html">Sci-Fi</a></li>
+            <li><a href="serial-killers.html">Serial Killers</a></li>
+            <li><a href="series-films.html">Series Films</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="spy-film.html">Spy Film</a></li>
+            <li><a href="stand-up.html">Stand-up</a></li>
+            <li><a href="superheroes.html">Superheroes</a></li>
+            <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <div class="movie-section"> 
-        <h2>Ancient and Medieval History</h2>
-        <p>Films depicting epic battles and historical events from ancient and medieval times, showcasing warriors, empires, and legendary conflicts.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-8">
-                <img src="../img/historical/Gladiator.jpg" alt="Gladiator Cover">
-                <div class="movie-title">
-                    <h3>Gladiator (2000)</h3>
+    <main>
+        <!-- Ancient and Medieval History Section -->
+        <section class="movie-section" aria-labelledby="ancient-history-heading">
+            <header class="section-header">
+                <h2 id="ancient-history-heading">Ancient and Medieval History</h2>
+                <p>Films depicting epic battles and historical events from ancient and medieval times, showcasing warriors, empires, and legendary conflicts.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
                 </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Gladiator delivers epic storytelling of betrayal and revenge in ancient Rome, with coherent narrative and original drama. The arena climax offers catharsis against tyranny. Timeless classic exploring Roman society. Rating: 8/10.</p>
-                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/Gladiator.jpg" alt="Gladiator movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gladiator (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Gladiator (2000)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Gladiator delivers epic storytelling of betrayal and revenge in ancient Rome, with coherent narrative and original drama. The arena climax offers catharsis against tyranny. Timeless classic exploring Roman society.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/Braveheart.jpg" alt="Braveheart movie poster" loading="lazy">
+                        <figcaption class="sr-only">Braveheart (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Braveheart (1995)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Braveheart portrays rebellion and freedom in medieval Scotland, building from tragedy to uprising with historical liberties. Visceral battles highlight courage and tyranny. Engaging on politics and warfare.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/Apocalypto.jpg" alt="Apocalypto movie poster" loading="lazy">
+                        <figcaption class="sr-only">Apocalypto (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Apocalypto (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Apocalypto follows a thrilling chase in the declining Mayan empire, rooted in cultural authenticity. Raw visuals capture jungle perils and rituals, exploring civilization's collapse and resilience. Provocative on pre-Columbian societies.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/300.jpg" alt="300 movie poster" loading="lazy">
+                        <figcaption class="sr-only">300 (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>300 (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>300 stylizes the Battle of Thermopylae into a defiant epic, with straightforward plot amid stylized violence. Comic-book visuals emphasize heroism and sacrifice against tyranny.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/The Last of the Mohicans.jpg" alt="The Last of the Mohicans movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Last of the Mohicans (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Last of the Mohicans (1992)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Last of the Mohicans blends romantic adventure and action in colonial America, with formulaic yet coherent plot. Stunning wilderness visuals underscore cultural clash and survival.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/Troy.jpg" alt="Troy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Troy (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Troy (2004)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Troy reimagines the Iliad with grand warfare spectacle, deviating for cinematic flow. Lavish siege visuals explore glory, fate, and frailty.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/historical/300 - Rise of an Empire.jpg" alt="300 - Rise of an Empire movie poster" loading="lazy">
+                        <figcaption class="sr-only">300 - Rise of an Empire (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>300 - Rise of an Empire (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>300: Rise of an Empire expands to naval battles, action-heavy but less original. Stylized visuals delve into Persian invasion and Greek unity.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/historical/Gladiator 2.jpg" alt="Gladiator 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gladiator 2 (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Gladiator 2 (2024)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Gladiator II continues Roman arena struggles with political intrigue echoing the original. Grand Colosseum visuals highlight legacy and rebellion.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/historical/The Rising Hawk.jpg" alt="The Rising Hawk movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Rising Hawk (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Rising Hawk (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Rising Hawk shows Carpathian resistance to Mongols, clichéd unity plot against invasion. Scenic mountain battles touch on freedom and heritage.</p>
+                    </div>
+                </article>
             </div>
-            <div class="movie-card rating-8">
-                <img src="../img/historical/Braveheart.jpg" alt="Braveheart Cover">
-                <div class="movie-title">
-                    <h3>Braveheart (1995)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Braveheart portrays rebellion and freedom in medieval Scotland, building from tragedy to uprising with historical liberties. Visceral battles highlight courage and tyranny. Engaging on politics and warfare. Rating: 8/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/Apocalypto.jpg" alt="Apocalypto Cover">
-                <div class="movie-title">
-                    <h3>Apocalypto (2006)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Apocalypto follows a thrilling chase in the declining Mayan empire, rooted in cultural authenticity. Raw visuals capture jungle perils and rituals, exploring civilization's collapse and resilience. Provocative on pre-Columbian societies. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/300.jpg" alt="300 Cover">
-                <div class="movie-title">
-                    <h3>300 (2006)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>300 stylizes the Battle of Thermopylae into a defiant epic, with straightforward plot amid stylized violence. Comic-book visuals emphasize heroism and sacrifice against tyranny. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/The Last of the Mohicans.jpg" alt="The Last of the Mohicans Cover">
-                <div class="movie-title">
-                    <h3>The Last of the Mohicans (1992)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Last of the Mohicans blends romantic adventure and action in colonial America, with formulaic yet coherent plot. Stunning wilderness visuals underscore cultural clash and survival. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/Troy.jpg" alt="Troy Cover">
-                <div class="movie-title">
-                    <h3>Troy (2004)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Troy reimagines the Iliad with grand warfare spectacle, deviating for cinematic flow. Lavish siege visuals explore glory, fate, and frailty. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-6">
-                <img src="../img/historical/300 - Rise of an Empire.jpg" alt="300 - Rise of an Empire Cover">
-                <div class="movie-title">
-                    <h3>300 - Rise of an Empire (2014)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>300: Rise of an Empire expands to naval battles, action-heavy but less original. Stylized visuals delve into Persian invasion and Greek unity. Rating: 6/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-6">
-                <img src="../img/historical/Gladiator 2.jpg" alt="Gladiator 2 Cover">
-                <div class="movie-title">
-                    <h3>Gladiator 2 (2024)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Gladiator II continues Roman arena struggles with political intrigue echoing the original. Grand Colosseum visuals highlight legacy and rebellion. Rating: 6/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-5">
-                <img src="../img/historical/The Rising Hawk.jpg" alt="The Rising Hawk Cover">
-                <div class="movie-title">
-                    <h3>The Rising Hawk (2019)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Rising Hawk shows Carpathian resistance to Mongols, clichéd unity plot against invasion. Scenic mountain battles touch on freedom and heritage. Rating: 5/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Exploration and Survival</h2>
-        <p>Stories of adventurers facing harsh environments and personal trials in uncharted territories.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-8">
-                <img src="../img/historical/The Revenant.jpeg" alt="The Revenant Cover">
-                <div class="movie-title">
-                    <h3>The Revenant (2015)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Revenant unfolds raw survival of betrayal and vengeance, coherent despite nonlinear elements. Breathtaking frozen wilderness visuals amplify endurance and nature's indifference. Rating: 8/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-6">
-                <img src="../img/historical/Jungle.jpg" alt="Jungle Cover">
-                <div class="movie-title">
-                    <h3>Jungle (2017)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Jungle recounts harrowing Amazon trek, tense and predictable survival plot. Lush visuals convey jungle's beauty and peril, exploring friendship and limits. Rating: 6/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-6">
-                <img src="../img/historical/The Lost City of Z.jpg" alt="The Lost City of Z Cover">
-                <div class="movie-title">
-                    <h3>The Lost City of Z (2016)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Lost City of Z follows Amazon quests driven by obsession and discovery. Evocative jungle visuals underscore colonialism and the unknown. Rating: 6/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-6">
-                <img src="../img/historical/Alpha.jpg" alt="Alpha Cover">
-                <div class="movie-title">
-                    <h3>Alpha (2018)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Alpha depicts prehistoric survival and wolf domestication, simple bonding plot. Stunning icy visuals highlight companionship and evolution. Rating: 6/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Science and Mathematics Biographies</h2>
-        <p>Biographical accounts of brilliant minds in science and math, highlighting intellectual breakthroughs and personal struggles.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-8">
-                <img src="../img/historical/The Imitation Game.jpg" alt="The Imitation Game Cover">
-                <div class="movie-title">
-                    <h3>The Imitation Game (2014)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Imitation Game recounts Enigma-cracking in WWII, taut plot blending tension and drama. Crisp visuals evoke urgency, delving into intelligence, prejudice, and innovation. Rating: 8/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-8">
-                <img src="../img/historical/A Beautiful Mind.jpg" alt="A Beautiful Mind Cover">
-                <div class="movie-title">
-                    <h3>A Beautiful Mind (2001)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>A Beautiful Mind explores genius and schizophrenia, twisty yet coherent plot. Elegant visuals mirror mental states, probing reality and intellect. Rating: 8/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/The Man Who Knew Infinity.jpg" alt="The Man Who Knew Infinity Cover">
-                <div class="movie-title">
-                    <h3>The Man Who Knew Infinity (2015)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Man Who Knew Infinity traces mathematical journey amid cultural clash. Serene visuals reflect pursuits, examining intuition versus proof. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/N Is a Number - A Portrait of Paul Erdos.jpg" alt="N Is a Number - A Portrait of Paul Erdos Cover">
-                <div class="movie-title">
-                    <h3>N Is a Number - A Portrait of Paul Erdos (1993)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>N Is a Number chronicles nomadic mathematical life through insightful anecdotes. Simple visuals focus on pure pursuit and eccentricity. Enriching on collaboration. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/Codebreaker.jpg" alt="Codebreaker Cover">
-                <div class="movie-title">
-                    <h3>Codebreaker (2011)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Codebreaker documents wartime contributions and tragic fate, poignant narrative of achievement and persecution. Archival visuals enhance authenticity, addressing innovation and bias. Rating: 7/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Business and Innovation Biographies</h2>
-        <p>Profiles of entrepreneurs who revolutionized industries through vision and determination.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-7">
-                <img src="../img/historical/The Aviator.jpg" alt="The Aviator Cover">
-                <div class="movie-title">
-                    <h3>The Aviator (2004)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Aviator sweeps through ambitious life of innovation and obsession, coherent but lengthy. Opulent visuals capture aviation feats, delving into genius and mental health. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/The Founder.jpg" alt="The Founder Cover">
-                <div class="movie-title">
-                    <h3>The Founder (2016)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>The Founder details empire-building, shrewd plot on ambition's dark side. Clean visuals trace fast-food evolution, probing capitalism and ethics. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-5">
-                <img src="../img/historical/Lamborghini - The Man Behind the Legend (2022).jpg" alt="Lamborghini - The Man Behind the Legend Cover">
-                <div class="movie-title">
-                    <h3>Lamborghini - The Man Behind the Legend (2022)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Lamborghini: The Man Behind the Legend traces rivalry-driven success, formulaic but coherent plot. Glossy visuals showcase cars, exploring competition and legacy. Rating: 5/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Political and Investigative Biographies</h2>
-        <p>Accounts of figures in politics and law enforcement who shaped history through controversy and revelation.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-7">
-                <img src="../img/historical/Richard Jewell.jpg" alt="Richard Jewell Cover">
-                <div class="movie-title">
-                    <h3>Richard Jewell (2019)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Richard Jewell exposes media and FBI mishandling, compelling plot of heroism to nightmare. Authentic Olympic visuals critique presumption and justice. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/Snowden.jpg" alt="Snowden Cover">
-                <div class="movie-title">
-                    <h3>Snowden (2016)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Snowden dramatizes surveillance whistleblowing, tense plot balancing stakes. Slick visuals expose tech, debating privacy and security. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-6">
-                <img src="../img/historical/Mark Felt - The Man Who Brought Down the White House.jpg" alt="Mark Felt - The Man Who Brought Down the White House Cover">
-                <div class="movie-title">
-                    <h3>Mark Felt - The Man Who Brought Down the White House (2017)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Mark Felt unveils Watergate leaks, methodical intrigue plot. Period visuals evoke tension, examining loyalty and truth. Rating: 6/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-6">
-                <img src="../img/historical/J. Edgar.jpg" alt="J. Edgar Cover">
-                <div class="movie-title">
-                    <h3>J. Edgar (2011)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>J. Edgar surveys FBI tenure, nonlinear plot on power and secrecy. Moody visuals reflect eras, probing authority and repression. Rating: 6/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Sports Biographies</h2>
-        <p>Stories of racing legends and rivalries that defined motorsport history.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-8">
-                <img src="../img/historical/Ford v Ferrari.jpg" alt="Ford v Ferrari Cover">
-                <div class="movie-title">
-                    <h3>Ford v Ferrari (2019)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Ford v Ferrari revs Le Mans rivalry of innovation versus tradition. Thrilling race visuals capture speed, exploring corporate ambition. Rating: 8/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-8">
-                <img src="../img/historical/Rush.jpg" alt="Rush Cover">
-                <div class="movie-title">
-                    <h3>Rush (2013)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Rush accelerates F1 rivalry of competition and recovery. Pulse-pounding 1970s visuals delve into risk and resilience. Rating: 8/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Space Exploration</h2>
-        <p>Biographies of pioneers who pushed the boundaries of human achievement in space.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-7">
-                <img src="../img/historical/First Man.jpg" alt="First Man Cover">
-                <div class="movie-title">
-                    <h3>First Man (2018)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>First Man orbits moon mission blending triumph and loss. Immersive space visuals contemplate sacrifice and exploration. Rating: 7/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Disaster and True Events</h2>
-        <p>Films based on real tragedies and heroic responses to crises.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-7">
-                <img src="../img/historical/Titanic.jpg" alt="Titanic Cover">
-                <div class="movie-title">
-                    <h3>Titanic (1997)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Titanic intertwines romance and disaster, emotionally coherent epic. Spectacular sinking visuals address class and fate. Rating: 7/10.</p>
-                </div>
-            </div>
-            <div class="movie-card rating-7">
-                <img src="../img/historical/Only The Brave.jpg" alt="Only The Brave Cover">
-                <div class="movie-title">
-                    <h3>Only The Brave (2017)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Only the Brave honors hotshots' camaraderie and tragedy. Vivid wildfire visuals explore heroism and loss. Rating: 7/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="movie-section"> 
-        <h2>Classic Cinema</h2>
-        <p>Timeless films that have influenced storytelling and filmmaking.</p>
-        <div class="movie-grid">
-            <div class="movie-card rating-8">
-                <img src="../img/historical/Citizen Kane.jpg" alt="Citizen Kane Cover">
-                <div class="movie-title">
-                    <h3>Citizen Kane (1941)</h3>
-                </div>
-                <div class="overview">
-                    <h3>Overview</h3>
-                    <p>Citizen Kane innovates nonlinear life unraveling through flashbacks. Revolutionary deep-focus visuals dissect power and isolation. Rating: 8/10.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+        </section>
 
-<footer>
-    <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
-</footer>
+        <!-- Exploration and Survival Section -->
+        <section class="movie-section" aria-labelledby="exploration-survival-heading">
+            <header class="section-header">
+                <h2 id="exploration-survival-heading">Exploration and Survival</h2>
+                <p>Stories of adventurers facing harsh environments and personal trials in uncharted territories.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/The Revenant.jpeg" alt="The Revenant movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Revenant (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Revenant (2015)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Revenant unfolds raw survival of betrayal and vengeance, coherent despite nonlinear elements. Breathtaking frozen wilderness visuals amplify endurance and nature's indifference.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/historical/Jungle.jpg" alt="Jungle movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jungle (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Jungle (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Jungle recounts harrowing Amazon trek, tense and predictable survival plot. Lush visuals convey jungle's beauty and peril, exploring friendship and limits.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/historical/The Lost City of Z.jpg" alt="The Lost City of Z movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lost City of Z (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Lost City of Z (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Lost City of Z follows Amazon quests driven by obsession and discovery. Evocative jungle visuals underscore colonialism and the unknown.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/historical/Alpha.jpg" alt="Alpha movie poster" loading="lazy">
+                        <figcaption class="sr-only">Alpha (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Alpha (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Alpha depicts prehistoric survival and wolf domestication, simple bonding plot. Stunning icy visuals highlight companionship and evolution.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 19V5M5 12l7-7 7 7"/>
-    </svg>
-</button>
+        <!-- Science and Mathematics Biographies Section -->
+        <section class="movie-section" aria-labelledby="science-biographies-heading">
+            <header class="section-header">
+                <h2 id="science-biographies-heading">Science and Mathematics Biographies</h2>
+                <p>Biographical accounts of brilliant minds in science and math, highlighting intellectual breakthroughs and personal struggles.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/The Imitation Game.jpg" alt="The Imitation Game movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Imitation Game (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Imitation Game (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Imitation Game recounts Enigma-cracking in WWII, taut plot blending tension and drama. Crisp visuals evoke urgency, delving into intelligence, prejudice, and innovation.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/A Beautiful Mind.jpg" alt="A Beautiful Mind movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Beautiful Mind (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>A Beautiful Mind (2001)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A Beautiful Mind explores genius and schizophrenia, twisty yet coherent plot. Elegant visuals mirror mental states, probing reality and intellect.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/The Man Who Knew Infinity.jpg" alt="The Man Who Knew Infinity movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Man Who Knew Infinity (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Man Who Knew Infinity (2015)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Man Who Knew Infinity traces mathematical journey amid cultural clash. Serene visuals reflect pursuits, examining intuition versus proof.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/N Is a Number - A Portrait of Paul Erdos.jpg" alt="N Is a Number - A Portrait of Paul Erdos movie poster" loading="lazy">
+                        <figcaption class="sr-only">N Is a Number - A Portrait of Paul Erdos (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>N Is a Number - A Portrait of Paul Erdos (1993)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>N Is a Number chronicles nomadic mathematical life through insightful anecdotes. Simple visuals focus on pure pursuit and eccentricity. Enriching on collaboration.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/Codebreaker.jpg" alt="Codebreaker movie poster" loading="lazy">
+                        <figcaption class="sr-only">Codebreaker (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Codebreaker (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Codebreaker documents wartime contributions and tragic fate, poignant narrative of achievement and persecution. Archival visuals enhance authenticity, addressing innovation and bias.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<script src="../js/app.js"></script></body>
+        <!-- Business and Innovation Biographies Section -->
+        <section class="movie-section" aria-labelledby="business-biographies-heading">
+            <header class="section-header">
+                <h2 id="business-biographies-heading">Business and Innovation Biographies</h2>
+                <p>Profiles of entrepreneurs who revolutionized industries through vision and determination.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/The Aviator.jpg" alt="The Aviator movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Aviator (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Aviator (2004)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Aviator sweeps through ambitious life of innovation and obsession, coherent but lengthy. Opulent visuals capture aviation feats, delving into genius and mental health.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/The Founder.jpg" alt="The Founder movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Founder (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Founder (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>The Founder details empire-building, shrewd plot on ambition's dark side. Clean visuals trace fast-food evolution, probing capitalism and ethics.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/historical/Lamborghini - The Man Behind the Legend (2022).jpg" alt="Lamborghini - The Man Behind the Legend movie poster" loading="lazy">
+                        <figcaption class="sr-only">Lamborghini - The Man Behind the Legend (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Lamborghini - The Man Behind the Legend (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Lamborghini: The Man Behind the Legend traces rivalry-driven success, formulaic but coherent plot. Glossy visuals showcase cars, exploring competition and legacy.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Political and Investigative Biographies Section -->
+        <section class="movie-section" aria-labelledby="political-biographies-heading">
+            <header class="section-header">
+                <h2 id="political-biographies-heading">Political and Investigative Biographies</h2>
+                <p>Accounts of figures in politics and law enforcement who shaped history through controversy and revelation.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/Richard Jewell.jpg" alt="Richard Jewell movie poster" loading="lazy">
+                        <figcaption class="sr-only">Richard Jewell (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Richard Jewell (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Richard Jewell exposes media and FBI mishandling, compelling plot of heroism to nightmare. Authentic Olympic visuals critique presumption and justice.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/Snowden.jpg" alt="Snowden movie poster" loading="lazy">
+                        <figcaption class="sr-only">Snowden (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Snowden (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Snowden dramatizes surveillance whistleblowing, tense plot balancing stakes. Slick visuals expose tech, debating privacy and security.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/historical/Mark Felt - The Man Who Brought Down the White House.jpg" alt="Mark Felt - The Man Who Brought Down the White House movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mark Felt - The Man Who Brought Down the White House (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Mark Felt - The Man Who Brought Down the White House (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Mark Felt unveils Watergate leaks, methodical intrigue plot. Period visuals evoke tension, examining loyalty and truth.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/historical/J. Edgar.jpg" alt="J. Edgar movie poster" loading="lazy">
+                        <figcaption class="sr-only">J. Edgar (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>J. Edgar (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>J. Edgar surveys FBI tenure, nonlinear plot on power and secrecy. Moody visuals reflect eras, probing authority and repression.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sports Biographies Section -->
+        <section class="movie-section" aria-labelledby="sports-biographies-heading">
+            <header class="section-header">
+                <h2 id="sports-biographies-heading">Sports Biographies</h2>
+                <p>Stories of racing legends and rivalries that defined motorsport history.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/Ford v Ferrari.jpg" alt="Ford v Ferrari movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ford v Ferrari (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Ford v Ferrari (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Ford v Ferrari revs Le Mans rivalry of innovation versus tradition. Thrilling race visuals capture speed, exploring corporate ambition.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/Rush.jpg" alt="Rush movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rush (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rush (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Rush accelerates F1 rivalry of competition and recovery. Pulse-pounding 1970s visuals delve into risk and resilience.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Space Exploration Section -->
+        <section class="movie-section" aria-labelledby="space-exploration-heading">
+            <header class="section-header">
+                <h2 id="space-exploration-heading">Space Exploration</h2>
+                <p>Biographies of pioneers who pushed the boundaries of human achievement in space.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/First Man.jpg" alt="First Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">First Man (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>First Man (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>First Man orbits moon mission blending triumph and loss. Immersive space visuals contemplate sacrifice and exploration.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Disaster and True Events Section -->
+        <section class="movie-section" aria-labelledby="disaster-events-heading">
+            <header class="section-header">
+                <h2 id="disaster-events-heading">Disaster and True Events</h2>
+                <p>Films based on real tragedies and heroic responses to crises.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/Titanic.jpg" alt="Titanic movie poster" loading="lazy">
+                        <figcaption class="sr-only">Titanic (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Titanic (1997)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Titanic intertwines romance and disaster, emotionally coherent epic. Spectacular sinking visuals address class and fate.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/historical/Only The Brave.jpg" alt="Only The Brave movie poster" loading="lazy">
+                        <figcaption class="sr-only">Only The Brave (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Only The Brave (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Only the Brave honors hotshots' camaraderie and tragedy. Vivid wildfire visuals explore heroism and loss.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Classic Cinema Section -->
+        <section class="movie-section" aria-labelledby="classic-cinema-heading">
+            <header class="section-header">
+                <h2 id="classic-cinema-heading">Classic Cinema</h2>
+                <p>Timeless films that have influenced storytelling and filmmaking.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/historical/Citizen Kane.jpg" alt="Citizen Kane movie poster" loading="lazy">
+                        <figcaption class="sr-only">Citizen Kane (1941)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Citizen Kane (1941)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Citizen Kane innovates nonlinear life unraveling through flashbacks. Revolutionary deep-focus visuals dissect power and isolation.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
+    </footer>
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="../js/app.js"></script>
+</body>
 </html>

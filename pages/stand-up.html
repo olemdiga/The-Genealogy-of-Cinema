@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stand-up Comedy</title>
+    <title>Stand-up Comedy - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="description" content="Showcasing stand-up comedy specials I've watched, organized by theme and rated by color.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Stand-up Comedy</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Hilarious performances, sharp wit, and social commentary from top comedians across different styles and eras.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 22 specials</span>
+            <span class="movie-count">4 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -45,278 +50,423 @@
             <li><a href="music-dance.html">Music & Dance</a></li>
             <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
             <li><a href="relationships.html">Relationships</a></li>
+            <li><a href="religion-mythology.html">Religion & Mythology</a></li>
             <li><a href="sci-fi.html">Sci-Fi</a></li>
             <li><a href="serial-killers.html">Serial Killers</a></li>
             <li><a href="series-films.html">Series Films</a></li>
-            <li><i><a href="sports.html">Sports</a></li>
+            <li><a href="sports.html">Sports</a></li>
             <li><a href="spy-film.html">Spy Film</a></li>
+            <li><a href="stand-up.html" aria-current="page">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Social and Political Commentary</h2>
-            <p>Specials tackling race, politics, culture, or societal issues with sharp wit.</p>
+        <!-- Social and Political Commentary Section -->
+        <section class="movie-section" aria-labelledby="social-political-heading">
+            <header class="section-header">
+                <h2 id="social-political-heading">Social and Political Commentary</h2>
+                <p>Specials tackling race, politics, culture, or societal issues with sharp wit.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 specials</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/stand-up/Dave Chappelle - Killin Them Softly.jpg" alt="Dave Chappelle: Killin' Them Softly Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/stand-up/Dave Chappelle - Killin Them Softly.jpg" alt="Dave Chappelle: Killin' Them Softly comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Dave Chappelle: Killin' Them Softly (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dave Chappelle: Killin' Them Softly (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A comedy classic with razor-sharp takes on race and culture. Still fresh, despite early-2000s vibe. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A comedy classic with razor-sharp takes on race and culture. Still fresh, despite early-2000s vibe.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/stand-up/Dave Chappelle - For What Its Worth.jpg" alt="Dave Chappelle: For What It's Worth Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/stand-up/Dave Chappelle - For What Its Worth.jpg" alt="Dave Chappelle: For What It's Worth comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Dave Chappelle: For What It's Worth (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dave Chappelle: For What It's Worth (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Peak Chappelle, blending raw humor with social bite. Timeless, though a few dated references show age. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Peak Chappelle, blending raw humor with social bite. Timeless, though a few dated references show age.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/Dave Chappelle - Equanimity.jpg" alt="Dave Chappelle: Equanimity Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/Dave Chappelle - Equanimity.jpg" alt="Dave Chappelle: Equanimity comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Dave Chappelle: Equanimity (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dave Chappelle: Equanimity (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chappelle’s sharp wit tackles race and politics with ease. Some bits feel safe, but the delivery’s masterful. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chappelle's sharp wit tackles race and politics with ease. Some bits feel safe, but the delivery's masterful.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/Dave Chappelle - The Age of Spin.jpg" alt="Dave Chappelle: The Age of Spin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/Dave Chappelle - The Age of Spin.jpg" alt="Dave Chappelle: The Age of Spin comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Dave Chappelle: The Age of Spin (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dave Chappelle: The Age of Spin (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chappelle returns with bold takes on fame and identity. Trans jokes sparked debate, but the craft shines. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chappelle returns with bold takes on fame and identity. Trans jokes sparked debate, but the craft shines.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/George Carlin - Life Is Worth Losing.jpg" alt="George Carlin: Life Is Worth Losing Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/George Carlin - Life Is Worth Losing.jpg" alt="George Carlin: Life Is Worth Losing comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">George Carlin: Life Is Worth Losing (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>George Carlin: Life Is Worth Losing (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Carlin’s biting cynicism on politics and society shines. Darker tone may not click for all, but it’s vintage. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Carlin's biting cynicism on politics and society shines. Darker tone may not click for all, but it's vintage.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/Trevor Noah - Lost in Translation.jpg" alt="Trevor Noah: Lost in Translation Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/Trevor Noah - Lost in Translation.jpg" alt="Trevor Noah: Lost in Translation comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Trevor Noah: Lost in Translation (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Trevor Noah: Lost in Translation (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Noah hits his stride with sharp cultural commentary. Few misses, but peak storytelling. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Noah hits his stride with sharp cultural commentary. Few misses, but peak storytelling.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/stand-up/Dave Chappelle - The Bird Revelation.jpg" alt="Dave Chappelle: The Bird Revelation Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/stand-up/Dave Chappelle - The Bird Revelation.jpg" alt="Dave Chappelle: The Bird Revelation comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Dave Chappelle: The Bird Revelation (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dave Chappelle: The Bird Revelation (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Intimate and raw, but leans too hard on controversy. Strong moments overshadowed by uneven pacing. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Intimate and raw, but leans too hard on controversy. Strong moments overshadowed by uneven pacing.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="movie-section">
-            <h2>Personal and Autobiographical</h2>
-            <p>Specials rooted in personal experiences, family, or identity.</p>
+        </section>
+
+        <!-- Personal and Autobiographical Section -->
+        <section class="movie-section" aria-labelledby="personal-autobiographical-heading">
+            <header class="section-header">
+                <h2 id="personal-autobiographical-heading">Personal and Autobiographical</h2>
+                <p>Specials rooted in personal experiences, family, or identity.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 specials</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/Hasan Minhaj - Homecoming King.jpg" alt="Hasan Minhaj: Homecoming King Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/Hasan Minhaj - Homecoming King.jpg" alt="Hasan Minhaj: Homecoming King comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Hasan Minhaj: Homecoming King (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hasan Minhaj: Homecoming King (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A heartfelt dive into identity and family. Sharp storytelling, though some jokes feel rehearsed. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A heartfelt dive into identity and family. Sharp storytelling, though some jokes feel rehearsed.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/stand-up/Kevin Hart - Seriously Funny.jpg" alt="Kevin Hart: Seriously Funny Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/stand-up/Kevin Hart - Seriously Funny.jpg" alt="Kevin Hart: Seriously Funny comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Kevin Hart: Seriously Funny (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kevin Hart: Seriously Funny (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hart’s high-energy tales of family and life hit hard. Relatable but formulaic at times. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Hart's high-energy tales of family and life hit hard. Relatable but formulaic at times.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="movie-section">
-            <h2>Absurdist and Dark Humor</h2>
-            <p>Edgy, irreverent, or dark humor, often pushing boundaries.</p>
+        </section>
+
+        <!-- Absurdist and Dark Humor Section -->
+        <section class="movie-section" aria-labelledby="absurdist-dark-heading">
+            <header class="section-header">
+                <h2 id="absurdist-dark-heading">Absurdist and Dark Humor</h2>
+                <p>Edgy, irreverent, or dark humor, often pushing boundaries.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 specials</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/stand-up/Richard Pryor - Live in Concert.jpg" alt="Richard Pryor: Live in Concert Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/stand-up/Richard Pryor - Live in Concert.jpg" alt="Richard Pryor: Live in Concert comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Richard Pryor: Live in Concert (1979)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Richard Pryor: Live in Concert (1979)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A comedy landmark with raw, fearless storytelling. Dated in spots, but Pryor’s genius endures. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A comedy landmark with raw, fearless storytelling. Dated in spots, but Pryor's genius endures.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/Louis CK - Shameless.jpg" alt="Louis C.K.: Shameless Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/Louis CK - Shameless.jpg" alt="Louis C.K.: Shameless comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Louis C.K.: Shameless (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Louis C.K.: Shameless (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>C.K.’s early gem, blending dark humor with honesty. Raw production, but the laughs land. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>C.K.'s early gem, blending dark humor with honesty. Raw production, but the laughs land.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/Louis CK - Chewed Up.jpg" alt="Louis C.K.: Chewed Up Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/Louis CK - Chewed Up.jpg" alt="Louis C.K.: Chewed Up comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Louis C.K.: Chewed Up (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Louis C.K.: Chewed Up (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Raw and fearless, C.K. dissects life’s absurdities. Edgy humor may grate for some, but it’s tight. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Raw and fearless, C.K. dissects life's absurdities. Edgy humor may grate for some, but it's tight.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/stand-up/Louis CK - Hilarious.jpg" alt="Louis C.K.: Hilarious Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/stand-up/Louis CK - Hilarious.jpg" alt="Louis C.K.: Hilarious comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Louis C.K.: Hilarious (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Louis C.K.: Hilarious (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Peak C.K. with sharp self-deprecation and wit. A few dated jokes, but the set holds up. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Peak C.K. with sharp self-deprecation and wit. A few dated jokes, but the set holds up.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/stand-up/Louis CK - Sincerely Louis CK.jpg" alt="Louis C.K.: Sincerely Louis C.K. Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/stand-up/Louis CK - Sincerely Louis CK.jpg" alt="Louis C.K.: Sincerely Louis C.K. comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Louis C.K.: Sincerely Louis C.K. (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Louis C.K.: Sincerely Louis C.K. (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Post-scandal return with bold but divisive humor. Some laughs, but controversy overshadows craft. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Post-scandal return with bold but divisive humor. Some laughs, but controversy overshadows craft.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/stand-up/Louis CK - Sorry.jpg" alt="Louis C.K.: Sorry Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/stand-up/Louis CK - Sorry.jpg" alt="Louis C.K.: Sorry comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Louis C.K.: Sorry (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Louis C.K.: Sorry (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>C.K. leans into edgy humor post-comeback. Funny but repetitive; lacks earlier specials’ depth. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>C.K. leans into edgy humor post-comeback. Funny but repetitive; lacks earlier specials' depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/stand-up/Matt Rife - Natural Selection.webp" alt="Matt Rife: Natural Selection Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/stand-up/Matt Rife - Natural Selection.webp" alt="Matt Rife: Natural Selection comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Matt Rife: Natural Selection (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Matt Rife: Natural Selection (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rife’s crowd-work-heavy set feels forced. Domestic violence joke drew heavy backlash, sinking impact. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rife's crowd-work-heavy set feels forced. Domestic violence joke drew heavy backlash, sinking impact.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="movie-section">
-            <h2>Cultural and Local Humor</h2>
-            <p>Specials with strong ties to specific cultural contexts, especially South African humor.</p>
+        </section>
+
+        <!-- Cultural and Local Humor Section -->
+        <section class="movie-section" aria-labelledby="cultural-local-heading">
+            <header class="section-header">
+                <h2 id="cultural-local-heading">Cultural and Local Humor</h2>
+                <p>Specials with strong ties to specific cultural contexts, especially South African humor.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 specials</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/stand-up/Trevor Noah - African American.jpg" alt="Trevor Noah: African American Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/stand-up/Trevor Noah - African American.jpg" alt="Trevor Noah: African American comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Trevor Noah: African American (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Trevor Noah: African American (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Noah’s cross-cultural humor shines in this early special. Solid but not as polished as later work. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Noah's cross-cultural humor shines in this early special. Solid but not as polished as later work.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/stand-up/Trevor Noah - Its My Culture.jpg" alt="Trevor Noah: It's My Culture Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/stand-up/Trevor Noah - Its My Culture.jpg" alt="Trevor Noah: It's My Culture comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Trevor Noah: It's My Culture (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Trevor Noah: It's My Culture (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Noah’s take on South African life is warm and funny. Strong but not groundbreaking. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Noah's take on South African life is warm and funny. Strong but not groundbreaking.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/stand-up/Trevor Noah - Thats Racist.jpg" alt="Trevor Noah: That's Racist Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/stand-up/Trevor Noah - Thats Racist.jpg" alt="Trevor Noah: That's Racist comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Trevor Noah: That's Racist (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Trevor Noah: That's Racist (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Early Noah tackles race with charm. Rough edges show, but the humor lands well. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Early Noah tackles race with charm. Rough edges show, but the humor lands well.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/stand-up/Trevor Noah - I Wish You Would.jpg" alt="Trevor Noah: I Wish You Would Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/stand-up/Trevor Noah - I Wish You Would.jpg" alt="Trevor Noah: I Wish You Would comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Trevor Noah: I Wish You Would (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Trevor Noah: I Wish You Would (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Noah’s global perspective delivers laughs on culture and politics. Safe at times, but polished. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Noah's global perspective delivers laughs on culture and politics. Safe at times, but polished.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/stand-up/Mashabela Galane - Rock the Mother Tongue.jpg" alt="Mashabela Galane: Rock the Mother Tongue Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/stand-up/Mashabela Galane - Rock the Mother Tongue.jpg" alt="Mashabela Galane: Rock the Mother Tongue comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Mashabela Galane: Rock the Mother Tongue (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mashabela Galane: Rock the Mother Tongue (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>South African humor with linguistic charm. Local appeal strong, but pacing drags for wider audiences. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>South African humor with linguistic charm. Local appeal strong, but pacing drags for wider audiences.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/stand-up/Trevor Noah - Daywalker 2.0.jpg" alt="Trevor Noah: Daywalker 2.0 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/stand-up/Trevor Noah - Daywalker 2.0.jpg" alt="Trevor Noah: Daywalker 2.0 comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Trevor Noah: Daywalker 2.0 (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Trevor Noah: Daywalker 2.0 (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Early Noah with sharp South African wit. Fun but raw, lacking later specials’ finesse. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Early Noah with sharp South African wit. Fun but raw, lacking later specials' finesse.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/stand-up/Comedy Venack.png" alt="Comedy Venack Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/stand-up/Comedy Venack.png" alt="Comedy Venack comedy special poster" loading="lazy">
+                        <figcaption class="sr-only">Comedy Venack (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Comedy Venack (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A lesser-known South African comedy special with local flair. Jokes land unevenly, and production feels dated. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A lesser-known South African comedy special with local flair. Jokes land unevenly, and production feels dated.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

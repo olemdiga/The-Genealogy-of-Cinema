@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Horror</title>
+    <title>Horror - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing horror movies I've watched, sorted by theme and rated by terror.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing horror movies I've watched, rated by terror. Explore supernatural thrillers, slasher classics, creature features, vampire tales, and survival horror.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Horror</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Spine-chilling tales of supernatural forces, relentless killers, monstrous creatures, and psychological terror that haunt your dreams.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 85 movies</span>
+            <span class="movie-count">7 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -38,6 +43,7 @@
             <li><a href="financial.html">Financial</a></li>
             <li><a href="heists.html">Heists</a></li>
             <li><a href="historical-biographical.html">Historical & Biographical</a></li>
+            <li><a href="horror.html" aria-current="page">Horror</a></li>
             <li><a href="literature.html">Literature</a></li>
             <li><a href="martial-arts.html">Martial Arts</a></li>
             <li><a href="monsters-aliens.html">Monsters & Aliens</a></li>
@@ -53,835 +59,1263 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Supernatural and Psychological Horror</h2>
-            <p>Films that haunt with ghosts, demons, and mind-bending terrors.</p>
+        <!-- Supernatural and Psychological Horror Section -->
+        <section class="movie-section" aria-labelledby="supernatural-horror-heading">
+            <header class="section-header">
+                <h2 id="supernatural-horror-heading">Supernatural and Psychological Horror</h2>
+                <p>Films that haunt with ghosts, demons, and mind-bending terrors.</p>
+                <div class="section-stats">
+                    <span class="movie-count">15 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/horror/Get Out.jpg" alt="Get Out Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/horror/Get Out.jpg" alt="Get Out movie poster" loading="lazy">
+                        <figcaption class="sr-only">Get Out (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Get Out (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Black man's visit to his white girlfriend's family unveils a sinister psychological trap. Razor-sharp social horror. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Black man's visit to his white girlfriend's family unveils a sinister psychological trap. Razor-sharp social horror that cuts deep.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/horror/The Sixth Sense.jpg" alt="The Sixth Sense Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/horror/The Sixth Sense.jpg" alt="The Sixth Sense movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Sixth Sense (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Sixth Sense (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A boy who sees ghosts and a psychologist unravel a chilling mystery. Iconic twisty terror. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A boy who sees ghosts and a psychologist unravel a chilling mystery. Iconic twisty terror that still haunts.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/horror/US.jpg" alt="Us Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/horror/US.jpg" alt="Us movie poster" loading="lazy">
+                        <figcaption class="sr-only">Us (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Us (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A family's vacation turns into a doppelgänger nightmare, slicing into class and identity. Eerie allegory. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A family's vacation turns into a doppelgänger nightmare, slicing into class and identity. Eerie allegory with sharp teeth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/horror/The Conjuring.jpg" alt="The Conjuring Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/horror/The Conjuring.jpg" alt="The Conjuring movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Conjuring (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Conjuring (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Paranormal investigators battle demonic forces in a haunted farmhouse. Spine-chilling suspense. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Paranormal investigators battle demonic forces in a haunted farmhouse. Spine-chilling suspense that grips tight.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/The Lighthouse.jpg" alt="The Lighthouse Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/The Lighthouse.jpg" alt="The Lighthouse movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lighthouse (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Lighthouse (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two lighthouse keepers descend into madness on a desolate island. Claustrophobic cosmic dread. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two lighthouse keepers descend into madness on a desolate island. Claustrophobic cosmic dread in black and white.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/Annabelle Creation.jpg" alt="Annabelle Creation Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/Annabelle Creation.jpg" alt="Annabelle Creation movie poster" loading="lazy">
+                        <figcaption class="sr-only">Annabelle: Creation (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Annabelle: Creation (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dollmaker's tragic loss births a demonic doll tormenting orphans. Creepy origin story. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A dollmaker's tragic loss births a demonic doll tormenting orphans. Creepy origin story with solid scares.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Annabelle.jpg" alt="Annabelle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Annabelle.jpg" alt="Annabelle movie poster" loading="lazy">
+                        <figcaption class="sr-only">Annabelle (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Annabelle (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cursed doll unleashes terror on a young couple. Spooky but predictable. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cursed doll unleashes terror on a young couple. Spooky but predictable demonic toy tale.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Annabelle Comes Home.jpg" alt="Annabelle Comes Home Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Annabelle Comes Home.jpg" alt="Annabelle Comes Home movie poster" loading="lazy">
+                        <figcaption class="sr-only">Annabelle Comes Home (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Annabelle Comes Home (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Annabelle awakens evil artifacts in a paranormal investigators' home. Haunted house havoc. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Annabelle awakens evil artifacts in a paranormal investigators' home. Haunted house havoc with familiar frights.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/The Nun.jpg" alt="The Nun Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/The Nun.jpg" alt="The Nun movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Nun (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Nun (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A priest and novitiate face a demonic nun in a gothic abbey. Atmospheric but thin. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A priest and novitiate face a demonic nun in a gothic abbey. Atmospheric but thin on substance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Devil.jpg" alt="Devil Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Devil.jpg" alt="Devil movie poster" loading="lazy">
+                        <figcaption class="sr-only">Devil (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Devil (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stranded elevator passengers face supernatural evil. Claustrophobic but clichéd. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stranded elevator passengers face supernatural evil. Claustrophobic but clichéd demonic game.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/The Turning.jpg" alt="The Turning Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/The Turning.jpg" alt="The Turning movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Turning (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Turning (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A governess faces eerie children and ghostly visions in a muddled manor. Confusing classic remake. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A governess faces eerie children and ghostly visions in a muddled manor. Confusing classic remake that loses its way.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Beloved.jpg" alt="Beloved Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Beloved.jpg" alt="Beloved movie poster" loading="lazy">
+                        <figcaption class="sr-only">Beloved (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Beloved (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A freed slave is haunted by her past's ghostly embodiment. Ambitious but uneven. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A freed slave is haunted by her past's ghostly embodiment. Ambitious but uneven supernatural drama.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/The Grudge.jpg" alt="The Grudge Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/The Grudge.jpg" alt="The Grudge movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Grudge (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Grudge (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cursed house traps victims in vengeful ghost's grip. Creepy but repetitive. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cursed house traps victims in vengeful ghost's grip. Creepy but repetitive J-horror remake.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/The Grudge 2.jpg" alt="The Grudge 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/The Grudge 2.jpg" alt="The Grudge 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Grudge 2 (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Grudge 2 (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Curse spreads across borders, haunting new victims. Stale scares recycle. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Curse spreads across borders, haunting new victims. Stale scares recycle the same ghostly formula.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/Truth or Dare.jpg" alt="Truth or Dare Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/Truth or Dare.jpg" alt="Truth or Dare movie poster" loading="lazy">
+                        <figcaption class="sr-only">Truth or Dare (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Truth or Dare (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A deadly game of truth or dare traps teens in supernatural peril. Silly scares. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A deadly game of truth or dare traps teens in supernatural peril. Silly scares with forced frights.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Slasher and Gore</h2>
-            <p>Blood-soaked tales of relentless killers and brutal violence.</p>
+        <!-- Slasher and Gore Section -->
+        <section class="movie-section" aria-labelledby="slasher-horror-heading">
+            <header class="section-header">
+                <h2 id="slasher-horror-heading">Slasher and Gore</h2>
+                <p>Blood-soaked tales of relentless killers and brutal violence.</p>
+                <div class="section-stats">
+                    <span class="movie-count">24 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/horror/Halloween.jpg" alt="Halloween Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/horror/Halloween.jpg" alt="Halloween movie poster" loading="lazy">
+                        <figcaption class="sr-only">Halloween (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Halloween (1978)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Michael Myers stalks teens with chilling precision, birthing slasher legend. Terrifying simplicity. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Michael Myers stalks teens with chilling precision, birthing slasher legend. Terrifying simplicity that defined a genre.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/Carrie.jpg" alt="Carrie Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/Carrie.jpg" alt="Carrie movie poster" loading="lazy">
+                        <figcaption class="sr-only">Carrie (1976)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Carrie (1976)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bullied teen unleashes telekinetic wrath at prom. Bloody coming-of-age horror. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bullied teen unleashes telekinetic wrath at prom. Bloody coming-of-age horror with emotional depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/Saw II.jpg" alt="Saw II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/Saw II.jpg" alt="Saw II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Saw II (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Saw II (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jigsaw's deadly traps escalate, testing victims' will to survive. Gory puzzle box. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jigsaw's deadly traps escalate, testing victims' will to survive. Gory puzzle box that tightens the screws.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Saw V.jpg" alt="Saw V Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Saw V.jpg" alt="Saw V movie poster" loading="lazy">
+                        <figcaption class="sr-only">Saw V (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Saw V (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jigsaw's legacy continues with new traps and disciples. Gruesome but formulaic. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jigsaw's legacy continues with new traps and disciples. Gruesome but formulaic franchise entry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Saw VI.jpg" alt="Saw VI Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Saw VI.jpg" alt="Saw VI movie poster" loading="lazy">
+                        <figcaption class="sr-only">Saw VI (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Saw VI (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Traps target insurance greed, weaving Jigsaw's brutal morality. Gory social commentary. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Traps target insurance greed, weaving Jigsaw's brutal morality. Gory social commentary with bite.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Jigsaw.jpg" alt="Jigsaw Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Jigsaw.jpg" alt="Jigsaw movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jigsaw (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jigsaw (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jigsaw's games resurface, baffling investigators with bloody traps. Revival lacks edge. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jigsaw's games resurface, baffling investigators with bloody traps. Revival lacks the original's sharp edge.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Spiral - From the Book of Saw.jpg" alt="Spiral - From the Book of Saw Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Spiral - From the Book of Saw.jpg" alt="Spiral - From the Book of Saw movie poster" loading="lazy">
+                        <figcaption class="sr-only">Spiral: From the Book of Saw (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spiral: From the Book of Saw (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A copycat killer targets cops with Jigsaw-inspired traps. Gritty but uninspired. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A copycat killer targets cops with Jigsaw-inspired traps. Gritty but uninspired franchise extension.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Friday the 13th.jpg" alt="Friday the 13th Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Friday the 13th.jpg" alt="Friday the 13th movie poster" loading="lazy">
+                        <figcaption class="sr-only">Friday the 13th (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Friday the 13th (1980)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Camp counselors face a vengeful killer at Crystal Lake. Classic slasher staple. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Camp counselors face a vengeful killer at Crystal Lake. Classic slasher staple with iconic shocks.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Childs Play.jpg" alt="Child's Play Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Childs Play.jpg" alt="Child's Play movie poster" loading="lazy">
+                        <figcaption class="sr-only">Child's Play (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Child's Play (1988)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A killer doll possessed by a serial killer hunts a boy. Creepy toy terror. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A killer doll possessed by a serial killer hunts a boy. Creepy toy terror that spawned a franchise.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Childs Play 2.jpg" alt="Child's Play 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Childs Play 2.jpg" alt="Child's Play 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Child's Play 2 (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Child's Play 2 (1990)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chucky returns to torment his young victim in foster care. Doll-driven dread. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chucky returns to torment his young victim in foster care. Doll-driven dread with factory frights.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Childs Play 3.jpg" alt="Child's Play 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Childs Play 3.jpg" alt="Child's Play 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Child's Play 3 (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Child's Play 3 (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chucky stalks a teen in military school. Repetitive killer doll chaos. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chucky stalks a teen in military school. Repetitive killer doll chaos running out of ideas.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Childs Play 2019.jpg" alt="Child's Play 2019 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Childs Play 2019.jpg" alt="Child's Play 2019 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Child's Play (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Child's Play (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A tech-savvy doll goes rogue, terrorizing a boy and his mom. Modernized Chucky lacks soul. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A tech-savvy doll goes rogue, terrorizing a boy and his mom. Modernized Chucky lacks the original's soul.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Curse of Chucky.jpg" alt="Curse of Chucky Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Curse of Chucky.jpg" alt="Curse of Chucky movie poster" loading="lazy">
+                        <figcaption class="sr-only">Curse of Chucky (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Curse of Chucky (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chucky terrorizes a family with a dark secret. Back-to-basics bloodshed. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chucky terrorizes a family with a dark secret. Back-to-basics bloodshed with gothic tones.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Cult of Chucky.jpg" alt="Cult of Chucky Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Cult of Chucky.jpg" alt="Cult of Chucky movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cult of Chucky (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cult of Chucky (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chucky multiplies in an asylum, sowing chaos. Gory but gimmicky. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chucky multiplies in an asylum, sowing chaos. Gory but gimmicky franchise stretch.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Saw 3D.jpg" alt="Saw 3D Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Saw 3D.jpg" alt="Saw 3D movie poster" loading="lazy">
+                        <figcaption class="sr-only">Saw 3D (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Saw 3D (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jigsaw's traps go 3D, but the shocks feel tired. Gimmicky gore fest. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jigsaw's traps go 3D, but the shocks feel tired. Gimmicky gore fest that strains the formula.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Hostel.jpg" alt="Hostel Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Hostel.jpg" alt="Hostel movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hostel (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hostel (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Backpackers fall prey to a torture-for-hire ring. Disturbing but shallow. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Backpackers fall prey to a torture-for-hire ring. Disturbing but shallow torture porn.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Seed of Chucky.jpg" alt="Seed of Chucky Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Seed of Chucky.jpg" alt="Seed of Chucky movie poster" loading="lazy">
+                        <figcaption class="sr-only">Seed of Chucky (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Seed of Chucky (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chucky's family expands with a new killer doll in campy chaos. Silly slaughter. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chucky's family expands with a new killer doll in campy chaos. Silly slaughter that jumps the shark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Bride of Chucky.jpg" alt="Bride of Chucky Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Bride of Chucky.jpg" alt="Bride of Chucky movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bride of Chucky (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bride of Chucky (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chucky gains a doll bride for a murderous road trip. Campy killer couple. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chucky gains a doll bride for a murderous road trip. Campy killer couple with meta humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/The Texas Chainsaw Massacre.jpg" alt="The Texas Chainsaw Massacre Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/The Texas Chainsaw Massacre.jpg" alt="The Texas Chainsaw Massacre movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Texas Chainsaw Massacre (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Texas Chainsaw Massacre (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teens face Leatherface's chainsaw in a gruesome remake. Brutal but basic. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Teens face Leatherface's chainsaw in a gruesome remake. Brutal but basic slasher retread.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/The Texas Chainsaw Massacre_ The Beginning.jpg" alt="The Texas Chainsaw Massacre - The Beginning Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/The Texas Chainsaw Massacre_ The Beginning.jpg" alt="The Texas Chainsaw Massacre: The Beginning movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Texas Chainsaw Massacre: The Beginning (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Texas Chainsaw Massacre: The Beginning (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Leatherface's origin unfolds in a bloody prequel. Gory but redundant. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Leatherface's origin unfolds in a bloody prequel. Gory but redundant backstory.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/Texas Chainsaw 3D.jpg" alt="Texas Chainsaw 3D Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/Texas Chainsaw 3D.jpg" alt="Texas Chainsaw 3D movie poster" loading="lazy">
+                        <figcaption class="sr-only">Texas Chainsaw 3D (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Texas Chainsaw 3D (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Leatherface returns for a 3D slaughter with family ties. Messy legacy sequel. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Leatherface returns for a 3D slaughter with family ties. Messy legacy sequel with identity crisis.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/Texas Chainsaw Massacre 2022.jpg" alt="Texas Chainsaw Massacre 2022 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/Texas Chainsaw Massacre 2022.jpg" alt="Texas Chainsaw Massacre 2022 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Texas Chainsaw Massacre (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Texas Chainsaw Massacre (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Leatherface resurfaces to terrorize influencers in a gentrified Texas town. Bloody but uninspired retread. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Leatherface resurfaces to terrorize influencers in a gentrified Texas town. Bloody but uninspired retread.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/Wrong Turn.jpg" alt="Wrong Turn Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/Wrong Turn.jpg" alt="Wrong Turn movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wrong Turn (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wrong Turn (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stranded travelers face cannibalistic hillbillies. Gory backwoods chase. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stranded travelers face cannibalistic hillbillies. Gory backwoods chase with mutant menace.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/horror/Wrong Turn 2.jpg" alt="Wrong Turn 2 - Dead End Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/horror/Wrong Turn 2.jpg" alt="Wrong Turn 2: Dead End movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wrong Turn 2: Dead End (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wrong Turn 2: Dead End (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Reality show contestants meet mutant cannibals. Trashy gore galore. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Reality show contestants meet mutant cannibals. Trashy gore galore with cheap thrills.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/horror/Wrong Turn 3.jpg" alt="Wrong Turn 3 - Left for Dead Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/horror/Wrong Turn 3.jpg" alt="Wrong Turn 3: Left for Dead movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wrong Turn 3: Left for Dead (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wrong Turn 3: Left for Dead (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Prisoners and guards face cannibals in woods. Cheap thrills fizzle. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Prisoners and guards face cannibals in woods. Cheap thrills fizzle in direct-to-video sequel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/horror/Wrong Turn 5 - Bloodlines.jpg" alt="Wrong Turn 5 - Bloodlines Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/horror/Wrong Turn 5 - Bloodlines.jpg" alt="Wrong Turn 5: Bloodlines movie poster" loading="lazy">
+                        <figcaption class="sr-only">Wrong Turn 5: Bloodlines (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wrong Turn 5: Bloodlines (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Festival-goers face cannibal clan in lifeless sequel. Gore without purpose. Rating: 1/10.</p>
+                        <h4>Overview</h4>
+                        <p>Festival-goers face cannibal clan in lifeless sequel. Gore without purpose or creativity.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Creature and Monster Horror</h2>
-            <p>Beasts, mutants, and unnatural creatures unleash primal fear.</p>
+        <!-- Creature and Monster Horror Section -->
+        <section class="movie-section" aria-labelledby="creature-horror-heading">
+            <header class="section-header">
+                <h2 id="creature-horror-heading">Creature and Monster Horror</h2>
+                <p>Beasts, mutants, and unnatural creatures unleash primal fear.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/The Mist.jpg" alt="The Mist Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/The Mist.jpg" alt="The Mist movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Mist (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Mist (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Trapped townsfolk face otherworldly creatures in a fog-shrouded store. Bleak monster mayhem. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Trapped townsfolk face otherworldly creatures in a fog-shrouded store. Bleak monster mayhem with human horror.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/Jeepers Creepers.jpg" alt="Jeepers Creepers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/Jeepers Creepers.jpg" alt="Jeepers Creepers movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jeepers Creepers (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jeepers Creepers (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Siblings encounter a winged demon feeding on humans. Eerie road-trip terror. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Siblings encounter a winged demon feeding on humans. Eerie road-trip terror with memorable monster.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Jeepers Creepers 2.jpg" alt="Jeepers Creepers 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Jeepers Creepers 2.jpg" alt="Jeepers Creepers 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jeepers Creepers 2 (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jeepers Creepers 2 (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A busload of teens battles the Creeper's feeding frenzy. Monster mash sequel. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A busload of teens battles the Creeper's feeding frenzy. Monster mash sequel with trapped prey.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Beast.jpg" alt="Beast Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Beast.jpg" alt="Beast movie poster" loading="lazy">
+                        <figcaption class="sr-only">Beast (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Beast (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rogue lion stalks a family in the African savanna. Tense but formulaic. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rogue lion stalks a family in the African savanna. Tense but formulaic survival thriller.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Anaconda.jpg" alt="Anaconda Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Anaconda.jpg" alt="Anaconda movie poster" loading="lazy">
+                        <figcaption class="sr-only">Anaconda (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Anaconda (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A film crew battles a giant snake in the Amazon. Campy creature chaos. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A film crew battles a giant snake in the Amazon. Campy creature chaos with B-movie charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Anacondas - The Hunt for the Blood Orchid.jpg" alt="Anacondas - The Hunt for the Blood Orchid Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Anacondas - The Hunt for the Blood Orchid.jpg" alt="Anacondas: The Hunt for the Blood Orchid movie poster" loading="lazy">
+                        <figcaption class="sr-only">Anacondas: The Hunt for the Blood Orchid (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Anacondas: The Hunt for the Blood Orchid (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Scientists hunt a rare flower, hunted by giant snakes. Cheesy jungle romp. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Scientists hunt a rare flower, hunted by giant snakes. Cheesy jungle romp with slithery threats.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Jeepers Creepers 3.jpg" alt="Jeepers Creepers 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Jeepers Creepers 3.jpg" alt="Jeepers Creepers 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jeepers Creepers 3 (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jeepers Creepers 3 (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Creeper's rampage continues with weaker scares. Monster fatigue sets in. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Creeper's rampage continues with weaker scares. Monster fatigue sets in for tired franchise.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/Cyclops.jpg" alt="Cyclops Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/Cyclops.jpg" alt="Cyclops movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cyclops (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cyclops (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A one-eyed beast battles Romans in a low-budget spectacle. Creature feature flop. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A one-eyed beast battles Romans in a low-budget spectacle. Creature feature flop with mythical mishaps.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Vampire and Occult Horror</h2>
-            <p>Bloodsuckers and dark rituals cast shadows of dread.</p>
+        <!-- Vampire and Occult Horror Section -->
+        <section class="movie-section" aria-labelledby="vampire-horror-heading">
+            <header class="section-header">
+                <h2 id="vampire-horror-heading">Vampire and Occult Horror</h2>
+                <p>Bloodsuckers and dark rituals cast shadows of dread.</p>
+                <div class="section-stats">
+                    <span class="movie-count">13 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/From Dusk Till Dawn.jpg" alt="From Dusk Till Dawn Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/From Dusk Till Dawn.jpg" alt="From Dusk Till Dawn movie poster" loading="lazy">
+                        <figcaption class="sr-only">From Dusk Till Dawn (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>From Dusk Till Dawn (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Criminals stumble into a vampire-infested bar. Genre-blending bloody chaos. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Criminals stumble into a vampire-infested bar. Genre-blending bloody chaos with Tarantino flair.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Day Shift.jpg" alt="Day Shift Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Day Shift.jpg" alt="Day Shift movie poster" loading="lazy">
+                        <figcaption class="sr-only">Day Shift (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Day Shift (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A vampire hunter moonlights as a pool cleaner in LA. Action-packed bloodsucking romp. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A vampire hunter moonlights as a pool cleaner in LA. Action-packed bloodsucking romp with humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Blade.jpg" alt="Blade Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Blade.jpg" alt="Blade movie poster" loading="lazy">
+                        <figcaption class="sr-only">Blade (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Blade (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A half-vampire hunts bloodsuckers with style. Comic-book carnage. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A half-vampire hunts bloodsuckers with style. Comic-book carnage that defined modern vampire action.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Blade II.jpg" alt="Blade II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Blade II.jpg" alt="Blade II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Blade II (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Blade II (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Blade teams with vampires against a mutant threat. Gory but overstuffed. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Blade teams with vampires against a mutant threat. Gory but overstuffed sequel with visual style.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Blade Trinity.jpg" alt="Blade - Trinity Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Blade Trinity.jpg" alt="Blade: Trinity movie poster" loading="lazy">
+                        <figcaption class="sr-only">Blade: Trinity (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Blade: Trinity (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Blade battles Dracula in a cluttered finale. Vampire saga stumbles. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Blade battles Dracula in a cluttered finale. Vampire saga stumbles with weak execution.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/From Dusk Till Dawn 2 - Texas Blood Money.jpg" alt="From Dusk Till Dawn 2 - Texas Blood Money Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/From Dusk Till Dawn 2 - Texas Blood Money.jpg" alt="From Dusk Till Dawn 2: Texas Blood Money movie poster" loading="lazy">
+                        <figcaption class="sr-only">From Dusk Till Dawn 2: Texas Blood Money (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>From Dusk Till Dawn 2: Texas Blood Money (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bank robbers face vampires in a heist gone undead. Cheap bloodsucker sequel. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bank robbers face vampires in a heist gone undead. Cheap bloodsucker sequel with direct-to-video feel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/From Dusk Till Dawn 3 - The Hangmans Daughter.jpg" alt="From Dusk Till Dawn 3 - The Hangman's Daughter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/From Dusk Till Dawn 3 - The Hangmans Daughter.jpg" alt="From Dusk Till Dawn 3: The Hangman's Daughter movie poster" loading="lazy">
+                        <figcaption class="sr-only">From Dusk Till Dawn 3: The Hangman's Daughter (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>From Dusk Till Dawn 3: The Hangman's Daughter (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Outlaws encounter vampires in a Western prequel. Fangs fall flat. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Outlaws encounter vampires in a Western prequel. Fangs fall flat in uninspired origin story.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Twilight.jpg" alt="Twilight Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Twilight.jpg" alt="Twilight movie poster" loading="lazy">
+                        <figcaption class="sr-only">Twilight (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Twilight (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen falls for a brooding vampire in a romantic saga. Sparkly melodrama. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen falls for a brooding vampire in a romantic saga. Sparkly melodrama that redefined vampire teens.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/The Twilight Saga - New Moon.jpg" alt="The Twilight Saga - New Moon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/The Twilight Saga - New Moon.jpg" alt="The Twilight Saga: New Moon movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Twilight Saga: New Moon (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Twilight Saga: New Moon (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Vampire romance deepens with werewolf rivalry. Mopey teen angst. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Vampire romance deepens with werewolf rivalry. Mopey teen angst with supernatural love triangle.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/The Twilight Saga - Eclipse.jpg" alt="The Twilight Saga - Eclipse Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/The Twilight Saga - Eclipse.jpg" alt="The Twilight Saga: Eclipse movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Twilight Saga: Eclipse (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Twilight Saga: Eclipse (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Love triangle escalates amid vampire-army threat. Romantic tension drags. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Love triangle escalates amid vampire-army threat. Romantic tension drags action-packed entry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/The Twilight Saga - Breaking Dawn - Part 1.jpg" alt="The Twilight Saga - Breaking Dawn - Part 1 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/The Twilight Saga - Breaking Dawn - Part 1.jpg" alt="The Twilight Saga: Breaking Dawn - Part 1 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Twilight Saga: Breaking Dawn - Part 1 (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Twilight Saga: Breaking Dawn - Part 1 (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Vampire wedding leads to supernatural pregnancy drama. Overwrought romance. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Vampire wedding leads to supernatural pregnancy drama. Overwrought romance with body horror elements.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/The Twilight Saga - Breaking Dawn - Part 2.jpg" alt="The Twilight Saga - Breaking Dawn - Part 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/The Twilight Saga - Breaking Dawn - Part 2.jpg" alt="The Twilight Saga: Breaking Dawn - Part 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Twilight Saga: Breaking Dawn - Part 2 (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Twilight Saga: Breaking Dawn - Part 2 (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Vampire clan battles for hybrid child's survival. Saga ends with a whimper. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Vampire clan battles for hybrid child's survival. Saga ends with a whimper and anticlimactic twist.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/Sinners.jpg" alt="Sinners Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/Sinners.jpg" alt="Sinners movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sinners (2025)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sinners (2025)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Twins return to their hometown, uncovering occult secrets and demonic forces in a dance of darkness. Lacks bite. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Twins return to their hometown, uncovering occult secrets and demonic forces in a dance of darkness. Lacks bite and originality.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Survival and Thriller Horror</h2>
-            <p>Desperate fights for survival against human and inhuman threats.</p>
+        <!-- Survival and Thriller Horror Section -->
+        <section class="movie-section" aria-labelledby="survival-horror-heading">
+            <header class="section-header">
+                <h2 id="survival-horror-heading">Survival and Thriller Horror</h2>
+                <p>Desperate fights for survival against human and inhuman threats.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/horror/Dont Breathe.jpg" alt="Don't Breathe Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/horror/Dont Breathe.jpg" alt="Don't Breathe movie poster" loading="lazy">
+                        <figcaption class="sr-only">Don't Breathe (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Don't Breathe (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Thieves break into a blind veteran's home, facing his deadly traps. Tense cat-and-mouse terror. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Thieves break into a blind veteran's home, facing his deadly traps. Tense cat-and-mouse terror with brutal twists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/horror/It Chapter Two.jpg" alt="It Chapter Two Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/horror/It Chapter Two.jpg" alt="It Chapter Two movie poster" loading="lazy">
+                        <figcaption class="sr-only">It Chapter Two (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>It Chapter Two (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Adults face Pennywise's return, confronting childhood fears. Sprawling but spooky. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Adults face Pennywise's return, confronting childhood fears. Sprawling but spooky clown conclusion.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/The Belko Experiment.jpg" alt="The Belko Experiment Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/The Belko Experiment.jpg" alt="The Belko Experiment movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Belko Experiment (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Belko Experiment (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Office workers are forced into a deadly kill-or-be-killed game. Corporate carnage. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Office workers are forced into a deadly kill-or-be-killed game. Corporate carnage with social commentary.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Escape Room.jpg" alt="Escape Room Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Escape Room.jpg" alt="Escape Room movie poster" loading="lazy">
+                        <figcaption class="sr-only">Escape Room (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Escape Room (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Strangers face lethal puzzles in a sadistic escape room. Thrilling but thin. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Strangers face lethal puzzles in a sadistic escape room. Thrilling but thin premise stretched thin.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/The Hunt.jpg" alt="The Hunt Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/The Hunt.jpg" alt="The Hunt movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hunt (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hunt (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Elites hunt humans for sport in a satirical bloodbath. Provocative but messy. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Elites hunt humans for sport in a satirical bloodbath. Provocative but messy political horror.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/The First Purge.jpg" alt="The First Purge Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/The First Purge.jpg" alt="The First Purge movie poster" loading="lazy">
+                        <figcaption class="sr-only">The First Purge (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The First Purge (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A social experiment unleashes all-crime chaos in a community. Violent but obvious. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A social experiment unleashes all-crime chaos in a community. Violent but obvious franchise origin.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/The Hills Have Eyes.jpg" alt="The Hills Have Eyes Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/The Hills Have Eyes.jpg" alt="The Hills Have Eyes movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hills Have Eyes (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hills Have Eyes (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A family faces mutant cannibals in a desert nightmare. Gruesome survival slog. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A family faces mutant cannibals in a desert nightmare. Gruesome survival slog with brutal violence.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/The Hills Have Eyes 2.jpg" alt="The Hills Have Eyes 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/The Hills Have Eyes 2.jpg" alt="The Hills Have Eyes 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hills Have Eyes 2 (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hills Have Eyes 2 (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Soldiers battle desert mutants in a gory sequel. Repetitive survival horror. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Soldiers battle desert mutants in a gory sequel. Repetitive survival horror with diminished returns.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/The Collector.jpg" alt="The Collector Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/The Collector.jpg" alt="The Collector movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Collector (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Collector (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A thief becomes prey to a sadistic trap-setting killer. Brutal but derivative. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A thief becomes prey to a sadistic trap-setting killer. Brutal but derivative home invasion horror.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Possession and Cursed Objects</h2>
-            <p>Demonic forces and cursed items bring terror to the innocent.</p>
+        <!-- Possession and Cursed Objects Section -->
+        <section class="movie-section" aria-labelledby="possession-horror-heading">
+            <header class="section-header">
+                <h2 id="possession-horror-heading">Possession and Cursed Objects</h2>
+                <p>Demonic forces and cursed items bring terror to the innocent.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/horror/Drag Me To Hell.jpg" alt="Drag Me to Hell Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/horror/Drag Me To Hell.jpg" alt="Drag Me to Hell movie poster" loading="lazy">
+                        <figcaption class="sr-only">Drag Me to Hell (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Drag Me to Hell (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A banker cursed by a gypsy fights demonic torment. Campy possession panic. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A banker cursed by a gypsy fights demonic torment. Campy possession panic with Raimi flair.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/horror/Orphan.jpg" alt="Orphan Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/horror/Orphan.jpg" alt="Orphan movie poster" loading="lazy">
+                        <figcaption class="sr-only">Orphan (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Orphan (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An adopted girl hides a sinister secret, unraveling a family. Twisted child terror. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>An adopted girl hides a sinister secret, unraveling a family. Twisted child terror with shocking reveal.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Orphan - First Kill.jpg" alt="Orphan - First Kill Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Orphan - First Kill.jpg" alt="Orphan: First Kill movie poster" loading="lazy">
+                        <figcaption class="sr-only">Orphan: First Kill (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Orphan: First Kill (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Prequel reveals Esther's early deception and murders. Familiar twisted tricks. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Prequel reveals Esther's early deception and murders. Familiar twisted tricks with diminished impact.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Mirrors.jpg" alt="Mirrors Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Mirrors.jpg" alt="Mirrors movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mirrors (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mirrors (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cursed mirror unleashes demonic visions on a security guard. Reflective frights fade. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cursed mirror unleashes demonic visions on a security guard. Reflective frights fade quickly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/horror/Pet Sematary.jpg" alt="Pet Sematary Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/horror/Pet Sematary.jpg" alt="Pet Sematary movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pet Sematary (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pet Sematary (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A burial ground revives the dead with evil consequences. Creepy but flat remake. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A burial ground revives the dead with evil consequences. Creepy but flat remake of King classic.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Folk and Ritual Horror</h2>
-            <p>Ancient traditions and eerie rituals spawn unsettling dread.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-4">
-                    <img src="../img/horror/Carved.jpg" alt="Carved Cover">
-                    <div class="movie-title">
-                        <h3>Carved: The Slit-Mouthed Woman (2007)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A vengeful spirit with a slashed mouth hunts children. J-horror with chilling folklore. Rating: 4/10.</p>
-                    </div>
+        <!-- Folk and Ritual Horror Section -->
+        <section class="movie-section" aria-labelledby="folk-horror-heading">
+            <header class="section-header">
+                <h2 id="folk-horror-heading">Folk and Ritual Horror</h2>
+                <p>Ancient traditions and eerie rituals spawn unsettling dread.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
                 </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/horror/Carved.jpg" alt="Carved: The Slit-Mouthed Woman movie poster" loading="lazy">
+                        <figcaption class="sr-only">Carved: The Slit-Mouthed Woman (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Carved: The Slit-Mouthed Woman (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A vengeful spirit with a slashed mouth hunts children. J-horror with chilling folklore and urban legend roots.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

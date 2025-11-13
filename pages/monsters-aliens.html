@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Monsters & Aliens</title>
+    <title>Monsters & Aliens - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing monster and alien movies sorted by theme, with witty, razor-sharp overviews and objective ratings based on Rotten Tomatoes consensus.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing monster and alien movies I've watched, rated by spectacle. Explore alien encounters, monster mayhem, predator hunts, dinosaur revivals, and epic sci-fi fantasies.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Monsters & Aliens</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Cosmic creatures, prehistoric beasts, and extraterrestrial encounters in epic showdowns, terrifying invasions, and spectacular sci-fi fantasies.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 48 movies</span>
+            <span class="movie-count">11 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -41,6 +46,7 @@
             <li><a href="horror.html">Horror</a></li>
             <li><a href="literature.html">Literature</a></li>
             <li><a href="martial-arts.html">Martial Arts</a></li>
+            <li><a href="monsters-aliens.html" aria-current="page">Monsters & Aliens</a></li>
             <li><a href="music-dance.html">Music & Dance</a></li>
             <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
             <li><a href="relationships.html">Relationships</a></li>
@@ -53,553 +59,850 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Alien Encounters</h2>
-            <p>First contact or final stand - humans vs. extraterrestrial weirdos in cerebral showdowns.</p>
+        <!-- Alien Encounters Section -->
+        <section class="movie-section" aria-labelledby="alien-encounters-heading">
+            <header class="section-header">
+                <h2 id="alien-encounters-heading">Alien Encounters</h2>
+                <p>First contact or final stand - humans vs. extraterrestrial weirdos in cerebral showdowns.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/monsters-aliens/Alien.jpg" alt="Alien Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Alien.jpg" alt="Alien movie poster" loading="lazy">
+                        <figcaption class="sr-only">Alien (1979)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Alien (1979)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A xenomorph crash-lands on a space freighter, turning blue-collar grunts into cosmic chum. Haters call it slow, but that claustrophobic dread and Sigourney’s snarl are pure sci-fi gold. 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A xenomorph crash-lands on a space freighter, turning blue-collar grunts into cosmic chum. Haters call it slow, but that claustrophobic dread and Sigourney's snarl are pure sci-fi gold.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/monsters-aliens/Arrival.jpg" alt="Arrival Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Arrival.jpg" alt="Arrival movie poster" loading="lazy">
+                        <figcaption class="sr-only">Arrival (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Arrival (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Linguist decodes squid-aliens’ cryptic word salad to save Earth. Some moan about the pace, but Villeneuve’s brainy take on contact is a linguistic love letter to hope. 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Linguist decodes squid-aliens' cryptic word salad to save Earth. Some moan about the pace, but Villeneuve's brainy take on contact is a linguistic love letter to hope.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/monsters-aliens/E.T. the Extra-Terrestrial.jpg" alt="E.T. the Extra-Terrestrial Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/E.T. the Extra-Terrestrial.jpg" alt="E.T. the Extra-Terrestrial movie poster" loading="lazy">
+                        <figcaption class="sr-only">E.T. the Extra-Terrestrial (1982)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>E.T. the Extra-Terrestrial (1982)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A wrinkly alien befriends a kid, bikes to the stars, and phones home. Cynics call it sappy syrup, but Spielberg’s heartstring tug is a universal hug. 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A wrinkly alien befriends a kid, bikes to the stars, and phones home. Cynics call it sappy syrup, but Spielberg's heartstring tug is a universal hug.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Ad Astra.jpg" alt="Ad Astra Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Ad Astra.jpg" alt="Ad Astra movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ad Astra (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ad Astra (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Brad Pitt space-quests for his rogue dad and cosmic answers. Critics gripe about glacial pacing, but the moody visuals and existential gut-punch orbit high. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Brad Pitt space-quests for his rogue dad and cosmic answers. Critics gripe about glacial pacing, but the moody visuals and existential gut-punch orbit high.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Prometheus.jpg" alt="Prometheus Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Prometheus.jpg" alt="Prometheus movie poster" loading="lazy">
+                        <figcaption class="sr-only">Prometheus (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Prometheus (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Space nerds hunt humanity’s origins, find squishy alien nightmares. Plot holes and dumb scientists irk fans, but Ridley’s cosmic canvas still dazzles the retinas. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Space nerds hunt humanity's origins, find squishy alien nightmares. Plot holes and dumb scientists irk fans, but Ridley's cosmic canvas still dazzles the retinas.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/Encounter.jpg" alt="Encounter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Encounter.jpg" alt="Encounter movie poster" loading="lazy">
+                        <figcaption class="sr-only">Encounter (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Encounter (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A vet dodges alien bugs to save his kids - or is he just unhinged? Critics slam the muddled twist, but Riz Ahmed’s frantic dad vibes keep it from crashing. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A vet dodges alien bugs to save his kids - or is he just unhinged? Critics slam the muddled twist, but Riz Ahmed's frantic dad vibes keep it from crashing.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Monster Mayhem</h2>
-            <p>Beasts, kaiju, and genetic freaks wrecking everything in sight.</p>
+        <!-- Monster Mayhem Section -->
+        <section class="movie-section" aria-labelledby="monster-mayhem-heading">
+            <header class="section-header">
+                <h2 id="monster-mayhem-heading">Monster Mayhem</h2>
+                <p>Beasts, kaiju, and genetic freaks wrecking everything in sight.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/monsters-aliens/King Kong.jpg" alt="King Kong Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/King Kong.jpg" alt="King Kong movie poster" loading="lazy">
+                        <figcaption class="sr-only">King Kong (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>King Kong (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Giant ape loves blonde, hates planes, climbs skyscrapers. Jackson’s bloated runtime bugs some, but the dino-stomping spectacle and Kong’s soulful eyes roar loud. 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Giant ape loves blonde, hates planes, climbs skyscrapers. Jackson's bloated runtime bugs some, but the dino-stomping spectacle and Kong's soulful eyes roar loud.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Godzilla.jpg" alt="Godzilla Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Godzilla.jpg" alt="Godzilla movie poster" loading="lazy">
+                        <figcaption class="sr-only">Godzilla (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Godzilla (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Big lizard stomps cities while humans yap about science. Thin characters annoy, but the kaiju carnage and moody scale make it a monster mash worth rooting for. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Big lizard stomps cities while humans yap about science. Thin characters annoy, but the kaiju carnage and moody scale make it a monster mash worth rooting for.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Kong - Skull Island.jpg" alt="Kong: Skull Island Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Kong - Skull Island.jpg" alt="Kong: Skull Island movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kong: Skull Island (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kong: Skull Island (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Kong smashes choppers and critters on a '70s monster island. Plot’s a jungle mess, but the ape-tastic action and Hiddleston’s swagger keep it swinging. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Kong smashes choppers and critters on a '70s monster island. Plot's a jungle mess, but the ape-tastic action and Hiddleston's swagger keep it swinging.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Deep Blue Sea.jpg" alt="Deep Blue Sea Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Deep Blue Sea.jpg" alt="Deep Blue Sea movie poster" loading="lazy">
+                        <figcaption class="sr-only">Deep Blue Sea (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Deep Blue Sea (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Smart sharks chomp scientists in a soggy lab thriller. Cheesy lines and logic leaks sink it for some, but LL Cool J and those fin-tastic kills keep it afloat. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Smart sharks chomp scientists in a soggy lab thriller. Cheesy lines and logic leaks sink it for some, but LL Cool J and those fin-tastic kills keep it afloat.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Rampage.jpg" alt="Rampage Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Rampage.jpg" alt="Rampage movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rampage (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rampage (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Rock fist-bumps a mutant gorilla to save Chicago from beastly chaos. Brain-dead script gets boos, but the city-smashing popcorn crunch is dumb-fun delirium. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Rock fist-bumps a mutant gorilla to save Chicago from beastly chaos. Brain-dead script gets boos, but the city-smashing popcorn crunch is dumb-fun delirium.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/Godzilla - King of the Monsters.jpg" alt="Godzilla: King of the Monsters Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Godzilla - King of the Monsters.jpg" alt="Godzilla: King of the Monsters movie poster" loading="lazy">
+                        <figcaption class="sr-only">Godzilla: King of the Monsters (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Godzilla: King of the Monsters (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Kaiju clash like gods while humans spew eco-babble. Messy plot and cardboard characters bore, but the monster melee’s epic roar keeps fans cheering. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Kaiju clash like gods while humans spew eco-babble. Messy plot and cardboard characters bore, but the monster melee's epic roar keeps fans cheering.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/The Meg.jpg" alt="The Meg Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/The Meg.jpg" alt="The Meg movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Meg (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Meg (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Statham vs. mega-shark in a deep-sea chomp-fest. Critics dunk on the shallow thrills, but the goofy scale and fishy carnage make it a splashy guilty pleasure. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Statham vs. mega-shark in a deep-sea chomp-fest. Critics dunk on the shallow thrills, but the goofy scale and fishy carnage make it a splashy guilty pleasure.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/monsters-aliens/Meg 2 -  The Trench.jpg" alt="Meg 2: The Trench Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Meg 2 -  The Trench.jpg" alt="Meg 2: The Trench movie poster" loading="lazy">
+                        <figcaption class="sr-only">Meg 2: The Trench (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Meg 2: The Trench (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>More sharks, more Statham, less sense. Fans cry foul over the bloated CGI mess, and even the chomp-tastic chaos can’t save this sunken sequel. 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>More sharks, more Statham, less sense. Fans cry foul over the bloated CGI mess, and even the chomp-tastic chaos can't save this sunken sequel.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Predator & Prey</h2>
-            <p>Hunters from the stars stalk humans for sport or survival.</p>
+        <!-- Predator & Prey Section -->
+        <section class="movie-section" aria-labelledby="predator-prey-heading">
+            <header class="section-header">
+                <h2 id="predator-prey-heading">Predator & Prey</h2>
+                <p>Hunters from the stars stalk humans for sport or survival.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/monsters-aliens/Prey.jpg" alt="Prey Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Prey.jpg" alt="Prey movie poster" loading="lazy">
+                        <figcaption class="sr-only">Prey (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Prey (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Comanche warrior hunts a Predator in 1719. Some gripe about thin lore, but the lean action and badass lead shred like a plasma cannon. 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Comanche warrior hunts a Predator in 1719. Some gripe about thin lore, but the lean action and badass lead shred like a plasma cannon.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Predator.jpg" alt="Predator Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Predator.jpg" alt="Predator movie poster" loading="lazy">
+                        <figcaption class="sr-only">Predator (1987)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Predator (1987)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Arnie’s commandos get hunted by a cloaked alien badass. Dated effects irk some, but the sweaty jungle carnage and one-liners are pure '80s muscle. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Arnie's commandos get hunted by a cloaked alien badass. Dated effects irk some, but the sweaty jungle carnage and one-liners are pure '80s muscle.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/The Predator.jpg" alt="The Predator Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/The Predator.jpg" alt="The Predator movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Predator (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Predator (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Predators crash Earth again, met by quippy misfits. Fans flay the tonal whiplash and messy cuts, leaving this hunt a disjointed misfire. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Predators crash Earth again, met by quippy misfits. Fans flay the tonal whiplash and messy cuts, leaving this hunt a disjointed misfire.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Dinosaur Revival</h2>
-            <p>Prehistoric beasts reborn to thrill or terrorize.</p>
+        <!-- Dinosaur Revival Section -->
+        <section class="movie-section" aria-labelledby="dinosaur-revival-heading">
+            <header class="section-header">
+                <h2 id="dinosaur-revival-heading">Dinosaur Revival</h2>
+                <p>Prehistoric beasts reborn to thrill or terrorize.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Jurassic World.png" alt="Jurassic World Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Jurassic World.png" alt="Jurassic World movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jurassic World (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jurassic World (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Dino theme park reboots with a gene-spliced super-rex. Critics claw at recycled roars, but Pratt’s charm and dino chomps keep it a toothy crowd-pleaser. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Dino theme park reboots with a gene-spliced super-rex. Critics claw at recycled roars, but Pratt's charm and dino chomps keep it a toothy crowd-pleaser.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/Jurassic World - Fallen Kingdom.webp" alt="Jurassic World: Fallen Kingdom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Jurassic World - Fallen Kingdom.webp" alt="Jurassic World: Fallen Kingdom movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jurassic World: Fallen Kingdom (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jurassic World: Fallen Kingdom (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Dinos flee a volcano, land in a gothic dino-trafficking plot. Absurd twists and dumb humans enrage fans, but the lava-fueled chaos keeps it from extinction. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Dinos flee a volcano, land in a gothic dino-trafficking plot. Absurd twists and dumb humans enrage fans, but the lava-fueled chaos keeps it from extinction.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Alien Invasion</h2>
-            <p>Extraterrestrials storm Earth with chaos or comedy.</p>
+        <!-- Alien Invasion Section -->
+        <section class="movie-section" aria-labelledby="alien-invasion-heading">
+            <header class="section-header">
+                <h2 id="alien-invasion-heading">Alien Invasion</h2>
+                <p>Extraterrestrials storm Earth with chaos or comedy.</p>
+                <div class="section-stats">
+                    <span class="movie-count">10 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Edge of Tomorrow.jpg" alt="Edge of Tomorrow Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Edge of Tomorrow.jpg" alt="Edge of Tomorrow movie poster" loading="lazy">
+                        <figcaption class="sr-only">Edge of Tomorrow (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Edge of Tomorrow (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cruise loops through alien D-Day, dying to win. Some scoff at the repeat gimmick, but the slick sci-fi carnage and Blunt’s badassery reload it fresh. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cruise loops through alien D-Day, dying to win. Some scoff at the repeat gimmick, but the slick sci-fi carnage and Blunt's badassery reload it fresh.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Independence Day.jpg" alt="Independence Day Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Independence Day.jpg" alt="Independence Day movie poster" loading="lazy">
+                        <figcaption class="sr-only">Independence Day (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Independence Day (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aliens blow up landmarks, humans punch back with Will Smith zingers. Dated cheese and jingoism jar, but the bombastic boom-fest still sparks July 4th vibes. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aliens blow up landmarks, humans punch back with Will Smith zingers. Dated cheese and jingoism jar, but the bombastic boom-fest still sparks July 4th vibes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Men in Black.jpg" alt="Men in Black Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Men in Black.jpg" alt="Men in Black movie poster" loading="lazy">
+                        <figcaption class="sr-only">Men in Black (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Men in Black (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Suited agents zap alien weirdos hiding on Earth. Some call it a one-joke flick, but the Smith-Jones banter and gooey critters make it a cosmic riot. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Suited agents zap alien weirdos hiding on Earth. Some call it a one-joke flick, but the Smith-Jones banter and gooey critters make it a cosmic riot.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Paul.jpg" alt="Paul Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Paul.jpg" alt="Paul movie poster" loading="lazy">
+                        <figcaption class="sr-only">Paul (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Paul (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Geeks road-trip with a foul-mouthed CG alien. Crude gags and thin stakes fizzle for some, but Pegg and Frost’s nerdy charm keep the UFO chuckling. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Geeks road-trip with a foul-mouthed CG alien. Crude gags and thin stakes fizzle for some, but Pegg and Frost's nerdy charm keep the UFO chuckling.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/Men in Black II.jpg" alt="Men in Black II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Men in Black II.jpg" alt="Men in Black II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Men in Black II (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Men in Black II (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Smith and Jones chase alien scum again, with less zing. Rehashed jokes and a rushed plot neuralyze the fun, but the charm still flickers faintly. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Smith and Jones chase alien scum again, with less zing. Rehashed jokes and a rushed plot neuralyze the fun, but the charm still flickers faintly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/monsters-aliens/Battleship.jpg" alt="Battleship Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Battleship.jpg" alt="Battleship movie poster" loading="lazy">
+                        <figcaption class="sr-only">Battleship (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Battleship (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Navy blasts alien ships in a board-game-gone-blockbuster. Critics sink its brain-dead bombast, but the splashy CGI chaos floats for popcorn munchers. 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Navy blasts alien ships in a board-game-gone-blockbuster. Critics sink its brain-dead bombast, but the splashy CGI chaos floats for popcorn munchers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/monsters-aliens/Beyond Skyline.jpg" alt="Beyond Skyline Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Beyond Skyline.jpg" alt="Beyond Skyline movie poster" loading="lazy">
+                        <figcaption class="sr-only">Beyond Skyline (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Beyond Skyline (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Alien abductors get kung-fu’d by scrappy survivors. Fans trash the B-movie slop, but the gonzo action and absurd guts make it a trashy treat. 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Alien abductors get kung-fu'd by scrappy survivors. Fans trash the B-movie slop, but the gonzo action and absurd guts make it a trashy treat.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/monsters-aliens/Men in Black - International.jpg" alt="Men in Black: International Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Men in Black - International.jpg" alt="Men in Black: International movie poster" loading="lazy">
+                        <figcaption class="sr-only">Men in Black: International (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Men in Black: International (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>New agents, same aliens, zero spark. Hemsworth and Tessa try, but the charmless script and lazy gags neuralyze the franchise into a coma. 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>New agents, same aliens, zero spark. Hemsworth and Tessa try, but the charmless script and lazy gags neuralyze the franchise into a coma.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/monsters-aliens/Occupation.jpg" alt="Occupation Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Occupation.jpg" alt="Occupation movie poster" loading="lazy">
+                        <figcaption class="sr-only">Occupation (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Occupation (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aussie townies fight alien invaders in a low-rent rip-off. Budget woes and cliché overload crash-land hard, but the scrappy spirit ekes out a pulse. 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aussie townies fight alien invaders in a low-rent rip-off. Budget woes and cliché overload crash-land hard, but the scrappy spirit ekes out a pulse.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/monsters-aliens/Rim of the World.jpg" alt="Rim of the World Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Rim of the World.jpg" alt="Rim of the World movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rim of the World (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rim of the World (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Kids save Earth from aliens in a Netflix knockoff. Derivative drivel and cringey kid banter tank it, but the campy chaos has a faint Goonies glow. 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Kids save Earth from aliens in a Netflix knockoff. Derivative drivel and cringey kid banter tank it, but the campy chaos has a faint Goonies glow.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Epic Sci-Fi Fantasy</h2>
-            <p>Big worlds, bigger creatures, and cosmic stakes.</p>
+        <!-- Epic Sci-Fi Fantasy Section -->
+        <section class="movie-section" aria-labelledby="epic-scifi-heading">
+            <header class="section-header">
+                <h2 id="epic-scifi-heading">Epic Sci-Fi Fantasy</h2>
+                <p>Big worlds, bigger creatures, and cosmic stakes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/monsters-aliens/Avatar.jpg" alt="Avatar Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Avatar.jpg" alt="Avatar movie poster" loading="lazy">
+                        <figcaption class="sr-only">Avatar (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Avatar (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Marine rides blue aliens to save Pandora’s glowy trees. Plot’s a recycled yawn, but Cameron’s visual wizardry makes it a jaw-dropping jungle fever dream. 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Marine rides blue aliens to save Pandora's glowy trees. Plot's a recycled yawn, but Cameron's visual wizardry makes it a jaw-dropping jungle fever dream.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Avatar - The Way of Water.jpg" alt="Avatar: The Way of Water Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Avatar - The Way of Water.jpg" alt="Avatar: The Way of Water movie poster" loading="lazy">
+                        <figcaption class="sr-only">Avatar: The Way of Water (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Avatar: The Way of Water (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jake’s blue family swims with whale-aliens to fight humans. Bloated runtime drowns some, but the underwater eye-candy and family feels make waves. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jake's blue family swims with whale-aliens to fight humans. Bloated runtime drowns some, but the underwater eye-candy and family feels make waves.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Pacific Rim.jpg" alt="Pacific Rim Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Pacific Rim.jpg" alt="Pacific Rim movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pacific Rim (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pacific Rim (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Giant robots punch kaiju in ocean-smashing glory. Thin characters and loud excess irk snobs, but del Toro’s mech-monster mania is a geek’s wet dream. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Giant robots punch kaiju in ocean-smashing glory. Thin characters and loud excess irk snobs, but del Toro's mech-monster mania is a geek's wet dream.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/John Carter.jpg" alt="John Carter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/John Carter.jpg" alt="John Carter movie poster" loading="lazy">
+                        <figcaption class="sr-only">John Carter (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>John Carter (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Civil War vet zaps to Mars, fights alien tribes. Jumbled lore and bland leads flop hard, but the pulpy action keeps this space dud from total crash. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Civil War vet zaps to Mars, fights alien tribes. Jumbled lore and bland leads flop hard, but the pulpy action keeps this space dud from total crash.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/Valerian and the City of a Thousand Planets.jpg" alt="Valerian and the City of a Thousand Planets Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Valerian and the City of a Thousand Planets.jpg" alt="Valerian and the City of a Thousand Planets movie poster" loading="lazy">
+                        <figcaption class="sr-only">Valerian and the City of a Thousand Planets (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Valerian and the City of a Thousand Planets (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Space cops chase cosmic critters in a neon galaxy. Visuals pop like candy, but the stiff leads and messy plot make it a dazzling misfire. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Space cops chase cosmic critters in a neon galaxy. Visuals pop like candy, but the stiff leads and messy plot make it a dazzling misfire.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/monsters-aliens/The Great Wall.jpg" alt="The Great Wall Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/The Great Wall.jpg" alt="The Great Wall movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Great Wall (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Great Wall (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Damon battles lizard monsters at China’s big wall. Cultural mishmash and dull stakes get roasted, but the colorful chaos tosses a few arrows of fun. 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Damon battles lizard monsters at China's big wall. Cultural mishmash and dull stakes get roasted, but the colorful chaos tosses a few arrows of fun.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Creature Feature Horror</h2>
-            <p>Monsters from the deep or beyond, here to haunt your nightmares.</p>
+        <!-- Creature Feature Horror Section -->
+        <section class="movie-section" aria-labelledby="creature-feature-heading">
+            <header class="section-header">
+                <h2 id="creature-feature-heading">Creature Feature Horror</h2>
+                <p>Monsters from the deep or beyond, here to haunt your nightmares.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Life Sci-Fi.jpg" alt="Life Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Life.webp" alt="Life movie poster" loading="lazy">
+                        <figcaption class="sr-only">Life (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Life (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Space crew pokes a Martian blob, regrets it fast. Derivative Alien clone irks purists, but the tense twists and gooey gore keep it slithering. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Space crew pokes a Martian blob, regrets it fast. Derivative Alien clone irks purists, but the tense twists and gooey gore keep it slithering.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/Underwater.jpg" alt="Underwater Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Underwater.jpg" alt="Underwater movie poster" loading="lazy">
+                        <figcaption class="sr-only">Underwater (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Underwater (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Deep-sea drillers face Cthulhu-esque beasties. Thin plot and soggy pacing sink it for many, but Stewart’s grit and creepy vibes keep it bubbling. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Deep-sea drillers face Cthulhu-esque beasties. Thin plot and soggy pacing sink it for many, but Stewart's grit and creepy vibes keep it bubbling.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/monsters-aliens/Snakes on a Plane.jpg" alt="Snakes on a Plane Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Snakes on a Plane.jpg" alt="Snakes on a Plane movie poster" loading="lazy">
+                        <figcaption class="sr-only">Snakes on a Plane (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Snakes on a Plane (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Sam Jackson battles sky-high serpents. Hype outslithers the schlocky execution, but the meme-worthy madness makes it a cult hiss-terical hit. 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Sam Jackson battles sky-high serpents. Hype outslithers the schlocky execution, but the meme-worthy madness makes it a cult hiss-terical hit.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Comic Book Monsters</h2>
-            <p>Hellish heroes and demonic beasts from the pages of comics.</p>
+        <!-- Comic Book Monsters Section -->
+        <section class="movie-section" aria-labelledby="comic-monsters-heading">
+            <header class="section-header">
+                <h2 id="comic-monsters-heading">Comic Book Monsters</h2>
+                <p>Hellish heroes and demonic beasts from the pages of comics.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/monsters-aliens/Hell Boy II.jpg" alt="Hellboy II: The Golden Army Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Hell Boy II.jpg" alt="Hellboy II: The Golden Army movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hellboy II: The Golden Army (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hellboy II: The Golden Army (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Red’s demon crew battles elven armies and mythic freaks. Some say it’s too whimsical, but del Toro’s creature carnival is a fiery, freaky delight. 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Red's demon crew battles elven armies and mythic freaks. Some say it's too whimsical, but del Toro's creature carnival is a fiery, freaky delight.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Hell Boy.jpg" alt="Hellboy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Hell Boy.jpg" alt="Hellboy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hellboy (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hellboy (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cigar-chomping demon fights Nazi occult nonsense. Clunky CGI and rushed lore bug some, but Perlman’s gruff charm makes it a helluva romp. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cigar-chomping demon fights Nazi occult nonsense. Clunky CGI and rushed lore bug some, but Perlman's gruff charm makes it a helluva romp.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/monsters-aliens/Hell Boy19.jpg" alt="Hellboy (2019) Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Hell Boy19.jpg" alt="Hellboy (2019) movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hellboy (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hellboy (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rebooted Red battles a witch with gory gusto. Fans trash the tonal mess and weak script, leaving this demon a bloody, forgettable misstep. 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rebooted Red battles a witch with gory gusto. Fans trash the tonal mess and weak script, leaving this demon a bloody, forgettable misstep.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Video Game Adaptations</h2>
-            <p>Pixelated monsters leap to the screen with mixed results.</p>
+        <!-- Video Game Adaptations Section -->
+        <section class="movie-section" aria-labelledby="video-game-heading">
+            <header class="section-header">
+                <h2 id="video-game-heading">Video Game Adaptations</h2>
+                <p>Pixelated monsters leap to the screen with mixed results.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/Monster Hunter.jpg" alt="Monster Hunter Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Monster Hunter.jpg" alt="Monster Hunter movie poster" loading="lazy">
+                        <figcaption class="sr-only">Monster Hunter (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Monster Hunter (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Soldiers portal-jump to slay game-inspired beasts. Fans rage at the lore butchery, but Milla’s monster-bashing keeps this chaotic quest barely playable. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Soldiers portal-jump to slay game-inspired beasts. Fans rage at the lore butchery, but Milla's monster-bashing keeps this chaotic quest barely playable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/monsters-aliens/Doom.jpg" alt="Doom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Doom.jpg" alt="Doom movie poster" loading="lazy">
+                        <figcaption class="sr-only">Doom (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Doom (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Marines blast Martian mutants in a gamey gore-fest. Lame script and no-doom vibe doom it for most, but the FPS nod keeps it a nostalgic misfire. 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Marines blast Martian mutants in a gamey gore-fest. Lame script and no-doom vibe doom it for most, but the FPS nod keeps it a nostalgic misfire.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Intergalactic Antiheroes</h2>
-            <p>Lone warriors battle beasts in gritty cosmic corners.</p>
+        <!-- Intergalactic Antiheroes Section -->
+        <section class="movie-section" aria-labelledby="intergalactic-antiheroes-heading">
+            <header class="section-header">
+                <h2 id="intergalactic-antiheroes-heading">Intergalactic Antiheroes</h2>
+                <p>Lone warriors battle beasts in gritty cosmic corners.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/monsters-aliens/Riddick.jpg" alt="Riddick Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/Riddick.jpg" alt="Riddick movie poster" loading="lazy">
+                        <figcaption class="sr-only">Riddick (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Riddick (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Vin Diesel’s night-vision badass fights beasts and bounty hunters. Repetitive grit grates, but the lean survival vibe keeps this space thug snarling. 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Vin Diesel's night-vision badass fights beasts and bounty hunters. Repetitive grit grates, but the lean survival vibe keeps this space thug snarling.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/monsters-aliens/The Chronicles of Riddick.jpg" alt="The Chronicles of Riddick Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/The Chronicles of Riddick.jpg" alt="The Chronicles of Riddick movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Chronicles of Riddick (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Chronicles of Riddick (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Riddick battles space tyrants and weird critters. Overblown mythos and murky visuals stall, but Diesel’s growl keeps this cosmic slog semi-cool. 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Riddick battles space tyrants and weird critters. Overblown mythos and murky visuals stall, but Diesel's growl keeps this cosmic slog semi-cool.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Sci-Fi Comedy Flops</h2>
-            <p>Alien antics meant to laugh, but mostly crash.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-2">
-                    <img src="../img/monsters-aliens/The Adventures of Pluto Nash.jpg" alt="The Adventures of Pluto Nash Cover">
-                    <div class="movie-title">
-                        <h3>The Adventures of Pluto Nash (2002)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Eddie Murphy runs a moon club, fights alien goons. A cosmic bomb so bad it’s legendary - critics and fans unite to blast this space junk into oblivion. 2/10.</p>
-                    </div>
+        <!-- Sci-Fi Comedy Flops Section -->
+        <section class="movie-section" aria-labelledby="scifi-comedy-heading">
+            <header class="section-header">
+                <h2 id="scifi-comedy-heading">Sci-Fi Comedy Flops</h2>
+                <p>Alien antics meant to laugh, but mostly crash.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
                 </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/monsters-aliens/The Adventures of Pluto Nash.jpg" alt="The Adventures of Pluto Nash movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Adventures of Pluto Nash (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Adventures of Pluto Nash (2002)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Eddie Murphy runs a moon club, fights alien goons. A cosmic bomb so bad it's legendary - critics and fans unite to blast this space junk into oblivion.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sports</title>
+    <title>Sports - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing sports movies sorted by theme, with witty, insightful overviews and objective ratings.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing sports movies I've watched, rated by color. Explore boxing, basketball, football, baseball, chess, and real-life sports documentaries.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Sports</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Stories of grit, redemption, and triumph in the ring, on the court, and across the field. From underdog victories to championship glory.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 57 movies</span>
+            <span class="movie-count">9 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -49,583 +54,889 @@
             <li><a href="sci-fi.html">Sci-Fi</a></li>
             <li><a href="serial-killers.html">Serial Killers</a></li>
             <li><a href="series-films.html">Series Films</a></li>
+            <li><a href="sports.html" aria-current="page">Sports</a></li>
             <li><a href="spy-film.html">Spy Film</a></li>
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Boxing & Martial Arts</h2>
-            <p>Stories of grit, redemption, and triumph in the ring or cage.</p>
+        <!-- Boxing & Martial Arts Section -->
+        <section class="movie-section" aria-labelledby="boxing-heading">
+            <header class="section-header">
+                <h2 id="boxing-heading">Boxing & Martial Arts</h2>
+                <p>Stories of grit, redemption, and triumph in the ring or cage.</p>
+                <div class="section-stats">
+                    <span class="movie-count">20 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/sports/Raging Bull.jpg" alt="Raging Bull Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sports/Raging Bull.jpg" alt="Raging Bull movie poster" loading="lazy">
+                        <figcaption class="sr-only">Raging Bull (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Raging Bull (1980)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jake LaMotta’s brutal ring life mirrors his self-destructive fury outside it, turning triumphs into tragedies. Negative consensus calls it unrelenting and depressing, but that's the point—raw poetry in every punishing blow. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jake LaMotta's brutal ring life mirrors his self-destructive fury outside it, turning triumphs into tragedies. Raw poetry in every punishing blow, though the unrelenting intensity may overwhelm some viewers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/Creed.jpg" alt="Creed Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/Creed.jpg" alt="Creed movie poster" loading="lazy">
+                        <figcaption class="sr-only">Creed (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Creed (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Adonis Creed steps from his father's shadow into the ring, blending legacy with fresh fire. Critics praise the emotional knockout, though some gripe about formulaic familiarity; audiences roar for the heart-pounding authenticity. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Adonis Creed steps from his father's shadow into the ring, blending legacy with fresh fire. Emotional knockout with heart-pounding authenticity, though some may find the formula familiar.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/The Fighter.jpg" alt="The Fighter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/The Fighter.jpg" alt="The Fighter movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Fighter (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Fighter (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Micky Ward battles family dysfunction and ring rivals in a gritty comeback saga. Negative takes highlight the chaotic clan drama as overwhelming, but that's the hook—real, raw, and relentlessly inspiring. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Micky Ward battles family dysfunction and ring rivals in a gritty comeback saga. Real, raw, and relentlessly inspiring, though the chaotic clan drama may overwhelm some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Rocky.jpg" alt="Rocky Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Rocky.jpg" alt="Rocky movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rocky (1976)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rocky (1976)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Philly underdog gets one shot at glory, proving heart trumps hype. Some knock the dated sentiment, but audiences cheer the timeless grit—it's the blueprint for every comeback tale that followed. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Philly underdog gets one shot at glory, proving heart trumps hype. The blueprint for every comeback tale that followed, though some may find the sentiment dated.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Undisputed III - Redemption.jpg" alt="Undisputed III: Redemption Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Undisputed III - Redemption.jpg" alt="Undisputed III: Redemption movie poster" loading="lazy">
+                        <figcaption class="sr-only">Undisputed III: Redemption (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Undisputed III: Redemption (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Boyka fights prison foes for a shot at freedom, blending brutal brawls with redemption arcs. Critics dismiss the thin plot, but fans fist-pump the nonstop action—pure guilty-pleasure pugilism. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Boyka fights prison foes for a shot at freedom, blending brutal brawls with redemption arcs. Pure guilty-pleasure pugilism with nonstop action, though the thin plot may disappoint some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Southpaw.jpg" alt="Southpaw Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Southpaw.jpg" alt="Southpaw movie poster" loading="lazy">
+                        <figcaption class="sr-only">Southpaw (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Southpaw (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A champ's world crumbles after tragedy, forcing a raw rebuild in the ring and beyond. Negative vibes cite over-the-top melodrama, yet Gyllenhaal's sweat-soaked grit keeps it swinging above the ropes. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A champ's world crumbles after tragedy, forcing a raw rebuild in the ring and beyond. Gyllenhaal's sweat-soaked grit keeps it swinging above the ropes, though the melodrama may feel over-the-top.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Boyka - Undisputed IV.jpg" alt="Boyka: Undisputed IV Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Boyka - Undisputed IV.jpg" alt="Boyka: Undisputed IV movie poster" loading="lazy">
+                        <figcaption class="sr-only">Boyka: Undisputed IV (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Boyka: Undisputed IV (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Boyka seeks atonement in underground cages, trading fury for focus. Detractors call it formulaic fan service, but the bone-crunching choreography hooks fight fans like a left hook. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Boyka seeks atonement in underground cages, trading fury for focus. Bone-crunching choreography hooks fight fans, though the formulaic approach may feel like fan service.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Bleed For This.png" alt="Bleed For This Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Bleed For This.png" alt="Bleed For This movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bleed For This (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bleed For This (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Vinny Pazienza defies a shattered neck for a improbable ring return. Consensus gripes about uneven pacing and clichés, but the underdog defiance and comeback chills earn it extra rounds. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Vinny Pazienza defies a shattered neck for an improbable ring return. Underdog defiance and comeback chills earn it extra rounds, though uneven pacing and clichés may frustrate some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Creed II.jpg" alt="Creed II Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Creed II.jpg" alt="Creed II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Creed II (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Creed II (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Adonis faces Drago's son in a grudge-fueled rematch, echoing old wounds. Critics note the recycled Rocky beats, but audiences embrace the family drama and fist-pumping spectacle. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Adonis faces Drago's son in a grudge-fueled rematch, echoing old wounds. Family drama and fist-pumping spectacle entertain, though the recycled Rocky beats may feel familiar.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Undisputed II - Last Man Standing.jpg" alt="Undisputed II: Last Man Standing Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Undisputed II - Last Man Standing.jpg" alt="Undisputed II: Last Man Standing movie poster" loading="lazy">
+                        <figcaption class="sr-only">Undisputed II: Last Man Standing (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Undisputed II: Last Man Standing (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A fallen champ battles in a Russian prison tourney for survival. Low-budget gripes abound, but the escalating scraps and Boyka's breakout villainy make it a scrappy crowd-pleaser. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A fallen champ battles in a Russian prison tourney for survival. Escalating scraps and Boyka's breakout villainy make it a scrappy crowd-pleaser, though low-budget limitations show.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Undisputed.jpg" alt="Undisputed Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Undisputed.jpg" alt="Undisputed movie poster" loading="lazy">
+                        <figcaption class="sr-only">Undisputed (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Undisputed (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A jailed boxer clashes with the prison's undefeated kingpin. Routine ring drama draws yawns, yet the tense buildup and solid scraps keep it from a total KO. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A jailed boxer clashes with the prison's undefeated kingpin. Tense buildup and solid scraps keep it from a total KO, though the routine ring drama may draw yawns.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Blood and Bone.jpg" alt="Blood and Bone Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Blood and Bone.jpg" alt="Blood and Bone movie poster" loading="lazy">
+                        <figcaption class="sr-only">Blood and Bone (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Blood and Bone (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An ex-con storms underground fights to fulfill a vow. Critics slam the sparse script, but Jai White's martial mastery turns it into a bone-snapping guilty thrill. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>An ex-con storms underground fights to fulfill a vow. Jai White's martial mastery turns it into a bone-snapping guilty thrill, though the sparse script disappoints.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Big George Foreman.jpg" alt="Big George Foreman Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Big George Foreman.jpg" alt="Big George Foreman movie poster" loading="lazy">
+                        <figcaption class="sr-only">Big George Foreman (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Big George Foreman (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Foreman's ring-to-pulpit-to-ring odyssey preaches perseverance. Detractors decry the hagiographic gloss and slow sermons, but the faithful flock to its uplifting hooks. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Foreman's ring-to-pulpit-to-ring odyssey preaches perseverance. Uplifting hooks appeal to the faithful, though the hagiographic gloss and slow sermons may deter some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/Rocky Balboa.jpg" alt="Rocky Balboa Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/Rocky Balboa.jpg" alt="Rocky Balboa movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rocky Balboa (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rocky Balboa (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aging Rocky laces up for one last bout, chasing faded glory. Sentimental swells irk some as maudlin mush, but the heartfelt grit still lands punches on nostalgia's chin. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aging Rocky laces up for one last bout, chasing faded glory. Heartfelt grit still lands punches on nostalgia's chin, though sentimental swells may feel maudlin to some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/Creed III.jpg" alt="Creed III Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/Creed III.jpg" alt="Creed III movie poster" loading="lazy">
+                        <figcaption class="sr-only">Creed III (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Creed III (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Adonis grapples with a vengeful past pal in the ring. Flashy visuals dazzle, but rote revenge tropes and absent Rocky leave audiences swinging at shadows. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Adonis grapples with a vengeful past pal in the ring. Flashy visuals dazzle, but rote revenge tropes and absent Rocky leave audiences swinging at shadows.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/Kickboxer.jpg" alt="Kickboxer Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/Kickboxer.jpg" alt="Kickboxer movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kickboxer (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kickboxer (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Van Damme avenges his bro in Thai kickboxing hell. Cheesy '80s excess draws laughs over gasps, but the splits and spins still flex nostalgic muscle. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Van Damme avenges his bro in Thai kickboxing hell. Splits and spins flex nostalgic muscle, though cheesy '80s excess draws laughs over gasps.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/sports/Rocky II.jpg" alt="Rocky II Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/sports/Rocky II.jpg" alt="Rocky II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rocky II (1979)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rocky II (1979)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rocky juggles fame, family, and a rematch grind. Familiar beats feel like echoes, with critics and fans alike yawning at the déjà vu—solid, but no fresh haymaker. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rocky juggles fame, family, and a rematch grind. Familiar beats feel like echoes—solid, but no fresh haymaker to distinguish it from the original.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/sports/Rocky III.jpg" alt="Rocky III Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/sports/Rocky III.jpg" alt="Rocky III movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rocky III (1982)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rocky III (1982)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rocky faces overconfidence and Clubber Lang's fury. Cartoonish flair amuses, but the eye-of-the-tiger sequel syndrome leaves it punching below its weight. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rocky faces overconfidence and Clubber Lang's fury. Cartoonish flair amuses, but the eye-of-the-tiger sequel syndrome leaves it punching below its weight.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/sports/Rocky IV.jpg" alt="Rocky IV Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/sports/Rocky IV.jpg" alt="Rocky IV movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rocky IV (1985)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rocky IV (1985)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rocky vs. Drago: Cold War slugfest with synth-rock flair. Patriotic cheese curdles for some, but the robot and revenge rally still score with '80s nostalgia junkies. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rocky vs. Drago: Cold War slugfest with synth-rock flair. Patriotic cheese curdles for some, but the robot and revenge rally still score with '80s nostalgia junkies.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/sports/Rocky V.jpg" alt="Rocky V Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/sports/Rocky V.jpg" alt="Rocky V movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rocky V (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rocky V (1990)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Broke Rocky mentors a hothead protégé amid family strife. Consensus crowns it the franchise flop—drab, dated, and dodging the ring for soap opera slips. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Broke Rocky mentors a hothead protégé amid family strife. Crowned the franchise flop—drab, dated, and dodging the ring for soap opera slips.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Basketball</h2>
-            <p>Tales of hoop dreams, rivalries, and redemption on the court.</p>
+        <!-- Basketball Section -->
+        <section class="movie-section" aria-labelledby="basketball-heading">
+            <header class="section-header">
+                <h2 id="basketball-heading">Basketball</h2>
+                <p>Tales of hoop dreams, rivalries, and redemption on the court.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/Coach Carter.webp" alt="Coach Carter Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/Coach Carter.webp" alt="Coach Carter movie poster" loading="lazy">
+                        <figcaption class="sr-only">Coach Carter (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Coach Carter (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A coach benches his squad for grades over games, igniting life lessons. Formulaic fire drills irk some, but Jackson's iron-fist inspiration hooks hearts. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A coach benches his squad for grades over games, igniting life lessons. Iron-fist inspiration that hooks hearts, though the formulaic approach may irk some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/He Got Game.jpg" alt="He Got Game Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/He Got Game.jpg" alt="He Got Game movie poster" loading="lazy">
+                        <figcaption class="sr-only">He Got Game (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>He Got Game (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A jailed dad pressures his hoops phenom son for college glory. Lee's raw family feud scores big, though uneven pacing trips a few—profound when it swishes. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A jailed dad pressures his hoops phenom son for college glory. Raw family feud that scores big, though uneven pacing trips up the momentum at times.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Hustle.jpg" alt="Hustle Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Hustle.jpg" alt="Hustle movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hustle (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hustle (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A scout unearths raw talent overseas for NBA redemption. Sandler's grit shines, but clichés clog the court—still, the underdog drive dribbles past gripes. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A scout unearths raw talent overseas for NBA redemption. Sandler's grit shines, but clichés clog the court—still, the underdog drive dribbles past gripes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/Uncle Drew.jpg" alt="Uncle Drew Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/Uncle Drew.jpg" alt="Uncle Drew movie poster" loading="lazy">
+                        <figcaption class="sr-only">Uncle Drew (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Uncle Drew (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A streetball vet recruits graybeard greats for glory. NBA cameos charm, but the ad-turned-flick fizzles with forced fun—more foul than slam dunk. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A streetball vet recruits graybeard greats for glory. NBA cameos charm, but the ad-turned-flick fizzles with forced fun—more foul than slam dunk.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/Like Mike.jpg" alt="Like Mike Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/Like Mike.jpg" alt="Like Mike movie poster" loading="lazy">
+                        <figcaption class="sr-only">Like Mike (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Like Mike (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Magic kicks zap an orphan to NBA stardom. Kid whimsy wanes fast for adults, with thin plot and dated gags drawing yawns amid the hoopla. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Magic kicks zap an orphan to NBA stardom. Kid whimsy wanes fast for adults, with thin plot and dated gags drawing yawns amid the hoopla.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Tennis</h2>
-            <p>Stories of ambition and triumph on the court.</p>
+        <!-- Tennis Section -->
+        <section class="movie-section" aria-labelledby="tennis-heading">
+            <header class="section-header">
+                <h2 id="tennis-heading">Tennis</h2>
+                <p>Stories of ambition and triumph on the court.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/King Richard.jpg" alt="King Richard Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/King Richard.jpg" alt="King Richard movie poster" loading="lazy">
+                        <figcaption class="sr-only">King Richard (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>King Richard (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Richard Williams blueprints his daughters' tennis dynasty amid doubt. Smith's magnetic drive dazzles, though some slam the glossed grit—still serves family fire. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Richard Williams blueprints his daughters' tennis dynasty amid doubt. Magnetic drive dazzles, though some may find the grit too glossed over.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Football & Rugby</h2>
-            <p>Gridiron battles and team spirit, on and off the field.</p>
+        <!-- Football & Rugby Section -->
+        <section class="movie-section" aria-labelledby="football-heading">
+            <header class="section-header">
+                <h2 id="football-heading">Football & Rugby</h2>
+                <p>Gridiron battles and team spirit, on and off the field.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/Remember the Titans.jpg" alt="Remember the Titans Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/Remember the Titans.jpg" alt="Remember the Titans movie poster" loading="lazy">
+                        <figcaption class="sr-only">Remember the Titans (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Remember the Titans (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A coach forges unity from racial rifts in a '70s gridiron clash. Cheesy choruses grate on cynics, but the triumphant team spirit still touchdowns. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A coach forges unity from racial rifts in a '70s gridiron clash. Triumphant team spirit that still touchdowns, though cheesy moments may grate on cynics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Gridiron Gang.jpg" alt="Gridiron Gang Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Gridiron Gang.jpg" alt="Gridiron Gang movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gridiron Gang (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Gridiron Gang (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A counselor turns juvie toughs into a football force for hope. Earnest but earnest-to-a-fault, with manipulative moments that sideline subtlety. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A counselor turns juvie toughs into a football force for hope. Earnest but earnest-to-a-fault, with manipulative moments that sideline subtlety.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/The Game Plan.jpg" alt="The Game Plan Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/The Game Plan.jpg" alt="The Game Plan movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Game Plan (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Game Plan (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A QB dad discovers surprise fatherhood amid gridiron glory. Rock's charm carries the cute chaos, but the kiddie clichés fumble the laughs. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A QB dad discovers surprise fatherhood amid gridiron glory. Rock's charm carries the cute chaos, but the kiddie clichés fumble the laughs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/The Longest Yard.jpg" alt="The Longest Yard Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/The Longest Yard.jpg" alt="The Longest Yard movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Longest Yard (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Longest Yard (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Inmates vs. guards in a prison pigskin payback. Crude crew amuses, but the draggy drags and dated drags sink this remake below the original's line. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Inmates vs. guards in a prison pigskin payback. Crude crew amuses, but the draggy drags and dated drags sink this remake below the original's line.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Baseball & Other Sports</h2>
-            <p>Stories from the diamond and beyond, blending strategy and heart.</p>
+        <!-- Baseball & Other Sports Section -->
+        <section class="movie-section" aria-labelledby="baseball-heading">
+            <header class="section-header">
+                <h2 id="baseball-heading">Baseball & Other Sports</h2>
+                <p>Stories from the diamond and beyond, blending strategy and heart.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/Moneyball.jpg" alt="Moneyball Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/Moneyball.jpg" alt="Moneyball movie poster" loading="lazy">
+                        <figcaption class="sr-only">Moneyball (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Moneyball (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Beane's stats revolution flips baseball's script on a shoestring. Nerdy numbers nerd out some purists, but the clever underdog math still calculates wins. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Beane's stats revolution flips baseball's script on a shoestring. Clever underdog math that still calculates wins, though the nerdy numbers may nerd out some purists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/The Sandlot.jpg" alt="The Sandlot Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/The Sandlot.jpg" alt="The Sandlot movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Sandlot (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Sandlot (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Baseball bonds boys through summer scrapes and beastly blunders. Nostalgic charm enchants, though '90s saccharine sours for skeptics—timeless kid magic. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Baseball bonds boys through summer scrapes and beastly blunders. Nostalgic charm enchants, though '90s saccharine sours for skeptics—timeless kid magic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/McFarland, USA.jpg" alt="McFarland, USA Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/McFarland, USA.jpg" alt="McFarland, USA movie poster" loading="lazy">
+                        <figcaption class="sr-only">McFarland, USA (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>McFarland, USA (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A coach molds migrant teens into cross-country contenders. Uplifting formula feels familiar, with cultural gloss-ups dodging deeper dives into hardship. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A coach molds migrant teens into cross-country contenders. Uplifting formula feels familiar, with cultural gloss-ups dodging deeper dives into hardship.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/The Novice.jpg" alt="The Novice Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/The Novice.jpg" alt="The Novice movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Novice (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Novice (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rower's obsession rows into dark waters of self-destruction. Intense immersion grips, but the unrelenting intensity exhausts without enough emotional oars. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rower's obsession rows into dark waters of self-destruction. Intense immersion grips, but the unrelenting intensity exhausts without enough emotional oars.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/Dodgeball.jpg" alt="Dodgeball: A True Underdog Story Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/Dodgeball.jpg" alt="Dodgeball: A True Underdog Story movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dodgeball: A True Underdog Story (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dodgeball: A True Underdog Story (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Misfits hurl rubber for gym glory in absurd arena antics. Crude cult quips quotably charm, but the dodge-drag drags on past the dodgeball fun. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Misfits hurl rubber for gym glory in absurd arena antics. Crude cult quips quotably charm, but the dodge-drag drags on past the dodgeball fun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/sports/The Waterboy.jpg" alt="The Waterboy Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sports/The Waterboy.jpg" alt="The Waterboy movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Waterboy (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Waterboy (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dimwit water boy tackles to gridiron stardom. Sandler's shtick slays slapstick fans, but the one-note hilarity hydrates only so deep before drying up. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A dimwit water boy tackles to gridiron stardom. Sandler's shtick slays slapstick fans, but the one-note hilarity hydrates only so deep before drying up.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Chess & Strategy</h2>
-            <p>Mental battles and intellectual triumphs on the board.</p>
+        <!-- Chess & Strategy Section -->
+        <section class="movie-section" aria-labelledby="chess-heading">
+            <header class="section-header">
+                <h2 id="chess-heading">Chess & Strategy</h2>
+                <p>Mental battles and intellectual triumphs on the board.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/Searching for Bobby Fischer.jpg" alt="Searching for Bobby Fischer Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/Searching for Bobby Fischer.jpg" alt="Searching for Bobby Fischer movie poster" loading="lazy">
+                        <figcaption class="sr-only">Searching for Bobby Fischer (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Searching for Bobby Fischer (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A chess whiz kid navigates prodigy pressures and parental pulls. Nuanced checkmates on ambition charm, with rare '90s cheesiness checkmated by smarts. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A chess whiz kid navigates prodigy pressures and parental pulls. Nuanced checkmates on ambition charm, with rare '90s cheesiness checkmated by smarts.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Pawn Sacrifice.jpg" alt="Pawn Sacrifice Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Pawn Sacrifice.jpg" alt="Pawn Sacrifice movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pawn Sacrifice (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pawn Sacrifice (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Fischer's Cold War chess clash with Spassky simmers with paranoia. Tense tactics thrill, though biopic blandness bishops away bolder strokes. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Fischer's Cold War chess clash with Spassky simmers with paranoia. Tense tactics thrill, though biopic blandness bishops away bolder strokes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Life of a King.jpg" alt="Life of a King Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Life of a King.jpg" alt="Life of a King movie poster" loading="lazy">
+                        <figcaption class="sr-only">Life of a King (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Life of a King (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An ex-con checkmates at-risk youth with strategy and second chances. Earnest redemption rook-slides clichés, but Whitaker's wisdom knights it worthwhile. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>An ex-con checkmates at-risk youth with strategy and second chances. Earnest redemption rook-slides clichés, but Whitaker's wisdom knights it worthwhile.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Sports Documentaries</h2>
-            <p>Real-life legends and their journeys to greatness.</p>
+        <!-- Sports Documentaries Section -->
+        <section class="movie-section" aria-labelledby="docs-heading">
+            <header class="section-header">
+                <h2 id="docs-heading">Sports Documentaries</h2>
+                <p>Real-life legends and their journeys to greatness.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/Chasing Great.jpg" alt="Chasing Great Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/Chasing Great.jpg" alt="Chasing Great movie poster" loading="lazy">
+                        <figcaption class="sr-only">Chasing Great (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Chasing Great (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>McCaw's rugby reign unfolds with leadership's quiet costs. Intimate intensity inspires, though niche appeal limits the scrum to diehards. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>McCaw's rugby reign unfolds with leadership's quiet costs. Intimate intensity inspires, though niche appeal limits the scrum to diehards.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/sports/I Am Ali.webp" alt="I Am Ali Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sports/I Am Ali.webp" alt="I Am Ali movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Am Ali (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Am Ali (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ali's tapes tape a champ's charisma and cracks. Personal poetry punches, but familiar footage floats familiar floats for fight fans. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ali's tapes tape a champ's charisma and cracks. Personal poetry punches, but familiar footage floats familiar floats for fight fans.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Magnus.jpg" alt="Magnus Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Magnus.jpg" alt="Magnus movie poster" loading="lazy">
+                        <figcaption class="sr-only">Magnus (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Magnus (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Carlsen's chess ascent captures prodigy poise under pressure. Brainy brilliance bewitches, but biographical beats bishop basic for non-nerds. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Carlsen's chess ascent captures prodigy poise under pressure. Brainy brilliance bewitches, but biographical beats bishop basic for non-nerds.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/McEnroe.png" alt="McEnroe Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/McEnroe.png" alt="McEnroe movie poster" loading="lazy">
+                        <figcaption class="sr-only">McEnroe (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>McEnroe (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>McEnroe unpacks his fiery serves and simmering regrets. Candid courtside confessions connect, though surface scratches miss deeper deuces. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>McEnroe unpacks his fiery serves and simmering regrets. Candid courtside confessions connect, though surface scratches miss deeper deuces.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Pele - Birth of a Legend.jpg" alt="Pele: Birth of a Legend Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Pele - Birth of a Legend.jpg" alt="Pele: Birth of a Legend movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pele: Birth of a Legend (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pele: Birth of a Legend (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pelé's slum-to-stardom sprint dazzles with footwork flair. Glossy goals gleam, but hagiographic haze headers home the inspirational basics. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Pelé's slum-to-stardom sprint dazzles with footwork flair. Glossy goals gleam, but hagiographic haze headers home the inspirational basics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Stylebender.jpg" alt="Stylebender Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Stylebender.jpg" alt="Stylebender movie poster" loading="lazy">
+                        <figcaption class="sr-only">Stylebender (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Stylebender (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Adesanya's MMA rise reveals rage's razor edge. Vibrant vibe vivifies, but the octagon orbit orbits familiar fighter fatigue for non-fans. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Adesanya's MMA rise reveals rage's razor edge. Vibrant vibe vivifies, but the octagon orbit orbits familiar fighter fatigue for non-fans.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Tyson.jpg" alt="Tyson Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Tyson.jpg" alt="Tyson movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tyson (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Tyson (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tyson's turbulent tale in his own turbulent words. Raw remorse resonates, but self-serving soliloquies sideline scrutiny for a one-sided bout. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tyson's turbulent tale in his own turbulent words. Raw remorse resonates, but self-serving soliloquies sideline scrutiny for a one-sided bout.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Pariah - The Lives and Deaths of Sonny Liston.jpg" alt="Pariah: The Lives and Deaths of Sonny Liston Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Pariah - The Lives and Deaths of Sonny Liston.jpg" alt="Pariah: The Lives and Deaths of Sonny Liston movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pariah: The Lives and Deaths of Sonny Liston (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pariah: The Lives and Deaths of Sonny Liston (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Liston's shadowy saga probes mob ties and murky ends. Enigmatic enigmas engage, but shadowy sources shadow the sleuthing with speculation. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Liston's shadowy saga probes mob ties and murky ends. Enigmatic enigmas engage, but shadowy sources shadow the sleuthing with speculation.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Sports Obsession</h2>
-            <p>Dark tales of fandom and rivalry gone too far.</p>
+        <!-- Sports Obsession Section -->
+        <section class="movie-section" aria-labelledby="obsession-heading">
+            <header class="section-header">
+                <h2 id="obsession-heading">Sports Obsession</h2>
+                <p>Dark tales of fandom and rivalry gone too far.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/The Fan.jpg" alt="The Fan Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/The Fan.jpg" alt="The Fan movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Fan (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Fan (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A fan's foul obsession fouls a baseball star's season. Tense thriller twists, but overblown histrionics homer into hammy territory. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A fan's foul obsession fouls a baseball star's season. Tense thriller twists, but overblown histrionics homer into hammy territory.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Disney+ Sports</h2>
-            <p>Family-friendly tales of athletic dreams and underdog victories.</p>
+        <!-- Disney+ Sports Section -->
+        <section class="movie-section" aria-labelledby="disney-heading">
+            <header class="section-header">
+                <h2 id="disney-heading">Disney+ Sports</h2>
+                <p>Family-friendly tales of athletic dreams and underdog victories.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/sports/Rise.jpg" alt="Rise Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sports/Rise.jpg" alt="Rise movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rise (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rise (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Antetokounmpos hoop from hardship to hardwood heroes. Heartwarming hustle hits, but polished Disney sheen smooths sibling struggles. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Antetokounmpos hoop from hardship to hardwood heroes. Heartwarming hustle hits, but polished Disney sheen smooths sibling struggles.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/sports/Eddie.jpg" alt="Eddie Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sports/Eddie.jpg" alt="Eddie movie poster" loading="lazy">
+                        <figcaption class="sr-only">Eddie (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Eddie (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A fan-fanatic coaches the Knicks to improbable wins. Cameo chaos courts laughs, but the benchwarmer plot benches originality. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A fan-fanatic coaches the Knicks to improbable wins. Cameo chaos courts laughs, but the benchwarmer plot benches originality.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

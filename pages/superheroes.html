@@ -3,27 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superheroes</title>
+    <title>Superheroes - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing superhero movies sorted by universe and franchise, with witty, insightful overviews and objective ratings based on Rotten Tomatoes consensus, factoring in negative reviews.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Superheroes</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Iconic heroes, epic team-ups, and super-powered adventures across multiple universes and franchises.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 78 movies</span>
+            <span class="movie-count">6 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
             <li><a href="african.html">African</a></li>
             <li><a href="ai-machines.html">AI & Machines</a></li>
             <li><a href="animation.html">Animation</a></li>
+            <li><a href="apocalyptic.html">Apocalyptic</a></li>
             <li><a href="assassins.html">Assassins</a></li>
             <li><a href="black-lives.html">Black Lives</a></li>
             <li><a href="christmas-family.html">Christmas & Family</a></li>
@@ -51,779 +57,1177 @@
             <li><a href="sports.html">Sports</a></li>
             <li><a href="spy-film.html">Spy Film</a></li>
             <li><a href="stand-up.html">Stand-up</a></li>
+            <li><a href="superheroes.html" aria-current="page">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Marvel Cinematic Universe</h2>
-            <p>Films from the interconnected Marvel universe, featuring iconic heroes and sprawling team-ups.</p>
+        <!-- Marvel Cinematic Universe Section -->
+        <section class="movie-section" aria-labelledby="mcu-heading">
+            <header class="section-header">
+                <h2 id="mcu-heading">Marvel Cinematic Universe</h2>
+                <p>Films from the interconnected Marvel universe, featuring iconic heroes and sprawling team-ups.</p>
+                <div class="section-stats">
+                    <span class="movie-count">27 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/superheroes/Avengers - Endgame.jpg" alt="Avengers - Endgame Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/superheroes/Avengers - Endgame.jpg" alt="Avengers - Endgame Cover" loading="lazy">
+                        <figcaption class="sr-only">Avengers: Endgame (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Avengers: Endgame (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Heroes unite for a time-bending showdown to undo cosmic devastation, delivering epic stakes and emotional closure. A monumental spectacle, though it leans hard on fan service. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Heroes unite for a time-bending showdown to undo cosmic devastation, delivering epic stakes and emotional closure. A monumental spectacle, though it leans hard on fan service.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Avengers  Infinity War.webp" alt="Avengers - Infinity War Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Avengers  Infinity War.webp" alt="Avengers - Infinity War Cover" loading="lazy">
+                        <figcaption class="sr-only">Avengers: Infinity War (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Avengers: Infinity War (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A galactic tyrant snaps his fingers, and heroes scramble to save reality itself. Jaw-dropping clashes, but the sprawling cast can overwhelm. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A galactic tyrant snaps his fingers, and heroes scramble to save reality itself. Jaw-dropping clashes, but the sprawling cast can overwhelm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Black Panther.jpg" alt="Black Panther Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Black Panther.jpg" alt="Black Panther Cover" loading="lazy">
+                        <figcaption class="sr-only">Black Panther (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Panther (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A king defends his futuristic African nation, blending cultural pride with high-tech action. Vibrant and groundbreaking, though the villain steals the show. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A king defends his futuristic African nation, blending cultural pride with high-tech action. Vibrant and groundbreaking, though the villain steals the show.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Captain America  Civil War.webp" alt="Captain America - Civil War Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Captain America  Civil War.webp" alt="Captain America - Civil War Cover" loading="lazy">
+                        <figcaption class="sr-only">Captain America: Civil War (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Captain America: Civil War (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ideals clash as heroes pick sides in a superhero showdown, with loyalty and duty tearing friends apart. Thrilling, but it’s practically an Avengers movie. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ideals clash as heroes pick sides in a superhero showdown, with loyalty and duty tearing friends apart. Thrilling, but it's practically an Avengers movie.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Captain America  The Winter Soldier.webp" alt="Captain America - The Winter Soldier Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Captain America  The Winter Soldier.webp" alt="Captain America - The Winter Soldier Cover" loading="lazy">
+                        <figcaption class="sr-only">Captain America: The Winter Soldier (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Captain America: The Winter Soldier (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A super-soldier uncovers a shadowy conspiracy, blending espionage with explosive action. Tight and thrilling, though the stakes feel familiar. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A super-soldier uncovers a shadowy conspiracy, blending espionage with explosive action. Tight and thrilling, though the stakes feel familiar.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Guardians of the Galaxy.jpg" alt="Guardians of the Galaxy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Guardians of the Galaxy.jpg" alt="Guardians of the Galaxy Cover" loading="lazy">
+                        <figcaption class="sr-only">Guardians of the Galaxy (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Guardians of the Galaxy (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Misfit space rogues band together to save the galaxy, fueled by a killer soundtrack and irreverent humor. Cosmic fun, though the plot’s a bit standard. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Misfit space rogues band together to save the galaxy, fueled by a killer soundtrack and irreverent humor. Cosmic fun, though the plot's a bit standard.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Guardians of the Galaxy Vol. 2.webp" alt="Guardians of the Galaxy Vol. 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Guardians of the Galaxy Vol. 2.webp" alt="Guardians of the Galaxy Vol. 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Guardians of the Galaxy Vol. 2 (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Guardians of the Galaxy Vol. 2 (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The ragtag crew explores family ties and cosmic threats, with more laughs and heart. Flashy and fun, but slightly overstuffed. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>The ragtag crew explores family ties and cosmic threats, with more laughs and heart. Flashy and fun, but slightly overstuffed.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Guardians of the Galaxy Vol. 3.webp" alt="Guardians of the Galaxy Vol. 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Guardians of the Galaxy Vol. 3.webp" alt="Guardians of the Galaxy Vol. 3 Cover" loading="lazy">
+                        <figcaption class="sr-only">Guardians of the Galaxy Vol. 3 (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Guardians of the Galaxy Vol. 3 (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Guardians face their darkest mission yet, with emotional depth and wild visuals. A fitting finale, though it’s heavy on sentiment. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Guardians face their darkest mission yet, with emotional depth and wild visuals. A fitting finale, though it's heavy on sentiment.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Iron Man.jpg" alt="Iron Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Iron Man.jpg" alt="Iron Man Cover" loading="lazy">
+                        <figcaption class="sr-only">Iron Man (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Iron Man (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A genius playboy builds a high-tech suit to fight evil, launching a cinematic universe with wit and swagger. Iconic start, though it’s light on depth. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A genius playboy builds a high-tech suit to fight evil, launching a cinematic universe with wit and swagger. Iconic start, though it's light on depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Spider-Man - Homecoming 2017.jpg" alt="Spider-Man - Homecoming Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Spider-Man - Homecoming 2017.jpg" alt="Spider-Man - Homecoming Cover" loading="lazy">
+                        <figcaption class="sr-only">Spider-Man: Homecoming (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spider-Man: Homecoming (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young web-slinger balances teen life and heroics under Iron Man’s wing. Fresh and fun, though it leans hard on MCU connections. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young web-slinger balances teen life and heroics under Iron Man's wing. Fresh and fun, though it leans hard on MCU connections.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Thor - Ragnarok.jpg" alt="Thor - Ragnarok Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Thor - Ragnarok.jpg" alt="Thor - Ragnarok Cover" loading="lazy">
+                        <figcaption class="sr-only">Thor: Ragnarok (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Thor: Ragnarok (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A thunder god teams up with misfits to save Asgard in a colorful, comedic cosmic romp. Vibrant and hilarious, though the stakes feel light. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A thunder god teams up with misfits to save Asgard in a colorful, comedic cosmic romp. Vibrant and hilarious, though the stakes feel light.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Avengers - Age of Ultron.webp" alt="Avengers - Age of Ultron Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Avengers - Age of Ultron.webp" alt="Avengers - Age of Ultron Cover" loading="lazy">
+                        <figcaption class="sr-only">Avengers: Age of Ultron (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Avengers: Age of Ultron (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Heroes battle a rogue AI bent on global domination, with quips and chaos aplenty. Ambitious but messy, it’s a middle chapter that sags. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Heroes battle a rogue AI bent on global domination, with quips and chaos aplenty. Ambitious but messy, it's a middle chapter that sags.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Black Panther Wakanda Forever.jpg" alt="Black Panther - Wakanda Forever Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Black Panther Wakanda Forever.jpg" alt="Black Panther - Wakanda Forever Cover" loading="lazy">
+                        <figcaption class="sr-only">Black Panther: Wakanda Forever (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Panther: Wakanda Forever (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Wakanda mourns and fights to protect its legacy against a new aquatic threat. Emotional and bold, but overstretched with grief. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Wakanda mourns and fights to protect its legacy against a new aquatic threat. Emotional and bold, but overstretched with grief.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Captain America - The First Avenger.jpg" alt="Captain America - The First Avenger Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Captain America - The First Avenger.jpg" alt="Captain America - The First Avenger Cover" loading="lazy">
+                        <figcaption class="sr-only">Captain America: The First Avenger (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Captain America: The First Avenger (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A scrawny kid becomes a WWII super-soldier, fighting Nazis and finding purpose. Earnest and nostalgic, but a bit formulaic. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A scrawny kid becomes a WWII super-soldier, fighting Nazis and finding purpose. Earnest and nostalgic, but a bit formulaic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Captain Marvel.webp" alt="Captain Marvel Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Captain Marvel.webp" alt="Captain Marvel Cover" loading="lazy">
+                        <figcaption class="sr-only">Captain Marvel (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Captain Marvel (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cosmic warrior uncovers her Earth-bound past, blasting through alien conspiracies. Empowering but predictable, with 90s nostalgia as a bonus. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cosmic warrior uncovers her Earth-bound past, blasting through alien conspiracies. Empowering but predictable, with 90s nostalgia as a bonus.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Doctor Strange.jpg" alt="Doctor Strange Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Doctor Strange.jpg" alt="Doctor Strange Cover" loading="lazy">
+                        <figcaption class="sr-only">Doctor Strange (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Doctor Strange (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A surgeon turned sorcerer bends time and reality to save the world. Mind-bending visuals, but the origin story treads familiar ground. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A surgeon turned sorcerer bends time and reality to save the world. Mind-bending visuals, but the origin story treads familiar ground.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Doctor Strange in the Multiverse of Madness.jpg" alt="Doctor Strange in the Multiverse of Madness Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Doctor Strange in the Multiverse of Madness.jpg" alt="Doctor Strange in the Multiverse of Madness Cover" loading="lazy">
+                        <figcaption class="sr-only">Doctor Strange in the Multiverse of Madness (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Doctor Strange in the Multiverse of Madness (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Magic and multiversal chaos collide as a sorcerer faces dark temptations. Stylish and wild, but the plot’s a tangled spell. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Magic and multiversal chaos collide as a sorcerer faces dark temptations. Stylish and wild, but the plot's a tangled spell.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Iron Man 2.jpg" alt="Iron Man 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Iron Man 2.jpg" alt="Iron Man 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Iron Man 2 (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Iron Man 2 (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tony Stark faces rivals and his own demons while juggling new tech and enemies. Fun but cluttered, it’s a sequel with spark but no shine. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tony Stark faces rivals and his own demons while juggling new tech and enemies. Fun but cluttered, it's a sequel with spark but no shine.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Shang-Chi and the Legend of the Ten Rings.webp" alt="Shang-Chi and the Legend of the Ten Rings Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Shang-Chi and the Legend of the Ten Rings.webp" alt="Shang-Chi and the Legend of the Ten Rings Cover" loading="lazy">
+                        <figcaption class="sr-only">Shang-Chi and the Legend of the Ten Rings (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shang-Chi and the Legend of the Ten Rings (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A martial artist confronts his shadowy past and a mystical legacy. Dynamic fights and rich lore, though it leans on formula. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A martial artist confronts his shadowy past and a mystical legacy. Dynamic fights and rich lore, though it leans on formula.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/The Avengers 2012.jpg" alt="The Avengers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/The Avengers 2012.jpg" alt="The Avengers Cover" loading="lazy">
+                        <figcaption class="sr-only">The Avengers (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Avengers (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Earth’s mightiest heroes unite to fend off an alien invasion. Explosive team-up thrills, but it’s more flash than depth. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Earth's mightiest heroes unite to fend off an alien invasion. Explosive team-up thrills, but it's more flash than depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Ant-Man.webp" alt="Ant-Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Ant-Man.webp" alt="Ant-Man Cover" loading="lazy">
+                        <figcaption class="sr-only">Ant-Man (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ant-Man (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A thief shrinks to save the day with tiny tech and big heart. Light and quirky, but it’s small-scale in ambition too. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A thief shrinks to save the day with tiny tech and big heart. Light and quirky, but it's small-scale in ambition too.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Ant-Man and the Wasp.jpg" alt="Ant-Man and the Wasp Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Ant-Man and the Wasp.jpg" alt="Ant-Man and the Wasp Cover" loading="lazy">
+                        <figcaption class="sr-only">Ant-Man and the Wasp (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ant-Man and the Wasp (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Shrinking heroes tackle a quantum heist with zippy action and humor. Breezy fun, but it’s forgettable fluff. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Shrinking heroes tackle a quantum heist with zippy action and humor. Breezy fun, but it's forgettable fluff.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Iron Man 3.jpg" alt="Iron Man 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Iron Man 3.jpg" alt="Iron Man 3 Cover" loading="lazy">
+                        <figcaption class="sr-only">Iron Man 3 (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Iron Man 3 (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tony battles trauma and a fiery foe while grounded. Introspective but uneven, with a twist that divides fans. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tony battles trauma and a fiery foe while grounded. Introspective but uneven, with a twist that divides fans.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Thor.jpg" alt="Thor Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Thor.jpg" alt="Thor Cover" loading="lazy">
+                        <figcaption class="sr-only">Thor (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Thor (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A brash god learns humility on Earth while facing cosmic kin. Mythic but clunky, it’s a rocky start for the thunderer. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A brash god learns humility on Earth while facing cosmic kin. Mythic but clunky, it's a rocky start for the thunderer.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Ant-Man and the Wasp Quantumania.jpg" alt="Ant-Man and the Wasp - Quantumania Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Ant-Man and the Wasp Quantumania.jpg" alt="Ant-Man and the Wasp - Quantumania Cover" loading="lazy">
+                        <figcaption class="sr-only">Ant-Man and the Wasp: Quantumania (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ant-Man and the Wasp: Quantumania (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tiny heroes get lost in a quantum mess, facing a multiversal menace. Ambitious visuals, but the story’s a chaotic speck. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tiny heroes get lost in a quantum mess, facing a multiversal menace. Ambitious visuals, but the story's a chaotic speck.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Thor - The Dark World.jpg" alt="Thor - The Dark World Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Thor - The Dark World.jpg" alt="Thor - The Dark World Cover" loading="lazy">
+                        <figcaption class="sr-only">Thor: The Dark World (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Thor: The Dark World (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Thor battles dark elves to save the cosmos, but the plot’s murkier than the title. Forgettable filler with some cool effects. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Thor battles dark elves to save the cosmos, but the plot's murkier than the title. Forgettable filler with some cool effects.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/The Incredible Hulk.jpg" alt="The Incredible Hulk Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/The Incredible Hulk.jpg" alt="The Incredible Hulk Cover" loading="lazy">
+                        <figcaption class="sr-only">The Incredible Hulk (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Incredible Hulk (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A scientist flees his green alter-ego while hunted by the military. Decent action, but it’s a hulk-sized missed opportunity. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A scientist flees his green alter-ego while hunted by the military. Decent action, but it's a hulk-sized missed opportunity.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>DC Extended Universe</h2>
-            <p>Films from DC’s cinematic universe, showcasing gritty heroes and mythic conflicts.</p>
+        <!-- DC Extended Universe Section -->
+        <section class="movie-section" aria-labelledby="dceu-heading">
+            <header class="section-header">
+                <h2 id="dceu-heading">DC Extended Universe</h2>
+                <p>Films from DC's cinematic universe, showcasing gritty heroes and mythic conflicts.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Wonder Woman.jpg" alt="Wonder Woman Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Wonder Woman.jpg" alt="Wonder Woman Cover" loading="lazy">
+                        <figcaption class="sr-only">Wonder Woman (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Wonder Woman (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An Amazon warrior battles in WWI, blending myth with heart-pounding action. Empowering and epic, though the finale’s a bit generic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>An Amazon warrior battles in WWI, blending myth with heart-pounding action. Empowering and epic, though the finale's a bit generic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Aquaman.jpg" alt="Aquaman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Aquaman.jpg" alt="Aquaman Cover" loading="lazy">
+                        <figcaption class="sr-only">Aquaman (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Aquaman (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An ocean king claims his throne in a splashy underwater epic. Bold visuals, but the story’s as shallow as a tide pool. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>An ocean king claims his throne in a splashy underwater epic. Bold visuals, but the story's as shallow as a tide pool.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Shazam!.jpg" alt="Shazam! Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Shazam!.jpg" alt="Shazam! Cover" loading="lazy">
+                        <figcaption class="sr-only">Shazam! (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shazam! (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A kid transforms into a goofy superhero, embracing powers with childlike glee. Fun and heartfelt, but light on stakes. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A kid transforms into a goofy superhero, embracing powers with childlike glee. Fun and heartfelt, but light on stakes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Man of Steel 2013.jpg" alt="Man of Steel Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Man of Steel 2013.jpg" alt="Man of Steel Cover" loading="lazy">
+                        <figcaption class="sr-only">Man of Steel (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Man of Steel (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Superman’s origin gets a gritty reboot, with city-leveling battles and moral weight. Visually grand, but overly somber. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Superman's origin gets a gritty reboot, with city-leveling battles and moral weight. Visually grand, but overly somber.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Aquaman and the Lost Kingdom.jpg" alt="Aquaman and the Lost Kingdom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Aquaman and the Lost Kingdom.jpg" alt="Aquaman and the Lost Kingdom Cover" loading="lazy">
+                        <figcaption class="sr-only">Aquaman and the Lost Kingdom (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Aquaman and the Lost Kingdom (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aquaman dives back into action to save his kingdom, with more underwater flair. Colorful but cluttered, it’s a soggy sequel. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aquaman dives back into action to save his kingdom, with more underwater flair. Colorful but cluttered, it's a soggy sequel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Shazam! Fury of the Gods.jpg" alt="Shazam! Fury of the Gods Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Shazam! Fury of the Gods.jpg" alt="Shazam! Fury of the Gods Cover" loading="lazy">
+                        <figcaption class="sr-only">Shazam! Fury of the Gods (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shazam! Fury of the Gods (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Shazam family faces divine wrath in a chaotic sequel. Playful but overstuffed, it’s a lightning bolt that fizzles. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Shazam family faces divine wrath in a chaotic sequel. Playful but overstuffed, it's a lightning bolt that fizzles.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Batman v Superman - Dawn of Justice.jpg" alt="Batman v Superman - Dawn of Justice Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Batman v Superman - Dawn of Justice.jpg" alt="Batman v Superman - Dawn of Justice Cover" loading="lazy">
+                        <figcaption class="sr-only">Batman v Superman: Dawn of Justice (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Batman v Superman: Dawn of Justice (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two titans clash in a grim, overstuffed epic, setting up a universe that stumbles. Ambitious but muddled, with a dour tone. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two titans clash in a grim, overstuffed epic, setting up a universe that stumbles. Ambitious but muddled, with a dour tone.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Black Adam.jpg" alt="Black Adam Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Black Adam.jpg" alt="Black Adam Cover" loading="lazy">
+                        <figcaption class="sr-only">Black Adam (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Adam (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An antihero unleashes ancient power, but generic action and a thin plot dim the spark. Loud and forgettable. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>An antihero unleashes ancient power, but generic action and a thin plot dim the spark. Loud and forgettable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Suicide Squad.jpg" alt="Suicide Squad Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Suicide Squad.jpg" alt="Suicide Squad Cover" loading="lazy">
+                        <figcaption class="sr-only">Suicide Squad (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Suicide Squad (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Villains team up for a chaotic mission, with style but no substance. Flashy visuals can’t save a jumbled mess. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Villains team up for a chaotic mission, with style but no substance. Flashy visuals can't save a jumbled mess.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Batman Legacy</h2>
-            <p>Standalone and series-based films centered on Gotham’s Dark Knight across different eras.</p>
+        <!-- Batman Legacy Section -->
+        <section class="movie-section" aria-labelledby="batman-legacy-heading">
+            <header class="section-header">
+                <h2 id="batman-legacy-heading">Batman Legacy</h2>
+                <p>Standalone and series-based films centered on Gotham's Dark Knight across different eras.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/superheroes/The Dark Knight.jpg" alt="The Dark Knight Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/superheroes/The Dark Knight.jpg" alt="The Dark Knight Cover" loading="lazy">
+                        <figcaption class="sr-only">The Dark Knight (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Dark Knight (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gotham’s gritty superhero saga where chaos wears a purple suit. Explosive action, moral dilemmas, and a pencil trick you’ll never forget. A bit overlong, but it’s the hero we deserve. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Gotham's gritty superhero saga where chaos wears a purple suit. Explosive action, moral dilemmas, and a pencil trick you'll never forget. A bit overlong, but it's the hero we deserve.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Batman Begins.jpg" alt="Batman Begins Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Batman Begins.jpg" alt="Batman Begins Cover" loading="lazy">
+                        <figcaption class="sr-only">Batman Begins (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Batman Begins (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bruce Wayne becomes the Dark Knight, forging his crusade against crime. Grounded and intense, though it takes time to soar. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bruce Wayne becomes the Dark Knight, forging his crusade against crime. Grounded and intense, though it takes time to soar.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/The Batman.jpg" alt="The Batman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/The Batman.jpg" alt="The Batman Cover" loading="lazy">
+                        <figcaption class="sr-only">The Batman (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Batman (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A brooding detective hunts a sadistic killer in a noir-drenched Gotham. Atmospheric and gripping, though it lingers too long. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A brooding detective hunts a sadistic killer in a noir-drenched Gotham. Atmospheric and gripping, though it lingers too long.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/The Dark Knight Rises.jpg" alt="The Dark Knight Rises Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/The Dark Knight Rises.jpg" alt="The Dark Knight Rises Cover" loading="lazy">
+                        <figcaption class="sr-only">The Dark Knight Rises (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Dark Knight Rises (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Batman faces a brutal foe to save Gotham from ruin. Epic but bloated, it closes the trilogy with ambition if not precision. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Batman faces a brutal foe to save Gotham from ruin. Epic but bloated, it closes the trilogy with ambition if not precision.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Batman Returns.jpg" alt="Batman Returns Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Batman Returns.jpg" alt="Batman Returns Cover" loading="lazy">
+                        <figcaption class="sr-only">Batman Returns (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Batman Returns (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gotham’s caped crusader battles a feline femme fatale and a waddling crime lord. Quirky and dark, but overstuffed with villains. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Gotham's caped crusader battles a feline femme fatale and a waddling crime lord. Quirky and dark, but overstuffed with villains.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Batman.png" alt="Batman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Batman.png" alt="Batman Cover" loading="lazy">
+                        <figcaption class="sr-only">Batman (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Batman (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A gothic take on the Dark Knight facing a manic clown. Iconic for its time, but dated and uneven today. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A gothic take on the Dark Knight facing a manic clown. Iconic for its time, but dated and uneven today.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/superheroes/Batman and Robin.jpg" alt="Batman & Robin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/superheroes/Batman and Robin.jpg" alt="Batman & Robin Cover" loading="lazy">
+                        <figcaption class="sr-only">Batman & Robin (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Batman & Robin (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Campy chaos with ice puns and neon excess, derailing the franchise with cartoonish glee. A frosty misfire. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Campy chaos with ice puns and neon excess, derailing the franchise with cartoonish glee. A frosty misfire.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Spider-Man Legacy</h2>
-            <p>Films following the web-slinger’s adventures across different franchises and iterations.</p>
+        <!-- Spider-Man Legacy Section -->
+        <section class="movie-section" aria-labelledby="spiderman-legacy-heading">
+            <header class="section-header">
+                <h2 id="spiderman-legacy-heading">Spider-Man Legacy</h2>
+                <p>Films following the web-slinger's adventures across different franchises and iterations.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Spider-Man 2.jpg" alt="Spider-Man 2 Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Spider-Man 2.jpg" alt="Spider-Man 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Spider-Man 2 (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spider-Man 2 (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Peter Parker juggles heroics and heartbreak while battling a multi-armed menace. Heartfelt and thrilling, it’s a web-spinning classic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Peter Parker juggles heroics and heartbreak while battling a multi-armed menace. Heartfelt and thrilling, it's a web-spinning classic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Spider-Man.jpg" alt="Spider-Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Spider-Man.jpg" alt="Spider-Man Cover" loading="lazy">
+                        <figcaption class="sr-only">Spider-Man (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spider-Man (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen gains powers and fights crime, learning responsibility the hard way. Nostalgic and earnest, though a bit dated. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen gains powers and fights crime, learning responsibility the hard way. Nostalgic and earnest, though a bit dated.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/The Amazing Spider-Man.jpg" alt="The Amazing Spider-Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/The Amazing Spider-Man.jpg" alt="The Amazing Spider-Man Cover" loading="lazy">
+                        <figcaption class="sr-only">The Amazing Spider-Man (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Amazing Spider-Man (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rebooted Spidey tackles a lizardly foe and personal mysteries. Fresh and stylish, but it retreads familiar webs. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rebooted Spidey tackles a lizardly foe and personal mysteries. Fresh and stylish, but it retreads familiar webs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Spider-Man 3.jpg" alt="Spider-Man 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Spider-Man 3.jpg" alt="Spider-Man 3 Cover" loading="lazy">
+                        <figcaption class="sr-only">Spider-Man 3 (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Spider-Man 3 (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Peter battles symbiotes and inner demons, but too many villains clog the web. Ambitious but overstuffed. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Peter battles symbiotes and inner demons, but too many villains clog the web. Ambitious but overstuffed.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>X-Men Universe</h2>
-            <p>Mutant heroes and villains clash in a world fearing their powers.</p>
+        <!-- X-Men Universe Section -->
+        <section class="movie-section" aria-labelledby="xmen-universe-heading">
+            <header class="section-header">
+                <h2 id="xmen-universe-heading">X-Men Universe</h2>
+                <p>Mutant heroes and villains clash in a world fearing their powers.</p>
+                <div class="section-stats">
+                    <span class="movie-count">10 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/X-Men - Days of Future Past.jpg" alt="X-Men - Days of Future Past Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/X-Men - Days of Future Past.jpg" alt="X-Men - Days of Future Past Cover" loading="lazy">
+                        <figcaption class="sr-only">X-Men: Days of Future Past (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X-Men: Days of Future Past (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mutants time-travel to prevent a dystopian future, blending eras with high stakes. Thrilling and smart, though complex. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mutants time-travel to prevent a dystopian future, blending eras with high stakes. Thrilling and smart, though complex.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Logan.jpg" alt="Logan Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Logan.jpg" alt="Logan Cover" loading="lazy">
+                        <figcaption class="sr-only">Logan (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Logan (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A weathered Wolverine protects a young mutant in a brutal, heartfelt farewell. Gritty and emotional, it’s a claw-some swan song. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A weathered Wolverine protects a young mutant in a brutal, heartfelt farewell. Gritty and emotional, it's a claw-some swan song.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/X-Men First Class.jpg" alt="X-Men - First Class Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/X-Men First Class.jpg" alt="X-Men - First Class Cover" loading="lazy">
+                        <figcaption class="sr-only">X-Men: First Class (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X-Men: First Class (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Young mutants forge alliances and rivalries in a 60s-set origin. Stylish and engaging, though it’s a bit safe. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Young mutants forge alliances and rivalries in a 60s-set origin. Stylish and engaging, though it's a bit safe.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/X2.jpg" alt="X2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/X2.jpg" alt="X2 Cover" loading="lazy">
+                        <figcaption class="sr-only">X2 (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X2 (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mutants unite against a genocidal plot, with action and heart. Strong sequel, though it shows its age. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mutants unite against a genocidal plot, with action and heart. Strong sequel, though it shows its age.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/X-Men.jpg" alt="X-Men Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/X-Men.jpg" alt="X-Men Cover" loading="lazy">
+                        <figcaption class="sr-only">X-Men (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X-Men (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mutants battle prejudice and a magnetic villain in a groundbreaking start. Dated but pivotal for the genre. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mutants battle prejudice and a magnetic villain in a groundbreaking start. Dated but pivotal for the genre.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/The Wolverine.jpg" alt="The Wolverine Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/The Wolverine.jpg" alt="The Wolverine Cover" loading="lazy">
+                        <figcaption class="sr-only">The Wolverine (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Wolverine (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Logan faces samurai and immortality in Japan. Gritty action, but the story’s a bit of a claw-back. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Logan faces samurai and immortality in Japan. Gritty action, but the story's a bit of a claw-back.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/X-Men Apocalypse.jpg" alt="X-Men - Apocalypse Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/X-Men Apocalypse.jpg" alt="X-Men - Apocalypse Cover" loading="lazy">
+                        <figcaption class="sr-only">X-Men: Apocalypse (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X-Men: Apocalypse (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mutants face an ancient god, but bloated stakes and generic chaos dim the spark. Ambitious but underwhelming. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mutants face an ancient god, but bloated stakes and generic chaos dim the spark. Ambitious but underwhelming.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/X-Men - The Last Stand.jpg" alt="X-Men - The Last Stand Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/X-Men - The Last Stand.jpg" alt="X-Men - The Last Stand Cover" loading="lazy">
+                        <figcaption class="sr-only">X-Men: The Last Stand (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X-Men: The Last Stand (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mutants clash over a cure, but rushed plotting and character missteps weaken the impact. A messy finale. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mutants clash over a cure, but rushed plotting and character missteps weaken the impact. A messy finale.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/superheroes/X-Men - Dark Phoenix.jpg" alt="X-Men - Dark Phoenix Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/superheroes/X-Men - Dark Phoenix.jpg" alt="X-Men - Dark Phoenix Cover" loading="lazy">
+                        <figcaption class="sr-only">X-Men: Dark Phoenix (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X-Men: Dark Phoenix (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mutant’s cosmic power spirals out of control, but lackluster execution dims the fire. A flat farewell. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mutant's cosmic power spirals out of control, but lackluster execution dims the fire. A flat farewell.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/superheroes/X-Men Origins - Wolverine.jpg" alt="X-Men Origins - Wolverine Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/superheroes/X-Men Origins - Wolverine.jpg" alt="X-Men Origins - Wolverine Cover" loading="lazy">
+                        <figcaption class="sr-only">X-Men Origins: Wolverine (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>X-Men Origins: Wolverine (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Logan’s past unravels in a cluttered origin story. Some fun action, but it’s a choppy mutant mess. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Logan's past unravels in a cluttered origin story. Some fun action, but it's a choppy mutant mess.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Other Superhero Films</h2>
-            <p>Standalone or non-franchise superhero stories, including antiheroes and unique takes.</p>
+        <!-- Other Superhero Films Section -->
+        <section class="movie-section" aria-labelledby="other-superheroes-heading">
+            <header class="section-header">
+                <h2 id="other-superheroes-heading">Other Superhero Films</h2>
+                <p>Standalone or non-franchise superhero stories, including antiheroes and unique takes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">15 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Deadpool.jpg" alt="Deadpool Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Deadpool.jpg" alt="Deadpool Cover" loading="lazy">
+                        <figcaption class="sr-only">Deadpool (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Deadpool (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A wisecracking mercenary seeks revenge with bullets and chimichangas. Raunchy, irreverent, and wildly entertaining. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A wisecracking mercenary seeks revenge with bullets and chimichangas. Raunchy, irreverent, and wildly entertaining.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Deadpool 2.jpg" alt="Deadpool 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Deadpool 2.jpg" alt="Deadpool 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Deadpool 2 (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Deadpool 2 (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The merc with a mouth teams up for more meta mayhem and heart. Crude and chaotic, it’s a bloody good time. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>The merc with a mouth teams up for more meta mayhem and heart. Crude and chaotic, it's a bloody good time.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/superheroes/Deadpool and Wolverine.png" alt="Deadpool and Wolverine Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/superheroes/Deadpool and Wolverine.png" alt="Deadpool and Wolverine Cover" loading="lazy">
+                        <figcaption class="sr-only">Deadpool & Wolverine (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Deadpool & Wolverine (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two regenerators team up for a multiversal buddy comedy with guts and gags. Nostalgic and nutty, it’s a stab-happy blast. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two regenerators team up for a multiversal buddy comedy with guts and gags. Nostalgic and nutty, it's a stab-happy blast.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Hancock.jpg" alt="Hancock Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Hancock.jpg" alt="Hancock Cover" loading="lazy">
+                        <figcaption class="sr-only">Hancock (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hancock (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A flawed superhuman cleans up his act and his city. Fresh take on heroics, but the second half stumbles. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A flawed superhuman cleans up his act and his city. Fresh take on heroics, but the second half stumbles.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Superman.jpg" alt="Superman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Superman.jpg" alt="Superman Cover" loading="lazy">
+                        <figcaption class="sr-only">Superman (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Superman (1978)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Man of Steel saves the world with old-school charm. Groundbreaking for its time, though it feels dated now. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Man of Steel saves the world with old-school charm. Groundbreaking for its time, though it feels dated now.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/superheroes/Superman 2.jpg" alt="Superman 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/superheroes/Superman 2.jpg" alt="Superman 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Superman 2 (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Superman 2 (1980)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Superman faces Kryptonian foes and a romantic dilemma. Classic but creaky, it’s a nostalgic power-up. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Superman faces Kryptonian foes and a romantic dilemma. Classic but creaky, it's a nostalgic power-up.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/superheroes/Teenage Mutant Ninja Turtles.jpeg" alt="Teenage Mutant Ninja Turtles Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/superheroes/Teenage Mutant Ninja Turtles.jpeg" alt="Teenage Mutant Ninja Turtles Cover" loading="lazy">
+                        <figcaption class="sr-only">Teenage Mutant Ninja Turtles (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Teenage Mutant Ninja Turtles (1990)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pizza-loving turtles fight crime with martial arts flair. Cheesy fun, but the low budget shows. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Pizza-loving turtles fight crime with martial arts flair. Cheesy fun, but the low budget shows.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Daredevil.jpg" alt="Daredevil Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Daredevil.jpg" alt="Daredevil Cover" loading="lazy">
+                        <figcaption class="sr-only">Daredevil (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Daredevil (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A blind vigilante fights crime with heightened senses. Gritty ideas, but clunky execution and dated vibes. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A blind vigilante fights crime with heightened senses. Gritty ideas, but clunky execution and dated vibes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Fantastic Four.jpg" alt="Fantastic Four Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Fantastic Four.jpg" alt="Fantastic Four Cover" loading="lazy">
+                        <figcaption class="sr-only">Fantastic Four (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fantastic Four (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cosmic family battles a metallic foe. Light and campy, but lacks the spark of true heroism. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cosmic family battles a metallic foe. Light and campy, but lacks the spark of true heroism.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Fantastic Four - Rise of the Silver Surfer.jpg" alt="Fantastic Four - Rise of the Silver Surfer Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Fantastic Four - Rise of the Silver Surfer.jpg" alt="Fantastic Four - Rise of the Silver Surfer Cover" loading="lazy">
+                        <figcaption class="sr-only">Fantastic Four: Rise of the Silver Surfer (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fantastic Four: Rise of the Silver Surfer (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Fantastic Four face a cosmic herald, but bland plotting dims the shine. Flashy but forgettable. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Fantastic Four face a cosmic herald, but bland plotting dims the shine. Flashy but forgettable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/superheroes/Venom.jpg" alt="Venom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/superheroes/Venom.jpg" alt="Venom Cover" loading="lazy">
+                        <figcaption class="sr-only">Venom (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Venom (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A journalist bonds with a gooey symbiote for chaotic heroics. Fun but messy, it’s a tonal rollercoaster. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A journalist bonds with a gooey symbiote for chaotic heroics. Fun but messy, it's a tonal rollercoaster.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/superheroes/Bloodshot.jpg" alt="Bloodshot Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/superheroes/Bloodshot.jpg" alt="Bloodshot Cover" loading="lazy">
+                        <figcaption class="sr-only">Bloodshot (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bloodshot (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A resurrected soldier uncovers a tech-fueled conspiracy. Generic action and weak stakes make it forgettable. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A resurrected soldier uncovers a tech-fueled conspiracy. Generic action and weak stakes make it forgettable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/superheroes/Green Lantern.jpg" alt="Green Lantern Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/superheroes/Green Lantern.jpg" alt="Green Lantern Cover" loading="lazy">
+                        <figcaption class="sr-only">Green Lantern (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Green Lantern (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pilot wields a cosmic ring, but bad effects and a thin plot dim the glow. A galactic misfire. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pilot wields a cosmic ring, but bad effects and a thin plot dim the glow. A galactic misfire.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/superheroes/The Darkest Minds.jpg" alt="The Darkest Minds Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/superheroes/The Darkest Minds.jpg" alt="The Darkest Minds Cover" loading="lazy">
+                        <figcaption class="sr-only">The Darkest Minds (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Darkest Minds (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teens with powers fight a dystopian regime. Intriguing setup, but generic execution and weak follow-through. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Teens with powers fight a dystopian regime. Intriguing setup, but generic execution and weak follow-through.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/superheroes/Morbius.jpg" alt="Morbius Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/superheroes/Morbius.jpg" alt="Morbius Cover" loading="lazy">
+                        <figcaption class="sr-only">Morbius (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Morbius (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A scientist becomes a vampire in a lifeless, incoherent slog. Muddled plot and zero pulse—it’s a cinematic bloodbath. Rating: 1/10.</p>
+                        <h4>Overview</h4>
+                        <p>A scientist becomes a vampire in a lifeless, incoherent slog. Muddled plot and zero pulse—it's a cinematic bloodbath.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

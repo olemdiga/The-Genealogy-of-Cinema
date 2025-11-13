@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Martial Arts</title>
+    <title>Martial Arts - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing martial arts movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing martial arts movies I've watched, rated by color. Explore classic kung fu, modern martial arts, action-comedy, and historical wuxia films.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Martial Arts</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Showcasing martial arts movies I've watched, rated by color. Explore classic kung fu, modern martial arts, action-comedy, and historical wuxia films.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 96 movies</span>
+            <span class="movie-count">9 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -40,11 +45,12 @@
             <li><a href="historical-biographical.html">Historical & Biographical</a></li>
             <li><a href="horror.html">Horror</a></li>
             <li><a href="literature.html">Literature</a></li>
-            <li><a href="martial-arts.html">Martial Arts</a></li>
+            <li><a href="martial-arts.html" aria-current="page">Martial Arts</a></li>
             <li><a href="monsters-aliens.html">Monsters & Aliens</a></li>
             <li><a href="music-dance.html">Music & Dance</a></li>
             <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
             <li><a href="relationships.html">Relationships</a></li>
+            <li><a href="religion-mythology.html">Religion & Mythology</a></li>
             <li><a href="sci-fi.html">Sci-Fi</a></li>
             <li><a href="serial-killers.html">Serial Killers</a></li>
             <li><a href="series-films.html">Series Films</a></li>
@@ -53,849 +59,1304 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Classic Kung Fu</h2>
-            <p>Iconic films from the golden age of Hong Kong martial arts, emphasizing traditional techniques and choreography.</p>
+        <!-- Classic Kung Fu Section -->
+        <section class="movie-section" aria-labelledby="classic-kung-fu-heading">
+            <header class="section-header">
+                <h2 id="classic-kung-fu-heading">Classic Kung Fu</h2>
+                <p>Iconic films from the golden age of Hong Kong martial arts, emphasizing traditional techniques and choreography.</p>
+                <div class="section-stats">
+                    <span class="movie-count">16 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/martial-arts/Enter The Dragon.jpg" alt="Enter the Dragon Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/martial-arts/Enter The Dragon.jpg" alt="Enter the Dragon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Enter the Dragon (1973)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Enter the Dragon (1973)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bruce Lee infiltrates a crime lord’s island tournament, delivering electrifying fights and raw charisma. A genre-defining masterpiece, though the plot’s simple. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bruce Lee infiltrates a crime lord's island tournament, delivering electrifying fights and raw charisma. A genre-defining masterpiece, though the plot's simple.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/Drunken Master.jpg" alt="Drunken Master Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/Drunken Master.jpg" alt="Drunken Master movie poster" loading="lazy">
+                        <figcaption class="sr-only">Drunken Master (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Drunken Master (1978)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young Jackie Chan masters a quirky fighting style with boozy flair. Playful and inventive, it’s a kung fu classic with heart. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young Jackie Chan masters a quirky fighting style with boozy flair. Playful and inventive, it's a kung fu classic with heart.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/Fist of Fury.jpg" alt="Fist of Fury Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/Fist of Fury.jpg" alt="Fist of Fury movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fist of Fury (1972)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fist of Fury (1972)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bruce Lee avenges his master in a fiery tale of nationalism and vengeance. Intense fights, but the story leans on melodrama. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bruce Lee avenges his master in a fiery tale of nationalism and vengeance. Intense fights, but the story leans on melodrama.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/The Way of the Dragon.jpg" alt="The Way of the Dragon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Way of the Dragon.jpg" alt="The Way of the Dragon movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Way of the Dragon (1972)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Way of the Dragon (1972)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bruce Lee faces off in Rome, culminating in an iconic Colosseum showdown. Raw and thrilling, though the pacing drags at times. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bruce Lee faces off in Rome, culminating in an iconic Colosseum showdown. Raw and thrilling, though the pacing drags at times.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/The Big Boss.jpg" alt="The Big Boss Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Big Boss.jpg" alt="The Big Boss movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Big Boss (1971)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Big Boss (1971)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bruce Lee’s breakout sees him smashing a crime ring. Gritty action, but the story’s thin and dated. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bruce Lee's breakout sees him smashing a crime ring. Gritty action, but the story's thin and dated.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Shaolin Wooden Men.jpg" alt="Shaolin Wooden Men Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Shaolin Wooden Men.jpg" alt="Shaolin Wooden Men movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shaolin Wooden Men (1976)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shaolin Wooden Men (1976)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mute monk trains to face wooden dummies and foes. Jackie’s early work shines, but the plot’s bare-bones. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mute monk trains to face wooden dummies and foes. Jackie's early work shines, but the plot's bare-bones.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Snake in the Eagle's Shadow.jpg" alt="Snake in the Eagle's Shadow Cover">
-                    <div class="movie-title">
-                        <h3>Snake in the Eagle’s Shadow (1978)</h3>
-                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Snake in the Eagle's Shadow.jpg" alt="Snake in the Eagle's Shadow movie poster" loading="lazy">
+                        <figcaption class="sr-only">Snake in the Eagle's Shadow (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Snake in the Eagle's Shadow (1978)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan learns a unique style to fend off rivals. Fun and fluid choreography, though the story’s predictable. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan learns a unique style to fend off rivals. Fun and fluid choreography, though the story's predictable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/The Young Master.jpg" alt="The Young Master Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Young Master.jpg" alt="The Young Master movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Young Master (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Young Master (1980)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan hunts a fugitive with acrobatic flair. Energetic fights, but the narrative’s a bit sloppy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan hunts a fugitive with acrobatic flair. Energetic fights, but the narrative's a bit sloppy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Game of Death.jpg" alt="Game of Death Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Game of Death.jpg" alt="Game of Death movie poster" loading="lazy">
+                        <figcaption class="sr-only">Game of Death (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Game of Death (1978)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bruce Lee battles up a tower, but posthumous edits dilute his magic. Iconic yellow suit, weak story. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bruce Lee battles up a tower, but posthumous edits dilute his magic. Iconic yellow suit, weak story.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Game of Death II.jpg" alt="Game of Death II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Game of Death II.jpg" alt="Game of Death II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Game of Death II (1981)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Game of Death II (1981)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cobbled-together sequel using Lee’s leftovers. Some decent fights, but it’s a shameless cash grab. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cobbled-together sequel using Lee's leftovers. Some decent fights, but it's a shameless cash grab.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Shaolin Invincible Sticks.jpg" alt="Shaolin Invincible Sticks Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Shaolin Invincible Sticks.jpg" alt="Shaolin Invincible Sticks movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shaolin Invincible Sticks (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shaolin Invincible Sticks (1978)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A monk wields sticks in a revenge tale. Solid fights, but the low-budget story lacks punch. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A monk wields sticks in a revenge tale. Solid fights, but the low-budget story lacks punch.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/The Secret Rivals.jpg" alt="The Secret Rivals Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Secret Rivals.jpg" alt="The Secret Rivals movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Secret Rivals (1976)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Secret Rivals (1976)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rival fighters team up against a villain. Decent action, but generic plot and dated production hold it back. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rival fighters team up against a villain. Decent action, but generic plot and dated production hold it back.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/Four Infernos to Cross.jpg" alt="Four Infernos to Cross Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/Four Infernos to Cross.jpg" alt="Four Infernos to Cross movie poster" loading="lazy">
+                        <figcaption class="sr-only">Four Infernos to Cross (1981)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Four Infernos to Cross (1981)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A martial artist faces deadly trials. Obscure and low-budget, with fights that barely spark. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A martial artist faces deadly trials. Obscure and low-budget, with fights that barely spark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/Guards of Shaolin.jpg" alt="Guards of Shaolin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/Guards of Shaolin.jpg" alt="Guards of Shaolin movie poster" loading="lazy">
+                        <figcaption class="sr-only">Guards of Shaolin (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Guards of Shaolin (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Shaolin monks protect a sacred relic. Routine fights and a thin story make it forgettable. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Shaolin monks protect a sacred relic. Routine fights and a thin story make it forgettable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/Revenge Of The Shaolin Kid.jpg" alt="Revenge of the Shaolin Kid Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/Revenge Of The Shaolin Kid.jpg" alt="Revenge of the Shaolin Kid movie poster" loading="lazy">
+                        <figcaption class="sr-only">Revenge of the Shaolin Kid (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Revenge of the Shaolin Kid (1978)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young fighter seeks vengeance. Standard kung fu fare with passable action but little else. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young fighter seeks vengeance. Standard kung fu fare with passable action but little else.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/To Kill with Intrigue.jpg" alt="To Kill with Intrigue Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/To Kill with Intrigue.jpg" alt="To Kill with Intrigue movie poster" loading="lazy">
+                        <figcaption class="sr-only">To Kill with Intrigue (1977)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>To Kill with Intrigue (1977)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan in a convoluted revenge plot. Some creative fights, but the melodrama drags it down. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan in a convoluted revenge plot. Some creative fights, but the melodrama drags it down.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Modern Kung Fu</h2>
-            <p>Contemporary takes on martial arts, often blending traditional styles with modern storytelling.</p>
+        <!-- Modern Kung Fu Section -->
+        <section class="movie-section" aria-labelledby="modern-kung-fu-heading">
+            <header class="section-header">
+                <h2 id="modern-kung-fu-heading">Modern Kung Fu</h2>
+                <p>Contemporary takes on martial arts, often blending traditional styles with modern storytelling.</p>
+                <div class="section-stats">
+                    <span class="movie-count">17 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/IP Man.jpg" alt="Ip Man Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/IP Man.jpg" alt="Ip Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ip Man (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ip Man (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Wing Chun master defends honor during Japan’s invasion. Elegant fights and Donnie Yen’s gravitas make it a modern classic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Wing Chun master defends honor during Japan's invasion. Elegant fights and Donnie Yen's gravitas make it a modern classic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/Kung Fu Hustle.jpg" alt="Kung Fu Hustle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/Kung Fu Hustle.jpg" alt="Kung Fu Hustle movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kung Fu Hustle (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kung Fu Hustle (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A goofy wannabe gangster unleashes wild martial arts chaos. Stephen Chow’s blend of slapstick and stunning fights is pure genius. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A goofy wannabe gangster unleashes wild martial arts chaos. Stephen Chow's blend of slapstick and stunning fights is pure genius.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Fearless.jpg" alt="Fearless Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Fearless.jpg" alt="Fearless movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fearless (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fearless (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li’s Huo Yuanjia rises as a martial arts legend. Stirring fights and patriotism, though the drama’s a bit heavy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li's Huo Yuanjia rises as a martial arts legend. Stirring fights and patriotism, though the drama's a bit heavy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Fist of Legend.jpg" alt="Fist of Legend Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Fist of Legend.jpg" alt="Fist of Legend movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fist of Legend (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fist of Legend (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li remakes Fist of Fury with slick fights and vengeance. Sharp choreography, but the story’s a retread. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li remakes Fist of Fury with slick fights and vengeance. Sharp choreography, but the story's a retread.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/IP Man 2.jpg" alt="Ip Man 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/IP Man 2.jpg" alt="Ip Man 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ip Man 2 (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ip Man 2 (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ip Man faces colonial foes and rival masters. Great action, but the nationalism leans heavy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ip Man faces colonial foes and rival masters. Great action, but the nationalism leans heavy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/The Forbidden Kingdom.jpg" alt="The Forbidden Kingdom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Forbidden Kingdom.jpg" alt="The Forbidden Kingdom movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Forbidden Kingdom (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Forbidden Kingdom (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan and Jet Li team up in a mythical quest. Fun fights, but the Westernized plot feels forced. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan and Jet Li team up in a mythical quest. Fun fights, but the Westernized plot feels forced.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Iron Monkey.jpg" alt="The Iron Monkey 1977 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Iron Monkey.jpg" alt="The Iron Monkey 1977 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Iron Monkey (1977)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Iron Monkey (1977)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A masked hero fights corruption with kung fu flair. Solid action, but the story’s a bit rote. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A masked hero fights corruption with kung fu flair. Solid action, but the story's a bit rote.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/IP Man 3.jpg" alt="Ip Man 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/IP Man 3.jpg" alt="Ip Man 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ip Man 3 (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ip Man 3 (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ip Man battles gangsters and a boxer. Strong fights, but the family drama feels tacked on. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ip Man battles gangsters and a boxer. Strong fights, but the family drama feels tacked on.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Kung Fu Jungle.jpg" alt="Kung Fu Jungle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Kung Fu Jungle.jpg" alt="Kung Fu Jungle movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kung Fu Jungle (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kung Fu Jungle (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A martial artist hunts a killer targeting fighters. Gritty action, but the plot’s a standard thriller. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A martial artist hunts a killer targeting fighters. Gritty action, but the plot's a standard thriller.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Legend of the Fist - Return of Chen Zhen.jpg" alt="Legend of the Fist - Return of Chen Zhen Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Legend of the Fist - Return of Chen Zhen.jpg" alt="Legend of the Fist - Return of Chen Zhen movie poster" loading="lazy">
+                        <figcaption class="sr-only">Legend of the Fist: Return of Chen Zhen (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Legend of the Fist: Return of Chen Zhen (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Donnie Yen revisits a Bruce Lee hero in wartime. Stylish fights, but the story’s a patriotic rehash. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Donnie Yen revisits a Bruce Lee hero in wartime. Stylish fights, but the story's a patriotic rehash.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Man of Tai Chi.jpg" alt="Man of Tai Chi Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Man of Tai Chi.jpg" alt="Man of Tai Chi movie poster" loading="lazy">
+                        <figcaption class="sr-only">Man of Tai Chi (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Man of Tai Chi (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Keanu Reeves directs a tai chi fighter’s descent into underground bouts. Sleek action, but the story’s thin. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Keanu Reeves directs a tai chi fighter's descent into underground bouts. Sleek action, but the story's thin.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Master Z - Ip Man Legacy.jpg" alt="Master Z: Ip Man Legacy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Master Z - Ip Man Legacy.jpg" alt="Master Z: Ip Man Legacy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Master Z: Ip Man Legacy (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Master Z: Ip Man Legacy (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Wing Chun master faces triads and foreigners. Decent fights, but it lacks Ip Man’s soul. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Wing Chun master faces triads and foreigners. Decent fights, but it lacks Ip Man's soul.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/True Legend.jpg" alt="True Legend Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/True Legend.jpg" alt="True Legend movie poster" loading="lazy">
+                        <figcaption class="sr-only">True Legend (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>True Legend (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A warrior seeks revenge after betrayal. Flashy fights, but the overblown plot dilutes the impact. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A warrior seeks revenge after betrayal. Flashy fights, but the overblown plot dilutes the impact.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Chinese Zodiac.jpg" alt="Chinese Zodiac Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Chinese Zodiac.jpg" alt="Chinese Zodiac movie poster" loading="lazy">
+                        <figcaption class="sr-only">Chinese Zodiac (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Chinese Zodiac (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan hunts artifacts with martial arts flair. Fun but formulaic, it’s a lesser entry in his catalog. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan hunts artifacts with martial arts flair. Fun but formulaic, it's a lesser entry in his catalog.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Ip Man 4 - The Finale.jpg" alt="Ip Man 4 - The Finale Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Ip Man 4 - The Finale.jpg" alt="Ip Man 4 - The Finale movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ip Man 4: The Finale (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ip Man 4: The Finale (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ip Man takes on America’s racists. Action’s solid, but the series ends with a tired, preachy note. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ip Man takes on America's racists. Action's solid, but the series ends with a tired, preachy note.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Legend of the Red Dragon.jpg" alt="Legend of the Red Dragon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Legend of the Red Dragon.jpg" alt="Legend of the Red Dragon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Legend of the Red Dragon (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Legend of the Red Dragon (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li protects his son in a period brawler. Decent fights, but the melodrama and pacing sag. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li protects his son in a period brawler. Decent fights, but the melodrama and pacing sag.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/IP Man - Kung Fu Master.jpg" alt="Ip Man – Kung Fu Master Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/IP Man - Kung Fu Master.jpg" alt="Ip Man – Kung Fu Master movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ip Man: Kung Fu Master (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ip Man: Kung Fu Master (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A prequel with Ip Man as a cop. Lackluster fights and a generic story make it a weak spinoff. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A prequel with Ip Man as a cop. Lackluster fights and a generic story make it a weak spinoff.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Action-Comedy Martial Arts</h2>
-            <p>Films blending martial arts with humor, often featuring Jackie Chan’s signature stunts.</p>
+        <!-- Action-Comedy Martial Arts Section -->
+        <section class="movie-section" aria-labelledby="action-comedy-heading">
+            <header class="section-header">
+                <h2 id="action-comedy-heading">Action-Comedy Martial Arts</h2>
+                <p>Films blending martial arts with humor, often featuring Jackie Chan's signature stunts.</p>
+                <div class="section-stats">
+                    <span class="movie-count">12 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/Rush Hour.jpg" alt="Rush Hour Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/Rush Hour.jpg" alt="Rush Hour movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rush Hour (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rush Hour (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan and Chris Tucker’s buddy-cop chaos delivers laughs and slick fights. A cultural gem, though the plot’s thin. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan and Chris Tucker's buddy-cop chaos delivers laughs and slick fights. A cultural gem, though the plot's thin.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/Shaolin Soccer.jpg" alt="Shaolin Soccer Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/Shaolin Soccer.jpg" alt="Shaolin Soccer movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shaolin Soccer (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shaolin Soccer (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stephen Chow’s monks use kung fu to dominate soccer. Absurdly funny and visually wild, it’s a genre-bending riot. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stephen Chow's monks use kung fu to dominate soccer. Absurdly funny and visually wild, it's a genre-bending riot.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Operation Condor.jpg" alt="Operation Condor Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Operation Condor.jpg" alt="Operation Condor movie poster" loading="lazy">
+                        <figcaption class="sr-only">Operation Condor (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Operation Condor (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan hunts treasure with death-defying stunts. High-energy fun, but the plot’s a chaotic afterthought. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan hunts treasure with death-defying stunts. High-energy fun, but the plot's a chaotic afterthought.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Project A - Part II.jpg" alt="Project A - Part II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Project A - Part II.jpg" alt="Project A - Part II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Project A: Part II (1987)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Project A: Part II (1987)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan battles pirates and corruption with acrobatic brilliance. Stunts dazzle, but the story’s a bit messy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan battles pirates and corruption with acrobatic brilliance. Stunts dazzle, but the story's a bit messy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Rumble in the Bronx.jpg" alt="Rumble in the Bronx Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Rumble in the Bronx.jpg" alt="Rumble in the Bronx movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rumble in the Bronx (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rumble in the Bronx (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan fights New York gangs with wild stunts. Pure fun, though the dubbed plot’s gloriously silly. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan fights New York gangs with wild stunts. Pure fun, though the dubbed plot's gloriously silly.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Rush Hour 2.jpg" alt="Rush Hour 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Rush Hour 2.jpg" alt="Rush Hour 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rush Hour 2 (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rush Hour 2 (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chan and Tucker bicker through another crime caper. Fun chemistry and fights, but it’s a familiar sequel. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chan and Tucker bicker through another crime caper. Fun chemistry and fights, but it's a familiar sequel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Kung Pow - Enter the Fist.jpg" alt="Kung Pow - Enter the Fist Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Kung Pow - Enter the Fist.jpg" alt="Kung Pow - Enter the Fist movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kung Pow: Enter the Fist (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kung Pow: Enter the Fist (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A parody dubbing old kung fu footage with absurd humor. Niche and ridiculous, it’s a cult hit for some. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A parody dubbing old kung fu footage with absurd humor. Niche and ridiculous, it's a cult hit for some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Rush Hour 3.jpg" alt="Rush Hour 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Rush Hour 3.jpg" alt="Rush Hour 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rush Hour 3 (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rush Hour 3 (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chan and Tucker chase triads in Paris. The charm’s still there, but the formula’s wearing thin. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chan and Tucker chase triads in Paris. The charm's still there, but the formula's wearing thin.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/The Medallion.jpg" alt="The Medallion Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Medallion.jpg" alt="The Medallion movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Medallion (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Medallion (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan gains supernatural powers via a mystical artifact. Fun stunts, but the fantasy plot’s a mess. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan gains supernatural powers via a mystical artifact. Fun stunts, but the fantasy plot's a mess.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/The Tuxedo.jpg" alt="The Tuxedo Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Tuxedo.jpg" alt="The Tuxedo movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Tuxedo (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Tuxedo (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan’s suit grants superpowers in a spy caper. Goofy fun, but the gimmick outshines the fights. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan's suit grants superpowers in a spy caper. Goofy fun, but the gimmick outshines the fights.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Twin Dragons.jpg" alt="Twin Dragons Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Twin Dragons.jpg" alt="Twin Dragons movie poster" loading="lazy">
+                        <figcaption class="sr-only">Twin Dragons (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Twin Dragons (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan plays twins in a chaotic comedy. Decent stunts, but the slapstick plot’s a bit dated. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan plays twins in a chaotic comedy. Decent stunts, but the slapstick plot's a bit dated.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/Beverly Hills Ninja.jpg" alt="Beverly Hills Ninja Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/Beverly Hills Ninja.jpg" alt="Beverly Hills Ninja movie poster" loading="lazy">
+                        <figcaption class="sr-only">Beverly Hills Ninja (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Beverly Hills Ninja (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chris Farley’s bumbling ninja stumbles through a goofy plot. Silly laughs, but the martial arts are a joke. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Chris Farley's bumbling ninja stumbles through a goofy plot. Silly laughs, but the martial arts are a joke.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Hollywood Martial Arts</h2>
-            <p>Martial arts films with Western leads or heavy Western influence, often blending with action or drama.</p>
+        <!-- Hollywood Martial Arts Section -->
+        <section class="movie-section" aria-labelledby="hollywood-heading">
+            <header class="section-header">
+                <h2 id="hollywood-heading">Hollywood Martial Arts</h2>
+                <p>Martial arts films with Western leads or heavy Western influence, often blending with action or drama.</p>
+                <div class="section-stats">
+                    <span class="movie-count">11 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/The Last Samurai.jpg" alt="The Last Samurai Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Last Samurai.jpg" alt="The Last Samurai movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Last Samurai (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Last Samurai (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Westerner learns samurai ways in a clash of cultures. Epic and respectful, though it romanticizes history. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Westerner learns samurai ways in a clash of cultures. Epic and respectful, though it romanticizes history.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/The Karate Kid.jpg" alt="The Karate Kid Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Karate Kid.jpg" alt="The Karate Kid movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Karate Kid (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Karate Kid (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen learns karate and life lessons from a wise mentor. Nostalgic and heartfelt, though a bit formulaic. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen learns karate and life lessons from a wise mentor. Nostalgic and heartfelt, though a bit formulaic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/The Last Dragon.jpg" alt="The Last Dragon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Last Dragon.jpg" alt="The Last Dragon movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Last Dragon (1985)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Last Dragon (1985)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A kung fu dreamer seeks “the glow” in a funky blaxploitation tribute. Cheesy charm and solid fights make it a cult hit. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A kung fu dreamer seeks "the glow" in a funky blaxploitation tribute. Cheesy charm and solid fights make it a cult hit.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Karate Kid - Legends.jpg" alt="Karate Kid - Legends Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Karate Kid - Legends.jpg" alt="Karate Kid - Legends movie poster" loading="lazy">
+                        <figcaption class="sr-only">Karate Kid: Legends (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Karate Kid: Legends (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A new kid trains under martial arts masters to face personal and competitive challenges. Solid choreography with a fresh cast, but it leans heavily on franchise nostalgia. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A new kid trains under martial arts masters to face personal and competitive challenges. Solid choreography with a fresh cast, but it leans heavily on franchise nostalgia.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Kiss of the Dragon.jpg" alt="Kiss of the Dragon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Kiss of the Dragon.jpg" alt="Kiss of the Dragon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kiss of the Dragon (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kiss of the Dragon (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li fights corrupt cops in Paris. Brutal action, but the gritty plot’s a bit generic. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li fights corrupt cops in Paris. Brutal action, but the gritty plot's a bit generic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Romeo Must Die.jpg" alt="Romeo Must Die Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Romeo Must Die.jpg" alt="Romeo Must Die movie poster" loading="lazy">
+                        <figcaption class="sr-only">Romeo Must Die (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Romeo Must Die (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li’s in a gang war with a romantic twist. Cool fights, but the story’s a cliché-ridden slog. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li's in a gang war with a romantic twist. Cool fights, but the story's a cliché-ridden slog.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/The Karate Kid Part 2.jpg" alt="The Karate Kid Part II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Karate Kid Part 2.jpg" alt="The Karate Kid Part II movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Karate Kid Part II (1986)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Karate Kid Part II (1986)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Daniel and Miyagi face foes in Okinawa. Decent action, but it leans hard on the original’s formula. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Daniel and Miyagi face foes in Okinawa. Decent action, but it leans hard on the original's formula.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Unleashed.jpg" alt="Unleashed Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Unleashed.jpg" alt="Unleashed movie poster" loading="lazy">
+                        <figcaption class="sr-only">Unleashed (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Unleashed (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li’s a caged fighter finding humanity. Raw action and heart, but the drama’s overly sentimental. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li's a caged fighter finding humanity. Raw action and heart, but the drama's overly sentimental.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/The Karate Kid 2010.jpg" alt="The Karate Kid Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Karate Kid 2010.jpg" alt="The Karate Kid movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Karate Kid (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Karate Kid (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A kid learns kung fu in China with Jackie Chan. Solid remake, but it lacks the original’s charm. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A kid learns kung fu in China with Jackie Chan. Solid remake, but it lacks the original's charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/The Next Karate Kid.jpg" alt="The Next Karate Kid Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Next Karate Kid.jpg" alt="The Next Karate Kid movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Next Karate Kid (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Next Karate Kid (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Miyagi trains a new student in a tired sequel. Some heart, but the spark’s gone. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Miyagi trains a new student in a tired sequel. Some heart, but the spark's gone.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/The Karate Kid Part III.jpg" alt="The Karate Kid Part III Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Karate Kid Part III.jpg" alt="The Karate Kid Part III movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Karate Kid Part III (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Karate Kid Part III (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Daniel faces a vengeful foe in a weak sequel. Forced drama and repetitive fights dim the legacy. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Daniel faces a vengeful foe in a weak sequel. Forced drama and repetitive fights dim the legacy.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Ninja and Assassin Films</h2>
-            <p>Martial arts films focusing on stealth, ninjas, or assassins with intense combat.</p>
+        <!-- Ninja and Assassin Films Section -->
+        <section class="movie-section" aria-labelledby="ninja-assassin-heading">
+            <header class="section-header">
+                <h2 id="ninja-assassin-heading">Ninja and Assassin Films</h2>
+                <p>Martial arts films focusing on stealth, ninjas, or assassins with intense combat.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Ninja Assassin.jpg" alt="Ninja Assassin Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Ninja Assassin.jpg" alt="Ninja Assassin movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ninja Assassin (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ninja Assassin (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rogue ninja battles his clan with bloody flair. Gory action thrills, but the story’s a shallow cut. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rogue ninja battles his clan with bloody flair. Gory action thrills, but the story's a shallow cut.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Naked Weapon.jpg" alt="Naked Weapon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Naked Weapon.jpg" alt="Naked Weapon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Naked Weapon (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Naked Weapon (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Female assassins fight with style in a sleazy thriller. Decent action, but the exploitative plot grates. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Female assassins fight with style in a sleazy thriller. Decent action, but the exploitative plot grates.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/Ninja - The Final Duel.jpg" alt="Ninja - The Final Duel Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/Ninja - The Final Duel.jpg" alt="Ninja - The Final Duel movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ninja: The Final Duel (1986)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ninja: The Final Duel (1986)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ninjas clash in a low-budget spectacle. Campy fights, but the story’s a disjointed mess. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ninjas clash in a low-budget spectacle. Campy fights, but the story's a disjointed mess.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Thai Martial Arts</h2>
-            <p>Films showcasing Muay Thai and other Thai fighting styles with intense, raw action.</p>
+        <!-- Thai Martial Arts Section -->
+        <section class="movie-section" aria-labelledby="thai-heading">
+            <header class="section-header">
+                <h2 id="thai-heading">Thai Martial Arts</h2>
+                <p>Films showcasing Muay Thai and other Thai fighting styles with intense, raw action.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Ong Bak - Muay Thai Warrior.jpg" alt="Ong Bak - Muay Thai Warrior Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Ong Bak - Muay Thai Warrior.jpg" alt="Ong Bak - Muay Thai Warrior movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ong Bak: Muay Thai Warrior (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ong Bak: Muay Thai Warrior (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tony Jaa hunts a stolen relic with jaw-dropping Muay Thai. Raw and relentless, though the story’s basic. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tony Jaa hunts a stolen relic with jaw-dropping Muay Thai. Raw and relentless, though the story's basic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Ong Bak 2.jpg" alt="Ong Bak 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Ong Bak 2.jpg" alt="Ong Bak 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ong Bak 2 (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ong Bak 2 (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tony Jaa’s warrior seeks revenge in a period epic. Stunning fights, but the plot’s a chaotic mess. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tony Jaa's warrior seeks revenge in a period epic. Stunning fights, but the plot's a chaotic mess.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/The Protector.jpg" alt="The Protector Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Protector.jpg" alt="The Protector movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Protector (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Protector (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tony Jaa chases stolen elephants with brutal Muay Thai. Insane action, but the story’s a flimsy excuse. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tony Jaa chases stolen elephants with brutal Muay Thai. Insane action, but the story's a flimsy excuse.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Wuxia and Historical</h2>
-            <p>Martial arts films with a focus on historical settings or wuxia’s poetic, mythical combat.</p>
+        <!-- Wuxia and Historical Section -->
+        <section class="movie-section" aria-labelledby="wuxia-historical-heading">
+            <header class="section-header">
+                <h2 id="wuxia-historical-heading">Wuxia and Historical</h2>
+                <p>Martial arts films with a focus on historical settings or wuxia's poetic, mythical combat.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/martial-arts/Crouching Tiger, Hidden Dragon - Sword of Destiny.jpg" alt="Crouching Tiger, Hidden Dragon - Sword of Destiny Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/martial-arts/Crouching Tiger, Hidden Dragon - Sword of Destiny.jpg" alt="Crouching Tiger, Hidden Dragon - Sword of Destiny movie poster" loading="lazy">
+                        <figcaption class="sr-only">Crouching Tiger, Hidden Dragon: Sword of Destiny (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Crouching Tiger, Hidden Dragon: Sword of Destiny (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A warrior protects a legendary sword in a wuxia sequel. Graceful fights, but it lacks the original’s soul. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A warrior protects a legendary sword in a wuxia sequel. Graceful fights, but it lacks the original's soul.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/My Father Is a Hero.jpg" alt="My Father Is a Hero Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/martial-arts/Harakiri.jpg" alt="Hara-Kiri movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hara-Kiri (1962)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Hara-Kiri (1962)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A powerful samurai drama about honor, hypocrisy, and revenge. A masterful critique of feudal codes with breathtaking cinematography and emotional depth.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/My Father Is a Hero.jpg" alt="My Father Is a Hero movie poster" loading="lazy">
+                        <figcaption class="sr-only">My Father Is a Hero (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>My Father Is a Hero (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li’s cop fights triads to save his son. Emotional and action-packed, though the drama’s a bit sappy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li's cop fights triads to save his son. Emotional and action-packed, though the drama's a bit sappy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/martial-arts/Tai-Chi Master.jpg" alt="Tai-Chi Master Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/martial-arts/Tai-Chi Master.jpg" alt="Tai-Chi Master movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tai-Chi Master (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Tai-Chi Master (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li’s monk masters tai chi in a wuxia tale. Lively fights, but the story’s a bit overstretched. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li's monk masters tai chi in a wuxia tale. Lively fights, but the story's a bit overstretched.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/Shaolin & Wu Tang.jpg" alt="Shaolin & Wu Tang Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/Shaolin & Wu Tang.jpg" alt="Shaolin & Wu Tang movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shaolin & Wu Tang (1983)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shaolin & Wu Tang (1983)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rival schools clash in a wuxia showdown. Solid choreography, but the plot’s a standard feud. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rival schools clash in a wuxia showdown. Solid choreography, but the plot's a standard feud.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Kids and Family Martial Arts</h2>
-            <p>Lighthearted martial arts films aimed at younger audiences or with a playful tone.</p>
+        <!-- Kids and Family Martial Arts Section -->
+        <section class="movie-section" aria-labelledby="kids-family-heading">
+            <header class="section-header">
+                <h2 id="kids-family-heading">Kids and Family Martial Arts</h2>
+                <p>Lighthearted martial arts films aimed at younger audiences or with a playful tone.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/3 Ninjas.jpg" alt="3 Ninjas Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/3 Ninjas.jpg" alt="3 Ninjas movie poster" loading="lazy">
+                        <figcaption class="sr-only">3 Ninjas (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>3 Ninjas (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Kid ninjas fight bumbling crooks. Nostalgic kid fun, but the action and humor are dated. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Kid ninjas fight bumbling crooks. Nostalgic kid fun, but the action and humor are dated.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/3 Ninjas Kick Back.jpg" alt="3 Ninjas Kick Back Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/3 Ninjas Kick Back.jpg" alt="3 Ninjas Kick Back movie poster" loading="lazy">
+                        <figcaption class="sr-only">3 Ninjas Kick Back (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>3 Ninjas Kick Back (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The ninja kids head to Japan for a dagger quest. Goofy but weaker than the first, it’s pure 90s cheese. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>The ninja kids head to Japan for a dagger quest. Goofy but weaker than the first, it's pure 90s cheese.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/martial-arts/3 Ninjas Knuckle Up.jpg" alt="3 Ninjas Knuckle Up Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/martial-arts/3 Ninjas Knuckle Up.jpg" alt="3 Ninjas Knuckle Up movie poster" loading="lazy">
+                        <figcaption class="sr-only">3 Ninjas Knuckle Up (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>3 Ninjas Knuckle Up (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Kid ninjas battle polluters. Slapstick and silly, it’s a forgettable sequel for fans only. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Kid ninjas battle polluters. Slapstick and silly, it's a forgettable sequel for fans only.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/martial-arts/3 Ninjas - High Noon at Mega Mountain.jpg" alt="3 Ninjas - High Noon at Mega Mountain Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/martial-arts/3 Ninjas - High Noon at Mega Mountain.jpg" alt="3 Ninjas - High Noon at Mega Mountain movie poster" loading="lazy">
+                        <figcaption class="sr-only">3 Ninjas: High Noon at Mega Mountain (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>3 Ninjas: High Noon at Mega Mountain (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The ninja kids face theme park terrorists. A low point for the series, it’s lazy and uninspired. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>The ninja kids face theme park terrorists. A low point for the series, it's lazy and uninspired.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/martial-arts/Magnificent 7 Kung-Fu Kids.jpg" alt="Magnificent 7 Kung-Fu Kids Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/martial-arts/Magnificent 7 Kung-Fu Kids.jpg" alt="Magnificent 7 Kung-Fu Kids movie poster" loading="lazy">
+                        <figcaption class="sr-only">Magnificent 7 Kung-Fu Kids (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Magnificent 7 Kung-Fu Kids (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Kid fighters take on crime in a low-budget romp. Charming for kids, but the action’s weak and dated. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Kid fighters take on crime in a low-budget romp. Charming for kids, but the action's weak and dated.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Other Martial Arts</h2>
-            <p>Miscellaneous martial arts films with unique styles or settings, often experimental or niche.</p>
+        <!-- Other Martial Arts Section -->
+        <section class="movie-section" aria-labelledby="other-heading">
+            <header class="section-header">
+                <h2 id="other-heading">Other Martial Arts</h2>
+                <p>Miscellaneous martial arts films with unique styles or settings, often experimental or niche.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/martial-arts/The Master.jpg" alt="The Master Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Master.jpg" alt="The Master movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Master (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Master (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jet Li’s kung fu master fights in America. Decent action, but the cultural clash plot’s clunky. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jet Li's kung fu master fights in America. Decent action, but the cultural clash plot's clunky.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Rumble in Hong Kong.jpg" alt="Rumble in Hong Kong Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Rumble in Hong Kong.jpg" alt="Rumble in Hong Kong movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rumble in Hong Kong (1973)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rumble in Hong Kong (1973)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan’s early cop role in a gritty crime flick. Raw but unpolished, it’s for completists only. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan's early cop role in a gritty crime flick. Raw but unpolished, it's for completists only.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/The Crippled Masters.jpg" alt="The Crippled Masters Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Crippled Masters.jpg" alt="The Crippled Masters movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Crippled Masters (1979)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Crippled Masters (1979)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Disabled fighters team up for revenge. Unique and bold, but the execution’s rough and exploitative. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Disabled fighters team up for revenge. Unique and bold, but the execution's rough and exploitative.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/The Heroine.jpg" alt="The Heroine Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Heroine.jpg" alt="The Heroine movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Heroine (1973)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Heroine (1973)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A female fighter takes on drug lords. Gritty for its time, but the low budget and weak plot show. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A female fighter takes on drug lords. Gritty for its time, but the low budget and weak plot show.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/The Ring of Death.jpg" alt="The Ring of Death Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/The Ring of Death.jpg" alt="The Ring of Death movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Ring of Death (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Ring of Death (1980)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A fighter enters a deadly tournament. Obscure with some cool fights, but the story’s a generic slog. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A fighter enters a deadly tournament. Obscure with some cool fights, but the story's a generic slog.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/martial-arts/Who Am I.jpg" alt="Who Am I? Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/martial-arts/Who Am I.jpg" alt="Who Am I? movie poster" loading="lazy">
+                        <figcaption class="sr-only">Who Am I? (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Who Am I? (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jackie Chan’s amnesiac agent fights for answers. Great stunts, but the convoluted plot drags. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jackie Chan's amnesiac agent fights for answers. Great stunts, but the convoluted plot drags.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

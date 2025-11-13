@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Heists</title>
+    <title>Heists - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing heist movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing heist movies I've watched, rated by color. Explore classic masterpieces, modern thrillers, comedy capers, and real-life inspired robberies.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Heists</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Intricate plans, high-stakes robberies, and clever criminals in classic masterpieces, modern thrillers, comedy capers, and real-life inspired stories.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 16 movies</span>
+            <span class="movie-count">4 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -36,6 +41,7 @@
             <li><a href="drama.html">Drama</a></li>
             <li><a href="fantasy-adventure.html">Fantasy & Adventure</a></li>
             <li><a href="financial.html">Financial</a></li>
+            <li><a href="heists.html" aria-current="page">Heists</a></li>
             <li><a href="historical-biographical.html">Historical & Biographical</a></li>
             <li><a href="horror.html">Horror</a></li>
             <li><a href="literature.html">Literature</a></li>
@@ -53,204 +59,309 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Classic Heist Masterpieces</h2>
-            <p>Timeless films featuring intricate heist plans and unforgettable characters.</p>
+        <!-- Classic Heist Masterpieces Section -->
+        <section class="movie-section" aria-labelledby="classic-heists-heading">
+            <header class="section-header">
+                <h2 id="classic-heists-heading">Classic Heist Masterpieces</h2>
+                <p>Timeless films featuring intricate heist plans and unforgettable characters.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/heists/Heat.jpg" alt="Heat Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/heists/Heat.jpg" alt="Heat movie poster" loading="lazy">
+                        <figcaption class="sr-only">Heat (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Heat (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cops and robbers play a high-stakes chess game in LA’s criminal underworld. Bank jobs and diner showdowns crackle with tension, though the runtime might rob your patience. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cops and robbers play a high-stakes chess game in LA's criminal underworld. Bank jobs and diner showdowns crackle with tension, though the runtime might rob your patience.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/heists/Oceans Eleven.jpg" alt="Ocean's Eleven Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/heists/Oceans Eleven.jpg" alt="Ocean's Eleven movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ocean's Eleven (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ocean's Eleven (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Smooth-talking crooks orchestrate a Vegas vault caper with swagger and smarts. Glitzy fun with a star-studded crew, but the stakes feel more like a poker bluff. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Smooth-talking crooks orchestrate a Vegas vault caper with swagger and smarts. Glitzy fun with a star-studded crew, but the stakes feel more like a poker bluff.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/heists/The Italian Job.jpg" alt="The Italian Job Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/heists/The Italian Job.jpg" alt="The Italian Job movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Italian Job (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Italian Job (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gold bars and Mini Coopers race through Venice in a revenge-fueled steal. Clever twists keep the engine revving, though the plan’s polish outshines the heart. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Gold bars and Mini Coopers race through Venice in a revenge-fueled steal. Clever twists keep the engine revving, though the plan's polish outshines the heart.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/heists/Reservoir Dogs.jpg" alt="Reservoir Dogs Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/heists/Reservoir Dogs.jpg" alt="Reservoir Dogs movie poster" loading="lazy">
+                        <figcaption class="sr-only">Reservoir Dogs (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Reservoir Dogs (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A diamond heist unravels into a blood-soaked whodunit of mistrust. Gritty dialogue and raw tension shine, but the nonlinear style might snag you up. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A diamond heist unravels into a blood-soaked whodunit of mistrust. Gritty dialogue and raw tension shine, but the nonlinear style might snag you up.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Modern Heist Thrillers</h2>
-            <p>Contemporary takes on heists with high action and unexpected twists.</p>
+        <!-- Modern Heist Thrillers Section -->
+        <section class="movie-section" aria-labelledby="modern-heists-heading">
+            <header class="section-header">
+                <h2 id="modern-heists-heading">Modern Heist Thrillers</h2>
+                <p>Contemporary takes on heists with high action and unexpected twists.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/heists/Baby Driver.jpg" alt="Baby Driver Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/heists/Baby Driver.jpg" alt="Baby Driver movie poster" loading="lazy">
+                        <figcaption class="sr-only">Baby Driver (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Baby Driver (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A wheelman syncs getaways to a killer soundtrack, dodging crime’s consequences. Stylish chases and sharp edits hum, but love’s tempo slows the rhythm. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A wheelman syncs getaways to a killer soundtrack, dodging crime's consequences. Stylish chases and sharp edits hum, but love's tempo slows the rhythm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/heists/Den of Thieves.jpg" alt="Den of Thieves Cover">
-                    <div class="movie-title">
-                        <h3>Den of Thieves (2018)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hardened thieves face off against rogue cops in a Federal Reserve showdown. Grit and gunfights pack a punch, but clichés burglarize the originality. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/heists/Inside Man.jpg" alt="Inside Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/heists/Inside Man.jpg" alt="Inside Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">Inside Man (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Inside Man (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mastermind’s bank job toys with cops and hostages in a cerebral standoff. Twists keep you guessing, though the motives slip through the cracks. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mastermind's bank job toys with cops and hostages in a cerebral standoff. Twists keep you guessing, though the motives slip through the cracks.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/heists/The Town.jpg" alt="The Town Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/heists/The Town.jpg" alt="The Town movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Town (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Town (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Charlestown crook’s heart gets held hostage by a heist’s fallout. Boston’s grit fuels intense scores, but romance robs some of the edge. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Charlestown crook's heart gets held hostage by a heist's fallout. Boston's grit fuels intense scores, but romance robs some of the edge.</p>
                     </div>
-                </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/heists/Den of Thieves.jpg" alt="Den of Thieves movie poster" loading="lazy">
+                        <figcaption class="sr-only">Den of Thieves (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Den of Thieves (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Hardened thieves face off against rogue cops in a Federal Reserve showdown. Grit and gunfights pack a punch, but clichés burglarize the originality.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Comedy Heist Capers</h2>
-            <p>Lighthearted heist stories with humor and quirky characters.</p>
+        <!-- Comedy Heist Capers Section -->
+        <section class="movie-section" aria-labelledby="comedy-heists-heading">
+            <header class="section-header">
+                <h2 id="comedy-heists-heading">Comedy Heist Capers</h2>
+                <p>Lighthearted heist stories with humor and quirky characters.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/heists/Going in Style.jpg" alt="Going in Style Cover">
-                    <div class="movie-title">
-                        <h3>Going in Style (2017)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Old-timers rob a bank to reclaim their dues with charm and chuckles. Senior shenanigans steal smiles, though the caper’s more cozy than cunning. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/heists/Mad Money.jpg" alt="Mad Money Cover">
-                    <div class="movie-title">
-                        <h3>Mad Money (2008)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Fed-up workers swipe cash from the Federal Reserve with goofy gusto. Zany antics cash in laughs, but the plan’s as flimsy as funny money. Rating: 5/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/heists/Masterminds.jpg" alt="Masterminds Cover">
-                    <div class="movie-title">
-                        <h3>Masterminds (2016)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dimwitted driver stumbles into a cash van heist with harebrained hilarity. Goofball gags hit hard, but the brain trust runs low on smarts. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/heists/Oceans Eight.jpg" alt="Ocean's Eight Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/heists/Oceans Eight.jpg" alt="Ocean's Eight movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ocean's Eight (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ocean's Eight (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A chic crew swipes jewels at the Met Gala with flair and finesse. Glamour sparkles, but the heist’s shine dims next to its glitzy predecessor. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A chic crew swipes jewels at the Met Gala with flair and finesse. Glamour sparkles, but the heist's shine dims next to its glitzy predecessor.</p>
                     </div>
-                </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/heists/Going in Style.jpg" alt="Going in Style movie poster" loading="lazy">
+                        <figcaption class="sr-only">Going in Style (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Going in Style (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Old-timers rob a bank to reclaim their dues with charm and chuckles. Senior shenanigans steal smiles, though the caper's more cozy than cunning.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/heists/Masterminds.jpg" alt="Masterminds movie poster" loading="lazy">
+                        <figcaption class="sr-only">Masterminds (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Masterminds (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A dimwitted driver stumbles into a cash van heist with harebrained hilarity. Goofball gags hit hard, but the brain trust runs low on smarts.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/heists/Mad Money.jpg" alt="Mad Money movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mad Money (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Mad Money (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Fed-up workers swipe cash from the Federal Reserve with goofy gusto. Zany antics cash in laughs, but the plan's as flimsy as funny money.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Real-Life Inspired Heists</h2>
-            <p>Heist films based on or inspired by true events and daring real-life robberies.</p>
+        <!-- Real-Life Inspired Heists Section -->
+        <section class="movie-section" aria-labelledby="real-heists-heading">
+            <header class="section-header">
+                <h2 id="real-heists-heading">Real-Life Inspired Heists</h2>
+                <p>Heist films based on or inspired by true events and daring real-life robberies.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/heists/Armored.jpg" alt="Armored Cover">
-                    <div class="movie-title">
-                        <h3>Armored (2009)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Guards turn robbers in a tense armored truck heist gone awry. Loyalty cracks under pressure, but the plot’s armor has some weak spots. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/heists/Dog Day Afternoon.jpg" alt="Dog Day Afternoon Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/heists/Dog Day Afternoon.jpg" alt="Dog Day Afternoon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dog Day Afternoon (1975)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dog Day Afternoon (1975)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A desperate bank job spirals into a sweaty, real-life hostage saga. Raw emotion and chaos grip tight, though the heat drags a bit. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A desperate bank job spirals into a sweaty, real-life hostage saga. Raw emotion and chaos grip tight, though the heat drags a bit.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/heists/The Hatton Garden Job.jpg" alt="The Hatton Garden Job Cover">
-                    <div class="movie-title">
-                        <h3>The Hatton Garden Job (2017)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Seasoned crooks pull off a diamond district raid with old-school guts. True-crime grit glitters, but the execution’s not quite a jewel. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/heists/The Taking of Pelham 1 2 3.jpg" alt="The Taking of Pelham 1 2 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/heists/The Taking of Pelham 1 2 3.jpg" alt="The Taking of Pelham 1 2 3 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Taking of Pelham 1 2 3 (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Taking of Pelham 1 2 3 (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A subway heist holds New York hostage in a high-speed mind game. Tense negotiations thrill, but the remake lacks the original’s grit. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A subway heist holds New York hostage in a high-speed mind game. Tense negotiations thrill, but the remake lacks the original's grit.</p>
                     </div>
-                </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/heists/Armored.jpg" alt="Armored movie poster" loading="lazy">
+                        <figcaption class="sr-only">Armored (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Armored (2009)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Guards turn robbers in a tense armored truck heist gone awry. Loyalty cracks under pressure, but the plot's armor has some weak spots.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/heists/The Hatton Garden Job.jpg" alt="The Hatton Garden Job movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hatton Garden Job (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Hatton Garden Job (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Seasoned crooks pull off a diamond district raid with old-school guts. True-crime grit glitters, but the execution's not quite a jewel.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

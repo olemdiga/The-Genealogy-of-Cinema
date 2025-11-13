@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fantasy & Adventure</title>
+    <title>Fantasy & Adventure - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing fantasy and adventure movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing fantasy and adventure movies I've watched, rated by color. Explore epic quests, magical realms, swashbuckling exploits, and heroic journeys.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Fantasy & Adventure</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Sweeping tales of grand quests, mythical worlds, heroic destinies, and daring exploits across magical realms.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 84 movies</span>
+            <span class="movie-count">7 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -34,7 +39,7 @@
             <li><a href="crime.html">Crime</a></li>
             <li><a href="documentary.html">Documentary</a></li>
             <li><a href="drama.html">Drama</a></li>
-            <li><a href="fantasy-adventure.html">Fantasy & Adventure</a></li>
+            <li><a href="fantasy-adventure.html" aria-current="page">Fantasy & Adventure</a></li>
             <li><a href="financial.html">Financial</a></li>
             <li><a href="heists.html">Heists</a></li>
             <li><a href="historical-biographical.html">Historical & Biographical</a></li>
@@ -54,775 +59,1173 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Epic Fantasy</h2>
-            <p>Sweeping tales of grand quests, mythical worlds, and heroic destinies.</p>
+        <!-- Epic Fantasy Section -->
+        <section class="movie-section" aria-labelledby="epic-fantasy-heading">
+            <header class="section-header">
+                <h2 id="epic-fantasy-heading">Epic Fantasy</h2>
+                <p>Sweeping tales of grand quests, mythical worlds, and heroic destinies.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/fantasy-adventure/The Lord of the Rings - The Return of the King.jpg" alt="The Lord of the Rings - The Return of the King Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Lord of the Rings - The Return of the King.jpg" alt="The Lord of the Rings - The Return of the King Cover" loading="lazy">
+                        <figcaption class="sr-only">The Lord of the Rings: The Return of the King (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Lord of the Rings: The Return of the King (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Frodo and Sam near Mount Doom as Middle-earth’s fate hangs in epic battles. Cinematic triumph of heart and spectacle. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Frodo and Sam near Mount Doom as Middle-earth's fate hangs in epic battles. Cinematic triumph of heart and spectacle.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/fantasy-adventure/The Lord of the Rings - The Fellowship of the Ring.jpg" alt="The Lord of the Rings - The Fellowship of the Ring Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Lord of the Rings - The Fellowship of the Ring.jpg" alt="The Lord of the Rings - The Fellowship of the Ring Cover" loading="lazy">
+                        <figcaption class="sr-only">The Lord of the Rings: The Fellowship of the Ring (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Lord of the Rings: The Fellowship of the Ring (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A hobbit carries a ring of doom, sparking a legendary quest. Tolkien’s world brought to vivid life. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A hobbit carries a ring of doom, sparking a legendary quest. Tolkien's world brought to vivid life.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/fantasy-adventure/The Lord of the Rings The Two Towers.jpg" alt="The Lord of the Rings - The Two Towers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Lord of the Rings The Two Towers.jpg" alt="The Lord of the Rings - The Two Towers Cover" loading="lazy">
+                        <figcaption class="sr-only">The Lord of the Rings: The Two Towers (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Lord of the Rings: The Two Towers (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Scattered heroes face orc armies and treachery in a sprawling saga. Epic battles elevate Tolkien’s vision. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Scattered heroes face orc armies and treachery in a sprawling saga. Epic battles elevate Tolkien's vision.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/The Chronicles of Narnia - The Lion, the Witch and the Wardrobe.jpg" alt="The Chronicles of Narnia - The Lion, the Witch and the Wardrobe Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Chronicles of Narnia - The Lion, the Witch and the Wardrobe.jpg" alt="The Chronicles of Narnia - The Lion, the Witch and the Wardrobe Cover" loading="lazy">
+                        <figcaption class="sr-only">The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Siblings discover Narnia, battling a witch to save a magical land. Faithful, enchanting adaptation. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Siblings discover Narnia, battling a witch to save a magical land. Faithful, enchanting adaptation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/The Hobbit - An Unexpected Journey.jpg" alt="The Hobbit - An Unexpected Journey Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Hobbit - An Unexpected Journey.jpg" alt="The Hobbit - An Unexpected Journey Cover" loading="lazy">
+                        <figcaption class="sr-only">The Hobbit: An Unexpected Journey (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hobbit: An Unexpected Journey (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bilbo joins dwarves and Gandalf on a quest facing trolls and dragons. Charming prelude to epic tales. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bilbo joins dwarves and Gandalf on a quest facing trolls and dragons. Charming prelude to epic tales.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/The Golden Compass.jpg" alt="The Golden Compass Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Golden Compass.jpg" alt="The Golden Compass Cover" loading="lazy">
+                        <figcaption class="sr-only">The Golden Compass (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Golden Compass (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A girl navigates a steampunk world with daemons and dust. Visually rich adventure in parallel universes. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A girl navigates a steampunk world with daemons and dust. Visually rich adventure in parallel universes.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Magical Realism</h2>
-            <p>Surreal tales weaving magic into grounded, often poignant realities.</p>
+        <!-- Magical Realism Section -->
+        <section class="movie-section" aria-labelledby="magical-realism-heading">
+            <header class="section-header">
+                <h2 id="magical-realism-heading">Magical Realism</h2>
+                <p>Surreal tales weaving magic into grounded, often poignant realities.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/The Green Mile.jpg" alt="The Green Mile Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Green Mile.jpg" alt="The Green Mile Cover" loading="lazy">
+                        <figcaption class="sr-only">The Green Mile (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Green Mile (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A death row guard encounters a prisoner with miraculous powers. Heart-wrenching blend of magic and humanity. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A death row guard encounters a prisoner with miraculous powers. Heart-wrenching blend of magic and humanity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/Being John Malkovich.jpg" alt="Being John Malkovich Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Being John Malkovich.jpg" alt="Being John Malkovich Cover" loading="lazy">
+                        <figcaption class="sr-only">Being John Malkovich (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Being John Malkovich (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A puppeteer stumbles into a portal to John Malkovich’s mind. Wildly inventive, existential weirdness. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A puppeteer stumbles into a portal to John Malkovich's mind. Wildly inventive, existential weirdness.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/Edward Scissorhands.jpg" alt="Edward Scissorhands Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Edward Scissorhands.jpg" alt="Edward Scissorhands Cover" loading="lazy">
+                        <figcaption class="sr-only">Edward Scissorhands (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Edward Scissorhands (1990)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man with scissors for hands navigates love and suburbia. Whimsical yet tragic Burton classic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man with scissors for hands navigates love and suburbia. Whimsical yet tragic Burton classic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Three Thousand Years of Longing.jpg" alt="Three Thousand Years of Longing Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Three Thousand Years of Longing.jpg" alt="Three Thousand Years of Longing Cover" loading="lazy">
+                        <figcaption class="sr-only">Three Thousand Years of Longing (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Three Thousand Years of Longing (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A scholar frees a djinn, weaving tales of love and desire. Visually lush exploration of longing. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A scholar frees a djinn, weaving tales of love and desire. Visually lush exploration of longing.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/fantasy-adventure/The Room.jpg" alt="The Room Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Room.jpg" alt="The Room Cover" loading="lazy">
+                        <figcaption class="sr-only">The Room (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Room (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bizarre love triangle unfolds in a fever-dream melodrama. So bad it’s cult legend. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bizarre love triangle unfolds in a fever-dream melodrama. So bad it's cult legend.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Swashbuckling Adventure</h2>
-            <p>Daring exploits, treasure hunts, and high-seas heroics.</p>
+        <!-- Swashbuckling Adventure Section -->
+        <section class="movie-section" aria-labelledby="swashbuckling-heading">
+            <header class="section-header">
+                <h2 id="swashbuckling-heading">Swashbuckling Adventure</h2>
+                <p>Daring exploits, treasure hunts, and high-seas heroics.</p>
+                <div class="section-stats">
+                    <span class="movie-count">17 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/fantasy-adventure/Indiana Jones Raiders of the Lost Ark.jpg" alt="Indiana Jones and the Raiders of the Lost Ark Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Indiana Jones Raiders of the Lost Ark.jpg" alt="Indiana Jones and the Raiders of the Lost Ark Cover" loading="lazy">
+                        <figcaption class="sr-only">Indiana Jones and the Raiders of the Lost Ark (1981)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Indiana Jones and the Raiders of the Lost Ark (1981)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Indy chases the Ark of the Covenant, dodging Nazis and traps. Timeless adventure perfection. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Indy chases the Ark of the Covenant, dodging Nazis and traps. Timeless adventure perfection.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/Indiana Jones and the Last Crusade.jpg" alt="Indiana Jones and the Last Crusade Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Indiana Jones and the Last Crusade.jpg" alt="Indiana Jones and the Last Crusade Cover" loading="lazy">
+                        <figcaption class="sr-only">Indiana Jones and the Last Crusade (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Indiana Jones and the Last Crusade (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Indy and his dad hunt the Holy Grail with wit and thrills. Heartfelt, action-packed classic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Indy and his dad hunt the Holy Grail with wit and thrills. Heartfelt, action-packed classic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/Indiana Jones Temple of Doom.jpg" alt="Indiana Jones and the Temple of Doom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Indiana Jones Temple of Doom.jpg" alt="Indiana Jones and the Temple of Doom Cover" loading="lazy">
+                        <figcaption class="sr-only">Indiana Jones and the Temple of Doom (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Indiana Jones and the Temple of Doom (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Indy battles a cult for sacred stones in a darker romp. Frenetic thrills abound. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Indy battles a cult for sacred stones in a darker romp. Frenetic thrills abound.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/The Mummy.jpg" alt="The Mummy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Mummy.jpg" alt="The Mummy Cover" loading="lazy">
+                        <figcaption class="sr-only">The Mummy (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Mummy (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Adventurers awaken a cursed mummy in a rollicking romp. Campy fun with thrills. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Adventurers awaken a cursed mummy in a rollicking romp. Campy fun with thrills.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Pirates of the Caribbean - Curse of the Black Pearl.jpg" alt="Pirates of the Caribbean - The Curse of the Black Pearl Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Pirates of the Caribbean - Curse of the Black Pearl.jpg" alt="Pirates of the Caribbean - The Curse of the Black Pearl Cover" loading="lazy">
+                        <figcaption class="sr-only">Pirates of the Caribbean: The Curse of the Black Pearl (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pirates of the Caribbean: The Curse of the Black Pearl (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jack Sparrow sails for cursed treasure with swashbuckling flair. Pirate adventure at its finest. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jack Sparrow sails for cursed treasure with swashbuckling flair. Pirate adventure at its finest.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Pirates of the Caribbean - Dead Man's Chest.jpg" alt="Pirates of the Caribbean - Dead Man's Chest Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Pirates of the Caribbean - Dead Man's Chest.jpg" alt="Pirates of the Caribbean - Dead Man's Chest Cover" loading="lazy">
+                        <figcaption class="sr-only">Pirates of the Caribbean: Dead Man's Chest (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pirates of the Caribbean: Dead Man's Chest (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jack Sparrow faces Davy Jones’ wrath in a high-seas spectacle. Fun spectacle on the waves. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jack Sparrow faces Davy Jones' wrath in a high-seas spectacle. Fun spectacle on the waves.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Pirates of the Caribbean - At World's End.jpg" alt="Pirates of the Caribbean - At World's End Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Pirates of the Caribbean - At World's End.jpg" alt="Pirates of the Caribbean - At World's End Cover" loading="lazy">
+                        <figcaption class="sr-only">Pirates of the Caribbean: At World's End (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pirates of the Caribbean: At World's End (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pirates unite against Davy Jones in a chaotic climax. Grand showdown on the seas. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Pirates unite against Davy Jones in a chaotic climax. Grand showdown on the seas.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Pirates of the Caribbean - On Stranger Tides.jpg" alt="Pirates of the Caribbean - On Stranger Tides Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Pirates of the Caribbean - On Stranger Tides.jpg" alt="Pirates of the Caribbean - On Stranger Tides Cover" loading="lazy">
+                        <figcaption class="sr-only">Pirates of the Caribbean: On Stranger Tides (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pirates of the Caribbean: On Stranger Tides (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jack Sparrow hunts the Fountain of Youth with new foes. Swashbuckling quest for eternal life. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jack Sparrow hunts the Fountain of Youth with new foes. Swashbuckling quest for eternal life.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Robin Hood.jpg" alt="Robin Hood Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Robin Hood.jpg" alt="Robin Hood Cover" loading="lazy">
+                        <figcaption class="sr-only">Robin Hood (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Robin Hood (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Robin Hood battles corruption in medieval England with gritty flair. Solid retelling of the legend. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Robin Hood battles corruption in medieval England with gritty flair. Solid retelling of the legend.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/The Mummy Returns.jpg" alt="The Mummy Returns Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Mummy Returns.jpg" alt="The Mummy Returns Cover" loading="lazy">
+                        <figcaption class="sr-only">The Mummy Returns (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Mummy Returns (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Brendan Fraser fights mummies and scorpions in a chaotic sequel. Action-packed ancient curses. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Brendan Fraser fights mummies and scorpions in a chaotic sequel. Action-packed ancient curses.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Pirates of the Caribbean Dead Men Tell No Tales.jpg" alt="Pirates of the Caribbean - Dead Men Tell No Tales Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Pirates of the Caribbean Dead Men Tell No Tales.jpg" alt="Pirates of the Caribbean - Dead Men Tell No Tales Cover" loading="lazy">
+                        <figcaption class="sr-only">Pirates of the Caribbean: Dead Men Tell No Tales (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pirates of the Caribbean: Dead Men Tell No Tales (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jack Sparrow faces ghostly sailors in a tired pirate tale. Flashy curse-breaking antics. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jack Sparrow faces ghostly sailors in a tired pirate tale. Flashy curse-breaking antics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Tomb Raider.jpg" alt="Tomb Raider Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Tomb Raider.jpg" alt="Tomb Raider Cover" loading="lazy">
+                        <figcaption class="sr-only">Tomb Raider (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Tomb Raider (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Lara Croft hunts a mythical artifact in a gritty reboot. Decent relic-chasing thrills. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Lara Croft hunts a mythical artifact in a gritty reboot. Decent relic-chasing thrills.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Indiana Jones and the Kingdom of the Crystal Skull.jpg" alt="Indiana Jones and the Kingdom of the Crystal Skull Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Indiana Jones and the Kingdom of the Crystal Skull.jpg" alt="Indiana Jones and the Kingdom of the Crystal Skull Cover" loading="lazy">
+                        <figcaption class="sr-only">Indiana Jones and the Kingdom of the Crystal Skull (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Indiana Jones and the Kingdom of the Crystal Skull (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Indy chases alien artifacts in a divisive sequel. Nostalgic artifact hunt with twists. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Indy chases alien artifacts in a divisive sequel. Nostalgic artifact hunt with twists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Prince of Persia.jpg" alt="Prince of Persia - The Sands of Time Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Prince of Persia.jpg" alt="Prince of Persia - The Sands of Time Cover" loading="lazy">
+                        <figcaption class="sr-only">Prince of Persia: The Sands of Time (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Prince of Persia: The Sands of Time (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A prince wields a time-bending dagger in a flashy adventure. Decent time-twisting escapades. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A prince wields a time-bending dagger in a flashy adventure. Decent time-twisting escapades.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Around the World in 80 Days.jpg" alt="Around the World in 80 Days Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Around the World in 80 Days.jpg" alt="Around the World in 80 Days Cover" loading="lazy">
+                        <figcaption class="sr-only">Around the World in 80 Days (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Around the World in 80 Days (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Victorian inventor races the globe in a whimsical adventure. Charming globe-trotting antics. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Victorian inventor races the globe in a whimsical adventure. Charming globe-trotting antics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/In Like Flynn.jpg" alt="In Like Flynn Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/In Like Flynn.jpg" alt="In Like Flynn Cover" loading="lazy">
+                        <figcaption class="sr-only">In Like Flynn (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>In Like Flynn (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Errol Flynn’s early adventures unfold in a breezy biopic. Swashbuckling exploits of a legend. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Errol Flynn's early adventures unfold in a breezy biopic. Swashbuckling exploits of a legend.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/The Mummy Tomb of the Dragon Emperor.jpg" alt="The Mummy - Tomb of the Dragon Emperor Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Mummy Tomb of the Dragon Emperor.jpg" alt="The Mummy - Tomb of the Dragon Emperor Cover" loading="lazy">
+                        <figcaption class="sr-only">The Mummy: Tomb of the Dragon Emperor (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Mummy: Tomb of the Dragon Emperor (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The O’Connells battle a resurrected emperor in a lackluster sequel. Action-heavy, charm-light emperor clash. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>The O'Connells battle a resurrected emperor in a lackluster sequel. Action-heavy, charm-light emperor clash.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Family-Friendly Fantasy</h2>
-            <p>Whimsical tales for all ages, filled with wonder and heart.</p>
+        <!-- Family-Friendly Fantasy Section -->
+        <section class="movie-section" aria-labelledby="family-friendly-heading">
+            <header class="section-header">
+                <h2 id="family-friendly-heading">Family-Friendly Fantasy</h2>
+                <p>Whimsical tales for all ages, filled with wonder and heart.</p>
+                <div class="section-stats">
+                    <span class="movie-count">23 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/Harry Potter and the Prisoner of Azkaban.jpg" alt="Harry Potter and the Prisoner of Azkaban Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Harry Potter and the Prisoner of Azkaban.jpg" alt="Harry Potter and the Prisoner of Azkaban Cover" loading="lazy">
+                        <figcaption class="sr-only">Harry Potter and the Prisoner of Azkaban (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Harry Potter and the Prisoner of Azkaban (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Harry uncovers Sirius Black’s secrets amid time-twisting dangers. Magical coming-of-age brilliance. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Harry uncovers Sirius Black's secrets amid time-twisting dangers. Magical coming-of-age brilliance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/Harry Potter and the Deathly Hallows - Part 2.jpg" alt="Harry Potter and the Deathly Hallows - Part 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Harry Potter and the Deathly Hallows - Part 2.jpg" alt="Harry Potter and the Deathly Hallows - Part 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Harry Potter and the Deathly Hallows - Part 2 (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Harry Potter and the Deathly Hallows - Part 2 (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Harry faces Voldemort in an epic Hogwarts showdown. Thrilling saga finale. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Harry faces Voldemort in an epic Hogwarts showdown. Thrilling saga finale.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Harry Potter and the Philosopher's Stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Harry Potter and the Philosopher's Stone.jpg" alt="Harry Potter and the Philosopher's Stone Cover" loading="lazy">
+                        <figcaption class="sr-only">Harry Potter and the Philosopher's Stone (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Harry Potter and the Philosopher's Stone (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A boy discovers he’s a wizard and enters Hogwarts’ magical world. Enchanting start to a saga. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A boy discovers he's a wizard and enters Hogwarts' magical world. Enchanting start to a saga.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Harry Potter and the Goblet of Fire.jpg" alt="Harry Potter and the Goblet of Fire Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Harry Potter and the Goblet of Fire.jpg" alt="Harry Potter and the Goblet of Fire Cover" loading="lazy">
+                        <figcaption class="sr-only">Harry Potter and the Goblet of Fire (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Harry Potter and the Goblet of Fire (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Harry competes in a deadly magical tournament as dark forces rise. Gripping wizardly trials. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Harry competes in a deadly magical tournament as dark forces rise. Gripping wizardly trials.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Harry Potter and the Half-Blood Prince.jpg" alt="Harry Potter and the Half-Blood Prince Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Harry Potter and the Half-Blood Prince.jpg" alt="Harry Potter and the Half-Blood Prince Cover" loading="lazy">
+                        <figcaption class="sr-only">Harry Potter and the Half-Blood Prince (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Harry Potter and the Half-Blood Prince (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Harry uncovers Dumbledore’s past while dark forces close in. Moody, magical drama. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Harry uncovers Dumbledore's past while dark forces close in. Moody, magical drama.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Harry Potter and the Order of the Phoenix.jpg" alt="Harry Potter and the Order of the Phoenix Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Harry Potter and the Order of the Phoenix.jpg" alt="Harry Potter and the Order of the Phoenix Cover" loading="lazy">
+                        <figcaption class="sr-only">Harry Potter and the Order of the Phoenix (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Harry Potter and the Order of the Phoenix (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Harry leads a rebellion against a tyrannical Ministry stooge. Dark, defiant wizardry. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Harry leads a rebellion against a tyrannical Ministry stooge. Dark, defiant wizardry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Harry Potter and the Chamber of Secrets.jpg" alt="Harry Potter and the Chamber of Secrets Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Harry Potter and the Chamber of Secrets.jpg" alt="Harry Potter and the Chamber of Secrets Cover" loading="lazy">
+                        <figcaption class="sr-only">Harry Potter and the Chamber of Secrets (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Harry Potter and the Chamber of Secrets (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Harry battles a mysterious monster threatening Hogwarts. Magical mystery in the halls. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Harry battles a mysterious monster threatening Hogwarts. Magical mystery in the halls.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Jumanji.webp" alt="Jumanji Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Jumanji.webp" alt="Jumanji Cover" loading="lazy">
+                        <figcaption class="sr-only">Jumanji (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jumanji (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A magical board game unleashes jungle chaos on kids and adults. Nostalgic, wild fun. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A magical board game unleashes jungle chaos on kids and adults. Nostalgic, wild fun.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/The Addams Family.jpg" alt="The Addams Family Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Addams Family.jpg" alt="The Addams Family Cover" loading="lazy">
+                        <figcaption class="sr-only">The Addams Family (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Addams Family (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A quirky family faces a con artist in gothic hilarity. Macabre charm shines. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A quirky family faces a con artist in gothic hilarity. Macabre charm shines.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Charlie and the Chocolate Factory.jpg" alt="Charlie and the Chocolate Factory Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Charlie and the Chocolate Factory.jpg" alt="Charlie and the Chocolate Factory Cover" loading="lazy">
+                        <figcaption class="sr-only">Charlie and the Chocolate Factory (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Charlie and the Chocolate Factory (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A poor boy tours Willy Wonka’s fantastical factory. Whimsical Burton remake of sweet wonders. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A poor boy tours Willy Wonka's fantastical factory. Whimsical Burton remake of sweet wonders.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Togo.jpg" alt="Togo Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Togo.jpg" alt="Togo Cover" loading="lazy">
+                        <figcaption class="sr-only">Togo (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Togo (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A sled dog leads a desperate mission to save an Alaskan town. Heartfelt canine heroics. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A sled dog leads a desperate mission to save an Alaskan town. Heartfelt canine heroics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Alice in Wonderland.jpg" alt="Alice in Wonderland Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Alice in Wonderland.jpg" alt="Alice in Wonderland Cover" loading="lazy">
+                        <figcaption class="sr-only">Alice in Wonderland (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Alice in Wonderland (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Alice returns to a vibrant Underland to battle the Red Queen. Visually dazzling fairy-tale revival. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Alice returns to a vibrant Underland to battle the Red Queen. Visually dazzling fairy-tale revival.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Charlotte's Web.jpg" alt="Charlotte's Web Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Charlotte's Web.jpg" alt="Charlotte's Web Cover" loading="lazy">
+                        <figcaption class="sr-only">Charlotte's Web (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Charlotte's Web (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pig and spider form an unlikely bond to save his life. Heartwarming barnyard tale. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pig and spider form an unlikely bond to save his life. Heartwarming barnyard tale.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Hook.jpg" alt="Hook Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Hook.jpg" alt="Hook Cover" loading="lazy">
+                        <figcaption class="sr-only">Hook (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hook (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A grown Peter Pan returns to Neverland to save his kids. Nostalgic flight into whimsy. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A grown Peter Pan returns to Neverland to save his kids. Nostalgic flight into whimsy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Jumanji - The Next Level.jpg" alt="Jumanji - The Next Level Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Jumanji - The Next Level.jpg" alt="Jumanji - The Next Level Cover" loading="lazy">
+                        <figcaption class="sr-only">Jumanji: The Next Level (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jumanji: The Next Level (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Players re-enter Jumanji’s game world with new avatars and stakes. Entertaining avatar swaps. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Players re-enter Jumanji's game world with new avatars and stakes. Entertaining avatar swaps.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Stuart Little.jpg" alt="Stuart Little Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Stuart Little.jpg" alt="Stuart Little Cover" loading="lazy">
+                        <figcaption class="sr-only">Stuart Little (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Stuart Little (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mouse joins a human family in a charming adventure. Cute family antics with a twist. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mouse joins a human family in a charming adventure. Cute family antics with a twist.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Doctor Dolittle.jpg" alt="Doctor Dolittle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Doctor Dolittle.jpg" alt="Doctor Dolittle Cover" loading="lazy">
+                        <figcaption class="sr-only">Doctor Dolittle (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Doctor Dolittle (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A doctor talks to animals in a comedic family adventure. Fun animal chatter galore. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A doctor talks to animals in a comedic family adventure. Fun animal chatter galore.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Dr. Dolittle 2.jpg" alt="Dr. Dolittle 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Dr. Dolittle 2.jpg" alt="Dr. Dolittle 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Dr. Dolittle 2 (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dr. Dolittle 2 (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Dr. Dolittle rallies animals to save a forest. Goofy animal advocacy romp. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Dr. Dolittle rallies animals to save a forest. Goofy animal advocacy romp.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Stuart Little 2.jpg" alt="Stuart Little 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Stuart Little 2.jpg" alt="Stuart Little 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Stuart Little 2 (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Stuart Little 2 (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stuart the mouse embarks on a city adventure with a new friend. Sweet mouse mischief. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stuart the mouse embarks on a city adventure with a new friend. Sweet mouse mischief.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Tooth Fairy.jpg" alt="Tooth Fairy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Tooth Fairy.jpg" alt="Tooth Fairy Cover" loading="lazy">
+                        <figcaption class="sr-only">Tooth Fairy (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Tooth Fairy (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A hockey player becomes a tooth fairy in a silly magical comedy. Harmless winged mishaps. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A hockey player becomes a tooth fairy in a silly magical comedy. Harmless winged mishaps.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/Zookeeper.jpg" alt="Zookeeper Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Zookeeper.jpg" alt="Zookeeper Cover" loading="lazy">
+                        <figcaption class="sr-only">Zookeeper (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Zookeeper (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A zookeeper gets love advice from talking animals. Goofy family fluff. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A zookeeper gets love advice from talking animals. Goofy family fluff.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/Dolittle.jpg" alt="Dolittle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Dolittle.jpg" alt="Dolittle Cover" loading="lazy">
+                        <figcaption class="sr-only">Dolittle (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dolittle (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A quirky vet sails to save a queen with animal allies. Colorful animal voyage. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A quirky vet sails to save a queen with animal allies. Colorful animal voyage.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/Kangaroo Jack.jpg" alt="Kangaroo Jack Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Kangaroo Jack.jpg" alt="Kangaroo Jack Cover" loading="lazy">
+                        <figcaption class="sr-only">Kangaroo Jack (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kangaroo Jack (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two pals chase a kangaroo with mob money in the Outback. Wacky Outback caper. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two pals chase a kangaroo with mob money in the Outback. Wacky Outback caper.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/The Secret Kingdom.jpg" alt="The Secret Kingdom Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Secret Kingdom.jpg" alt="The Secret Kingdom Cover" loading="lazy">
+                        <figcaption class="sr-only">The Secret Kingdom (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Secret Kingdom (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Siblings discover a magical underground world to save their family. Charming subterranean wonders. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Siblings discover a magical underground world to save their family. Charming subterranean wonders.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Mythic and Heroic Journeys</h2>
-            <p>Legendary heroes face trials in fantastical or ancient realms.</p>
+        <!-- Mythic and Heroic Journeys Section -->
+        <section class="movie-section" aria-labelledby="mythic-heroic-heading">
+            <header class="section-header">
+                <h2 id="mythic-heroic-heading">Mythic and Heroic Journeys</h2>
+                <p>Legendary heroes face trials in fantastical or ancient realms.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/fantasy-adventure/Conan the Barbarian.jpg" alt="Conan the Barbarian Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Conan the Barbarian.jpg" alt="Conan the Barbarian Cover" loading="lazy">
+                        <figcaption class="sr-only">Conan the Barbarian (1982)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Conan the Barbarian (1982)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A warrior seeks revenge against a snake cult in a brutal fantasy world. Gritty, iconic swordplay. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A warrior seeks revenge against a snake cult in a brutal fantasy world. Gritty, iconic swordplay.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/King Arthur Legend of the Sword.jpg" alt="King Arthur - Legend of the Sword Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/King Arthur Legend of the Sword.jpg" alt="King Arthur - Legend of the Sword Cover" loading="lazy">
+                        <figcaption class="sr-only">King Arthur: Legend of the Sword (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>King Arthur: Legend of the Sword (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Arthur wields Excalibur in a gritty, magical retelling. Stylish rise of a king. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Arthur wields Excalibur in a gritty, magical retelling. Stylish rise of a king.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/The Legend of Tarzan.jpg" alt="The Legend of Tarzan Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Legend of Tarzan.jpg" alt="The Legend of Tarzan Cover" loading="lazy">
+                        <figcaption class="sr-only">The Legend of Tarzan (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Legend of Tarzan (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tarzan returns to the jungle to thwart colonial schemes. Visually lush jungle exploits. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tarzan returns to the jungle to thwart colonial schemes. Visually lush jungle exploits.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Dragonheart - Vengeance.jpg" alt="Dragonheart - Vengeance Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Dragonheart - Vengeance.jpg" alt="Dragonheart - Vengeance Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragonheart: Vengeance (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dragonheart: Vengeance (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A farmer allies with a dragon to avenge his family. Heartfelt draconic alliance. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A farmer allies with a dragon to avenge his family. Heartfelt draconic alliance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/The Golden Child.jpg" alt="The Golden Child Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Golden Child.jpg" alt="The Golden Child Cover" loading="lazy">
+                        <figcaption class="sr-only">The Golden Child (1986)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Golden Child (1986)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Eddie Murphy seeks a mystical child in a quirky quest. Oddball mystical hunt. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Eddie Murphy seeks a mystical child in a quirky quest. Oddball mystical hunt.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/The Scorpion King.jpg" alt="The Scorpion King Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Scorpion King.jpg" alt="The Scorpion King Cover" loading="lazy">
+                        <figcaption class="sr-only">The Scorpion King (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Scorpion King (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A warrior battles an evil king in a sandy sword-and-sorcery tale. Brawny desert conquest. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A warrior battles an evil king in a sandy sword-and-sorcery tale. Brawny desert conquest.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/The Scorpion King - Book of Souls.jpg" alt="The Scorpion King - Book of Souls Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Scorpion King - Book of Souls.jpg" alt="The Scorpion King - Book of Souls Cover" loading="lazy">
+                        <figcaption class="sr-only">The Scorpion King: Book of Souls (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Scorpion King: Book of Souls (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A warrior hunts a cursed artifact in a lackluster sequel. Generic mythic slog. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A warrior hunts a cursed artifact in a lackluster sequel. Generic mythic slog.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Modern Fantasy Action</h2>
-            <p>Contemporary tales blending magic, action, and supernatural stakes.</p>
+        <!-- Modern Fantasy Action Section -->
+        <section class="movie-section" aria-labelledby="modern-fantasy-heading">
+            <header class="section-header">
+                <h2 id="modern-fantasy-heading">Modern Fantasy Action</h2>
+                <p>Contemporary tales blending magic, action, and supernatural stakes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/fantasy-adventure/Ghostbusters.png" alt="Ghostbusters Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Ghostbusters.png" alt="Ghostbusters Cover" loading="lazy">
+                        <figcaption class="sr-only">Ghostbusters (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ghostbusters (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Paranormal exterminators battle ghosts in New York. Iconic blend of humor and spooks. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Paranormal exterminators battle ghosts in New York. Iconic blend of humor and spooks.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Maleficent_ Mistress of Evil.jpg" alt="Maleficent - Mistress of Evil Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Maleficent_ Mistress of Evil.jpg" alt="Maleficent - Mistress of Evil Cover" loading="lazy">
+                        <figcaption class="sr-only">Maleficent: Mistress of Evil (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Maleficent: Mistress of Evil (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Maleficent faces new threats in a fairy-tale war. Stunning visuals of enchanted conflict. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Maleficent faces new threats in a fairy-tale war. Stunning visuals of enchanted conflict.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Bulletproof Monk.jpg" alt="Bulletproof Monk Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Bulletproof Monk.jpg" alt="Bulletproof Monk Cover" loading="lazy">
+                        <figcaption class="sr-only">Bulletproof Monk (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bulletproof Monk (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A monk protects a sacred scroll with martial arts flair. Cheesy mystical guardianship. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A monk protects a sacred scroll with martial arts flair. Cheesy mystical guardianship.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Fantastic Beasts - The Crimes of Grindelwald.jpg" alt="Fantastic Beasts - The Crimes of Grindelwald Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Fantastic Beasts - The Crimes of Grindelwald.jpg" alt="Fantastic Beasts - The Crimes of Grindelwald Cover" loading="lazy">
+                        <figcaption class="sr-only">Fantastic Beasts: The Crimes of Grindelwald (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fantastic Beasts: The Crimes of Grindelwald (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Newt Scamander battles dark wizard Grindelwald in a magical clash. Visually rich wizard duel. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Newt Scamander battles dark wizard Grindelwald in a magical clash. Visually rich wizard duel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/The Sorcerer's Apprentice.jpg" alt="The Sorcerer's Apprentice Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Sorcerer's Apprentice.jpg" alt="The Sorcerer's Apprentice Cover" loading="lazy">
+                        <figcaption class="sr-only">The Sorcerer's Apprentice (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Sorcerer's Apprentice (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen trains as a wizard to stop an ancient evil. Fun wizardly apprenticeship. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen trains as a wizard to stop an ancient evil. Fun wizardly apprenticeship.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/Ghost Rider.jpg" alt="Ghost Rider Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Ghost Rider.jpg" alt="Ghost Rider Cover" loading="lazy">
+                        <figcaption class="sr-only">Ghost Rider (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ghost Rider (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A biker becomes a fiery demon to battle evil. Flashy hellfire vengeance. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A biker becomes a fiery demon to battle evil. Flashy hellfire vengeance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/The Last Witch Hunter.jpeg" alt="The Last Witch Hunter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/The Last Witch Hunter.jpeg" alt="The Last Witch Hunter Cover" loading="lazy">
+                        <figcaption class="sr-only">The Last Witch Hunter (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Last Witch Hunter (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An immortal hunter battles witches in modern New York. Stylish supernatural hunts. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>An immortal hunter battles witches in modern New York. Stylish supernatural hunts.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/Artemis Fowl.jpg" alt="Artemis Fowl Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Artemis Fowl.jpg" alt="Artemis Fowl Cover" loading="lazy">
+                        <figcaption class="sr-only">Artemis Fowl (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Artemis Fowl (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young genius battles fairies to save his father. Magical showdown with fairies. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young genius battles fairies to save his father. Magical showdown with fairies.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Fantasy Comedy</h2>
-            <p>Lighthearted romps with magical mischief and laughs.</p>
+        <!-- Fantasy Comedy Section -->
+        <section class="movie-section" aria-labelledby="fantasy-comedy-heading">
+            <header class="section-header">
+                <h2 id="fantasy-comedy-heading">Fantasy Comedy</h2>
+                <p>Lighthearted romps with magical mischief and laughs.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Ted.jpg" alt="Ted Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Ted.jpg" alt="Ted Cover" loading="lazy">
+                        <figcaption class="sr-only">Ted (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ted (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A foul-mouthed teddy bear causes chaos in a man’s life. Crude living toy mayhem. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A foul-mouthed teddy bear causes chaos in a man's life. Crude living toy mayhem.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/fantasy-adventure/Ted 2.jpg" alt="Ted 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Ted 2.jpg" alt="Ted 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Ted 2 (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ted 2 (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The talking bear fights for his rights in a crude sequel. Funny teddy bear legal battles. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>The talking bear fights for his rights in a crude sequel. Funny teddy bear legal battles.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/fantasy-adventure/Little.jpg" alt="Little Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Little.jpg" alt="Little Cover" loading="lazy">
+                        <figcaption class="sr-only">Little (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Little (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bossy exec wakes up as a kid in a magical comedy. Amusing body-swap hilarity. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bossy exec wakes up as a kid in a magical comedy. Amusing body-swap hilarity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/fantasy-adventure/Gulliver's Travels.jpg" alt="Gulliver's Travels Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/fantasy-adventure/Gulliver's Travels.jpg" alt="Gulliver's Travels Cover" loading="lazy">
+                        <figcaption class="sr-only">Gulliver's Travels (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Gulliver's Travels (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A modern Gulliver lands in a tiny kingdom for comedic misadventures. Silly size-shifting antics. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A modern Gulliver lands in a tiny kingdom for comedic misadventures. Silly size-shifting antics.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

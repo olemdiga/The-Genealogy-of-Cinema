@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Literature</title>
+    <title>Literature - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies inspired by literature or literary figures, sorted by theme, with witty, insightful overviews and objective ratings based on Rotten Tomatoes consensus, factoring in negative reviews.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing movies inspired by literature or literary figures I've watched, rated by color. Explore Shakespearean adaptations, literary icons, classic novels, and language-focused stories.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Literature</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Shakespearean adaptations, literary icons, classic novel interpretations, and stories celebrating the power of language and storytelling.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 12 movies</span>
+            <span class="movie-count">5 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -39,6 +44,7 @@
             <li><a href="heists.html">Heists</a></li>
             <li><a href="historical-biographical.html">Historical & Biographical</a></li>
             <li><a href="horror.html">Horror</a></li>
+            <li><a href="literature.html" aria-current="page">Literature</a></li>
             <li><a href="martial-arts.html">Martial Arts</a></li>
             <li><a href="monsters-aliens.html">Monsters & Aliens</a></li>
             <li><a href="music-dance.html">Music & Dance</a></li>
@@ -53,171 +59,262 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Shakespearean Adaptations</h2>
-            <p>Films bringing the Bard’s timeless tales to the screen with flair or grit.</p>
+        <!-- Shakespearean Adaptations Section -->
+        <section class="movie-section" aria-labelledby="shakespeare-heading">
+            <header class="section-header">
+                <h2 id="shakespeare-heading">Shakespearean Adaptations</h2>
+                <p>Films bringing the Bard's timeless tales to the screen with flair or grit.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/literature/The Tragedy of Macbeth.jpg" alt="The Tragedy of Macbeth Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/literature/The Tragedy of Macbeth.jpg" alt="The Tragedy of Macbeth movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Tragedy of Macbeth (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Tragedy of Macbeth (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Coen’s stark, shadowy take on Macbeth’s murderous ambition drips with dread. Washington and McDormand slay, but the minimalist style feels cold to some. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Coen's stark, shadowy take on Macbeth's murderous ambition drips with dread. Washington and McDormand slay, but the minimalist style feels cold to some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/literature/Shakespeare in Love.jpg" alt="Shakespeare in Love Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/literature/Shakespeare in Love.jpg" alt="Shakespeare in Love movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shakespeare in Love (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shakespeare in Love (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A fictionalized Bard finds muse in a forbidden romance, weaving Romeo and Juliet. Witty and lush, but some call its Oscar win overblown fluff. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A fictionalized Bard finds muse in a forbidden romance, weaving Romeo and Juliet. Witty and lush, but some call its Oscar win overblown fluff.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/literature/Romeo + Juliet.jpg" alt="Romeo + Juliet Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/literature/Romeo + Juliet.jpg" alt="Romeo + Juliet movie poster" loading="lazy">
+                        <figcaption class="sr-only">Romeo + Juliet (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Romeo + Juliet (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Luhrmann’s neon-drenched, modern Verona pulses with young love and violence. DiCaprio and Danes spark, but the frenetic style and dated MTV vibe jar some. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Luhrmann's neon-drenched, modern Verona pulses with young love and violence. DiCaprio and Danes spark, but the frenetic style and dated MTV vibe jar some.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Literary Icons & Writers</h2>
-            <p>Stories of authors or their creative struggles, real or imagined.</p>
+        <!-- Literary Icons & Writers Section -->
+        <section class="movie-section" aria-labelledby="literary-icons-heading">
+            <header class="section-header">
+                <h2 id="literary-icons-heading">Literary Icons & Writers</h2>
+                <p>Stories of authors or their creative struggles, real or imagined.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/literature/Adaptation..jpg" alt="Adaptation Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/literature/Adaptation..jpg" alt="Adaptation movie poster" loading="lazy">
+                        <figcaption class="sr-only">Adaptation. (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Adaptation. (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A neurotic screenwriter battles to adapt a book while his twin thrives. Kaufman’s meta-genius dazzles, but its quirky chaos confuses mainstream audiences. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A neurotic screenwriter battles to adapt a book while his twin thrives. Kaufman's meta-genius dazzles, but its quirky chaos confuses mainstream audiences.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/literature/A Private War.jpg" alt="A Private War Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/literature/A Private War.jpg" alt="A Private War movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Private War (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Private War (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>War journalist Marie Colvin risks all for truth in conflict zones. Pike’s fierce performance grips, but formulaic biopic beats and rushed pacing soften impact. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>War journalist Marie Colvin risks all for truth in conflict zones. Pike's fierce performance grips, but formulaic biopic beats and rushed pacing soften impact.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/literature/Genius.jpg" alt="Genius Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/literature/Genius.jpg" alt="Genius movie poster" loading="lazy">
+                        <figcaption class="sr-only">Genius (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Genius (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Editor Max Perkins shapes the works of literary giants like Wolfe. Strong cast intrigues, but stuffy pacing and shallow depth make it a dry read. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Editor Max Perkins shapes the works of literary giants like Wolfe. Strong cast intrigues, but stuffy pacing and shallow depth make it a dry read.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/literature/The Words.jpg" alt="The Words Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/literature/The Words.jpg" alt="The Words movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Words (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Words (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A writer’s stolen manuscript brings fame and guilt in a nested tale. Ambitious ideas intrigue, but convoluted structure and weak payoff bore most. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A writer's stolen manuscript brings fame and guilt in a nested tale. Ambitious ideas intrigue, but convoluted structure and weak payoff bore most.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Classic Novel Adaptations</h2>
-            <p>Big-screen takes on literary masterpieces, for better or worse.</p>
+        <!-- Classic Novel Adaptations Section -->
+        <section class="movie-section" aria-labelledby="classic-novels-heading">
+            <header class="section-header">
+                <h2 id="classic-novels-heading">Classic Novel Adaptations</h2>
+                <p>Big-screen takes on literary masterpieces, for better or worse.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/literature/The Great Gatsby.jpg" alt="The Great Gatsby Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/literature/The Great Gatsby.jpg" alt="The Great Gatsby movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Great Gatsby (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Great Gatsby (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Luhrmann’s glitzy Jazz Age spectacle drowns Fitzgerald’s tragedy in excess. DiCaprio shines, but shallow depth and overblown style alienate purists. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Luhrmann's glitzy Jazz Age spectacle drowns Fitzgerald's tragedy in excess. DiCaprio shines, but shallow depth and overblown style alienate purists.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Language & Storytelling</h2>
-            <p>Films celebrating the power of words, competition, or self-expression.</p>
+        <!-- Language & Storytelling Section -->
+        <section class="movie-section" aria-labelledby="language-storytelling-heading">
+            <header class="section-header">
+                <h2 id="language-storytelling-heading">Language & Storytelling</h2>
+                <p>Films celebrating the power of words, competition, or self-expression.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/literature/Dead Poets Society.jpg" alt="Dead Poets Society Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/literature/Dead Poets Society.jpg" alt="Dead Poets Society movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dead Poets Society (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dead Poets Society (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A maverick teacher inspires prep school boys to seize the day through poetry. Williams’ passion uplifts, but sentimental tropes and tidy arcs feel dated. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A maverick teacher inspires prep school boys to seize the day through poetry. Williams' passion uplifts, but sentimental tropes and tidy arcs feel dated.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/literature/Akeelah and the Bee.jpg" alt="Akeelah and the Bee Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/literature/Akeelah and the Bee.jpg" alt="Akeelah and the Bee movie poster" loading="lazy">
+                        <figcaption class="sr-only">Akeelah and the Bee (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Akeelah and the Bee (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A shy girl from South L.A. conquers the spelling bee circuit. Heartwarming and earnest, but predictable underdog clichés blunt its scrabble. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A shy girl from South L.A. conquers the spelling bee circuit. Heartwarming and earnest, but predictable underdog clichés blunt its scrabble.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/literature/Bad Words.jpg" alt="Bad Words Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/literature/Bad Words.jpg" alt="Bad Words movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bad Words (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bad Words (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bitter adult exploits a loophole to dominate kids’ spelling bees. Bateman’s dark humor bites, but uneven tone and thin stakes misspell its potential. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bitter adult exploits a loophole to dominate kids' spelling bees. Bateman's dark humor bites, but uneven tone and thin stakes misspell its potential.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Literary-Inspired Thrillers</h2>
-            <p>Dark tales weaving literature into mystery or obsession.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-4">
-                    <img src="../img/literature/The Number 23.jpg" alt="The Number 23 Cover">
-                    <div class="movie-title">
-                        <h3>The Number 23 (2007)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man’s obsession with a book and the number 23 unravels his sanity. Carrey’s dramatic turn tries, but silly twists and convoluted plotting flunk the thriller test. Rating: 4/10.</p>
-                    </div>
+        <!-- Literary-Inspired Thrillers Section -->
+        <section class="movie-section" aria-labelledby="literary-thrillers-heading">
+            <header class="section-header">
+                <h2 id="literary-thrillers-heading">Literary-Inspired Thrillers</h2>
+                <p>Dark tales weaving literature into mystery or obsession.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
                 </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/literature/The Number 23.jpg" alt="The Number 23 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Number 23 (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Number 23 (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A man's obsession with a book and the number 23 unravels his sanity. Carrey's dramatic turn tries, but silly twists and convoluted plotting flunk the thriller test.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

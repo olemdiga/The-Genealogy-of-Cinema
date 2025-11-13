@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comedy</title>
+    <title>Comedy - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing comedy movies I've watched, sorted by theme and rated by laughs.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing comedy movies sorted by theme, with witty, insightful overviews and objective ratings based on Rotten Tomatoes consensus, factoring in negative reviews.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Comedy</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Laugh-out-loud films spanning slapstick, satire, buddy antics, and outrageous parodies across every comedic style.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 97 movies</span>
+            <span class="movie-count">11 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -53,954 +58,1450 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Buddy and Action Comedy</h2>
-            <p>Fast-paced laughs with mismatched partners and chaotic antics.</p>
+        <!-- Buddy and Action Comedy Section -->
+        <section class="movie-section" aria-labelledby="buddy-action-heading">
+            <header class="section-header">
+                <h2 id="buddy-action-heading">Buddy and Action Comedy</h2>
+                <p>Fast-paced laughs with mismatched partners and chaotic antics.</p>
+                <div class="section-stats">
+                    <span class="movie-count">15 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/comedy/The Big Lebowski.jpg" alt="The Big Lebowski Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/comedy/The Big Lebowski.jpg" alt="The Big Lebowski Cover" loading="lazy">
+                        <figcaption class="sr-only">The Big Lebowski (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Big Lebowski (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Dude abides in a zany kidnapping caper with bowling and rug obsessions. Cult classic hilarity. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Dude abides in a zany kidnapping caper with bowling and rug obsessions. Cult classic hilarity with endless quotable moments.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/comedy/Game Night.jpg" alt="Game Night Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/comedy/Game Night.jpg" alt="Game Night Cover" loading="lazy">
+                        <figcaption class="sr-only">Game Night (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Game Night (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A game night spirals into real crime and chaos. Clever, twisty fun. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A game night spirals into real crime and chaos. Clever, twisty fun with sharp writing and unexpected turns.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/comedy/The Hangover.jpg" alt="The Hangover Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/comedy/The Hangover.jpg" alt="The Hangover Cover" loading="lazy">
+                        <figcaption class="sr-only">The Hangover (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hangover (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Vegas bachelor party loses the groom in a wild, blurry night. Riotous misadventure. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Vegas bachelor party loses the groom in a wild, blurry night. Riotous misadventure that defined a comedy era.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Due Date.jpg" alt="Due Date Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Due Date.jpg" alt="Due Date Cover" loading="lazy">
+                        <figcaption class="sr-only">Due Date (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Due Date (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A road trip with an oddball derails a man's rush to his baby's birth. Frantic buddy laughs. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A road trip with an oddball derails a man's rush to his baby's birth. Frantic buddy laughs with solid chemistry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Showtime.jpg" alt="Showtime Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Showtime.jpg" alt="Showtime Cover" loading="lazy">
+                        <figcaption class="sr-only">Showtime (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Showtime (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cops star in a reality TV show, clashing over crime and cameras. Goofy action spoof. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cops star in a reality TV show, clashing over crime and cameras. Goofy action spoof with Murphy's charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Blue Streak.jpg" alt="Blue Streak Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Blue Streak.jpg" alt="Blue Streak Cover" loading="lazy">
+                        <figcaption class="sr-only">Blue Streak (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Blue Streak (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A jewel thief poses as a cop to retrieve his loot. Fast-talking heist hijinks. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A jewel thief poses as a cop to retrieve his loot. Fast-talking heist hijinks with Lawrence's signature energy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/I Spy.jpg" alt="I Spy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/I Spy.jpg" alt="I Spy Cover" loading="lazy">
+                        <figcaption class="sr-only">I Spy (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Spy (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A spy and a boxer team up to recover a stolen jet. Action-comedy chemistry. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A spy and a boxer team up to recover a stolen jet. Action-comedy chemistry that entertains despite formulaic plot.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Stuber.jpg" alt="Stuber Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Stuber.jpg" alt="Stuber Cover" loading="lazy">
+                        <figcaption class="sr-only">Stuber (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Stuber (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A cop and his Uber driver chase criminals in a wild ride. Goofy action romp. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A cop and his Uber driver chase criminals in a wild ride. Goofy action romp with surprising buddy dynamics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/National Security.jpg" alt="National Security Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/National Security.jpg" alt="National Security Cover" loading="lazy">
+                        <figcaption class="sr-only">National Security (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>National Security (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Security guards uncover a smuggling ring with bickering banter. Decent buddy antics. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Security guards uncover a smuggling ring with bickering banter. Decent buddy antics that deliver modest laughs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Skiptrace.jpg" alt="Skiptrace Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Skiptrace.jpg" alt="Skiptrace Cover" loading="lazy">
+                        <figcaption class="sr-only">Skiptrace (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Skiptrace (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A detective and a gambler team up for a global chase. Uneven action laughs. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A detective and a gambler team up for a global chase. Uneven action laughs with international flavor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Barely Lethal.jpg" alt="Barely Lethal Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Barely Lethal.jpg" alt="Barely Lethal Cover" loading="lazy">
+                        <figcaption class="sr-only">Barely Lethal (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Barely Lethal (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen assassin fakes her death for a normal high school life. Spy spoof with charm. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen assassin fakes her death for a normal high school life. Spy spoof with charm but limited impact.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Get Hard.jpg" alt="Get Hard Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Get Hard.jpg" alt="Get Hard Cover" loading="lazy">
+                        <figcaption class="sr-only">Get Hard (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Get Hard (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A millionaire preps for prison with a car washer's help. Crass but sporadically funny. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A millionaire preps for prison with a car washer's help. Crass but sporadically funny with hit-or-miss gags.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Game Over, Man.jpg" alt="Game Over, Man! Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Game Over, Man.jpg" alt="Game Over, Man! Cover" loading="lazy">
+                        <figcaption class="sr-only">Game Over, Man! (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Game Over, Man! (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hotel workers play heroes in a hostage crisis. Over-the-top slapstick. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Hotel workers play heroes in a hostage crisis. Over-the-top slapstick that strains for laughs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/The Brothers Grimsby.jpg" alt="The Brothers Grimsby Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/The Brothers Grimsby.jpg" alt="The Brothers Grimsby Cover" loading="lazy">
+                        <figcaption class="sr-only">The Brothers Grimsby (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Brothers Grimsby (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A spy reunites with his hooligan brother for crude global antics. Gross-out gags galore. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A spy reunites with his hooligan brother for crude global antics. Gross-out gags galore that push boundaries.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Gun Shy.jpg" alt="Gun Shy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Gun Shy.jpg" alt="Gun Shy Cover" loading="lazy">
+                        <figcaption class="sr-only">Gun Shy (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Gun Shy (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rock star’s wife is kidnapped, forcing him into action. Misfired action comedy. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rock star's wife is kidnapped, forcing him into action. Misfired action comedy with wasted potential.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Parody and Spoof</h2>
-            <p>Outrageous takes on genres and pop culture for big laughs.</p>
+        <!-- Parody and Spoof Section -->
+        <section class="movie-section" aria-labelledby="parody-spoof-heading">
+            <header class="section-header">
+                <h2 id="parody-spoof-heading">Parody and Spoof</h2>
+                <p>Outrageous takes on genres and pop culture for big laughs.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/comedy/The Naked Gun - From the files of Police Squad.jpg" alt="The Naked Gun Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/comedy/The Naked Gun - From the files of Police Squad.jpg" alt="The Naked Gun Cover" loading="lazy">
+                        <figcaption class="sr-only">The Naked Gun: From the Files of Police Squad! (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Naked Gun: From the Files of Police Squad! (1988)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bumbling detective foils a royal assassination with absurd gags. Timeless spoof mastery. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bumbling detective foils a royal assassination with absurd gags. Timeless spoof mastery from the Nielsen legacy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Scary Movie.jpg" alt="Scary Movie Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Scary Movie.jpg" alt="Scary Movie Cover" loading="lazy">
+                        <figcaption class="sr-only">Scary Movie (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Scary Movie (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teens face a killer in a horror spoof packed with raunchy gags. Prime parody fun. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Teens face a killer in a horror spoof packed with raunchy gags. Prime parody fun that launched a franchise.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Scary Movie 2.jpg" alt="Scary Movie 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Scary Movie 2.jpg" alt="Scary Movie 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Scary Movie 2 (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Scary Movie 2 (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A haunted house spoof with crude humor and horror jabs. Silly sequel shenanigans. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A haunted house spoof with crude humor and horror jabs. Silly sequel shenanigans with diminishing returns.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/scary Movie 3.jpg" alt="Scary Movie 3 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/scary Movie 3.jpg" alt="Scary Movie 3 Cover" loading="lazy">
+                        <figcaption class="sr-only">Scary Movie 3 (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Scary Movie 3 (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Alien invasions and horror clichés get lampooned. Hit-or-miss hilarity. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Alien invasions and horror clichés get lampooned. Hit-or-miss hilarity with some standout moments.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Scary Movie 4.jpg" alt="Scary Movie 4 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Scary Movie 4.jpg" alt="Scary Movie 4 Cover" loading="lazy">
+                        <figcaption class="sr-only">Scary Movie 4 (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Scary Movie 4 (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>More horror spoofs with alien and grudge gags. Diminishing returns. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>More horror spoofs with alien and grudge gags. Diminishing returns as franchise fatigue sets in.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/The Unbearable Weight of Massive Talent.jpg" alt="The Unbearable Weight of Massive Talent Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/The Unbearable Weight of Massive Talent.jpg" alt="The Unbearable Weight of Massive Talent Cover" loading="lazy">
+                        <figcaption class="sr-only">The Unbearable Weight of Massive Talent (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Unbearable Weight of Massive Talent (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Nicolas Cage plays himself in a meta-action comedy. Clever but uneven. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Nicolas Cage plays himself in a meta-action comedy. Clever but uneven with self-referential humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/Superhero Movie.jpg" alt="Superhero Movie Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/Superhero Movie.jpg" alt="Superhero Movie Cover" loading="lazy">
+                        <figcaption class="sr-only">Superhero Movie (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Superhero Movie (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen gains powers in a superhero spoof. Formulaic parody fizzles. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen gains powers in a superhero spoof. Formulaic parody fizzles with uninspired gags.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/Fifty Shades of Black.jpg" alt="Fifty Shades of Black Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/Fifty Shades of Black.jpg" alt="Fifty Shades of Black Cover" loading="lazy">
+                        <figcaption class="sr-only">Fifty Shades of Black (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fifty Shades of Black (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A raunchy riff on erotic romance novels. Crude spoof misses mark. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A raunchy riff on erotic romance novels. Crude spoof misses mark with lazy humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Scary Movie 5.jpg" alt="Scary Movie 5 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Scary Movie 5.jpg" alt="Scary Movie 5 Cover" loading="lazy">
+                        <figcaption class="sr-only">Scary Movie 5 (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Scary Movie 5 (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Horror spoofs continue with tired gags and weak scares. Franchise fatigue. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Horror spoofs continue with tired gags and weak scares. Franchise fatigue reaches its breaking point.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Family and Kid-Friendly Comedy</h2>
-            <p>Lighthearted fun for all ages with silly adventures.</p>
+        <!-- Family and Kid-Friendly Comedy Section -->
+        <section class="movie-section" aria-labelledby="family-friendly-heading">
+            <header class="section-header">
+                <h2 id="family-friendly-heading">Family and Kid-Friendly Comedy</h2>
+                <p>Lighthearted fun for all ages with silly adventures.</p>
+                <div class="section-stats">
+                    <span class="movie-count">12 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Cheaper by the Dozen.jpg" alt="Cheaper by the Dozen Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Cheaper by the Dozen.jpg" alt="Cheaper by the Dozen Cover" loading="lazy">
+                        <figcaption class="sr-only">Cheaper by the Dozen (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cheaper by the Dozen (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A family of twelve navigates chaos and parenting challenges. Heartwarming family frenzy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A family of twelve navigates chaos and parenting challenges. Heartwarming family frenzy with relatable chaos.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/George of the Jungle.jpg" alt="George of the Jungle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/George of the Jungle.jpg" alt="George of the Jungle Cover" loading="lazy">
+                        <figcaption class="sr-only">George of the Jungle (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>George of the Jungle (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bumbling Tarzan-like hero swings into love and laughs. Slapstick jungle joy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bumbling Tarzan-like hero swings into love and laughs. Slapstick jungle joy with Brendan Fraser's charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Daddy Day Care.jpg" alt="Daddy Day Care Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Daddy Day Care.jpg" alt="Daddy Day Care Cover" loading="lazy">
+                        <figcaption class="sr-only">Daddy Day Care (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Daddy Day Care (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Laid-off dads start a chaotic daycare. Kid-friendly comedic charm. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Laid-off dads start a chaotic daycare. Kid-friendly comedic charm with predictable but fun antics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Dennis the Menace.jpg" alt="Dennis the Menace Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Dennis the Menace.jpg" alt="Dennis the Menace Cover" loading="lazy">
+                        <figcaption class="sr-only">Dennis the Menace (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dennis the Menace (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mischievous boy torments his grumpy neighbor. Classic kid chaos. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mischievous boy torments his grumpy neighbor. Classic kid chaos with nostalgic appeal.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/The Princess Diaries.jpg" alt="The Princess Diaries Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/The Princess Diaries.jpg" alt="The Princess Diaries Cover" loading="lazy">
+                        <figcaption class="sr-only">The Princess Diaries (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Princess Diaries (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen learns she’s royalty, navigating etiquette and identity. Charming royal romp. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen learns she's royalty, navigating etiquette and identity. Charming royal romp with Julie Andrews' grace.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Scooby-Doo.jpg" alt="Scooby-Doo Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Scooby-Doo.jpg" alt="Scooby-Doo Cover" loading="lazy">
+                        <figcaption class="sr-only">Scooby-Doo (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Scooby-Doo (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mystery Inc. solves a spooky island case with goofy antics. Nostalgic cartoon caper. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mystery Inc. solves a spooky island case with goofy antics. Nostalgic cartoon caper with mixed results.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Garfield - A Tail of Two Kitties.jpg" alt="Garfield - A Tail of Two Kitties Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Garfield - A Tail of Two Kitties.jpg" alt="Garfield - A Tail of Two Kitties Cover" loading="lazy">
+                        <figcaption class="sr-only">Garfield: A Tail of Two Kitties (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Garfield: A Tail of Two Kitties (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Garfield swaps places with a royal cat in England. Feline farce falls flat. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Garfield swaps places with a royal cat in England. Feline farce falls flat despite Murray's voice work.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Major Payne.jpg" alt="Major Payne Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Major Payne.jpg" alt="Major Payne Cover" loading="lazy">
+                        <figcaption class="sr-only">Major Payne (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Major Payne (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A tough marine trains misfit cadets with drill-sergeant humor. Goofy discipline. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A tough marine trains misfit cadets with drill-sergeant humor. Goofy discipline with Damon Wayans' intensity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/Are We There Yet.jpg" alt="Are We There Yet? Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/Are We There Yet.jpg" alt="Are We There Yet? Cover" loading="lazy">
+                        <figcaption class="sr-only">Are We There Yet? (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Are We There Yet? (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man endures kids’ pranks on a road trip to win their mom. Family-friendly frustration. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man endures kids' pranks on a road trip to win their mom. Family-friendly frustration with mild laughs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/Babys Day Out.jpg" alt="Baby's Day Out Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/Babys Day Out.jpg" alt="Baby's Day Out Cover" loading="lazy">
+                        <figcaption class="sr-only">Baby's Day Out (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Baby's Day Out (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A baby outsmarts bumbling kidnappers in a city adventure. Silly infant antics. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A baby outsmarts bumbling kidnappers in a city adventure. Silly infant antics with physical comedy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Problem Child 3 - Junior in Love.jpg" alt="Problem Child 3 - Junior in Love Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Problem Child 3 - Junior in Love.jpg" alt="Problem Child 3 - Junior in Love Cover" loading="lazy">
+                        <figcaption class="sr-only">Problem Child 3: Junior in Love (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Problem Child 3: Junior in Love (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mischievous kid stirs trouble chasing a crush. Tired prank parade. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mischievous kid stirs trouble chasing a crush. Tired prank parade showing franchise exhaustion.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/comedy/Baby Geniuses.jpg" alt="Baby Geniuses Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/comedy/Baby Geniuses.jpg" alt="Baby Geniuses Cover" loading="lazy">
+                        <figcaption class="sr-only">Baby Geniuses (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Baby Geniuses (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Talking babies foil a corporate plot. Absurd and unfunny. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Talking babies foil a corporate plot. Absurd and unfunny with cringe-worthy execution.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Urban and Cultural Comedy</h2>
-            <p>Laughs rooted in community, identity, and streetwise humor.</p>
+        <!-- Urban and Cultural Comedy Section -->
+        <section class="movie-section" aria-labelledby="urban-cultural-heading">
+            <header class="section-header">
+                <h2 id="urban-cultural-heading">Urban and Cultural Comedy</h2>
+                <p>Laughs rooted in community, identity, and streetwise humor.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/comedy/Girls Trip.jpg" alt="Girls Trip Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/comedy/Girls Trip.jpg" alt="Girls Trip Cover" loading="lazy">
+                        <figcaption class="sr-only">Girls Trip (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Girls Trip (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends reunite for a wild New Orleans adventure. Vibrant, heartfelt hilarity. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Friends reunite for a wild New Orleans adventure. Vibrant, heartfelt hilarity with breakout performances.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Friday After Next.jpg" alt="Friday After Next Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Friday After Next.jpg" alt="Friday After Next Cover" loading="lazy">
+                        <figcaption class="sr-only">Friday After Next (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Friday After Next (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cousins face a Christmas burglar with neighborhood laughs. Festive stoner fun. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cousins face a Christmas burglar with neighborhood laughs. Festive stoner fun with Ice Cube's swagger.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/How High.jpg" alt="How High Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/How High.jpg" alt="How High Cover" loading="lazy">
+                        <figcaption class="sr-only">How High (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>How High (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stoners use magic weed to ace college exams. High-spirited absurdity. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stoners use magic weed to ace college exams. High-spirited absurdity with Method Man and Redman's chemistry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Barbershop - The Next Cut.jpg" alt="Barbershop - The Next Cut Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Barbershop - The Next Cut.jpg" alt="Barbershop - The Next Cut Cover" loading="lazy">
+                        <figcaption class="sr-only">Barbershop: The Next Cut (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Barbershop: The Next Cut (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Barbershop crew tackles community issues with sharp wit. Funny and grounded. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Barbershop crew tackles community issues with sharp wit. Funny and grounded with social relevance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Death At A Funeral.jpg" alt="Death At A Funeral Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Death At A Funeral.jpg" alt="Death At A Funeral Cover" loading="lazy">
+                        <figcaption class="sr-only">Death at a Funeral (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Death at a Funeral (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A funeral spirals into chaos with secrets and mishaps. Comedic mourning mayhem. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A funeral spirals into chaos with secrets and mishaps. Comedic mourning mayhem with ensemble cast.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/First Sunday.jpg" alt="First Sunday Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/First Sunday.jpg" alt="First Sunday Cover" loading="lazy">
+                        <figcaption class="sr-only">First Sunday (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>First Sunday (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Petty crooks rob a church, finding redemption amid laughs. Faith-based farce. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Petty crooks rob a church, finding redemption amid laughs. Faith-based farce with heart.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Night School.jpg" alt="Night School Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Night School.jpg" alt="Night School Cover" loading="lazy">
+                        <figcaption class="sr-only">Night School (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Night School (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dropout attends night school with a quirky teacher. Classroom comedy cliches. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A dropout attends night school with a quirky teacher. Classroom comedy clichés with Hart's energy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Fist Fight.jpg" alt="Fist Fight Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Fist Fight.jpg" alt="Fist Fight Cover" loading="lazy">
+                        <figcaption class="sr-only">Fist Fight (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fist Fight (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teachers square off in a schoolyard brawl. Macho but middling laughs. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Teachers square off in a schoolyard brawl. Macho but middling laughs with school setting.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Tyler Perry and Madea Comedies</h2>
-            <p>Bold, brash humor with family drama and Madea’s wisdom.</p>
+        <!-- Tyler Perry and Madea Comedies Section -->
+        <section class="movie-section" aria-labelledby="tyler-perry-heading">
+            <header class="section-header">
+                <h2 id="tyler-perry-heading">Tyler Perry and Madea Comedies</h2>
+                <p>Bold, brash humor with family drama and Madea's wisdom.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Boo! A Madea Halloween.jpg" alt="Boo! A Madea Halloween Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Boo! A Madea Halloween.jpg" alt="Boo! A Madea Halloween Cover" loading="lazy">
+                        <figcaption class="sr-only">Boo! A Madea Halloween (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Boo! A Madea Halloween (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Madea battles ghosts and teens at a haunted party. Spooky family fun. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Madea battles ghosts and teens at a haunted party. Spooky family fun with signature sass.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Madea Goes to Jail.jpg" alt="Madea Goes to Jail Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Madea Goes to Jail.jpg" alt="Madea Goes to Jail Cover" loading="lazy">
+                        <figcaption class="sr-only">Madea Goes to Jail (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Madea Goes to Jail (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Madea lands in prison, stirring up laughs and lessons. Sassy incarceration comedy. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Madea lands in prison, stirring up laughs and lessons. Sassy incarceration comedy with moral undertones.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Madeas Witness Protection.jpg" alt="Madea's Witness Protection Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Madeas Witness Protection.jpg" alt="Madea's Witness Protection Cover" loading="lazy">
+                        <figcaption class="sr-only">Madea's Witness Protection (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Madea's Witness Protection (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Madea hides a family from mob threats. Outrageous protection plan. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Madea hides a family from mob threats. Outrageous protection plan with culture clash humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/I Can Do Bad All by Myself.jpg" alt="I Can Do Bad All by Myself Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/I Can Do Bad All by Myself.jpg" alt="I Can Do Bad All by Myself Cover" loading="lazy">
+                        <figcaption class="sr-only">I Can Do Bad All by Myself (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Can Do Bad All by Myself (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Madea helps a singer and kids find redemption. Melodramatic laughs. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Madea helps a singer and kids find redemption. Melodramatic laughs with emotional core.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/A Madea Family Funeral.jpg" alt="A Madea Family Funeral Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/A Madea Family Funeral.jpg" alt="A Madea Family Funeral Cover" loading="lazy">
+                        <figcaption class="sr-only">A Madea Family Funeral (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Madea Family Funeral (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Madea’s family reunion turns funeral with secrets and laughs. Familiar Madea mayhem. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Madea's family reunion turns funeral with secrets and laughs. Familiar Madea mayhem in final outing.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Slapstick and Absurd Comedy</h2>
-            <p>Over-the-top antics and goofy characters for pure silliness.</p>
+        <!-- Slapstick and Absurd Comedy Section -->
+        <section class="movie-section" aria-labelledby="slapstick-absurd-heading">
+            <header class="section-header">
+                <h2 id="slapstick-absurd-heading">Slapstick and Absurd Comedy</h2>
+                <p>Over-the-top antics and goofy characters for pure silliness.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/comedy/Bean.jpg" alt="Bean Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/comedy/Bean.jpg" alt="Bean Cover" loading="lazy">
+                        <figcaption class="sr-only">Bean (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bean (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mr. Bean wreaks havoc at an art gallery with clueless charm. Prime physical comedy. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mr. Bean wreaks havoc at an art gallery with clueless charm. Prime physical comedy from Atkinson's genius.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Mr. Beans Holiday.jpg" alt="Mr. Bean's Holiday Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Mr. Bean Holiday.jpg" alt="Mr. Bean's Holiday Cover" loading="lazy">
+                        <figcaption class="sr-only">Mr. Bean's Holiday (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mr. Bean's Holiday (2007)</h3>
-                    </div>
-
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bean’s French vacation spirals into absurd misadventures. Goofy travelogue laughs. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bean's French vacation spirals into absurd misadventures. Goofy travelogue laughs with European flair.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Rat Race.jpg" alt="Rat Race Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Rat Race.jpg" alt="Rat Race Cover" loading="lazy">
+                        <figcaption class="sr-only">Rat Race (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rat Race (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Contestants chase a cash prize in a zany cross-country race. Chaotic ensemble hilarity. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Contestants chase a cash prize in a zany cross-country race. Chaotic ensemble hilarity with wild scenarios.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/The Nutty Professor.jpg" alt="The Nutty Professor Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/The Nutty Professor.jpg" alt="The Nutty Professor Cover" loading="lazy">
+                        <figcaption class="sr-only">The Nutty Professor (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Nutty Professor (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A shy scientist transforms into a brash alter ego. Transformative slapstick. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A shy scientist transforms into a brash alter ego. Transformative slapstick with Murphy's range.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/The Animal.jpg" alt="The Animal Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/The Animal.jpg" alt="The Animal Cover" loading="lazy">
+                        <figcaption class="sr-only">The Animal (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Animal (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man gains animal powers after a transplant. Wacky but weird. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man gains animal powers after a transplant. Wacky but weird with Schneider's signature style.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/The Master of Disguise.jpg" alt="The Master of Disguise Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/The Master of Disguise.jpg" alt="The Master of Disguise Cover" loading="lazy">
+                        <figcaption class="sr-only">The Master of Disguise (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Master of Disguise (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A waiter uses disguise skills to save his parents. Silly costume chaos. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A waiter uses disguise skills to save his parents. Silly costume chaos with juvenile humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Code Name - The Cleaner.jpg" alt="Code Name: The Cleaner Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Code Name - The Cleaner.jpg" alt="Code Name: The Cleaner Cover" loading="lazy">
+                        <figcaption class="sr-only">Code Name: The Cleaner (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Code Name: The Cleaner (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A janitor believes he’s a spy in a convoluted caper. Forgettable farce. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A janitor believes he's a spy in a convoluted caper. Forgettable farce with confused identity.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Crime and Undercover Comedy</h2>
-            <p>Misfits and cons navigate law and laughs.</p>
+        <!-- Crime and Undercover Comedy Section -->
+        <section class="movie-section" aria-labelledby="crime-undercover-heading">
+            <header class="section-header">
+                <h2 id="crime-undercover-heading">Crime and Undercover Comedy</h2>
+                <p>Misfits and cons navigate law and laughs.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Murder Mystery.jpg" alt="Murder Mystery Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Murder Mystery.jpg" alt="Murder Mystery Cover" loading="lazy">
+                        <figcaption class="sr-only">Murder Mystery (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Murder Mystery (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A couple stumbles into a yacht murder plot with goofy sleuthing. Light whodunit laughs. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A couple stumbles into a yacht murder plot with goofy sleuthing. Light whodunit laughs with Aniston-Sandler chemistry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/White Chicks.jpg" alt="White Chicks Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/White Chicks.jpg" alt="White Chicks Cover" loading="lazy">
+                        <figcaption class="sr-only">White Chicks (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>White Chicks (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>FBI agents go undercover as socialites in drag. Outrageous disguise comedy. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>FBI agents go undercover as socialites in drag. Outrageous disguise comedy that became cult classic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Big Mommas House.jpg" alt="Big Momma's House Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Big Mommas House.jpg" alt="Big Momma's House Cover" loading="lazy">
+                        <figcaption class="sr-only">Big Momma's House (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Big Momma's House (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An FBI agent disguises as a grandma to catch a crook. Goofy undercover antics. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>An FBI agent disguises as a grandma to catch a crook. Goofy undercover antics with Lawrence's commitment.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Big Mommas - Like Father Like Son.jpg" alt="Big Mommas: Like Father, Like Son Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Big Mommas - Like Father Like Son.jpg" alt="Big Mommas: Like Father, Like Son Cover" loading="lazy">
+                        <figcaption class="sr-only">Big Mommas: Like Father, Like Son (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Big Mommas: Like Father, Like Son (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Agent and stepson go undercover at a girls’ school. More drag shenanigans. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Agent and stepson go undercover at a girls' school. More drag shenanigans with generational twist.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Little Man.jpg" alt="Little Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Little Man.jpg" alt="Little Man Cover" loading="lazy">
+                        <figcaption class="sr-only">Little Man (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Little Man (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A tiny crook poses as a baby to retrieve a diamond. Absurd body-swap laughs. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A tiny crook poses as a baby to retrieve a diamond. Absurd body-swap laughs with visual effects.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Black Knight.jpg" alt="Black Knight Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Black Knight.jpg" alt="Black Knight Cover" loading="lazy">
+                        <figcaption class="sr-only">Black Knight (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Knight (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A theme park worker time-travels to medieval England. Fish-out-of-water flops. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A theme park worker time-travels to medieval England. Fish-out-of-water flops with Lawrence's effort.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Whats the Worst That Could Happen.jpg" alt="What's the Worst That Could Happen? Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Whats the Worst That Could Happen.jpg" alt="What's the Worst That Could Happen? Cover" loading="lazy">
+                        <figcaption class="sr-only">What's the Worst That Could Happen? (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>What's the Worst That Could Happen? (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A thief and a tycoon feud over a stolen ring. Middling crime caper. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A thief and a tycoon feud over a stolen ring. Middling crime caper with Murphy-Lawrence pairing.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/Undercover Brother 2.jpg" alt="Undercover Brother 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/Undercover Brother 2.jpg" alt="Undercover Brother 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Undercover Brother 2 (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Undercover Brother 2 (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A funky agent battles a new evil in a weak sequel. Blaxploitation parody fades. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A funky agent battles a new evil in a weak sequel. Blaxploitation parody fades without original cast.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Teen and School Comedy</h2>
-            <p>High school hijinks and coming-of-age laughs.</p>
+        <!-- Teen and School Comedy Section -->
+        <section class="movie-section" aria-labelledby="teen-school-heading">
+            <header class="section-header">
+                <h2 id="teen-school-heading">Teen and School Comedy</h2>
+                <p>High school hijinks and coming-of-age laughs.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/Legally Blonde.jpg" alt="Legally Blonde Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/Legally Blonde.jpg" alt="Legally Blonde Cover" loading="lazy">
+                        <figcaption class="sr-only">Legally Blonde (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Legally Blonde (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A sorority girl conquers Harvard Law with pink-powered wit. Charming underdog story. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A sorority girl conquers Harvard Law with pink-powered wit. Charming underdog story that defies stereotypes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Bad Teacher.jpg" alt="Bad Teacher Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Bad Teacher.jpg" alt="Bad Teacher Cover" loading="lazy">
+                        <figcaption class="sr-only">Bad Teacher (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bad Teacher (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A scheming teacher chases a rich sub with raunchy antics. Edgy classroom comedy. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A scheming teacher chases a rich sub with raunchy antics. Edgy classroom comedy with Diaz's bite.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Senior Year.jpg" alt="Senior Year Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Senior Year.jpg" alt="Senior Year Cover" loading="lazy">
+                        <figcaption class="sr-only">Senior Year (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Senior Year (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A woman wakes from a coma to relive her senior year. Nostalgic but predictable. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A woman wakes from a coma to relive her senior year. Nostalgic but predictable with Rebel Wilson's energy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Legally Blonde 2.jpg" alt="Legally Blonde 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Legally Blonde 2.jpg" alt="Legally Blonde 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Legally Blonde 2: Red, White & Blonde (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Legally Blonde 2: Red, White & Blonde (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Elle takes on Washington with her signature pink flair. Diminished sequel sparkle. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Elle takes on Washington with her signature pink flair. Diminished sequel sparkle with weaker plot.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/The Bad Education Movie.jpg" alt="The Bad Education Movie Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/The Bad Education Movie.jpg" alt="The Bad Education Movie Cover" loading="lazy">
+                        <figcaption class="sr-only">The Bad Education Movie (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Bad Education Movie (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teacher leads students on a chaotic class trip. British schoolboy shenanigans flop. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teacher leads students on a chaotic class trip. British schoolboy shenanigans flop in feature form.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/Behaving Badly.jpg" alt="Behaving Badly Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/Behaving Badly.jpg" alt="Behaving Badly Cover" loading="lazy">
+                        <figcaption class="sr-only">Behaving Badly (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Behaving Badly (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen’s crush leads to mobster and ex-girlfriend chaos. Crass teen misfire. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen's crush leads to mobster and ex-girlfriend chaos. Crass teen misfire with wasted cast.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Project X.jpg" alt="Project X Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Project X.jpg" alt="Project X Cover" loading="lazy">
+                        <figcaption class="sr-only">Project X (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Project X (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen party spirals into epic chaos. Found-footage excess grates. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen party spirals into epic chaos. Found-footage excess grates with irresponsible messaging.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Political and Social Satire</h2>
-            <p>Sharp-witted takes on society and politics.</p>
+        <!-- Political and Social Satire Section -->
+        <section class="movie-section" aria-labelledby="political-satire-heading">
+            <header class="section-header">
+                <h2 id="political-satire-heading">Political and Social Satire</h2>
+                <p>Sharp-witted takes on society and politics.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/comedy/The Dictator.jpg" alt="The Dictator Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/comedy/The Dictator.jpg" alt="The Dictator Cover" loading="lazy">
+                        <figcaption class="sr-only">The Dictator (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Dictator (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A tyrant navigates America with crude political jabs. Outrageous satire bites. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A tyrant navigates America with crude political jabs. Outrageous satire bites with Cohen's fearless approach.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/The Distinguished Gentleman.jpg" alt="The Distinguished Gentleman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/The Distinguished Gentleman.jpg" alt="The Distinguished Gentleman Cover" loading="lazy">
+                        <figcaption class="sr-only">The Distinguished Gentleman (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Distinguished Gentleman (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A conman becomes a congressman, exposing political scams. Dated but sharp. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A conman becomes a congressman, exposing political scams. Dated but sharp with Murphy's charisma.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/You Dont Mess with the Zohan.jpg" alt="You Don't Mess with the Zohan Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/You Dont Mess with the Zohan.jpg" alt="You Don't Mess with the Zohan Cover" loading="lazy">
+                        <figcaption class="sr-only">You Don't Mess with the Zohan (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>You Don't Mess with the Zohan (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An Israeli agent fakes his death to become a hairdresser. Absurd cultural comedy. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>An Israeli agent fakes his death to become a hairdresser. Absurd cultural comedy with Sandler's silliness.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Raunchy and Outrageous Comedy</h2>
-            <p>Crude humor and over-the-top shenanigans for bold laughs.</p>
+        <!-- Raunchy and Outrageous Comedy Section -->
+        <section class="movie-section" aria-labelledby="raunchy-outrageous-heading">
+            <header class="section-header">
+                <h2 id="raunchy-outrageous-heading">Raunchy and Outrageous Comedy</h2>
+                <p>Crude humor and over-the-top shenanigans for bold laughs.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Grown Ups 2.jpg" alt="Grown Ups 2 Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Grown Ups 2.jpg" alt="Grown Ups 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Grown Ups 2 (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Grown Ups 2 (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends reunite for more suburban silliness and crude gags. Lazy sequel laughs. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Friends reunite for more suburban silliness and crude gags. Lazy sequel laughs with ensemble cast.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Dirty Grandpa.jpg" alt="Dirty Grandpa Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Dirty Grandpa.jpg" alt="Dirty Grandpa Cover" loading="lazy">
+                        <figcaption class="sr-only">Dirty Grandpa (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dirty Grandpa (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A grandpa drags his grandson into raunchy spring break chaos. Crass generational clash. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A grandpa drags his grandson into raunchy spring break chaos. Crass generational clash with De Niro's wild side.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Sextuplets.jpg" alt="Sextuplets Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Sextuplets.jpg" alt="Sextuplets Cover" loading="lazy">
+                        <figcaption class="sr-only">Sextuplets (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sextuplets (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man meets his quirky siblings in a multi-role comedy. Gimmicky and flat. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man meets his quirky siblings in a multi-role comedy. Gimmicky and flat with Wayans' multiple characters.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/The Ridiculous 6.jpg" alt="The Ridiculous 6 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/The Ridiculous 6.jpg" alt="The Ridiculous 6 Cover" loading="lazy">
+                        <figcaption class="sr-only">The Ridiculous 6 (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Ridiculous 6 (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man unites with half-brothers for a Western heist. Crude cowboy misfire. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man unites with half-brothers for a Western heist. Crude cowboy misfire with Sandler's crew.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Airplane Mode.jpg" alt="Airplane Mode Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Airplane Mode.jpg" alt="Airplane Mode Cover" loading="lazy">
+                        <figcaption class="sr-only">Airplane Mode (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Airplane Mode (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Social media stars crash-land in a tech-free farce. Low-budget influencer flop. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Social media stars crash-land in a tech-free farce. Low-budget influencer flop with cringe humor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Deported.jpg" alt="Deported Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Deported.jpg" alt="Deported Cover" loading="lazy">
+                        <figcaption class="sr-only">Deported (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Deported (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A man hires a fake wife to avoid deportation. Weak immigration jests. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A man hires a fake wife to avoid deportation. Weak immigration jests with predictable plot.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Police Academy Series</h2>
-            <p>Bumbling recruits bring chaos to law enforcement training.</p>
+        <!-- Police Academy Series Section -->
+        <section class="movie-section" aria-labelledby="police-academy-heading">
+            <header class="section-header">
+                <h2 id="police-academy-heading">Police Academy Series</h2>
+                <p>Bumbling recruits bring chaos to law enforcement training.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/comedy/Police Academy.jpg" alt="Police Academy Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/comedy/Police Academy.jpg" alt="Police Academy Cover" loading="lazy">
+                        <figcaption class="sr-only">Police Academy (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Police Academy (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Misfit recruits wreak havoc at a police academy. Classic cop comedy chaos. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Misfit recruits wreak havoc at a police academy. Classic cop comedy chaos that launched a franchise.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Police Academy 2 - Their First Assignment.jpg" alt="Police Academy 2 - Their First Assignment Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Police Academy 2 - Their First Assignment.jpg" alt="Police Academy 2 - Their First Assignment Cover" loading="lazy">
+                        <figcaption class="sr-only">Police Academy 2: Their First Assignment (1985)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Police Academy 2: Their First Assignment (1985)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rookies tackle street crime with bumbling antics. Sequel silliness continues. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rookies tackle street crime with bumbling antics. Sequel silliness continues with familiar gags.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/comedy/Police Academy 3 - Back in Training.jpg" alt="Police Academy 3 - Back in Training Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/comedy/Police Academy 3 - Back in Training.jpg" alt="Police Academy 3 - Back in Training Cover" loading="lazy">
+                        <figcaption class="sr-only">Police Academy 3: Back in Training (1986)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Police Academy 3: Back in Training (1986)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Recruits save the academy from closure with goofy stunts. Formulaic fun fades. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Recruits save the academy from closure with goofy stunts. Formulaic fun fades as repetition sets in.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/comedy/Police Academy 4 - Citizens on Patrol.jpg" alt="Police Academy 4 - Citizens on Patrol Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/comedy/Police Academy 4 - Citizens on Patrol.jpg" alt="Police Academy 4 - Citizens on Patrol Cover" loading="lazy">
+                        <figcaption class="sr-only">Police Academy 4: Citizens on Patrol (1987)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Police Academy 4: Citizens on Patrol (1987)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Civilians join cops for chaotic patrols. Waning comedic returns. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Civilians join cops for chaotic patrols. Waning comedic returns with tired premise.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/comedy/Police Academy 6 - City Under Siege.jpg" alt="Police Academy 6 - City Under Siege Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/comedy/Police Academy 6 - City Under Siege.jpg" alt="Police Academy 6 - City Under Siege Cover" loading="lazy">
+                        <figcaption class="sr-only">Police Academy 6: City Under Siege (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Police Academy 6: City Under Siege (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cops battle a crime wave with tired gags. Series fatigue sets in. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cops battle a crime wave with tired gags. Series fatigue sets in with minimal innovation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/comedy/Police Academy 7 - Mission to Moscow.jpg" alt="Police Academy 7 - Mission to Moscow Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/comedy/Police Academy 7 - Mission to Moscow.jpg" alt="Police Academy 7 - Mission to Moscow Cover" loading="lazy">
+                        <figcaption class="sr-only">Police Academy: Mission to Moscow (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Police Academy: Mission to Moscow (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cops take on Russian mob with stale humor. Franchise’s final flop. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cops take on Russian mob with stale humor. Franchise's final flop that should have ended sooner.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

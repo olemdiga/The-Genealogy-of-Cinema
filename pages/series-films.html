@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Series Films</title>
+    <title>Series Films - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing films tied to TV series or franchises I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing films tied to TV series or franchises I've watched, rated by color. Explore anime epics, crime continuations, and sci-fi expansions.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Series Films</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Films tied to TV series or franchises, offering continuations, expansions, and standalone stories from beloved universes.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 20 movies</span>
+            <span class="movie-count">4 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -45,253 +50,378 @@
             <li><a href="music-dance.html">Music & Dance</a></li>
             <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
             <li><a href="relationships.html">Relationships</a></li>
+            <li><a href="religion-mythology.html">Religion & Mythology</a></li>
             <li><a href="sci-fi.html">Sci-Fi</a></li>
             <li><a href="serial-killers.html">Serial Killers</a></li>
+            <li><a href="series-films.html" aria-current="page">Series Films</a></li>
             <li><a href="sports.html">Sports</a></li>
             <li><a href="spy-film.html">Spy Film</a></li>
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
-            <li><a href="religion.html">Religion & Mythology</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <!-- Interactive and Anthology Extensions -->
-            <h2>Interactive and Anthology Extensions</h2>
-            <p>Films from anthology or experimental series, offering standalone or innovative narratives.</p>
+        <!-- Interactive and Anthology Extensions Section -->
+        <section class="movie-section" aria-labelledby="interactive-anthology-heading">
+            <header class="section-header">
+                <h2 id="interactive-anthology-heading">Interactive and Anthology Extensions</h2>
+                <p>Films from anthology or experimental series, offering standalone or innovative narratives.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/series/Black Mirror -  Bandersnatch.jpg" alt="Black Mirror: Bandersnatch Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/series/Black Mirror -  Bandersnatch.jpg" alt="Black Mirror: Bandersnatch Cover" loading="lazy">
+                        <figcaption class="sr-only">Black Mirror: Bandersnatch (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Mirror: Bandersnatch (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A programmer crafts a choose-your-own-adventure game with dark consequences. Innovative but convoluted, its interactivity overshadows depth. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A programmer crafts a choose-your-own-adventure game with dark consequences. Innovative but convoluted, its interactivity overshadows depth.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="movie-section">
-            <!-- Anime Action Epics -->
-            <h2>Anime Action Epics</h2>
-            <p>High-energy animated films from the Dragon Ball franchise, focusing on battles and mythic stakes.</p>
+        </section>
+
+        <!-- Anime Action Epics Section -->
+        <section class="movie-section" aria-labelledby="anime-action-heading">
+            <header class="section-header">
+                <h2 id="anime-action-heading">Anime Action Epics</h2>
+                <p>High-energy animated films from the Dragon Ball franchise, focusing on battles and mythic stakes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">13 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/series/Dragon Ball Super Broly.jpg" alt="Dragon Ball Super: Broly Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Super Broly.jpg" alt="Dragon Ball Super: Broly Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Super: Broly (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dragon Ball Super: Broly (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku battles a reimagined Broly in a high-octane clash. Stunning animation, but thin plot leans hard on fan service. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Goku battles a reimagined Broly in a high-octane clash. Stunning animation, but thin plot leans hard on fan service.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/series/Dragon Ball Z Battle of Gods.jpg" alt="Dragon Ball Z: Battle of Gods Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Battle of Gods.jpg" alt="Dragon Ball Z: Battle of Gods Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Battle of Gods (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dragon Ball Z: Battle of Gods (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku faces Beerus, a god of destruction. Fun revival with vibrant action, but lightweight story frustrates non-fans. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Goku faces Beerus, a god of destruction. Fun revival with vibrant action, but lightweight story frustrates non-fans.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/Dragon Ball Z Bojack Unbound.jpg" alt="Dragon Ball Z: Bojack Unbound Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: Bojack Unbound (1993)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gohan fights space pirate Bojack in a tournament. Routine action and thin plot make it forgettable fan fodder. Rating: 4/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/series/Dragon Ball Z Broly The Legendary Super Saiyan.jpg" alt="Dragon Ball Z: Broly - The Legendary Super Saiyan Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: Broly - The Legendary Super Saiyan (1993)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Broly, a berserk Saiyan, wreaks havoc. Iconic for fans, but repetitive fights and shallow story limit broader appeal. Rating: 5/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/Dragon Ball Z Coolers Revenge.jpg" alt="Dragon Ball Z: Cooler's Revenge Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: Cooler's Revenge (1991)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku battles Cooler, Frieza’s brother. Decent action, but formulaic villain and pacing issues drag it down. Rating: 4/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/Dragon Ball Z Dead Zone.jpg" alt="Dragon Ball Z: Dead Zone Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: Dead Zone (1989)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku fights to save Gohan from Garlic Jr. Early DBZ effort feels dated, with simplistic stakes and clunky animation. Rating: 4/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/series/Dragon Ball Z Fusion Reborn.jpg" alt="Dragon Ball Z: Fusion Reborn Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Fusion Reborn.jpg" alt="Dragon Ball Z: Fusion Reborn Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Fusion Reborn (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dragon Ball Z: Fusion Reborn (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku and Vegeta fuse to fight a demonic foe. Flashy fun for fans, but chaotic plot lacks substance. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Goku and Vegeta fuse to fight a demonic foe. Flashy fun for fans, but chaotic plot lacks substance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/Dragon Ball Z Lord Slug.jpg" alt="Dragon Ball Z: Lord Slug Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: Lord Slug (1991)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku battles an alien tyrant, Lord Slug. Generic villain and repetitive action make it a stale DBZ entry. Rating: 4/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/series/Dragon Ball Z Resurrection F.jpg" alt="Dragon Ball Z: Resurrection 'F' Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Resurrection F.jpg" alt="Dragon Ball Z: Resurrection 'F' Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Resurrection 'F' (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dragon Ball Z: Resurrection 'F' (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Frieza’s revived for revenge against Goku. Sleek visuals, but nostalgia-driven plot feels like fan-service overkill. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Frieza's revived for revenge against Goku. Sleek visuals, but nostalgia-driven plot feels like fan-service overkill.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/Dragon Ball Z Super Android 13.jpg" alt="Dragon Ball Z: Super Android 13! Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: Super Android 13! (1992)</h3>
-                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Broly The Legendary Super Saiyan.jpg" alt="Dragon Ball Z: Broly - The Legendary Super Saiyan Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Broly - The Legendary Super Saiyan (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: Broly - The Legendary Super Saiyan (1993)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku fights new androids unleashed by Dr. Gero. Action-packed but forgettable, with a recycled plot. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Broly, a berserk Saiyan, wreaks havoc. Iconic for fans, but repetitive fights and shallow story limit broader appeal.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/Dragon Ball Z The Tree of Might.jpg" alt="Dragon Ball Z: The Tree of Might Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: The Tree of Might (1990)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku battles Saiyans planting a destructive tree. Environmental theme fizzles in a bland, repetitive slugfest. Rating: 4/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/Dragon Ball Z The Worlds Strongest.jpg" alt="Dragon Ball Z: The World's Strongest Cover">
-                    <div class="movie-title">
-                        <h3>Dragon Ball Z: The World's Strongest (1990)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Goku faces a mad scientist’s superhuman creation. Early DBZ charm, but simplistic and dated storytelling. Rating: 4/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/series/Dragon Ball Z Wrath of the Dragon.jpg" alt="Dragon Ball Z: Wrath of the Dragon Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Wrath of the Dragon.jpg" alt="Dragon Ball Z: Wrath of the Dragon Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Wrath of the Dragon (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dragon Ball Z: Wrath of the Dragon (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gohan frees a dragon with dire consequences. Decent action, but convoluted mythos and fan focus limit impact. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Gohan frees a dragon with dire consequences. Decent action, but convoluted mythos and fan focus limit impact.</p>
                     </div>
-                </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Bojack Unbound.jpg" alt="Dragon Ball Z: Bojack Unbound Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Bojack Unbound (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: Bojack Unbound (1993)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Gohan fights space pirate Bojack in a tournament. Routine action and thin plot make it forgettable fan fodder.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Coolers Revenge.jpg" alt="Dragon Ball Z: Cooler's Revenge Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Cooler's Revenge (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: Cooler's Revenge (1991)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Goku battles Cooler, Frieza's brother. Decent action, but formulaic villain and pacing issues drag it down.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Dead Zone.jpg" alt="Dragon Ball Z: Dead Zone Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Dead Zone (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: Dead Zone (1989)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Goku fights to save Gohan from Garlic Jr. Early DBZ effort feels dated, with simplistic stakes and clunky animation.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Lord Slug.jpg" alt="Dragon Ball Z: Lord Slug Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Lord Slug (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: Lord Slug (1991)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Goku battles an alien tyrant, Lord Slug. Generic villain and repetitive action make it a stale DBZ entry.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z Super Android 13.jpg" alt="Dragon Ball Z: Super Android 13! Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: Super Android 13! (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: Super Android 13! (1992)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Goku fights new androids unleashed by Dr. Gero. Action-packed but forgettable, with a recycled plot.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z The Tree of Might.jpg" alt="Dragon Ball Z: The Tree of Might Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: The Tree of Might (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: The Tree of Might (1990)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Goku battles Saiyans planting a destructive tree. Environmental theme fizzles in a bland, repetitive slugfest.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/Dragon Ball Z The Worlds Strongest.jpg" alt="Dragon Ball Z: The World's Strongest Cover" loading="lazy">
+                        <figcaption class="sr-only">Dragon Ball Z: The World's Strongest (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dragon Ball Z: The World's Strongest (1990)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Goku faces a mad scientist's superhuman creation. Early DBZ charm, but simplistic and dated storytelling.</p>
+                    </div>
+                </article>
             </div>
-        </div>
-        <div class="movie-section">
-            <!-- Crime and Drama Continuations -->
-            <h2>Crime and Drama Continuations</h2>
-            <p>Films extending crime or drama series, focusing on character closure or epilogues.</p>
+        </section>
+
+        <!-- Crime and Drama Continuations Section -->
+        <section class="movie-section" aria-labelledby="crime-drama-heading">
+            <header class="section-header">
+                <h2 id="crime-drama-heading">Crime and Drama Continuations</h2>
+                <p>Films extending crime or drama series, focusing on character closure or epilogues.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/series/El Camino A Breaking Bad Movie.jpg" alt="El Camino: A Breaking Bad Movie Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/series/El Camino A Breaking Bad Movie.jpg" alt="El Camino: A Breaking Bad Movie Cover" loading="lazy">
+                        <figcaption class="sr-only">El Camino: A Breaking Bad Movie (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>El Camino: A Breaking Bad Movie (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Jesse Pinkman flees after Breaking Bad’s finale. Gripping closure, but feels inessential and slightly padded. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Jesse Pinkman flees after Breaking Bad's finale. Gripping closure, but feels inessential and slightly padded.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/series/House Swan Song.jpg" alt="House: Swan Song Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/series/House Swan Song.jpg" alt="House: Swan Song Cover" loading="lazy">
+                        <figcaption class="sr-only">House: Swan Song (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>House: Swan Song (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A retrospective on House M.D.’s run with cast insights. Nostalgic for fans, but lacks depth as a standalone piece. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A retrospective on House M.D.'s run with cast insights. Nostalgic for fans, but lacks depth as a standalone piece.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/series/Mr. Monks Last Case.jpg" alt="Mr. Monk's Last Case Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/series/Mr. Monks Last Case.jpg" alt="Mr. Monk's Last Case Cover" loading="lazy">
+                        <figcaption class="sr-only">Mr. Monk's Last Case (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mr. Monk's Last Case (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Monk solves a final mystery tied to his stepdaughter. Charming for fans, but predictable and overly sentimental. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Monk solves a final mystery tied to his stepdaughter. Charming for fans, but predictable and overly sentimental.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/series/Prison Break The Final Break.jpg" alt="Prison Break: The Final Break Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/series/Prison Break The Final Break.jpg" alt="Prison Break: The Final Break Cover" loading="lazy">
+                        <figcaption class="sr-only">Prison Break: The Final Break (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Prison Break: The Final Break (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Michael plans a final escape to save Sara. Rushed wrap-up feels forced, leaning on familiar tropes. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Michael plans a final escape to save Sara. Rushed wrap-up feels forced, leaning on familiar tropes.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="movie-section">
-            <!-- Sci-Fi and Mystery Expansions -->
-            <h2>Sci-Fi and Mystery Expansions</h2>
-            <p>Films tied to sci-fi or mystery series, exploring conspiracies or supernatural elements.</p>
+        </section>
+
+        <!-- Sci-Fi and Mystery Expansions Section -->
+        <section class="movie-section" aria-labelledby="sci-fi-mystery-heading">
+            <header class="section-header">
+                <h2 id="sci-fi-mystery-heading">Sci-Fi and Mystery Expansions</h2>
+                <p>Films tied to sci-fi or mystery series, exploring conspiracies or supernatural elements.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/series/The X Files Fight The Future.jpg" alt="The X-Files: Fight The Future Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/series/The X Files Fight The Future.jpg" alt="The X-Files: Fight The Future Cover" loading="lazy">
+                        <figcaption class="sr-only">The X-Files: Fight The Future (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The X-Files: Fight The Future (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mulder and Scully uncover an alien conspiracy. Solid thriller, but dense mythos alienates non-fans. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mulder and Scully uncover an alien conspiracy. Solid thriller, but dense mythos alienates non-fans.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/series/The X Files I Want to Believe.jpg" alt="The X-Files: I Want to Believe Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/series/The X Files I Want to Believe.jpg" alt="The X-Files: I Want to Believe Cover" loading="lazy">
+                        <figcaption class="sr-only">The X-Files: I Want to Believe (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The X-Files: I Want to Believe (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mulder and Scully probe a psychic’s visions. Muddled and uninspired, it’s a letdown for series fans. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mulder and Scully probe a psychic's visions. Muddled and uninspired, it's a letdown for series fans.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

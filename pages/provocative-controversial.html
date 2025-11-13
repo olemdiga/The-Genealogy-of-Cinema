@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Provocative & Controversial</title>
+    <title>Provocative & Controversial - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing provocative and controversial movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing provocative and controversial movies I've watched, rated by color. Explore extreme violence, shocking narratives, erotic exploration, and surreal cult experiences.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Provocative & Controversial</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Films that challenge boundaries, provoke thought, and explore the extreme edges of cinema through violence, eroticism, psychological depth, and surreal experiences.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 17 movies</span>
+            <span class="movie-count">4 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -43,6 +48,7 @@
             <li><a href="martial-arts.html">Martial Arts</a></li>
             <li><a href="monsters-aliens.html">Monsters & Aliens</a></li>
             <li><a href="music-dance.html">Music & Dance</a></li>
+            <li><a href="provocative-controversial.html" aria-current="page">Provocative & Controversial</a></li>
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="religion-mythology.html">Religion & Mythology</a></li>
             <li><a href="sci-fi.html">Sci-Fi</a></li>
@@ -53,214 +59,324 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Extreme Violence & Revenge</h2>
-            <p>Films exploring intense violence, vengeance, and retribution themes.</p>
+        <!-- Cult & Surreal Experiences Section -->
+        <section class="movie-section" aria-labelledby="cult-surreal-heading">
+            <header class="section-header">
+                <h2 id="cult-surreal-heading">Cult & Surreal Experiences</h2>
+                <p>Movies offering surreal, cult-classic vibes with provocative storytelling and mind-bending narratives.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/provocative-controversial/I Spit on Your Grave 1978.jpg" alt="I Spit on Your Grave Cover">
-                    <div class="movie-title">
-                        <h3>I Spit on Your Grave (1978)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A writer’s retreat turns into a nightmare, sparking a brutal quest for vengeance. Raw and relentless, it’s a gut-punch that doesn’t pull back, though the cruelty lingers too long. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/provocative-controversial/I Spit on Your Grave 2010.jpg" alt="I Spit on Your Grave Cover">
-                    <div class="movie-title">
-                        <h3>I Spit on Your Grave (2010)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A brutal remake where vengeance is served cold and bloody, but the shocks feel recycled from the original's grave. Gory grit meets modern polish, yet it barely elevates the formula. Rating: 5/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/provocative-controversial/I Spit on Your Grave 2.webp" alt="I Spit on Your Grave 2 Cover">
-                    <div class="movie-title">
-                        <h3>I Spit on Your Grave 2 (2013)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A model’s dreams are shattered by torment, igniting a savage payback spree. Gory retribution shocks, but the formula feels like a rerun with dimmer impact. Rating: 5/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/provocative-controversial/I Spit on Your Grave III.jpg" alt="I Spit on Your Grave III Cover">
-                    <div class="movie-title">
-                        <h3>I Spit on Your Grave III: Vengeance is Mine (2015)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A survivor becomes a predator, hunting abusers with cold fury. Vigilante justice cuts deep, but the series’ third stab feels more repetitive than righteous. Rating: 5/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/provocative-controversial/The Last House on the Left.jpg" alt="The Last House on the Left Cover">
-                    <div class="movie-title">
-                        <h3>The Last House on the Left (1972)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Grieving parents unleash hell on their daughter’s attackers in a gruesome showdown. Visceral and unforgiving, it’s a raw wound that doesn’t always justify its brutality. Rating: 4/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="movie-section">
-            <h2>Shocking & Disturbing Narratives</h2>
-            <p>Movies that challenge viewers with unsettling and provocative content.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/provocative-controversial/Cannibal Holocaust.jpg" alt="Cannibal Holocaust Cover">
-                    <div class="movie-title">
-                        <h3>Cannibal Holocaust (1980)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Filmmakers vanish in the jungle, leaving behind tapes of unspeakable horrors. Found-footage ferocity blurs reality, but the shock value overshadows its critique. Rating: 7/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/provocative-controversial/Salo or the 120 Days of Sodom.jpg" alt="Salo, or the 120 Days of Sodom Cover">
-                    <div class="movie-title">
-                        <h3>Salo, or the 120 Days of Sodom (1975)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A grim allegory of power, trapping victims in a sadistic nightmare. Unflinching and oppressive, its message stabs but leaves you numb from excess. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/provocative-controversial/Mondo Weirdo.jpg" alt="Mondo Weirdo Cover">
-                    <div class="movie-title">
-                        <h3>Mondo Weirdo (1990)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A chaotic dive into human extremes, blending raw footage with bizarre tales. Unsettling and unpolished, it’s a curiosity that doesn’t always connect. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/provocative-controversial/Caligula.jpg" alt="Caligula Cover">
-                    <div class="movie-title">
-                        <h3>Caligula (1979)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rome’s mad emperor indulges in debauchery and bloodshed. Lavish excess shocks, but the chaos drowns out any coherent historical bite. Rating: 5/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="movie-section">
-            <h2>Erotic & Psychological Exploration</h2>
-            <p>Films delving into eroticism, sensuality, and psychological complexity.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/provocative-controversial/The Sex Adventures of the Three Musketeers.jpg" alt="The Sex Adventures of the Three Musketeers Cover">
-                    <div class="movie-title">
-                        <h3>The Sex Adventures of the Three Musketeers (1992)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Swordplay meets seduction in a cheeky historical romp. Lighthearted and lusty, it swings for fun but lacks the finesse of its source. Rating: 6/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/provocative-controversial/Cheeky.jpg" alt="Cheeky Cover">
-                    <div class="movie-title">
-                        <h3>Cheeky (2000)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A woman’s Venetian escapades weave lust with longing. Sensual and introspective, it teases the heart but sometimes trips on its own indulgence. Rating: 5/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/provocative-controversial/Russkaya Lolita.jpg" alt="Russkaya Lolita Cover">
-                    <div class="movie-title">
-                        <h3>Russkaya Lolita (2007)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A taboo romance unfolds with unsettling intimacy. Daring but divisive, it treads risky ground without always justifying its choices. Rating: 5/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/provocative-controversial/Lie With Me.jpg" alt="Lie With Me Cover">
-                    <div class="movie-title">
-                        <h3>Lie With Me (2005)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Passion ignites a woman’s raw encounters, probing love’s edges. Intimate yet uneven, it bares all but lacks emotional staying power. Rating: 4/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="movie-section">
-            <h2>Cult & Surreal Experiences</h2>
-            <p>Movies offering surreal, cult-classic vibes with provocative storytelling.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/provocative-controversial/Midsommar.jpg" alt="Midsommar Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Midsommar.jpg" alt="Midsommar movie poster" loading="lazy">
+                        <figcaption class="sr-only">Midsommar (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Midsommar (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A sunlit Swedish cult twists grief into ritualistic dread. Visually haunting, it blooms with unease but overstays its solstice. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A sunlit Swedish cult twists grief into ritualistic dread. Visually haunting, it blooms with unease but overstays its solstice.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/provocative-controversial/The Holy Mountain.jpg" alt="The Holy Mountain Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/The Holy Mountain.jpg" alt="The Holy Mountain movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Holy Mountain (1973)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Holy Mountain (1973)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mystic odyssey blends spiritual quests with psychedelic visuals. Mind-bending and bold, it’s a cult gem that dazzles more than it decodes. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mystic odyssey blends spiritual quests with psychedelic visuals. Mind-bending and bold, it's a cult gem that dazzles more than it decodes.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/provocative-controversial/Pleasure.jpg" alt="Pleasure Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Pleasure.jpg" alt="Pleasure movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pleasure (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pleasure (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An aspiring star navigates the adult industry’s dark underbelly. Gritty and revealing, it exposes harsh truths but fumbles its narrative thrust. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>An aspiring star navigates the adult industry's dark underbelly. Gritty and revealing, it exposes harsh truths but fumbles its narrative thrust.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/provocative-controversial/Cashback.jpg" alt="Cashback Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Cashback.jpg" alt="Cashback movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cashback (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cashback (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An insomniac artist freezes time to sketch beauty in a supermarket. Quirky and dreamy, it charms but drifts into voyeuristic thin ice. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>An insomniac artist freezes time to sketch beauty in a supermarket. Quirky and dreamy, it charms but drifts into voyeuristic thin ice.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
+
+        <!-- Shocking & Disturbing Narratives Section -->
+        <section class="movie-section" aria-labelledby="shocking-narratives-heading">
+            <header class="section-header">
+                <h2 id="shocking-narratives-heading">Shocking & Disturbing Narratives</h2>
+                <p>Movies that challenge viewers with unsettling, provocative content and boundary-pushing themes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Cannibal Holocaust.jpg" alt="Cannibal Holocaust movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cannibal Holocaust (1980)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cannibal Holocaust (1980)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Filmmakers vanish in the jungle, leaving behind tapes of unspeakable horrors. Found-footage ferocity blurs reality, but the shock value overshadows its critique.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Salo or the 120 Days of Sodom.jpg" alt="Salo, or the 120 Days of Sodom movie poster" loading="lazy">
+                        <figcaption class="sr-only">Salo, or the 120 Days of Sodom (1975)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Salo, or the 120 Days of Sodom (1975)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A grim allegory of power, trapping victims in a sadistic nightmare. Unflinching and oppressive, its message stabs but leaves you numb from excess.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Mondo Weirdo.jpg" alt="Mondo Weirdo movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mondo Weirdo (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Mondo Weirdo (1990)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A chaotic dive into human extremes, blending raw footage with bizarre tales. Unsettling and unpolished, it's a curiosity that doesn't always connect.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Caligula.jpg" alt="Caligula movie poster" loading="lazy">
+                        <figcaption class="sr-only">Caligula (1979)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Caligula (1979)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Rome's mad emperor indulges in debauchery and bloodshed. Lavish excess shocks, but the chaos drowns out any coherent historical bite.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Extreme Violence & Revenge Section -->
+        <section class="movie-section" aria-labelledby="extreme-violence-heading">
+            <header class="section-header">
+                <h2 id="extreme-violence-heading">Extreme Violence & Revenge</h2>
+                <p>Films exploring intense violence, vengeance, and retribution themes with unflinching brutality.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/I Spit on Your Grave 1978.jpg" alt="I Spit on Your Grave movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Spit on Your Grave (1978)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>I Spit on Your Grave (1978)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A writer's retreat turns into a nightmare, sparking a brutal quest for vengeance. Raw and relentless, it's a gut-punch that doesn't pull back, though the cruelty lingers too long.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/I Spit on Your Grave 2010.jpg" alt="I Spit on Your Grave movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Spit on Your Grave (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>I Spit on Your Grave (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A brutal remake where vengeance is served cold and bloody, but the shocks feel recycled from the original's grave. Gory grit meets modern polish, yet it barely elevates the formula.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/I Spit on Your Grave 2.webp" alt="I Spit on Your Grave 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Spit on Your Grave 2 (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>I Spit on Your Grave 2 (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A model's dreams are shattered by torment, igniting a savage payback spree. Gory retribution shocks, but the formula feels like a rerun with dimmer impact.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/I Spit on Your Grave III.jpg" alt="I Spit on Your Grave III movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Spit on Your Grave III: Vengeance is Mine (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>I Spit on Your Grave III: Vengeance is Mine (2015)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A survivor becomes a predator, hunting abusers with cold fury. Vigilante justice cuts deep, but the series' third stab feels more repetitive than righteous.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/The Last House on the Left.jpg" alt="The Last House on the Left movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Last House on the Left (1972)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Last House on the Left (1972)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Grieving parents unleash hell on their daughter's attackers in a gruesome showdown. Visceral and unforgiving, it's a raw wound that doesn't always justify its brutality.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Erotic & Psychological Exploration Section -->
+        <section class="movie-section" aria-labelledby="erotic-psychological-heading">
+            <header class="section-header">
+                <h2 id="erotic-psychological-heading">Erotic & Psychological Exploration</h2>
+                <p>Films delving into eroticism, sensuality, and psychological complexity with provocative themes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/The Sex Adventures of the Three Musketeers.jpg" alt="The Sex Adventures of the Three Musketeers movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Sex Adventures of the Three Musketeers (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Sex Adventures of the Three Musketeers (1992)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Swordplay meets seduction in a cheeky historical romp. Lighthearted and lusty, it swings for fun but lacks the finesse of its source.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Cheeky.jpg" alt="Cheeky movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cheeky (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cheeky (2000)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A woman's Venetian escapades weave lust with longing. Sensual and introspective, it teases the heart but sometimes trips on its own indulgence.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Russkaya Lolita.jpg" alt="Russkaya Lolita movie poster" loading="lazy">
+                        <figcaption class="sr-only">Russkaya Lolita (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Russkaya Lolita (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A taboo romance unfolds with unsettling intimacy. Daring but divisive, it treads risky ground without always justifying its choices.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/provocative-controversial/Lie With Me.jpg" alt="Lie With Me movie poster" loading="lazy">
+                        <figcaption class="sr-only">Lie With Me (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Lie With Me (2005)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Passion ignites a woman's raw encounters, probing love's edges. Intimate yet uneven, it bares all but lacks emotional staying power.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

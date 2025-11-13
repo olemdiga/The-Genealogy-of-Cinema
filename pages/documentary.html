@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Documentary</title>
+    <title>Documentary Movies - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies I've watched, rated by color.">
+    <meta name="description" content="Showcasing documentary movies I've watched, rated by color. Explore music legends, true crime, social issues, science, and automotive adventures.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Documentary</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Explorations into real-life stories, from music icons and true crime to social issues, science, and adventurous journeys.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 26 movies</span>
+            <span class="movie-count">5 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -32,6 +37,7 @@
             <li><a href="computer-crimes.html">Computer Crimes</a></li>
             <li><a href="computers.html">Computers</a></li>
             <li><a href="crime.html">Crime</a></li>
+            <li><a href="documentary.html" aria-current="page">Documentary</a></li>
             <li><a href="drama.html">Drama</a></li>
             <li><a href="fantasy-adventure.html">Fantasy & Adventure</a></li>
             <li><a href="financial.html">Financial</a></li>
@@ -53,311 +59,441 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Music Legends and Biographies</h2>
-            <p>Explorations into the lives and legacies of iconic musicians who shaped genres and culture.</p>
+        <section class="movie-section" aria-labelledby="music-legends-heading">
+            <header class="section-header">
+                <h2 id="music-legends-heading">Music Legends and Biographies</h2>
+                <p>Explorations into the lives and legacies of iconic musicians who shaped genres and culture.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
+                </div>
+            </header>
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/documentary/Searching for Sugar Man.jpg" alt="Searching for Sugar Man Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/documentary/Searching for Sugar Man.jpg" alt="Searching for Sugar Man Cover" loading="lazy">
+                        <figcaption class="sr-only">Searching for Sugar Man (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Searching for Sugar Man (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A ghost of folk music, unknown in America yet a revolutionary icon in South Africa. This soul-stirring hunt for a lost artist unveils a poetic enigma whose melodies toppled apartheid’s walls. Gripping, but the mystery’s reveal feels almost too perfect. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A ghost of folk music, unknown in America yet a revolutionary icon in South Africa. This soul-stirring hunt for a lost artist unveils a poetic enigma whose melodies toppled apartheid’s walls. Gripping, but the mystery’s reveal feels almost too perfect.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/documentary/What Happened, Miss Simone.jpg" alt="What Happened, Miss Simone? Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/documentary/What Happened, Miss Simone.jpg" alt="What Happened, Miss Simone? Cover" loading="lazy">
+                        <figcaption class="sr-only">What Happened, Miss Simone? (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>What Happened, Miss Simone? (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Nina Simone’s voice carried civil rights fire, her piano a weapon against injustice. This raw portrait of genius and torment hits like a protest song, though it lingers heavily on her pain. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Nina Simone’s voice carried civil rights fire, her piano a weapon against injustice. This raw portrait of genius and torment hits like a protest song, though it lingers heavily on her pain.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/documentary/Marley.jpg" alt="Marley Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/documentary/Marley.jpg" alt="Marley Cover" loading="lazy">
+                        <figcaption class="sr-only">Marley (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Marley (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bob Marley’s reggae heartbeat pulsed with rebellion and hope. From Trenchtown to global stardom, this deep dive into his life grooves hard but stretches long, like a jam session past midnight. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bob Marley’s reggae heartbeat pulsed with rebellion and hope. From Trenchtown to global stardom, this deep dive into his life grooves hard but stretches long, like a jam session past midnight.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/documentary/Standing in the Shadows of Motown.jpg" alt="Standing in the Shadows of Motown Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/documentary/Standing in the Shadows of Motown.jpg" alt="Standing in the Shadows of Motown Cover" loading="lazy">
+                        <figcaption class="sr-only">Standing in the Shadows of Motown (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Standing in the Shadows of Motown (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The Funk Brothers, Motown’s secret sauce, laid down grooves that defined a generation. This tribute to unsung heroes swings with soul, though it’s more nostalgic than revelatory. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>The Funk Brothers, Motown’s secret sauce, laid down grooves that defined a generation. This tribute to unsung heroes swings with soul, though it’s more nostalgic than revelatory.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/Chasing Trane.jpg" alt="Chasing Trane Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/Chasing Trane.jpg" alt="Chasing Trane Cover" loading="lazy">
+                        <figcaption class="sr-only">Chasing Trane (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Chasing Trane (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>John Coltrane’s saxophone wailed with spiritual hunger, reshaping jazz. This tribute captures his genius but feels like a love letter that doesn’t dig deep enough. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>John Coltrane’s saxophone wailed with spiritual hunger, reshaping jazz. This tribute captures his genius but feels like a love letter that doesn’t dig deep enough.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/It Might Get Loud.jpg" alt="It Might Get Loud Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/It Might Get Loud.jpg" alt="It Might Get Loud Cover" loading="lazy">
+                        <figcaption class="sr-only">It Might Get Loud (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>It Might Get Loud (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Three guitar gods—Page, White, Edge—riff on their craft. It’s a sonic love-in, but the jam session vibe overshadows deeper insights into their artistry. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Three guitar gods—Page, White, Edge—riff on their craft. It’s a sonic love-in, but the jam session vibe overshadows deeper insights into their artistry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/Jimi Hendrix - Hear My Train a Comin'.jpg" alt="Jimi Hendrix - Hear My Train a Comin' Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/Jimi Hendrix - Hear My Train a Comin'.jpg" alt="Jimi Hendrix - Hear My Train a Comin' Cover" loading="lazy">
+                        <figcaption class="sr-only">Jimi Hendrix - Hear My Train a Comin' (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Jimi Hendrix - Hear My Train a Comin' (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hendrix’s guitar set the ‘60s ablaze, a psychedelic comet gone too soon. This doc strums his legend well, but it’s more a mixtape than a profound revelation. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Hendrix’s guitar set the ‘60s ablaze, a psychedelic comet gone too soon. This doc strums his legend well, but it’s more a mixtape than a profound revelation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/Biggie - The Life of Notorious B.I.G..jpg" alt="Biggie - The Life of Notorious B.I.G. Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/Biggie - The Life of Notorious B.I.G..jpg" alt="Biggie - The Life of Notorious B.I.G. Cover" loading="lazy">
+                        <figcaption class="sr-only">Biggie - The Life of Notorious B.I.G. (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Biggie - The Life of Notorious B.I.G. (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Biggie’s rhymes painted Brooklyn’s grit and glamour, his life cut short by violence. This doc flows smoothly but leans too hard on hagiography over hard truths. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Biggie’s rhymes painted Brooklyn’s grit and glamour, his life cut short by violence. This doc flows smoothly but leans too hard on hagiography over hard truths.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/documentary/The Black Godfather.jpg" alt="The Black Godfather Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/documentary/The Black Godfather.jpg" alt="The Black Godfather Cover" loading="lazy">
+                        <figcaption class="sr-only">The Black Godfather (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Black Godfather (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Clarence Avant, music’s behind-the-scenes titan, brokered deals and broke barriers. This doc celebrates his influence but glosses over the messier edges of power. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Clarence Avant, music’s behind-the-scenes titan, brokered deals and broke barriers. This doc celebrates his influence but glosses over the messier edges of power.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>True Crime and Scandals</h2>
-            <p>Investigations into shocking crimes, exploitation, and hidden injustices that rocked society.</p>
+        <section class="movie-section" aria-labelledby="true-crime-heading">
+            <header class="section-header">
+                <h2 id="true-crime-heading">True Crime and Scandals</h2>
+                <p>Investigations into shocking crimes, exploitation, and hidden injustices that rocked society.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/documentary/I Am Evidence.jpg" alt="I Am Evidence Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/documentary/I Am Evidence.jpg" alt="I Am Evidence Cover" loading="lazy">
+                        <figcaption class="sr-only">I Am Evidence (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Am Evidence (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Unprocessed rape kits pile up, a silent indictment of justice denied. This gut-punch doc exposes systemic failure while championing survivors’ fight for change. Sobering but slightly repetitive. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Unprocessed rape kits pile up, a silent indictment of justice denied. This gut-punch doc exposes systemic failure while championing survivors’ fight for change. Sobering but slightly repetitive.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/Hot Girls Wanted.jpg" alt="Hot Girls Wanted Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/Hot Girls Wanted.jpg" alt="Hot Girls Wanted Cover" loading="lazy">
+                        <figcaption class="sr-only">Hot Girls Wanted (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hot Girls Wanted (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The amateur porn industry lures young women with promises of fame, only to chew them up. This unflinching look is grimly compelling but feels exploitative itself at times. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>The amateur porn industry lures young women with promises of fame, only to chew them up. This unflinching look is grimly compelling but feels exploitative itself at times.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/documentary/Our Father.jpg" alt="Our Father Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/documentary/Our Father.jpg" alt="Our Father Cover" loading="lazy">
+                        <figcaption class="sr-only">Our Father (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Our Father (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A fertility doctor’s twisted secret spawns dozens of siblings—and a chilling betrayal. This doc grips like a thriller but leans too heavily on sensationalism. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A fertility doctor’s twisted secret spawns dozens of siblings—and a chilling betrayal. This doc grips like a thriller but leans too heavily on sensationalism.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/documentary/Money Shot - The Pornhub Story.jpg" alt="Money Shot - The Pornhub Story Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/documentary/Money Shot - The Pornhub Story.jpg" alt="Money Shot - The Pornhub Story Cover" loading="lazy">
+                        <figcaption class="sr-only">Money Shot - The Pornhub Story (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Money Shot - The Pornhub Story (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pornhub’s rise and scandals expose the internet’s wild west of desire. Intriguing but scattered, it probes ethics without landing a decisive blow. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Pornhub’s rise and scandals expose the internet’s wild west of desire. Intriguing but scattered, it probes ethics without landing a decisive blow.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/documentary/Holy Heist.jpg" alt="Holy Heist Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/documentary/Holy Heist.jpg" alt="Holy Heist Cover" loading="lazy">
+                        <figcaption class="sr-only">Holy Heist (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Holy Heist (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A preacher, a robbery, and a wild tale of faith-fueled crime. This doc tries for holy shock value but stumbles with a messy narrative and thin depth. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A preacher, a robbery, and a wild tale of faith-fueled crime. This doc tries for holy shock value but stumbles with a messy narrative and thin depth.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Social Issues and Political Figures</h2>
-            <p>Examinations of societal challenges, philosophical ideas, and influential thinkers shaping discourse.</p>
+        <section class="movie-section" aria-labelledby="social-issues-heading">
+            <header class="section-header">
+                <h2 id="social-issues-heading">Social Issues and Political Figures</h2>
+                <p>Examinations of societal challenges, philosophical ideas, and influential thinkers shaping discourse.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/documentary/Citizenfour.jpg" alt="Citizenfour Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/documentary/Citizenfour.jpg" alt="Citizenfour Cover" loading="lazy">
+                        <figcaption class="sr-only">Citizenfour (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Citizenfour (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Edward Snowden pulls back the curtain on global surveillance, a real-time thriller of secrets and stakes. Tense and vital, though its intensity can feel claustrophobic. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Edward Snowden pulls back the curtain on global surveillance, a real-time thriller of secrets and stakes. Tense and vital, though its intensity can feel claustrophobic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/documentary/Every Brilliant Thing.jpg" alt="Every Brilliant Thing Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/documentary/Every Brilliant Thing.jpg" alt="Every Brilliant Thing Cover" loading="lazy">
+                        <figcaption class="sr-only">Every Brilliant Thing (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Every Brilliant Thing (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A one-man show turns a list of life’s joys into a shield against darkness. Heartfelt and inventive, it’s a bittersweet hug that occasionally leans too theatrical. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A one-man show turns a list of life’s joys into a shield against darkness. Heartfelt and inventive, it’s a bittersweet hug that occasionally leans too theatrical.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/To End All War - Oppenheimer & the Atomic Bomb.jpg" alt="To End All War - Oppenheimer & the Atomic Bomb Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/To End All War - Oppenheimer & the Atomic Bomb.jpg" alt="To End All War - Oppenheimer & the Atomic Bomb Cover" loading="lazy">
+                        <figcaption class="sr-only">To End All War - Oppenheimer & the Atomic Bomb (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>To End All War - Oppenheimer & the Atomic Bomb (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Oppenheimer’s atomic legacy is a dance of genius and guilt. This doc dissects the bomb’s birth thoughtfully, but it’s overshadowed by flashier retellings. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Oppenheimer’s atomic legacy is a dance of genius and guilt. This doc dissects the bomb’s birth thoughtfully, but it’s overshadowed by flashier retellings.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/documentary/Thomas Sowell - Common Sense in a Senseless World.jpg" alt="Thomas Sowell - Common Sense in a Senseless World Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/documentary/Thomas Sowell - Common Sense in a Senseless World.jpg" alt="Thomas Sowell - Common Sense in a Senseless World Cover" loading="lazy">
+                        <figcaption class="sr-only">Thomas Sowell - Common Sense in a Senseless World (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Thomas Sowell - Common Sense in a Senseless World (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Sowell’s contrarian intellect slices through dogma with data. This doc admires his clarity but feels like a fan club lecture, lacking critical balance. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Sowell’s contrarian intellect slices through dogma with data. This doc admires his clarity but feels like a fan club lecture, lacking critical balance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/documentary/Examined Life.jpg" alt="Examined Life Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/documentary/Examined Life.jpg" alt="Examined Life Cover" loading="lazy">
+                        <figcaption class="sr-only">Examined Life (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Examined Life (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Philosophers muse on life’s big questions amid city streets. Thought-provoking but meandering, it’s like eavesdropping on a lecture hall with no syllabus. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Philosophers muse on life’s big questions amid city streets. Thought-provoking but meandering, it’s like eavesdropping on a lecture hall with no syllabus.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/documentary/The Disruptors.jpg" alt="The Disruptors Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/documentary/The Disruptors.jpg" alt="The Disruptors Cover" loading="lazy">
+                        <figcaption class="sr-only">The Disruptors (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Disruptors (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>ADHD gets a rebrand as a creative superpower. Uplifting but overly polished, it champions neurodiversity while sidestepping deeper systemic critiques. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>ADHD gets a rebrand as a creative superpower. Uplifting but overly polished, it champions neurodiversity while sidestepping deeper systemic critiques.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/documentary/Dick - The Documentary.jpg" alt="Dick - The Documentary Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/documentary/Dick - The Documentary.jpg" alt="Dick - The Documentary Cover" loading="lazy">
+                        <figcaption class="sr-only">Dick - The Documentary (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dick - The Documentary (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Men talk frankly about their anatomy and identity. Bold in concept, but the execution feels gimmicky, more curious than profound. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Men talk frankly about their anatomy and identity. Bold in concept, but the execution feels gimmicky, more curious than profound.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/documentary/Screened Out.jpg" alt="Screened Out Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/documentary/Screened Out.jpg" alt="Screened Out Cover" loading="lazy">
+                        <figcaption class="sr-only">Screened Out (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Screened Out (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Social media’s addictive trap gets a surface-level exposé. It raises alarms about screen time but lacks the depth to truly unplug you. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Social media’s addictive trap gets a surface-level exposé. It raises alarms about screen time but lacks the depth to truly unplug you.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Science, Technology, and Exploration</h2>
-            <p>Stories of innovation, discovery, and the human quest to push boundaries.</p>
+        <section class="movie-section" aria-labelledby="science-technology-heading">
+            <header class="section-header">
+                <h2 id="science-technology-heading">Science, Technology, and Exploration</h2>
+                <p>Stories of innovation, discovery, and the human quest to push boundaries.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/documentary/Return to Space.jpg" alt="Return to Space Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/documentary/Return to Space.jpg" alt="Return to Space Cover" loading="lazy">
+                        <figcaption class="sr-only">Return to Space (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Return to Space (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>SpaceX rockets NASA back to the stars with Elon’s audacious vision. Slick and inspiring, but it’s more corporate PR than cosmic revelation. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>SpaceX rockets NASA back to the stars with Elon’s audacious vision. Slick and inspiring, but it’s more corporate PR than cosmic revelation.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Automotive Adventures</h2>
-            <p>Thrilling journeys and challenges on the road, celebrating the spirit of exploration.</p>
+        <section class="movie-section" aria-labelledby="automotive-adventures-heading">
+            <header class="section-header">
+                <h2 id="automotive-adventures-heading">Automotive Adventures</h2>
+                <p>Thrilling journeys and challenges on the road, celebrating the spirit of exploration.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/Top Gear - The Great African Adventure.jpg" alt="Top Gear - The Great African Adventure Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/Top Gear - The Great African Adventure.jpg" alt="Top Gear - The Great African Adventure Cover" loading="lazy">
+                        <figcaption class="sr-only">Top Gear - The Great African Adventure (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Top Gear - The Great African Adventure (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Top Gear’s trio tackle Africa’s wild roads in beat-up cars, delivering laughs and chaos. It’s a joyride, but the colonial lens grates at times. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Top Gear’s trio tackle Africa’s wild roads in beat-up cars, delivering laughs and chaos. It’s a joyride, but the colonial lens grates at times.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/Top Gear The Perfect Road Trip.jpg" alt="Top Gear The Perfect Road Trip Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/Top Gear The Perfect Road Trip.jpg" alt="Top Gear The Perfect Road Trip Cover" loading="lazy">
+                        <figcaption class="sr-only">Top Gear The Perfect Road Trip (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Top Gear The Perfect Road Trip (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Supercars and scenic routes fuel Top Gear’s banter-heavy quest for the ultimate drive. Fun but formulaic, it’s petrolhead candy with little substance. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Supercars and scenic routes fuel Top Gear’s banter-heavy quest for the ultimate drive. Fun but formulaic, it’s petrolhead candy with little substance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/documentary/Top Gear The Perfect Road Trip 2.jpg" alt="Top Gear The Perfect Road Trip 2 Cover">
-                    <div class="movie-title">
+                </article>
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/documentary/Top Gear The Perfect Road Trip 2.jpg" alt="Top Gear The Perfect Road Trip 2 Cover" loading="lazy">
+                        <figcaption class="sr-only">Top Gear The Perfect Road Trip 2 (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Top Gear The Perfect Road Trip 2 (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>More Top Gear antics, chasing the perfect drive with shiny cars and cheeky quips. Entertaining, but it’s a retread that doesn’t top the original. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>More Top Gear antics, chasing the perfect drive with shiny cars and cheeky quips. Entertaining, but it’s a retread that doesn’t top the original.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

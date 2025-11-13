@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Drama</title>
+    <title>Drama - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="description" content="Showcasing drama movies sorted by theme, with witty, insightful overviews and objective ratings based on Rotten Tomatoes consensus, factoring in negative reviews.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Drama</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Powerful stories of human experience, emotional journeys, and personal transformation across various life challenges and relationships.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 34 movies</span>
+            <span class="movie-count">9 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -33,6 +38,7 @@
             <li><a href="computers.html">Computers</a></li>
             <li><a href="crime.html">Crime</a></li>
             <li><a href="documentary.html">Documentary</a></li>
+            <li><a href="drama.html" aria-current="page">Drama</a></li>
             <li><a href="fantasy-adventure.html">Fantasy & Adventure</a></li>
             <li><a href="financial.html">Financial</a></li>
             <li><a href="heists.html">Heists</a></li>
@@ -53,419 +59,644 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Coming-of-Age Struggles</h2>
-            <p>Youth navigating identity, hardship, and societal pressures.</p>
+        <!-- Coming-of-Age Struggles Section -->
+        <section class="movie-section" aria-labelledby="coming-of-age-heading">
+            <header class="section-header">
+                <h2 id="coming-of-age-heading">Coming-of-Age Struggles</h2>
+                <p>Youth navigating identity, hardship, and societal pressures.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/drama/Are You There God Its Me, Margaret..jpg" alt="Are You There God? It's Me, Margaret. Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/drama/Are You There God Its Me, Margaret..jpg" alt="Are You There God? It's Me, Margaret. movie poster" loading="lazy">
+                        <figcaption class="sr-only">Are You There God? It's Me, Margaret. (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Are You There God? It's Me, Margaret. (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A preteen grapples with puberty, faith, and family in a warm adaptation of Blume’s classic. Heartfelt and authentic, though some find its nostalgia too safe. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A preteen grapples with puberty, faith, and family in a warm adaptation of Blume's classic. Heartfelt and authentic, though some find its nostalgia too safe.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/The Inevitable Defeat of Mister and Pete.jpg" alt="The Inevitable Defeat of Mister & Pete Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/The Inevitable Defeat of Mister and Pete.jpg" alt="The Inevitable Defeat of Mister & Pete movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Inevitable Defeat of Mister & Pete (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Inevitable Defeat of Mister & Pete (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two Brooklyn kids survive summer abandonment with grit and heart. Raw performances shine, but heavy-handed drama and pacing issues blunt its edge. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two Brooklyn kids survive summer abandonment with grit and heart. Raw performances shine, but heavy-handed drama and pacing issues blunt its edge.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/Freedom Writers.jpg" alt="Freedom Writers Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/Freedom Writers.jpg" alt="Freedom Writers movie poster" loading="lazy">
+                        <figcaption class="sr-only">Freedom Writers (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Freedom Writers (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teacher inspires at-risk students through journaling in a gang-torn school. Swank’s passion uplifts, but formulaic tropes and sentimentality dilute its power. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teacher inspires at-risk students through journaling in a gang-torn school. Swank's passion uplifts, but formulaic tropes and sentimentality dilute its power.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/drama/Kicks.jpg" alt="Kicks Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/drama/Kicks.jpg" alt="Kicks movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kicks (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Kicks (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen chases his stolen sneakers through Oakland’s dangers. Stylish visuals pop, but thin narrative and uneven tone keep it from landing hard. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen chases his stolen sneakers through Oakland's dangers. Stylish visuals pop, but thin narrative and uneven tone keep it from landing hard.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/drama/Cuties.jpg" alt="Cuties Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/drama/Cuties.jpg" alt="Cuties movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cuties (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Cuties (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Senegalese girl in Paris joins a provocative dance crew, sparking cultural clashes. Aims to critique hypersexualization but stumbles with exploitative visuals, fueling backlash. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Senegalese girl in Paris joins a provocative dance crew, sparking cultural clashes. Aims to critique hypersexualization but stumbles with exploitative visuals, fueling backlash.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Family & Redemption</h2>
-            <p>Tales of broken homes, reconciliation, and personal growth.</p>
+        <!-- Family & Redemption Section -->
+        <section class="movie-section" aria-labelledby="family-redemption-heading">
+            <header class="section-header">
+                <h2 id="family-redemption-heading">Family & Redemption</h2>
+                <p>Tales of broken homes, reconciliation, and personal growth.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/drama/Good Will Hunting.jpg" alt="Good Will Hunting Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/drama/Good Will Hunting.jpg" alt="Good Will Hunting movie poster" loading="lazy">
+                        <figcaption class="sr-only">Good Will Hunting (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Good Will Hunting (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A genius janitor’s therapy sessions with a gruff shrink unlock his potential. Damon and Williams spark magic, though some find its emotional beats too tidy. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A genius janitor's therapy sessions with a gruff shrink unlock his potential. Damon and Williams spark magic, though some find its emotional beats too tidy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Antwone Fisher.jpg" alt="Antwone Fisher Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Antwone Fisher.jpg" alt="Antwone Fisher movie poster" loading="lazy">
+                        <figcaption class="sr-only">Antwone Fisher (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Antwone Fisher (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A volatile sailor confronts his abusive past through therapy and love. Washington’s directorial debut hits hard, but predictable arcs soften the blow. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A volatile sailor confronts his abusive past through therapy and love. Washington's directorial debut hits hard, but predictable arcs soften the blow.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Fences.jpg" alt="Fences Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Fences.jpg" alt="Fences movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fences (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fences (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bitter patriarch’s dreams and regrets tear at his 1950s family. Washington and Davis deliver powerhouses, though stagey roots and length test patience. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bitter patriarch's dreams and regrets tear at his 1950s family. Washington and Davis deliver powerhouses, though stagey roots and length test patience.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/Ben is Back.jpg" alt="Ben is Back Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/Ben is Back.jpg" alt="Ben is Back movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ben Is Back (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ben Is Back (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A recovering addict’s Christmas return tests his family’s trust. Hedges and Roberts shine, but melodramatic twists and rushed pacing dim its raw grit. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A recovering addict's Christmas return tests his family's trust. Hedges and Roberts shine, but melodramatic twists and rushed pacing dim its raw grit.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/drama/The Family That Preys.jpg" alt="The Family That Preys Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/drama/The Family That Preys.jpg" alt="The Family That Preys movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Family That Preys (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Family That Preys (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two matriarchs navigate family betrayals and corporate greed. Perry’s soapy drama entertains, but heavy-handed morals and clichés sap its depth. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two matriarchs navigate family betrayals and corporate greed. Perry's soapy drama entertains, but heavy-handed morals and clichés sap its depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/drama/I Am Sam.jpg" alt="I Am Sam Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/drama/I Am Sam.jpg" alt="I Am Sam movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Am Sam (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Am Sam (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A developmentally disabled father fights for custody of his daughter. Penn’s heartfelt role moves, but manipulative tear-jerking and simplistic writing grate. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A developmentally disabled father fights for custody of his daughter. Penn's heartfelt role moves, but manipulative tear-jerking and simplistic writing grate.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/drama/Untogether.jpg" alt="Untogether Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/drama/Untogether.jpg" alt="Untogether movie poster" loading="lazy">
+                        <figcaption class="sr-only">Untogether (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Untogether (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two sisters wrestle with love and addiction in L.A.’s art scene. Decent cast flounders in a meandering plot, with shallow characters failing to connect. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two sisters wrestle with love and addiction in L.A.'s art scene. Decent cast flounders in a meandering plot, with shallow characters failing to connect.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Psychological Turmoil</h2>
-            <p>Characters unraveling under obsession, trauma, or societal decay.</p>
+        <!-- Psychological Turmoil Section -->
+        <section class="movie-section" aria-labelledby="psychological-turmoil-heading">
+            <header class="section-header">
+                <h2 id="psychological-turmoil-heading">Psychological Turmoil</h2>
+                <p>Characters unraveling under obsession, trauma, or societal decay.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/drama/Fight Club.jpg" alt="Fight Club Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/drama/Fight Club.jpg" alt="Fight Club movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fight Club (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Fight Club (1999)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An insomniac’s descent into anarchic rebellion births a cult of fists and chaos. Fincher’s razor-sharp satire thrills, though some misread its toxic masculinity as endorsement. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>An insomniac's descent into anarchic rebellion births a cult of fists and chaos. Fincher's razor-sharp satire thrills, though some misread its toxic masculinity as endorsement.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Black Swan.jpg" alt="Black Swan Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Black Swan.jpg" alt="Black Swan movie poster" loading="lazy">
+                        <figcaption class="sr-only">Black Swan (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Swan (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A ballerina’s obsession with perfection spirals into madness. Portman’s haunting turn dazzles, but exaggerated psychodrama and clichés irk some viewers. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A ballerina's obsession with perfection spirals into madness. Portman's haunting turn dazzles, but exaggerated psychodrama and clichés irk some viewers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/drama/Burnt.jpg" alt="Burnt Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/drama/Burnt.jpg" alt="Burnt movie poster" loading="lazy">
+                        <figcaption class="sr-only">Burnt (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Burnt (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A disgraced chef chases Michelin stars and redemption. Cooper’s intensity cooks, but predictable arcs and shallow stakes leave a bland aftertaste. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A disgraced chef chases Michelin stars and redemption. Cooper's intensity cooks, but predictable arcs and shallow stakes leave a bland aftertaste.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/drama/The Weather Man.jpg" alt="The Weather Man Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/drama/The Weather Man.jpg" alt="The Weather Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Weather Man (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Weather Man (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A TV weatherman battles midlife malaise and family dysfunction. Cage’s quiet angst intrigues, but uneven tone and aimless plot cloud its purpose. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A TV weatherman battles midlife malaise and family dysfunction. Cage's quiet angst intrigues, but uneven tone and aimless plot cloud its purpose.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Social Issues & Injustice</h2>
-            <p>Stories confronting prejudice, inequality, and systemic battles.</p>
+        <!-- Social Issues & Injustice Section -->
+        <section class="movie-section" aria-labelledby="social-issues-heading">
+            <header class="section-header">
+                <h2 id="social-issues-heading">Social Issues & Injustice</h2>
+                <p>Stories confronting prejudice, inequality, and systemic battles.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-10">
-                    <img src="../img/drama/Parasite.jpg" alt="Parasite Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/drama/Parasite.jpg" alt="Parasite movie poster" loading="lazy">
+                        <figcaption class="sr-only">Parasite (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Parasite (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A poor family cons their way into a rich household, exposing class warfare’s brutal irony. Bong’s masterpiece stings with wit, though some find its climax too wild. Rating: 10/10.</p>
+                        <h4>Overview</h4>
+                        <p>A poor family cons their way into a rich household, exposing class warfare's brutal irony. Bong's masterpiece stings with wit, though some find its climax too wild.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Philadelphia.jpg" alt="Philadelphia Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Philadelphia.jpg" alt="Philadelphia movie poster" loading="lazy">
+                        <figcaption class="sr-only">Philadelphia (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Philadelphia (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A lawyer with AIDS fights workplace discrimination with a reluctant ally. Hanks’ raw emotion grounds it, but cautious handling and dated tropes soften its punch. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A lawyer with AIDS fights workplace discrimination with a reluctant ally. Hanks' raw emotion grounds it, but cautious handling and dated tropes soften its punch.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/John Q.jpg" alt="John Q Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/John Q.jpg" alt="John Q movie poster" loading="lazy">
+                        <figcaption class="sr-only">John Q (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>John Q (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A desperate father holds a hospital hostage for his son’s surgery. Washington’s fire fuels it, but heavy-handed preaching and clichés weaken its cause. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A desperate father holds a hospital hostage for his son's surgery. Washington's fire fuels it, but heavy-handed preaching and clichés weaken its cause.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/Stand and Deliver.jpg" alt="Stand and Deliver Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/Stand and Deliver.jpg" alt="Stand and Deliver movie poster" loading="lazy">
+                        <figcaption class="sr-only">Stand and Deliver (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Stand and Deliver (1988)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A math teacher pushes Latino students to excel in a tough school. Olmos’ passion inspires, but formulaic uplift and dated style limit its spark. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A math teacher pushes Latino students to excel in a tough school. Olmos' passion inspires, but formulaic uplift and dated style limit its spark.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Disability & Connection</h2>
-            <p>Characters overcoming or embracing differences to find meaning.</p>
+        <!-- Disability & Connection Section -->
+        <section class="movie-section" aria-labelledby="disability-connection-heading">
+            <header class="section-header">
+                <h2 id="disability-connection-heading">Disability & Connection</h2>
+                <p>Characters overcoming or embracing differences to find meaning.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Rain Man.webp" alt="Rain Man Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Rain Man.webp" alt="Rain Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rain Man (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rain Man (1988)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A selfish yuppie bonds with his autistic savant brother on a road trip. Hoffman’s brilliance shines, but stereotypical portrayal and sentimentality date it. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A selfish yuppie bonds with his autistic savant brother on a road trip. Hoffman's brilliance shines, but stereotypical portrayal and sentimentality date it.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/The Upside.jpg" alt="The Upside Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/The Upside.jpg" alt="The Upside movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Upside (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Upside (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A parolee caretaker bonds with a quadriplegic billionaire. Hart and Cranston’s chemistry lifts, but formulaic remake and cloying tone dull its edge. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A parolee caretaker bonds with a quadriplegic billionaire. Hart and Cranston's chemistry lifts, but formulaic remake and cloying tone dull its edge.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/drama/Me Before You.jpg" alt="Me Before You Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/drama/Me Before You.jpg" alt="Me Before You movie poster" loading="lazy">
+                        <figcaption class="sr-only">Me Before You (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Me Before You (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A quirky caregiver falls for a paralyzed man seeking euthanasia. Emotional leads charm, but manipulative plot and disability clichés spark controversy. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A quirky caregiver falls for a paralyzed man seeking euthanasia. Emotional leads charm, but manipulative plot and disability clichés spark controversy.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Survival & Heroism</h2>
-            <p>Ordinary people facing extraordinary crises with courage.</p>
+        <!-- Survival & Heroism Section -->
+        <section class="movie-section" aria-labelledby="survival-heroism-heading">
+            <header class="section-header">
+                <h2 id="survival-heroism-heading">Survival & Heroism</h2>
+                <p>Ordinary people facing extraordinary crises with courage.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Sully.png" alt="Sully Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Sully.png" alt="Sully movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sully (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sully (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pilot’s Hudson River landing saves lives, but bureaucracy questions his heroics. Hanks’ stoic gravitas anchors, though lean runtime and drama gaps limit depth. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pilot's Hudson River landing saves lives, but bureaucracy questions his heroics. Hanks' stoic gravitas anchors, though lean runtime and drama gaps limit depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/The Impossible.jpg" alt="The Impossible Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/The Impossible.jpg" alt="The Impossible movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Impossible (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Impossible (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A family fights to reunite after the 2004 tsunami’s devastation. Visceral visuals and Watts’ raw performance grip, but white-savior framing irks some. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A family fights to reunite after the 2004 tsunami's devastation. Visceral visuals and Watts' raw performance grip, but white-savior framing irks some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/Thirteen Lives.jpg" alt="Thirteen Lives Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/Thirteen Lives.jpg" alt="Thirteen Lives movie poster" loading="lazy">
+                        <figcaption class="sr-only">Thirteen Lives (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Thirteen Lives (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Divers risk all to save a trapped Thai soccer team. Tense and meticulous, but familiar beats and limited character depth keep it from soaring. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Divers risk all to save a trapped Thai soccer team. Tense and meticulous, but familiar beats and limited character depth keep it from soaring.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/drama/Flight.jpg" alt="Flight Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/drama/Flight.jpg" alt="Flight movie poster" loading="lazy">
+                        <figcaption class="sr-only">Flight (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Flight (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pilot’s heroic landing masks his addiction-fueled crash. Washington’s raw intensity soars, but preachy moralizing and uneven pacing drag it down. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pilot's heroic landing masks his addiction-fueled crash. Washington's raw intensity soars, but preachy moralizing and uneven pacing drag it down.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/drama/San Andreas.jpg" alt="San Andreas Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/drama/San Andreas.jpg" alt="San Andreas movie poster" loading="lazy">
+                        <figcaption class="sr-only">San Andreas (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>San Andreas (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A chopper pilot saves his family amid a mega-quake. Jaw-dropping effects thrill, but wooden characters and disaster clichés make it rubble. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A chopper pilot saves his family amid a mega-quake. Jaw-dropping effects thrill, but wooden characters and disaster clichés make it rubble.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Human Spirit & Aspiration</h2>
-            <p>Underdogs chasing dreams against all odds.</p>
+        <!-- Human Spirit & Aspiration Section -->
+        <section class="movie-section" aria-labelledby="human-spirit-heading">
+            <header class="section-header">
+                <h2 id="human-spirit-heading">Human Spirit & Aspiration</h2>
+                <p>Underdogs chasing dreams against all odds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/drama/Slumdog Millionaire.jpg" alt="Slumdog Millionaire Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/drama/Slumdog Millionaire.jpg" alt="Slumdog Millionaire movie poster" loading="lazy">
+                        <figcaption class="sr-only">Slumdog Millionaire (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Slumdog Millionaire (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Mumbai orphan’s game-show run reveals his gritty life. Vibrant energy and heart uplift, though some call its poverty depiction glossy and contrived. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Mumbai orphan's game-show run reveals his gritty life. Vibrant energy and heart uplift, though some call its poverty depiction glossy and contrived.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Forrest Gump.jpg" alt="Forrest Gump Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Forrest Gump.jpg" alt="Forrest Gump movie poster" loading="lazy">
+                        <figcaption class="sr-only">Forrest Gump (1994)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Forrest Gump (1994)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A simple man’s odyssey through American history captivates with heart. Hanks’ charm endures, but saccharine tone and historical gloss irk skeptics. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A simple man's odyssey through American history captivates with heart. Hanks' charm endures, but saccharine tone and historical gloss irk skeptics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/The Art of Racing in the Rain.jpg" alt="The Art of Racing in the Rain Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/The Art of Racing in the Rain.jpg" alt="The Art of Racing in the Rain movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Art of Racing in the Rain (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Art of Racing in the Rain (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dog narrates his racer owner’s life of love and loss. Heartstrings tug hard, but sappy narration and predictable beats dampen the journey. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A dog narrates his racer owner's life of love and loss. Heartstrings tug hard, but sappy narration and predictable beats dampen the journey.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Existential & Philosophical</h2>
-            <p>Deep dives into life’s meaning, choice, and human connection.</p>
+        <!-- Existential & Philosophical Section -->
+        <section class="movie-section" aria-labelledby="existential-philosophical-heading">
+            <header class="section-header">
+                <h2 id="existential-philosophical-heading">Existential & Philosophical</h2>
+                <p>Deep dives into life's meaning, choice, and human connection.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/drama/Nine Days.jpg" alt="Nine Days Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/drama/Nine Days.jpg" alt="Nine Days movie poster" loading="lazy">
+                        <figcaption class="sr-only">Nine Days (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Nine Days (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A reclusive soul-judge interviews candidates for life on Earth. Poetic and profound, but slow pacing and heavy themes alienate some viewers. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A reclusive soul-judge interviews candidates for life on Earth. Poetic and profound, but slow pacing and heavy themes alienate some viewers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/drama/Youth.jpg" alt="Youth Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/drama/Youth.jpg" alt="Youth movie poster" loading="lazy">
+                        <figcaption class="sr-only">Youth (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Youth (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aging artists reflect on life at a Swiss resort. Lush visuals and Caine’s gravitas impress, but meandering narrative and pretension frustrate many. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aging artists reflect on life at a Swiss resort. Lush visuals and Caine's gravitas impress, but meandering narrative and pretension frustrate many.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Legal & Moral Dilemmas</h2>
-            <p>Courtroom battles and ethical crossroads with high stakes.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/drama/The Pelican Brief.jpg" alt="The Pelican Brief Cover">
-                    <div class="movie-title">
-                        <h3>The Pelican Brief (1993)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A law student’s theory about assassinated justices sparks a deadly conspiracy. Grisham’s twists grip, but bloated runtime and dated thrills lessen impact. Rating: 7/10.</p>
-                    </div>
+        <!-- Legal & Moral Dilemmas Section -->
+        <section class="movie-section" aria-labelledby="legal-moral-heading">
+            <header class="section-header">
+                <h2 id="legal-moral-heading">Legal & Moral Dilemmas</h2>
+                <p>Courtroom battles and ethical crossroads with high stakes.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
                 </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/drama/The Pelican Brief.jpg" alt="The Pelican Brief movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Pelican Brief (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Pelican Brief (1993)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A law student's theory about assassinated justices sparks a deadly conspiracy. Grisham's twists grip, but bloated runtime and dated thrills lessen impact.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

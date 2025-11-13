@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Black Lives</title>
+    <title>Black Lives - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing Black Lives movies I've watched, rated by color. Explore stories of slavery, civil rights, modern racial justice, and Black cultural heritage.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Black Lives</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Powerful stories confronting slavery, civil rights, modern racial justice, and the rich tapestry of Black cultural heritage and achievement.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 42 movies</span>
+            <span class="movie-count">8 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -26,6 +31,7 @@
             <li><a href="animation.html">Animation</a></li>
             <li><a href="apocalyptic.html">Apocalyptic</a></li>
             <li><a href="assassins.html">Assassins</a></li>
+            <li><a href="black-lives.html" aria-current="page">Black Lives</a></li>
             <li><a href="christmas-family.html">Christmas & Family</a></li>
             <li><a href="comedy.html">Comedy</a></li>
             <li><a href="computer-crimes.html">Computer Crimes</a></li>
@@ -53,472 +59,721 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Slavery & Abolition</h2>
-            <p>Films confronting the brutal institution of slavery, resistance, and the fight for freedom.</p>
+        <!-- Slavery & Abolition Section -->
+        <section class="movie-section" aria-labelledby="slavery-abolition-heading">
+            <header class="section-header">
+                <h2 id="slavery-abolition-heading">Slavery & Abolition</h2>
+                <p>Films confronting the brutal institution of slavery, resistance, and the fight for freedom.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/12 Years a Slave.jpg" alt="12 Years a Slave Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/12 Years a Slave.jpg" alt="12 Years a Slave movie poster" loading="lazy">
+                        <figcaption class="sr-only">12 Years a Slave (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>12 Years a Slave (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Uncompromising portrait of one man's descent into bondage and unyielding will to survive. Harrowing testament to human endurance against systematic dehumanization. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Uncompromising portrait of one man's descent into bondage and unyielding will to survive. Harrowing testament to human endurance against systematic dehumanization.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Django Unchained.jpg" alt="Django Unchained Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Django Unchained.jpg" alt="Django Unchained movie poster" loading="lazy">
+                        <figcaption class="sr-only">Django Unchained (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Django Unchained (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bloody revenge fantasy that weaponizes cinema against plantation cruelty. Cathartic explosion of righteous violence against white supremacy. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Bloody revenge fantasy that weaponizes cinema against plantation cruelty. Cathartic explosion of righteous violence against white supremacy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Glory.jpg" alt="Glory Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Glory.jpg" alt="Glory movie poster" loading="lazy">
+                        <figcaption class="sr-only">Glory (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Glory (1989)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>54th Massachusetts fights for dignity in blood-soaked Civil War battlefields. Monumental tribute to Black soldiers who redefined American valor. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>54th Massachusetts fights for dignity in blood-soaked Civil War battlefields. Monumental tribute to Black soldiers who redefined American valor.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Belle.jpg" alt="Belle Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Belle.jpg" alt="Belle movie poster" loading="lazy">
+                        <figcaption class="sr-only">Belle (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Belle (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mixed-race heiress challenges 18th-century British legal hypocrisy. Elegant dismantling of aristocratic racism through courtroom and courtship. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Mixed-race heiress challenges 18th-century British legal hypocrisy. Elegant dismantling of aristocratic racism through courtroom and courtship.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/black-lives/Emancipation.jpg" alt="Emancipation Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/black-lives/Emancipation.jpg" alt="Emancipation movie poster" loading="lazy">
+                        <figcaption class="sr-only">Emancipation (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Emancipation (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gordon flees Louisiana chains toward Union lines in visceral survival epic. Raw, relentless pursuit through alligator-infested swamps. 6/10</p>
+                        <h4>Overview</h4>
+                        <p>Gordon flees Louisiana chains toward Union lines in visceral survival epic. Raw, relentless pursuit through alligator-infested swamps.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/black-lives/The Birth of a Nation.jpg" alt="The Birth of a Nation Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/black-lives/The Birth of a Nation.jpg" alt="The Birth of a Nation movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Birth of a Nation (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Birth of a Nation (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Nat Turner's rebellion ignites 1831 Virginia slave uprising. Brutal confrontation with plantation power structures and moral complexity. 6/10</p>
+                        <h4>Overview</h4>
+                        <p>Nat Turner's rebellion ignites 1831 Virginia slave uprising. Brutal confrontation with plantation power structures and moral complexity.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Civil Rights & Activism</h2>
-            <p>Struggles for justice, equality, and the leaders who shaped the movement.</p>
+        <!-- Civil Rights & Activism Section -->
+        <section class="movie-section" aria-labelledby="civil-rights-heading">
+            <header class="section-header">
+                <h2 id="civil-rights-heading">Civil Rights & Activism</h2>
+                <p>Struggles for justice, equality, and the leaders who shaped the movement.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/black-lives/Malcolm X.jpg" alt="Malcolm X Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/black-lives/Malcolm X.jpg" alt="Malcolm X movie poster" loading="lazy">
+                        <figcaption class="sr-only">Malcolm X (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Malcolm X (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Transformative journey from street hustler to revolutionary prophet. Monumental biography that captures the evolution of Black consciousness. 9/10</p>
+                        <h4>Overview</h4>
+                        <p>Transformative journey from street hustler to revolutionary prophet. Monumental biography that captures the evolution of Black consciousness.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Judas and the Black Messiah.jpg" alt="Judas and the Black Messiah Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Judas and the Black Messiah.jpg" alt="Judas and the Black Messiah movie poster" loading="lazy">
+                        <figcaption class="sr-only">Judas and the Black Messiah (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Judas and the Black Messiah (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Fred Hampton's Panther revolution versus FBI betrayal. Explosive chronicle of state-sponsored assassination of Black radical leadership. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Fred Hampton's Panther revolution versus FBI betrayal. Explosive chronicle of state-sponsored assassination of Black radical leadership.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/I Am Not Your Negro.jpg" alt="I Am Not Your Negro Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/I Am Not Your Negro.jpg" alt="I Am Not Your Negro movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Am Not Your Negro (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I Am Not Your Negro (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Baldwin's unfinished manuscript becomes searing meditation on America's racial wound. Essential, unflinching examination of Black American experience. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Baldwin's unfinished manuscript becomes searing meditation on America's racial wound. Essential, unflinching examination of Black American experience.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Just Mercy.jpg" alt="Just Mercy Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Just Mercy.jpg" alt="Just Mercy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Just Mercy (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Just Mercy (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bryan Stevenson battles Alabama death row injustice. Methodical dismantling of systemic judicial racism through Walter McMillian's wrongful conviction. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Bryan Stevenson battles Alabama death row injustice. Methodical dismantling of systemic judicial racism through Walter McMillian's wrongful conviction.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/The Great Debaters.jpg" alt="The Great Debaters Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/The Great Debaters.jpg" alt="The Great Debaters movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Great Debaters (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Great Debaters (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Wiley College debate team challenges segregation-era academic supremacy. Intellectual rebellion against Jim Crow intellectual apartheid. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Wiley College debate team challenges segregation-era academic supremacy. Intellectual rebellion against Jim Crow intellectual apartheid.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Marshall.jpg" alt="Marshall Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Marshall.jpg" alt="Marshall movie poster" loading="lazy">
+                        <figcaption class="sr-only">Marshall (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Marshall (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Young Thurgood Marshall defends accused rapist in 1940s Connecticut. Courtroom crucible that forged future Supreme Court justice's racial justice blueprint. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Young Thurgood Marshall defends accused rapist in 1940s Connecticut. Courtroom crucible that forged future Supreme Court justice's racial justice blueprint.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Becoming Frederick Douglass.jpg" alt="Becoming Frederick Douglass Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Becoming Frederick Douglass.jpg" alt="Becoming Frederick Douglass movie poster" loading="lazy">
+                        <figcaption class="sr-only">Becoming Frederick Douglass (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Becoming Frederick Douglass (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Documentary traces escaped slave's transformation into abolitionist icon. Essential biography of the 19th-century freedom fighter's revolutionary voice. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Documentary traces escaped slave's transformation into abolitionist icon. Essential biography of the 19th-century freedom fighter's revolutionary voice.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/The Best of Enemies.jpg" alt="The Best of Enemies Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/The Best of Enemies.jpg" alt="The Best of Enemies movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Best of Enemies (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Best of Enemies (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>1960s Durham mock trial unites Black activist and KKK leader. True story of unlikely alliance challenging segregation through deliberative democracy. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>1960s Durham mock trial unites Black activist and KKK leader. True story of unlikely alliance challenging segregation through deliberative democracy.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Modern Racial Justice</h2>
-            <p>Contemporary stories of police brutality, systemic racism, and resistance.</p>
+        <!-- Modern Racial Justice Section -->
+        <section class="movie-section" aria-labelledby="modern-racial-justice-heading">
+            <header class="section-header">
+                <h2 id="modern-racial-justice-heading">Modern Racial Justice</h2>
+                <p>Contemporary stories of police brutality, systemic racism, and resistance.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/black-lives/The Hate U Give.jpg" alt="The Hate U Give Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/black-lives/The Hate U Give.jpg" alt="The Hate U Give movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hate U Give (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hate U Give (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teen witnesses police killing of childhood friend, ignites community activism. Powerful exploration of survivor's guilt and Black Lives Matter awakening. 9/10</p>
+                        <h4>Overview</h4>
+                        <p>Teen witnesses police killing of childhood friend, ignites community activism. Powerful exploration of survivor's guilt and Black Lives Matter awakening.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Origin.jpg" alt="Origin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Origin.jpg" alt="Origin movie poster" loading="lazy">
+                        <figcaption class="sr-only">Origin (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Origin (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Isabel Wilkerson's global caste system research journey. Intellectual odyssey connecting American racism to international oppression frameworks. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Isabel Wilkerson's global caste system research journey. Intellectual odyssey connecting American racism to international oppression frameworks.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/American Skin.webp" alt="American Skin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/American Skin.webp" alt="American Skin movie poster" loading="lazy">
+                        <figcaption class="sr-only">American Skin (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>American Skin (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Marine veteran demands civilian trial for cop who killed his son. Courtroom confrontation exposing military-police impunity double standard. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Marine veteran demands civilian trial for cop who killed his son. Courtroom confrontation exposing military-police impunity double standard.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Antebellum.jpg" alt="Antebellum Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Antebellum.jpg" alt="Antebellum movie poster" loading="lazy">
+                        <figcaption class="sr-only">Antebellum (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Antebellum (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Modern scholar trapped in contemporary slavery plantation. Genre-bending horror revealing America's hidden racial gulags. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Modern scholar trapped in contemporary slavery plantation. Genre-bending horror revealing America's hidden racial gulags.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Street Life & Hood Drama</h2>
-            <p>Raw portraits of urban Black experience, crime, and community survival.</p>
+        <!-- Street Life & Hood Drama Section -->
+        <section class="movie-section" aria-labelledby="street-life-heading">
+            <header class="section-header">
+                <h2 id="street-life-heading">Street Life & Hood Drama</h2>
+                <p>Raw portraits of urban Black experience, crime, and community survival.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Boyz n the Hood.jpg" alt="Boyz n the Hood Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Boyz n the Hood.jpg" alt="Boyz n the Hood movie poster" loading="lazy">
+                        <figcaption class="sr-only">Boyz n the Hood (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Boyz n the Hood (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Coming-of-age in South Central amid gang violence and police occupation. Seminal chronicle of Black fatherhood, brotherhood, and systemic containment. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Coming-of-age in South Central amid gang violence and police occupation. Seminal chronicle of Black fatherhood, brotherhood, and systemic containment.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Menace II Society.jpg" alt="Menace II Society Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Menace II Society.jpg" alt="Menace II Society movie poster" loading="lazy">
+                        <figcaption class="sr-only">Menace II Society (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Menace II Society (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Watts teenager navigates drug trade, robbery, and retaliatory violence. Unflinching descent into hood nihilism without redemption sentimentality. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Watts teenager navigates drug trade, robbery, and retaliatory violence. Unflinching descent into hood nihilism without redemption sentimentality.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Queen & Slim.jpg" alt="Queen & Slim Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Queen & Slim.jpg" alt="Queen & Slim movie poster" loading="lazy">
+                        <figcaption class="sr-only">Queen & Slim (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Queen & Slim (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>First date becomes fugitive romance after traffic stop killing. Modern Black Bonnie & Clyde mythology born from routine police encounter. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>First date becomes fugitive romance after traffic stop killing. Modern Black Bonnie & Clyde mythology born from routine police encounter.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Family & Relationships</h2>
-            <p>Intimate stories of Black familial bonds, love, and generational trauma.</p>
+        <!-- Family & Relationships Section -->
+        <section class="movie-section" aria-labelledby="family-relationships-heading">
+            <header class="section-header">
+                <h2 id="family-relationships-heading">Family & Relationships</h2>
+                <p>Intimate stories of Black familial bonds, love, and generational trauma.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/The Color Purple.jpg" alt="The Color Purple Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/The Color Purple.jpg" alt="The Color Purple movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Color Purple (1985)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Color Purple (1985)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Celie’s journey from brutalized child to empowered matriarch. Masterpiece of female solidarity triumphing over incest, abuse, and patriarchy. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Celie's journey from brutalized child to empowered matriarch. Masterpiece of female solidarity triumphing over incest, abuse, and patriarchy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Mudbound.jpg" alt="Mudbound Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Mudbound.jpg" alt="Mudbound movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mudbound (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mudbound (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mississippi Delta sharecroppers navigate WWII return and racial terror. Interwoven family sagas exposing Jim Crow's postwar persistence. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Mississippi Delta sharecroppers navigate WWII return and racial terror. Interwoven family sagas exposing Jim Crow's postwar persistence.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Soul Food.jpg" alt="Soul Food Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Soul Food.jpg" alt="Soul Food movie poster" loading="lazy">
+                        <figcaption class="sr-only">Soul Food (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Soul Food (1997)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Chicago family's weekly dinners sustain through cancer, affairs, coma. Vibrant ensemble celebrating Black matriarchal resilience and Sunday rituals. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Chicago family's weekly dinners sustain through cancer, affairs, coma. Vibrant ensemble celebrating Black matriarchal resilience and Sunday rituals.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/The Autobiography of Miss Jane Pittman.jpg" alt="The Autobiography of Miss Jane Pittman Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/The Autobiography of Miss Jane Pittman.jpg" alt="The Autobiography of Miss Jane Pittman movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Autobiography of Miss Jane Pittman (1974)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Autobiography of Miss Jane Pittman (1974)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>110-year-old former slave recounts century of Black American struggle. Epic oral history spanning emancipation through Civil Rights era. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>110-year-old former slave recounts century of Black American struggle. Epic oral history spanning emancipation through Civil Rights era.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Precious.jpg" alt="Precious Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Precious.jpg" alt="Precious movie poster" loading="lazy">
+                        <figcaption class="sr-only">Precious (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Precious (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>16-year-old Harlem teen escapes incestuous mother through literacy. Raw survival story of educational salvation amid extreme domestic violence. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>16-year-old Harlem teen escapes incestuous mother through literacy. Raw survival story of educational salvation amid extreme domestic violence.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/For Colored Girls.jpg" alt="For Colored Girls Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/For Colored Girls.jpg" alt="For Colored Girls movie poster" loading="lazy">
+                        <figcaption class="sr-only">For Colored Girls (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>For Colored Girls (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Interconnected Harlem women confront abortion, abuse, abandonment. Stage-to-screen adaptation celebrating sisterhood healing through shared trauma. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Interconnected Harlem women confront abortion, abuse, abandonment. Stage-to-screen adaptation celebrating sisterhood healing through shared trauma.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/black-lives/Madea's Big Happy Family.jpg" alt="Madea's Big Happy Family Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/black-lives/Madea's Big Happy Family.jpg" alt="Madea's Big Happy Family movie poster" loading="lazy">
+                        <figcaption class="sr-only">Madea's Big Happy Family (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Madea's Big Happy Family (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tyler Perry's gun-toting grandma mediates family cancer crisis. Broad comedy tackling abortion, abuse through melodramatic family intervention. 5/10</p>
+                        <h4>Overview</h4>
+                        <p>Tyler Perry's gun-toting grandma mediates family cancer crisis. Broad comedy tackling abortion, abuse through melodramatic family intervention.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Achievement & Representation</h2>
-            <p>Stories of Black excellence in science, business, law, and culture.</p>
+        <!-- Achievement & Representation Section -->
+        <section class="movie-section" aria-labelledby="achievement-representation-heading">
+            <header class="section-header">
+                <h2 id="achievement-representation-heading">Achievement & Representation</h2>
+                <p>Stories of Black excellence in science, business, law, and culture.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Hidden Figures.jpg" alt="Hidden Figures Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Hidden Figures.jpg" alt="Hidden Figures movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hidden Figures (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hidden Figures (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>NASA's Black female mathematicians propel space race against segregation. Triumphant reclamation of erased contributions to American scientific supremacy. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>NASA's Black female mathematicians propel space race against segregation. Triumphant reclamation of erased contributions to American scientific supremacy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Green Book.jpg" alt="Green Book Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Green Book.jpg" alt="Green Book movie poster" loading="lazy">
+                        <figcaption class="sr-only">Green Book (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Green Book (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pianist Shirley travels Deep South with Italian driver using Negro Motorist Green Book. Road trip buddy comedy softens segregation-era racial reconciliation. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Pianist Shirley travels Deep South with Italian driver using Negro Motorist Green Book. Road trip buddy comedy softens segregation-era racial reconciliation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/The Banker.jpg" alt="The Banker Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/The Banker.jpg" alt="The Banker movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Banker (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Banker (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>1960s Black entrepreneurs build banking empire circumventing redlining. Smart financial thriller exposing housing discrimination's economic stranglehold. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>1960s Black entrepreneurs build banking empire circumventing redlining. Smart financial thriller exposing housing discrimination's economic stranglehold.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/The Pursuit of Happyness.jpg" alt="The Pursuit of Happyness Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/The Pursuit of Happyness.jpg" alt="The Pursuit of Happyness movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Pursuit of Happyness (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Pursuit of Happyness (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Homeless salesman chases stockbroker dream with young son. Inspirational bootstrap narrative grounded in authentic father-son survival struggle. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Homeless salesman chases stockbroker dream with young son. Inspirational bootstrap narrative grounded in authentic father-son survival struggle.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Cultural Heritage</h2>
-            <p>Preserving and celebrating African American history, music, and blaxploitation.</p>
+        <!-- Cultural Heritage Section -->
+        <section class="movie-section" aria-labelledby="cultural-heritage-heading">
+            <header class="section-header">
+                <h2 id="cultural-heritage-heading">Cultural Heritage</h2>
+                <p>Preserving and celebrating African American history, music, and blaxploitation.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/black-lives/Moonlight.jpg" alt="Moonlight Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/black-lives/Moonlight.jpg" alt="Moonlight movie poster" loading="lazy">
+                        <figcaption class="sr-only">Moonlight (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Moonlight (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A poetic triptych tracing a young Black man's quiet wrestle with identity, sexuality, and masculinity in Miami's shadows. Lyrical brilliance illuminates hidden corners of the Black experience with tender precision. 9/10</p>
+                        <h4>Overview</h4>
+                        <p>A poetic triptych tracing a young Black man's quiet wrestle with identity, sexuality, and masculinity in Miami's shadows. Lyrical brilliance illuminates hidden corners of the Black experience with tender precision.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/black-lives/Dolemite Is My Name.jpg" alt="Dolemite Is My Name Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/black-lives/Dolemite Is My Name.jpg" alt="Dolemite Is My Name movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dolemite Is My Name (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dolemite Is My Name (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rudy Ray Moore creates blaxploitation legend through independent hustle. Joyous celebration of 1970s Black cinema entrepreneurship and cultural defiance. 8/10</p>
+                        <h4>Overview</h4>
+                        <p>Rudy Ray Moore creates blaxploitation legend through independent hustle. Joyous celebration of 1970s Black cinema entrepreneurship and cultural defiance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Daughters of the Dust.jpg" alt="Daughters of the Dust Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Daughters of the Dust.jpg" alt="Daughters of the Dust movie poster" loading="lazy">
+                        <figcaption class="sr-only">Daughters of the Dust (1991)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Daughters of the Dust (1991)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Gullah Geechee family prepares 1902 Sea Islands migration to mainland. Lyrical, nonlinear preservation of African diasporic spiritual traditions. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Gullah Geechee family prepares 1902 Sea Islands migration to mainland. Lyrical, nonlinear preservation of African diasporic spiritual traditions.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Dolemite.jpg" alt="Dolemite Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Dolemite.jpg" alt="Dolemite movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dolemite (1975)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dolemite (1975)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Released pimp seeks revenge on crime syndicate framing him for drugs. Cult classic blaxploitation featuring kung fu, bad dialogue, revolutionary swagger. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Released pimp seeks revenge on crime syndicate framing him for drugs. Cult classic blaxploitation featuring kung fu, bad dialogue, revolutionary swagger.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/Friday.jpg" alt="Friday Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/Friday.jpg" alt="Friday movie poster" loading="lazy">
+                        <figcaption class="sr-only">Friday (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Friday (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>South Central stoners evade drug dealer on neighborhood block. Hilarious snapshot of 90s Black suburban comedy gold with quotable dialogue mastery. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>South Central stoners evade drug dealer on neighborhood block. Hilarious snapshot of 90s Black suburban comedy gold with quotable dialogue mastery.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/They Cloned Tyrone.jpg" alt="They Cloned Tyrone Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/They Cloned Tyrone.jpg" alt="They Cloned Tyrone movie poster" loading="lazy">
+                        <figcaption class="sr-only">They Cloned Tyrone (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>They Cloned Tyrone (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Pimp, dealer, singer uncover corporate conspiracy controlling Black community. Blaxploitation revival with social commentary and genre subversion. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Pimp, dealer, singer uncover corporate conspiracy controlling Black community. Blaxploitation revival with social commentary and genre subversion.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Legal Drama</h2>
-            <p>Courtroom battles against racial injustice in the American justice system.</p>
+        <!-- Legal Drama Section -->
+        <section class="movie-section" aria-labelledby="legal-drama-heading">
+            <header class="section-header">
+                <h2 id="legal-drama-heading">Legal Drama</h2>
+                <p>Courtroom battles against racial injustice in the American justice system.</p>
+                <div class="section-stats">
+                    <span class="movie-count">2 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/black-lives/A Time to Kill.jpg" alt="A Time to Kill Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/black-lives/A Time to Kill.jpg" alt="A Time to Kill movie poster" loading="lazy">
+                        <figcaption class="sr-only">A Time to Kill (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>A Time to Kill (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mississippi father kills daughter's rapists, faces all-white jury. Grisham thriller confronts Southern racial double standards in capital punishment. 7/10</p>
+                        <h4>Overview</h4>
+                        <p>Mississippi father kills daughter's rapists, faces all-white jury. Grisham thriller confronts Southern racial double standards in capital punishment.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/black-lives/The Flood.jpg" alt="The Flood Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/black-lives/The Flood.jpg" alt="The Flood movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Flood (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Flood (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>British asylum seekers face racist immigration tribunal. Contemporary drama exposing modern European racial exclusion mechanisms. 6/10</p>
+                        <h4>Overview</h4>
+                        <p>British asylum seekers face racist immigration tribunal. Contemporary drama exposing modern European racial exclusion mechanisms.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

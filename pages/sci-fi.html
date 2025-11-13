@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sci-Fi</title>
-<link rel="stylesheet" href="../css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<meta name="description" content="Sci-Fi films exploring time, space, technology, and the human condition. Rated by story, concept, and intellectual depth.">
-<link rel="icon" href="../olem.png" sizes="any">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sci-Fi - Olems Watchlist</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Sci-Fi films exploring time, space, technology, and the human condition. Rated by story, concept, and intellectual depth.">
+    <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
-<header>
-<h1>Sci-Fi</h1>
-<span class="openbtn" onclick="openNav()">&#9776; Menu</span>
-</header>
+    <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
+        <h1>Sci-Fi</h1>
+        <p>Sci-Fi films exploring time, space, technology, and the human condition. Rated by story, concept, and intellectual depth.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 68 movies</span>
+            <span class="movie-count">8 Categories</span>
+        </div>
+    </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -46,6 +51,7 @@
             <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
             <li><a href="relationships.html">Relationships</a></li>
             <li><a href="religion-mythology.html">Religion & Mythology</a></li>
+            <li><a href="sci-fi.html" aria-current="page">Sci-Fi</a></li>
             <li><a href="serial-killers.html">Serial Killers</a></li>
             <li><a href="series-films.html">Series Films</a></li>
             <li><a href="sports.html">Sports</a></li>
@@ -53,620 +59,1131 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
-<main>
-<div class="movie-section">
-<h2>Time Travel & Alternate Realities</h2>
-<p>Explorations of time manipulation, paradoxes, and alternate timelines.</p>
-<div class="movie-grid">
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Back to the Future.jpg" alt="Back to the Future (1985) Cover">
-    <div class="movie-title"><h3>Back to the Future (1985)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A flux capacitor-powered romp that cleverly juggles paradoxes with heart, proving that meddling with time is a family affair best left to teenagers and eccentric inventors. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Back to the Future Part II.jpg" alt="Back to the Future Part II (1989) Cover">
-    <div class="movie-title"><h3>Back to the Future Part II (1989)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Leaps through timelines with audacious flair, turning hoverboards and almanacs into a witty cautionary tale about the perils of future-proofing your bets. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Tenet.jpg" alt="Tenet (2020) Cover">
-    <div class="movie-title"><h3>Tenet (2020)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A palindromic puzzle of inverted entropy, where bullets fly backward and minds bend forward, rewarding those who embrace its cerebral chaos over emotional clarity. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Predestination.jpg" alt="Predestination (2014) Cover">
-    <div class="movie-title"><h3>Predestination (2014)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A serpentine loop of self-fulfilling prophecy, twisting identity and fate into a knot so tight it questions whether free will is just a bootstrap paradox in disguise. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Back to the Future Part III.jpeg" alt="Back to the Future Part III (1990) Cover">
-    <div class="movie-title"><h3>Back to the Future Part III (1990)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Saddles up for a Wild West detour, trading DeLoreans for locomotives in a charming finale that reminds us: sometimes, the future is best rewritten with a little old-school romance. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Source Code.jpg" alt="Source Code (2011) Cover">
-    <div class="movie-title"><h3>Source Code (2011)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A Groundhog Day in a train explosion, where reliving eight minutes uncovers not just a bomber, but the profound layers of identity hidden in digital echoes. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/DeJaVu.jpg" alt="Deja Vu (2006) Cover">
-    <div class="movie-title"><h3>Deja Vu (2006)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Peeks into the past through surveillance wizardry, blending procedural grit with temporal tweaks to explore how love can defy the arrow of time - déjà vu indeed. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/The Adam Project.jpg" alt="The Adam Project (2022) Cover">
-    <div class="movie-title"><h3>The Adam Project (2022)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A snarky self-meeting across ages, where quips fly faster than time jets, offering a heartfelt nod to the idea that fixing the future starts with mending family fractures. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/The Time Machine.jpg" alt="The Time Machine (2002) Cover">
-    <div class="movie-title"><h3>The Time Machine (2002)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Zooms through epochs with visual panache, but stumbles on narrative coherence, reminding us that some classics are best left unremade unless you're ready to evolve the story too. 6/10</p>
-    </div>
-</div>
-</div>
-</div>
+    <main>
+        <!-- Time Travel & Alternate Realities Section -->
+        <section class="movie-section" aria-labelledby="time-travel-heading">
+            <header class="section-header">
+                <h2 id="time-travel-heading">Time Travel & Alternate Realities</h2>
+                <p>Explorations of time manipulation, paradoxes, and alternate timelines.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Back to the Future.jpg" alt="Back to the Future movie poster" loading="lazy">
+                        <figcaption class="sr-only">Back to the Future (1985)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Back to the Future (1985)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A flux capacitor-powered romp that cleverly juggles paradoxes with heart, proving that meddling with time is a family affair best left to teenagers and eccentric inventors.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Back to the Future Part II.jpg" alt="Back to the Future Part II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Back to the Future Part II (1989)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Back to the Future Part II (1989)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Leaps through timelines with audacious flair, turning hoverboards and almanacs into a witty cautionary tale about the perils of future-proofing your bets.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Tenet.jpg" alt="Tenet movie poster" loading="lazy">
+                        <figcaption class="sr-only">Tenet (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Tenet (2020)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A palindromic puzzle of inverted entropy, where bullets fly backward and minds bend forward, rewarding those who embrace its cerebral chaos over emotional clarity.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Predestination.jpg" alt="Predestination movie poster" loading="lazy">
+                        <figcaption class="sr-only">Predestination (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Predestination (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A serpentine loop of self-fulfilling prophecy, twisting identity and fate into a knot so tight it questions whether free will is just a bootstrap paradox in disguise.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Back to the Future Part III.jpeg" alt="Back to the Future Part III movie poster" loading="lazy">
+                        <figcaption class="sr-only">Back to the Future Part III (1990)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Back to the Future Part III (1990)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Saddles up for a Wild West detour, trading DeLoreans for locomotives in a charming finale that reminds us: sometimes, the future is best rewritten with a little old-school romance.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Source Code.jpg" alt="Source Code movie poster" loading="lazy">
+                        <figcaption class="sr-only">Source Code (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Source Code (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A Groundhog Day in a train explosion, where reliving eight minutes uncovers not just a bomber, but the profound layers of identity hidden in digital echoes.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/DeJaVu.jpg" alt="Deja Vu movie poster" loading="lazy">
+                        <figcaption class="sr-only">Deja Vu (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Deja Vu (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Peeks into the past through surveillance wizardry, blending procedural grit with temporal tweaks to explore how love can defy the arrow of time - déjà vu indeed.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/The Adam Project.jpg" alt="The Adam Project movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Adam Project (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Adam Project (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A snarky self-meeting across ages, where quips fly faster than time jets, offering a heartfelt nod to the idea that fixing the future starts with mending family fractures.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/The Time Machine.jpg" alt="The Time Machine movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Time Machine (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Time Machine (2002)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Zooms through epochs with visual panache, but stumbles on narrative coherence, reminding us that some classics are best left unremade unless you're ready to evolve the story too.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="movie-section">
-<h2>Space, Futurism & Dystopia</h2>
-<p>Visions of distant worlds, political empires, and speculative futures.</p>
-<div class="movie-grid">
-<div class="movie-card rating-10">
-    <img src="../img/sci-fi/Dune Part 2.jpg" alt="Dune Part Two (2024) Cover">
-    <div class="movie-title"><h3>Dune Part Two (2024)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Sandworms and spice fuel an operatic sequel that elevates desert politics to mythic heights, proving sequels can eclipse origins when vision meets vengeance. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-10">
-    <img src="../img/sci-fi/Interstellar.jpg" alt="Interstellar (2014) Cover">
-    <div class="movie-title"><h3>Interstellar (2014)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Bends space-time around parental love, blending hard science with heartfelt odysseys to argue that humanity's salvation lies not in stars, but in connections that transcend them. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Dune.jpg" alt="Dune (2021) Cover">
-    <div class="movie-title"><h3>Dune (2021)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A sprawling saga of spice and schemes, where vast dunes hide deeper truths about ecology and empire, crafted with a grandeur that demands awe - and a sequel. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Star Wars.jpg" alt="Star Wars (1977) Cover">
-    <div class="movie-title"><h3>Star Wars (1977)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Blasts off a galaxy far, far away with lightsabers and lore, revolutionizing myths in space by showing that underdog rebels can topple empires with a dash of destiny. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Star Wars - Return of the Jedi.jpg" alt="Star Wars - Return of the Jedi (1983) Cover">
-    <div class="movie-title"><h3>Star Wars - Return of the Jedi (1983)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Caps the trilogy with furry allies and familial revelations, blending spectacle with sentiment to affirm that redemption arcs shine brightest against Death Star backdrops. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Rogue One - A Star Wars Story.png" alt="Rogue One - A Star Wars Story (2016) Cover">
-    <div class="movie-title"><h3>Rogue One - A Star Wars Story (2016)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A gritty heist in the stars, where disposable heroes steal plans and hearts, underscoring that true rebellion thrives in the shadows of hope and sacrifice. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Star Wars - The Force Awakens.jpg" alt="Star Wars - The Force Awakens (2015) Cover">
-    <div class="movie-title"><h3>Star Wars - The Force Awakens (2015)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Reignites the saga with familiar echoes and fresh faces, proving nostalgia can be a force multiplier when wielded with charm and high-stakes chases. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Star Wars - Episode VIII - The Last Jedi.jpg" alt="Star Wars - Episode VIII – The Last Jedi (2017) Cover">
-    <div class="movie-title"><h3>Star Wars - Episode VIII – The Last Jedi (2017)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Shatters sacred cows with bold strokes, exploring failure and legacy in a galaxy where letting go of the past might just save the future - or divide the fandom. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Oblivion.jpg" alt="Oblivion (2013) Cover">
-    <div class="movie-title"><h3>Oblivion (2013)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A lone drone repairman uncovers Earth's layered lies, blending sleek visuals with existential twists to question if oblivion is forgetting - or remembering too much. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Elysium.jpg" alt="Elysium (2013) Cover">
-    <div class="movie-title"><h3>Elysium (2013)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Storms the gates of orbital privilege with cybernetic fury, a blunt hammer on class divides that hits hard but leaves subtlety grounded on ruined Earth. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Star Wars - Episode III - Revenge of the Sith.jpg" alt="Star Wars - Episode III - Revenge of the Sith (2005) Cover">
-    <div class="movie-title"><h3>Star Wars - Episode III - Revenge of the Sith (2005)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Chronicles a hero's volcanic fall, where lava flows and loyalties burn, offering a tragic bridge that reminds us empires rise on the ashes of good intentions. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Solo - A Star Wars Story.jpg" alt="Solo - A Star Wars Story (2018) Cover">
-    <div class="movie-title"><h3>Solo - A Star Wars Story (2018)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Charts a smuggler's scrappy origins with heist hijinks, proving that even icons start as underdogs dodging debt and destiny in the Kessel Run of life. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Rebel Moon - Part One - A Child of Fire.jpg" alt="Rebel Moon - Part One - A Child of Fire (2023) Cover">
-    <div class="movie-title"><h3>Rebel Moon - Part One - A Child of Fire (2023)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Assembles a ragtag resistance in slow-motion splendor, borrowing from better galaxies to craft a visually lush but narratively barren space opera overture. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Rebel Moon - Part Two - The Scargiver.jpg" alt="Rebel Moon - Part Two - The Scargiver (2024) Cover">
-    <div class="movie-title"><h3>Rebel Moon - Part Two - The Scargiver (2024)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Ramps up the explosions but skimps on soul, turning farm defense into a derivative symphony of slo-mo and stereotypes in a galaxy desperate for originality. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Megalopolis.jpg" alt="Megalopolis (2024) Cover">
-    <div class="movie-title"><h3>Megalopolis (2024)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A visionary's fever dream of urban utopia, where ambition clashes with coherence, leaving audiences pondering if grand ideas need grounding to truly soar. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Star Wars - Episode I - The Phantom Menace.jpg" alt="Star Wars - Episode I - The Phantom Menace (1999) Cover">
-    <div class="movie-title"><h3>Star Wars - Episode I - The Phantom Menace (1999)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Trades myth for midichlorians and podraces, a prequel that expands the universe but shrinks the magic, proving origins can be as taxing as trade disputes. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Star Wars - Episode II - Attack of the Clones.jpg" alt="Star Wars - Episode II - Attack of the Clones (2002) Cover">
-    <div class="movie-title"><h3>Star Wars - Episode II - Attack of the Clones (2002)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Clones armies and forbidden love amid political machinations, where digital battles outshine dialogue, hinting that some sagas stumble before they strike back. 5/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Star Wars - The Rise of Skywalker.jpg" alt="Star Wars - The Rise of Skywalker (2019) Cover">
-    <div class="movie-title"><h3>Star Wars - The Rise of Skywalker (2019)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Rushes to wrap a trilogy with retcons and reunions, a frantic finale that prioritizes fan service over fresh force, leaving legacies feeling force-fed. 5/10</p>
-    </div>
-</div>
-</div>
-</div>
+        <!-- Space, Futurism & Dystopia Section -->
+        <section class="movie-section" aria-labelledby="space-dystopia-heading">
+            <header class="section-header">
+                <h2 id="space-dystopia-heading">Space, Futurism & Dystopia</h2>
+                <p>Visions of distant worlds, political empires, and speculative futures.</p>
+                <div class="section-stats">
+                    <span class="movie-count">18 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/sci-fi/Dune Part 2.jpg" alt="Dune Part Two movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dune Part Two (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dune Part Two (2024)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sandworms and spice fuel an operatic sequel that elevates desert politics to mythic heights, proving sequels can eclipse origins when vision meets vengeance.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/sci-fi/Interstellar.jpg" alt="Interstellar movie poster" loading="lazy">
+                        <figcaption class="sr-only">Interstellar (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Interstellar (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Bends space-time around parental love, blending hard science with heartfelt odysseys to argue that humanity's salvation lies not in stars, but in connections that transcend them.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Dune.jpg" alt="Dune movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dune (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Dune (2021)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A sprawling saga of spice and schemes, where vast dunes hide deeper truths about ecology and empire, crafted with a grandeur that demands awe - and a sequel.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars.jpg" alt="Star Wars movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars (1977)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars (1977)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Blasts off a galaxy far, far away with lightsabers and lore, revolutionizing myths in space by showing that underdog rebels can topple empires with a dash of destiny.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars - Return of the Jedi.jpg" alt="Star Wars - Return of the Jedi movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars - Return of the Jedi (1983)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars - Return of the Jedi (1983)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Caps the trilogy with furry allies and familial revelations, blending spectacle with sentiment to affirm that redemption arcs shine brightest against Death Star backdrops.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Rogue One - A Star Wars Story.png" alt="Rogue One - A Star Wars Story movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rogue One - A Star Wars Story (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rogue One - A Star Wars Story (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A gritty heist in the stars, where disposable heroes steal plans and hearts, underscoring that true rebellion thrives in the shadows of hope and sacrifice.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars - The Force Awakens.jpg" alt="Star Wars - The Force Awakens movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars - The Force Awakens (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars - The Force Awakens (2015)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Reignites the saga with familiar echoes and fresh faces, proving nostalgia can be a force multiplier when wielded with charm and high-stakes chases.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars - Episode VIII - The Last Jedi.jpg" alt="Star Wars - Episode VIII – The Last Jedi movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars - Episode VIII – The Last Jedi (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars - Episode VIII – The Last Jedi (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Shatters sacred cows with bold strokes, exploring failure and legacy in a galaxy where letting go of the past might just save the future - or divide the fandom.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Oblivion.jpg" alt="Oblivion movie poster" loading="lazy">
+                        <figcaption class="sr-only">Oblivion (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Oblivion (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A lone drone repairman uncovers Earth's layered lies, blending sleek visuals with existential twists to question if oblivion is forgetting - or remembering too much.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Elysium.jpg" alt="Elysium movie poster" loading="lazy">
+                        <figcaption class="sr-only">Elysium (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Elysium (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Storms the gates of orbital privilege with cybernetic fury, a blunt hammer on class divides that hits hard but leaves subtlety grounded on ruined Earth.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars - Episode III - Revenge of the Sith.jpg" alt="Star Wars - Episode III - Revenge of the Sith movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars - Episode III - Revenge of the Sith (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars - Episode III - Revenge of the Sith (2005)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Chronicles a hero's volcanic fall, where lava flows and loyalties burn, offering a tragic bridge that reminds us empires rise on the ashes of good intentions.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Solo - A Star Wars Story.jpg" alt="Solo - A Star Wars Story movie poster" loading="lazy">
+                        <figcaption class="sr-only">Solo - A Star Wars Story (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Solo - A Star Wars Story (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Charts a smuggler's scrappy origins with heist hijinks, proving that even icons start as underdogs dodging debt and destiny in the Kessel Run of life.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Rebel Moon - Part One - A Child of Fire.jpg" alt="Rebel Moon - Part One - A Child of Fire movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rebel Moon - Part One - A Child of Fire (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rebel Moon - Part One - A Child of Fire (2023)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Assembles a ragtag resistance in slow-motion splendor, borrowing from better galaxies to craft a visually lush but narratively barren space opera overture.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Rebel Moon - Part Two - The Scargiver.jpg" alt="Rebel Moon - Part Two - The Scargiver movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rebel Moon - Part Two - The Scargiver (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rebel Moon - Part Two - The Scargiver (2024)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Ramps up the explosions but skimps on soul, turning farm defense into a derivative symphony of slo-mo and stereotypes in a galaxy desperate for originality.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Megalopolis.jpg" alt="Megalopolis movie poster" loading="lazy">
+                        <figcaption class="sr-only">Megalopolis (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Megalopolis (2024)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A visionary's fever dream of urban utopia, where ambition clashes with coherence, leaving audiences pondering if grand ideas need grounding to truly soar.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars - Episode I - The Phantom Menace.jpg" alt="Star Wars - Episode I - The Phantom Menace movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars - Episode I - The Phantom Menace (1999)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars - Episode I - The Phantom Menace (1999)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Trades myth for midichlorians and podraces, a prequel that expands the universe but shrinks the magic, proving origins can be as taxing as trade disputes.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars - Episode II - Attack of the Clones.jpg" alt="Star Wars - Episode II - Attack of the Clones movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars - Episode II - Attack of the Clones (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars - Episode II - Attack of the Clones (2002)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Clones armies and forbidden love amid political machinations, where digital battles outshine dialogue, hinting that some sagas stumble before they strike back.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Star Wars - The Rise of Skywalker.jpg" alt="Star Wars - The Rise of Skywalker movie poster" loading="lazy">
+                        <figcaption class="sr-only">Star Wars - The Rise of Skywalker (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Star Wars - The Rise of Skywalker (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Rushes to wrap a trilogy with retcons and reunions, a frantic finale that prioritizes fan service over fresh force, leaving legacies feeling force-fed.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="movie-section">
-<h2>Technology, AI & Virtual Realities</h2>
-<p>Artificial intelligence, virtual realms and surveillance societies.</p>
-<div class="movie-grid">
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Inception.jpg" alt="Inception (2010) Cover">
-    <div class="movie-title"><h3>Inception (2010)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Plants ideas in dreams within dreams, a labyrinthine heist that probes subconscious guilt, reminding us that the mind's architecture can collapse under its own weight. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Everything Everywhere All at Once.jpg" alt="Everything Everywhere All at Once (2022) Cover">
-    <div class="movie-title"><h3>Everything Everywhere All at Once (2022)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A multiverse melee of hot dog fingers and existential audits, hilariously arguing that chaos is the ultimate connector in a cosmos of missed opportunities. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Anon.jpg" alt="Anon (2018) Cover">
-    <div class="movie-title"><h3>Anon (2018)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>In a world where privacy is extinct, a glitch sparks a noir chase, slyly warning that total transparency might just blind us to our own deceptions. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Ready Player One.jpg" alt="Ready Player One (2018) Cover">
-    <div class="movie-title"><h3>Ready Player One (2018)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Dives into a virtual treasure hunt crammed with 80s Easter eggs, fun but fleeting, critiquing escapism while indulging in it like a pixelated guilty pleasure. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Rep.li.cas.jpg" alt="Replicas (2022) Cover">
-    <div class="movie-title"><h3>Replicas (2022)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Clones grief into synthetic echoes, a chilling what-if that probes the ethics of playing god, though it often feels like a copy of better existential thrillers. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Glass.png" alt="Glass (2019) Cover">
-    <div class="movie-title"><h3>Glass (2019)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Shatters superhero tropes in a psychiatric showdown, a meta-mashup that's as fragile as its title, daring to deconstruct myths even if it cracks under ambition. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Spectral.jpg" alt="Spectral (2016) Cover">
-    <div class="movie-title"><h3>Spectral (2016)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Ghosts meet gadgets in urban warfare, a clever fusion of sci-fi and soldiering that spectralizes threats, proving invisible enemies demand visible ingenuity. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Sonic the Hedgehog.jpg" alt="Sonic the Hedgehog (2020) Cover">
-    <div class="movie-title"><h3>Sonic the Hedgehog (2020)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Zooms from game to screen with hyperkinetic charm, a blue blur of buddy comedy that spins gold from redesign drama, even if depth rings hollow. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Click.jpg" alt="Click (2006) Cover">
-    <div class="movie-title"><h3>Click (2006)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A universal remote fast-forwards life's mundanities, a comedic caution that skipping the ads means missing the plot, blending laughs with late-blooming poignancy. 5/10</p>
-    </div>
-</div>
-</div>
-</div>
+        <!-- Technology, AI & Virtual Realities Section -->
+        <section class="movie-section" aria-labelledby="ai-virtual-heading">
+            <header class="section-header">
+                <h2 id="ai-virtual-heading">Technology, AI & Virtual Realities</h2>
+                <p>Artificial intelligence, virtual realms and surveillance societies.</p>
+                <div class="section-stats">
+                    <span class="movie-count">9 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Inception.jpg" alt="Inception movie poster" loading="lazy">
+                        <figcaption class="sr-only">Inception (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Inception (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Plants ideas in dreams within dreams, a labyrinthine heist that probes subconscious guilt, reminding us that the mind's architecture can collapse under its own weight.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Everything Everywhere All at Once.jpg" alt="Everything Everywhere All at Once movie poster" loading="lazy">
+                        <figcaption class="sr-only">Everything Everywhere All at Once (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Everything Everywhere All at Once (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A multiverse melee of hot dog fingers and existential audits, hilariously arguing that chaos is the ultimate connector in a cosmos of missed opportunities.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Anon.jpg" alt="Anon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Anon (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Anon (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>In a world where privacy is extinct, a glitch sparks a noir chase, slyly warning that total transparency might just blind us to our own deceptions.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Ready Player One.jpg" alt="Ready Player One movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ready Player One (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Ready Player One (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Dives into a virtual treasure hunt crammed with 80s Easter eggs, fun but fleeting, critiquing escapism while indulging in it like a pixelated guilty pleasure.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Rep.li.cas.jpg" alt="Replicas movie poster" loading="lazy">
+                        <figcaption class="sr-only">Replicas (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Replicas (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Clones grief into synthetic echoes, a chilling what-if that probes the ethics of playing god, though it often feels like a copy of better existential thrillers.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Glass.png" alt="Glass movie poster" loading="lazy">
+                        <figcaption class="sr-only">Glass (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Glass (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Shatters superhero tropes in a psychiatric showdown, a meta-mashup that's as fragile as its title, daring to deconstruct myths even if it cracks under ambition.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Spectral.jpg" alt="Spectral movie poster" loading="lazy">
+                        <figcaption class="sr-only">Spectral (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Spectral (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Ghosts meet gadgets in urban warfare, a clever fusion of sci-fi and soldiering that spectralizes threats, proving invisible enemies demand visible ingenuity.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Sonic the Hedgehog.jpg" alt="Sonic the Hedgehog movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sonic the Hedgehog (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Sonic the Hedgehog (2020)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Zooms from game to screen with hyperkinetic charm, a blue blur of buddy comedy that spins gold from redesign drama, even if depth rings hollow.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Click.jpg" alt="Click movie poster" loading="lazy">
+                        <figcaption class="sr-only">Click (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Click (2006)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A universal remote fast-forwards life's mundanities, a comedic caution that skipping the ads means missing the plot, blending laughs with late-blooming poignancy.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="movie-section">
-<h2>Human Evolution & Existential Sci‑Fi</h2>
-<p>Transformation, identity and humanity's possible futures.</p>
-<div class="movie-grid">
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Annihilation.jpg" alt="Annihilation (2018) Cover">
-    <div class="movie-title"><h3>Annihilation (2018)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Mutates grief into cosmic horror, a shimmering zone where self-destruction mirrors evolution, whispering that change isn't always progress - sometimes it's erasure. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/I Origins.jpeg" alt="I Origins (2014) Cover">
-    <div class="movie-title"><h3>I Origins (2014)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Scans irises for souls, blending science and spirituality in a quest that eyes the divide between proof and faith, leaving viewers pondering reincarnation's retina. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Swan Song.jpg" alt="Swan Song (2021) Cover">
-    <div class="movie-title"><h3>Swan Song (2021)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Duplicates a dying man for seamless succession, a soft-spoken sci-fi that plumbs the ethics of legacy, asking if love survives when identity gets a reboot. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/THX 1138.jpg" alt="THX 1138 (1971) Cover">
-    <div class="movie-title"><h3>THX 1138 (1971)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A sterile dystopia where emotions are sedated, Lucas's debut buzzes with warnings about conformity, proving rebellion starts with a single, unmedicated thought. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Realive.jpg" alt="Realive (2016) Cover">
-    <div class="movie-title"><h3>Realive (2016)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Revives a suicide via cryonics, a contemplative resurrection tale that dissects the cost of second chances, revealing immortality's fine print is written in regret. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Crimes of the Future.jpg" alt="Crimes of the Future (2022) Cover">
-    <div class="movie-title"><h3>Crimes of the Future (2022)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Evolves bodies into art installations, Cronenberg's visceral satire on adaptation and excess, where surgery is the new sex - and pain, the ultimate performance. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Rememory.jpg" alt="Rememory (2017) Cover">
-    <div class="movie-title"><h3>Rememory (2017)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A memory machine unlocks buried truths, a quiet whodunit that rewinds trauma, suggesting that reliving the past can heal - or haunt - depending on what's recalled. 6/10</p>
-    </div>
-</div>
-</div>
-</div>
+        <!-- Human Evolution & Existential Sci‑Fi Section -->
+        <section class="movie-section" aria-labelledby="human-evolution-heading">
+            <header class="section-header">
+                <h2 id="human-evolution-heading">Human Evolution & Existential Sci‑Fi</h2>
+                <p>Transformation, identity and humanity's possible futures.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Annihilation.jpg" alt="Annihilation movie poster" loading="lazy">
+                        <figcaption class="sr-only">Annihilation (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Annihilation (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Mutates grief into cosmic horror, a shimmering zone where self-destruction mirrors evolution, whispering that change isn't always progress - sometimes it's erasure.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/I Origins.jpeg" alt="I Origins movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Origins (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>I Origins (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Scans irises for souls, blending science and spirituality in a quest that eyes the divide between proof and faith, leaving viewers pondering reincarnation's retina.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Swan Song.jpg" alt="Swan Song movie poster" loading="lazy">
+                        <figcaption class="sr-only">Swan Song (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Swan Song (2021)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Duplicates a dying man for seamless succession, a soft-spoken sci-fi that plumbs the ethics of legacy, asking if love survives when identity gets a reboot.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/THX 1138.jpg" alt="THX 1138 movie poster" loading="lazy">
+                        <figcaption class="sr-only">THX 1138 (1971)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>THX 1138 (1971)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A sterile dystopia where emotions are sedated, Lucas's debut buzzes with warnings about conformity, proving rebellion starts with a single, unmedicated thought.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Realive.jpg" alt="Realive movie poster" loading="lazy">
+                        <figcaption class="sr-only">Realive (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Realive (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Revives a suicide via cryonics, a contemplative resurrection tale that dissects the cost of second chances, revealing immortality's fine print is written in regret.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Crimes of the Future.jpg" alt="Crimes of the Future movie poster" loading="lazy">
+                        <figcaption class="sr-only">Crimes of the Future (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Crimes of the Future (2022)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Evolves bodies into art installations, Cronenberg's visceral satire on adaptation and excess, where surgery is the new sex - and pain, the ultimate performance.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Rememory.jpg" alt="Rememory movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rememory (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Rememory (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A memory machine unlocks buried truths, a quiet whodunit that rewinds trauma, suggesting that reliving the past can heal - or haunt - depending on what's recalled.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="movie-section">
-<h2>Genetic Enhancement & Human Potential</h2>
-<p>Genetics, cognitive enhancement, and biological alteration.</p>
-<div class="movie-grid">
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/Gattaca.jpg" alt="Gattaca (1997) Cover">
-    <div class="movie-title"><h3>Gattaca (1997)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Swabs DNA for destiny, a sleek underdog story that skewers genetic elitism, affirming that stars are reached not by perfect genes, but by imperfect dreams. 9/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Limitless.jpg" alt="Limitless (2011) Cover">
-    <div class="movie-title"><h3>Limitless (2011)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Pops a pill for peak brainpower, a slick ascent into addiction and ambition, wittily warning that unlocking 100% of your mind might cost 100% of your soul. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/Lucy.jpg" alt="Lucy (2014) Cover">
-    <div class="movie-title"><h3>Lucy (2014)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Amps cognition to cosmic levels, a kinetic evolution from drug mule to deity, cheekily debunking the 10% brain myth while embracing its absurd potential. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/The 6th Day.jpg" alt="The 6th Day (2000) Cover">
-    <div class="movie-title"><h3>The 6th Day (2000)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Duplicates Arnie in a cloning conspiracy, a Y2K-era thriller that clones ethical dilemmas, reminding us that two of a kind might double the trouble. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/The Titan.jpg" alt="The Titan (2018) Cover">
-    <div class="movie-title"><h3>The Titan (2018)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Biohacks humans for Titan living, a somber transformation tale that explores the monstrous cost of adaptation, where survival demands surrendering humanity. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/I Am Number Four.jpeg" alt="I Am Number Four (2011) Cover">
-    <div class="movie-title"><h3>I Am Number Four (2011)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Alien teens hide superpowers in high school, a formulaic YA blast that sparks with effects but fizzles on originality, like Twilight with tentacles. 6/10</p>
-    </div>
-</div>
-</div>
-</div>
+        <!-- Genetic Enhancement & Human Potential Section -->
+        <section class="movie-section" aria-labelledby="genetic-enhancement-heading">
+            <header class="section-header">
+                <h2 id="genetic-enhancement-heading">Genetic Enhancement & Human Potential</h2>
+                <p>Genetics, cognitive enhancement, and biological alteration.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/Gattaca.jpg" alt="Gattaca movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gattaca (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Gattaca (1997)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Swabs DNA for destiny, a sleek underdog story that skewers genetic elitism, affirming that stars are reached not by perfect genes, but by imperfect dreams.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Limitless.jpg" alt="Limitless movie poster" loading="lazy">
+                        <figcaption class="sr-only">Limitless (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Limitless (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Pops a pill for peak brainpower, a slick ascent into addiction and ambition, wittily warning that unlocking 100% of your mind might cost 100% of your soul.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/Lucy.jpg" alt="Lucy movie poster" loading="lazy">
+                        <figcaption class="sr-only">Lucy (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Lucy (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Amps cognition to cosmic levels, a kinetic evolution from drug mule to deity, cheekily debunking the 10% brain myth while embracing its absurd potential.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/The 6th Day.jpg" alt="The 6th Day movie poster" loading="lazy">
+                        <figcaption class="sr-only">The 6th Day (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The 6th Day (2000)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Duplicates Arnie in a cloning conspiracy, a Y2K-era thriller that clones ethical dilemmas, reminding us that two of a kind might double the trouble.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/The Titan.jpg" alt="The Titan movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Titan (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Titan (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Biohacks humans for Titan living, a somber transformation tale that explores the monstrous cost of adaptation, where survival demands surrendering humanity.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/I Am Number Four.jpeg" alt="I Am Number Four movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Am Number Four (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>I Am Number Four (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Alien teens hide superpowers in high school, a formulaic YA blast that sparks with effects but fizzles on originality, like Twilight with tentacles.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="movie-section">
-<h2>Post‑Apocalyptic & Climate Collapse</h2>
-<p>Survival narratives, disasters, and ecological collapse.</p>
-<div class="movie-grid">
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/The Day After Tomorrow.jpg" alt="The Day After Tomorrow (2004) Cover">
-    <div class="movie-title"><h3>The Day After Tomorrow (2004)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Freezes the planet in a climate catastrophe spectacle, a frosty wake-up call that chills with effects while warming hearts with familial frostbite survival. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/The Tomorrow War.jpg" alt="The Tomorrow War (2021) Cover">
-    <div class="movie-title"><h3>The Tomorrow War (2021)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Drafts dads into future fights against alien hordes, a time-hopping blockbuster that packs punches and pathos, even if logic gets lost in the leap. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-5">
-    <img src="../img/sci-fi/Geostorm.jpg" alt="Geostorm (2017) Cover">
-    <div class="movie-title"><h3>Geostorm (2017)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Weathers weaponized satellites with bombastic bluster, a disaster flick that's all thunder and no lightning, satirizing climate control gone comically awry. 4/10</p>
-    </div>
-</div>
-<div class="movie-card rating-5">
-    <img src="../img/sci-fi/Babylon A.D..jpg" alt="Babylon A.D. (2008) Cover">
-    <div class="movie-title"><h3>Babylon A.D. (2008)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Escorts a messianic cargo through dystopian dreck, a gritty grind that glimpses potential but gets mired in muddled mysticism and machete edits. 4/10</p>
-    </div>
-</div>
-<div class="movie-card rating-4">
-    <img src="../img/sci-fi/After Earth.jpg" alt="After Earth (2013) Cover">
-    <div class="movie-title"><h3>After Earth (2013)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Strands a father-son duo on feral future Earth, a survival sermon on fear that's visually ambitious but emotionally barren, like a sci-fi self-help seminar. 4/10</p>
-    </div>
-</div>
-<div class="movie-card rating-2">
-    <img src="../img/sci-fi/War of The Worlds.jpg" alt="War of the Worlds (2025) Cover">
-    <div class="movie-title"><h3>War of the Worlds (2025)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A limp rehash of alien invasion tropes, stumbling through spectacle without spark, as if the tripods tripped over their own outdated commentary on humanity. 2/10</p>
-    </div>
-</div>
-</div>
-</div>
+        <!-- Post‑Apocalyptic & Climate Collapse Section -->
+        <section class="movie-section" aria-labelledby="post-apocalyptic-heading">
+            <header class="section-header">
+                <h2 id="post-apocalyptic-heading">Post‑Apocalyptic & Climate Collapse</h2>
+                <p>Survival narratives, disasters, and ecological collapse.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/The Day After Tomorrow.jpg" alt="The Day After Tomorrow movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Day After Tomorrow (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Day After Tomorrow (2004)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Freezes the planet in a climate catastrophe spectacle, a frosty wake-up call that chills with effects while warming hearts with familial frostbite survival.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/The Tomorrow War.jpg" alt="The Tomorrow War movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Tomorrow War (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Tomorrow War (2021)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Drafts dads into future fights against alien hordes, a time-hopping blockbuster that packs punches and pathos, even if logic gets lost in the leap.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sci-fi/Geostorm.jpg" alt="Geostorm movie poster" loading="lazy">
+                        <figcaption class="sr-only">Geostorm (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Geostorm (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Weathers weaponized satellites with bombastic bluster, a disaster flick that's all thunder and no lightning, satirizing climate control gone comically awry.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sci-fi/Babylon A.D..jpg" alt="Babylon A.D. movie poster" loading="lazy">
+                        <figcaption class="sr-only">Babylon A.D. (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Babylon A.D. (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Escorts a messianic cargo through dystopian dreck, a gritty grind that glimpses potential but gets mired in muddled mysticism and machete edits.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/sci-fi/After Earth.jpg" alt="After Earth movie poster" loading="lazy">
+                        <figcaption class="sr-only">After Earth (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>After Earth (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Strands a father-son duo on feral future Earth, a survival sermon on fear that's visually ambitious but emotionally barren, like a sci-fi self-help seminar.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/sci-fi/War of The Worlds.jpg" alt="War of the Worlds movie poster" loading="lazy">
+                        <figcaption class="sr-only">War of the Worlds (2025)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>War of the Worlds (2025)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A limp rehash of alien invasion tropes, stumbling through spectacle without spark, as if the tripods tripped over their own outdated commentary on humanity.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="movie-section">
-<h2>Rebellion, Society & Control</h2>
-<p>Dystopian control, resistance and political upheaval.</p>
-<div class="movie-grid">
-<div class="movie-card rating-9">
-    <img src="../img/sci-fi/V for Vendetta.jpg" alt="V for Vendetta (2005) Cover">
-    <div class="movie-title"><h3>V for Vendetta (2005)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Masks a revolutionary in Guy Fawkes flair, exploding fascism with fireworks and philosophy, a timely reminder that ideas are bulletproof - and so is inspiration. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/The Platform.jpg" alt="The Platform (2019) Cover">
-    <div class="movie-title"><h3>The Platform (2019)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A vertical prison where food trickles down - or doesn't - a biting bite on inequality, proving that in the pit of society, survival is a zero-sum feast. 8/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/What Happened to Monday.jpg" alt="What Happened to Monday (2017) Cover">
-    <div class="movie-title"><h3>What Happened to Monday (2017)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Septuplets share one identity in a overpopulated crackdown, a taut thriller that multiplies tension, questioning if unity in diversity can outwit authoritarian arithmetic. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/The Hunger Games - Mockingjay - Part 1.webp" alt="The Hunger Games - Mockingjay - Part 1 (2014) Cover">
-    <div class="movie-title"><h3>The Hunger Games - Mockingjay - Part 1 (2014)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Shifts from arena to underground rebellion, a brooding buildup that weaponizes propaganda, showing revolutions are won with symbols as much as arrows. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Divergent.jpg" alt="Divergent (2014) Cover">
-    <div class="movie-title"><h3>Divergent (2014)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Sorts society into factions, a YA dystopia where not fitting in is the ultimate superpower, energetic but derivative, like a aptitude test for franchise fatigue. 6/10</p>
-    </div>
-</div>
-</div>
-</div>
+        <!-- Rebellion, Society & Control Section -->
+        <section class="movie-section" aria-labelledby="rebellion-society-heading">
+            <header class="section-header">
+                <h2 id="rebellion-society-heading">Rebellion, Society & Control</h2>
+                <p>Dystopian control, resistance and political upheaval.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/sci-fi/V for Vendetta.jpg" alt="V for Vendetta movie poster" loading="lazy">
+                        <figcaption class="sr-only">V for Vendetta (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>V for Vendetta (2005)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Masks a revolutionary in Guy Fawkes flair, exploding fascism with fireworks and philosophy, a timely reminder that ideas are bulletproof - and so is inspiration.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/The Platform.jpg" alt="The Platform movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Platform (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Platform (2019)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A vertical prison where food trickles down - or doesn't - a biting bite on inequality, proving that in the pit of society, survival is a zero-sum feast.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/What Happened to Monday.jpg" alt="What Happened to Monday movie poster" loading="lazy">
+                        <figcaption class="sr-only">What Happened to Monday (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>What Happened to Monday (2017)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Septuplets share one identity in a overpopulated crackdown, a taut thriller that multiplies tension, questioning if unity in diversity can outwit authoritarian arithmetic.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/The Hunger Games - Mockingjay - Part 1.webp" alt="The Hunger Games - Mockingjay - Part 1 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hunger Games - Mockingjay - Part 1 (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Hunger Games - Mockingjay - Part 1 (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Shifts from arena to underground rebellion, a brooding buildup that weaponizes propaganda, showing revolutions are won with symbols as much as arrows.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Divergent.jpg" alt="Divergent movie poster" loading="lazy">
+                        <figcaption class="sr-only">Divergent (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Divergent (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sorts society into factions, a YA dystopia where not fitting in is the ultimate superpower, energetic but derivative, like a aptitude test for franchise fatigue.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<div class="movie-section">
-<h2>Miscellaneous & Hybrid Sci‑Fi</h2>
-<p>Crime hybrids, family sci‑fi, and other genre blends.</p>
-<div class="movie-grid">
-<div class="movie-card rating-8">
-    <img src="../img/sci-fi/Cube.jpg" alt="Cube (1997) Cover">
-    <div class="movie-title"><h3>Cube (1997)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p> Traps strangers in a lethal labyrinth, a low-budget brainteaser that cubes math with mortality, illustrating how institutional traps turn humans into variables. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-7">
-    <img src="../img/sci-fi/In Time.jpg" alt="In Time (2011) Cover">
-    <div class="movie-title"><h3>In Time (2011)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Turns time into tender, a capitalist critique where the rich live forever and the poor race clocks, timely in concept but ticking unevenly in execution. 7/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Kin.jpg" alt="Kin (2018) Cover">
-    <div class="movie-title"><h3>Kin (2018)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>A mysterious weapon bonds brothers on the run, a understated sci-fi road trip that simmers with sibling synergy, hinting at bigger blasts in quieter moments. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Alien Code.jpg" alt="Alien Code (2024) Cover">
-    <div class="movie-title"><h3>Alien Code (2024)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Deciphers extraterrestrial signals amid government games, a paranoid puzzle that probes contact's chaos, suggesting first encounters might rewrite more than history. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/The One.jpg" alt="The One (2001) Cover">
-    <div class="movie-title"><h3>The One (2001)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Jet Li battles his multiverse selves for supremacy, a wire-fu whirlwind that's cheesily entertaining, proving one man's ego can span infinite dimensions. 6/10</p>
-    </div>
-</div>
-<div class="movie-card rating-6">
-    <img src="../img/sci-fi/Jumper.jpg" alt="Jumper (2008) Cover">
-    <div class="movie-title"><h3>Jumper (2008)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Teleports trouble worldwide, a globetrotting gimmick that jumps genres but lands flatly on depth, like a superpower vacation gone vigilante. 5/10</p>
-    </div>
-</div>
-<div class="movie-card rating-5">
-    <img src="../img/sci-fi/Assassin's Creed.jpg" alt="Assassin's Creed (2016) Cover">
-    <div class="movie-title"><h3>Assassin's Creed (2016)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Relives ancestral leaps of faith via Animus, a game adaptation that's visually acrobatic but plot-twisted into knots, creed-bound but creed-broken. 5/10</p>
-    </div>
-</div>
-<div class="movie-card rating-5">
-    <img src="../img/sci-fi/The Adventures of Sharkboy and Lavagirl.jpg" alt="The Adventures of Sharkboy and Lavagirl (2005) Cover">
-    <div class="movie-title"><h3>The Adventures of Sharkboy and Lavagirl (2005)</h3></div>
-    <div class="overview">
-        <h3>Overview</h3>
-        <p>Dreams up kid heroes in 3D whimsy, a Rodriguez romp that's earnestly imaginative but technically turbulent, like a child's sketch brought to hyperactive life. 5/10</p>
-    </div>
-</div>
-</div>
-</div>
+        <!-- Miscellaneous & Hybrid Sci‑Fi Section -->
+        <section class="movie-section" aria-labelledby="misc-hybrid-heading">
+            <header class="section-header">
+                <h2 id="misc-hybrid-heading">Miscellaneous & Hybrid Sci‑Fi</h2>
+                <p>Crime hybrids, family sci‑fi, and other genre blends.</p>
+                <div class="section-stats">
+                    <span class="movie-count">7 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/sci-fi/Cube.jpg" alt="Cube movie poster" loading="lazy">
+                        <figcaption class="sr-only">Cube (1997)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Cube (1997)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Traps strangers in a lethal labyrinth, a low-budget brainteaser that cubes math with mortality, illustrating how institutional traps turn humans into variables.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/sci-fi/In Time.jpg" alt="In Time movie poster" loading="lazy">
+                        <figcaption class="sr-only">In Time (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>In Time (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Turns time into tender, a capitalist critique where the rich live forever and the poor race clocks, timely in concept but ticking unevenly in execution.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Kin.jpg" alt="Kin movie poster" loading="lazy">
+                        <figcaption class="sr-only">Kin (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Kin (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A mysterious weapon bonds brothers on the run, a understated sci-fi road trip that simmers with sibling synergy, hinting at bigger blasts in quieter moments.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Alien Code.jpg" alt="Alien Code movie poster" loading="lazy">
+                        <figcaption class="sr-only">Alien Code (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Alien Code (2024)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Deciphers extraterrestrial signals amid government games, a paranoid puzzle that probes contact's chaos, suggesting first encounters might rewrite more than history.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/The One.jpg" alt="The One movie poster" loading="lazy">
+                        <figcaption class="sr-only">The One (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The One (2001)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Jet Li battles his multiverse selves for supremacy, a wire-fu whirlwind that's cheesily entertaining, proving one man's ego can span infinite dimensions.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/sci-fi/Jumper.jpg" alt="Jumper movie poster" loading="lazy">
+                        <figcaption class="sr-only">Jumper (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Jumper (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Teleports trouble worldwide, a globetrotting gimmick that jumps genres but lands flatly on depth, like a superpower vacation gone vigilante.</p>
+                    </div>
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/sci-fi/Assassin's Creed.jpg" alt="Assassin's Creed movie poster" loading="lazy">
+                        <figcaption class="sr-only">Assassin's Creed (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Assassin's Creed (2016)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Relives ancestral leaps of faith via Animus, a game adaptation that's visually acrobatic but plot-twisted into knots, creed-bound but creed-broken.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
+    </footer>
 
-</main>
-<footer>
-<p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
-</footer>
-<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-<path d="M12 19V5M5 12l7-7 7 7"/>
-</svg>
-</button>
-<script src="../js/app.js"></script>
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>

@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Computers</title>
+    <title>Computers - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies about computers, tech pioneers, and digital culture, sorted by theme, with witty, insightful overviews and objective ratings based on Rotten Tomatoes consensus, factoring in negative reviews.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing movies about computers, tech pioneers, and digital culture I've watched, rated by color. Explore tech biopics, industry innovations, social media impact, and tech thrillers.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Computers</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Tech pioneers, digital culture, industry innovations, and high-stakes tech dramas that explore the impact of computing on our world.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 10 movies</span>
+            <span class="movie-count">4 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -30,6 +35,7 @@
             <li><a href="christmas-family.html">Christmas & Family</a></li>
             <li><a href="comedy.html">Comedy</a></li>
             <li><a href="computer-crimes.html">Computer Crimes</a></li>
+            <li><a href="computers.html" aria-current="page">Computers</a></li>
             <li><a href="crime.html">Crime</a></li>
             <li><a href="documentary.html">Documentary</a></li>
             <li><a href="drama.html">Drama</a></li>
@@ -53,144 +59,219 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Tech Biopics</h2>
-            <p>Stories of computer pioneers and their revolutionary impact.</p>
+        <!-- Tech Biopics Section -->
+        <section class="movie-section" aria-labelledby="tech-biopics-heading">
+            <header class="section-header">
+                <h2 id="tech-biopics-heading">Tech Biopics</h2>
+                <p>Stories of computer pioneers and tech visionaries whose revolutionary ideas transformed our digital world.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/computers/The Social Network.jpg" alt="The Social Network Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/computers/The Social Network.jpg" alt="The Social Network movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Social Network (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Social Network (2010)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Zuckerberg’s meteoric rise building Facebook weaves betrayal and genius. Sorkin’s sharp script crackles, though some call its dramatization exaggerated and cold. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Zuckerberg's meteoric rise building Facebook weaves betrayal and genius. Sorkin's sharp script crackles, though some call its dramatization exaggerated and cold.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/computers/Steve Jobs.jpg" alt="Steve Jobs Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/computers/Steve Jobs.jpg" alt="Steve Jobs movie poster" loading="lazy">
+                        <figcaption class="sr-only">Steve Jobs (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Steve Jobs (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Three pivotal Apple launches frame Jobs’ brilliance and flaws. Fassbender’s electric turn shines, but stagey structure and relentless dialogue alienate some. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Three pivotal Apple launches frame Jobs' brilliance and flaws. Fassbender's electric turn shines, but stagey structure and relentless dialogue alienate some.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/computers/Steve Jobs The Man in the Machine.jpg" alt="Steve Jobs: The Man in the Machine Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/computers/Steve Jobs The Man in the Machine.jpg" alt="Steve Jobs: The Man in the Machine movie poster" loading="lazy">
+                        <figcaption class="sr-only">Steve Jobs: The Man in the Machine (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Steve Jobs: The Man in the Machine (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A documentary probes Jobs’ legacy, from innovation to ruthless ambition. Insightful archival footage informs, but biased lens and lack of focus dilute its byte. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A documentary probes Jobs' legacy, from innovation to ruthless ambition. Insightful archival footage informs, but biased lens and lack of focus dilute its byte.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Tech Industry & Innovation</h2>
-            <p>Chronicles of the computer world’s rise and its unsung heroes.</p>
+        <!-- Tech Industry & Innovation Section -->
+        <section class="movie-section" aria-labelledby="tech-industry-heading">
+            <header class="section-header">
+                <h2 id="tech-industry-heading">Tech Industry & Innovation</h2>
+                <p>Chronicles of the computer world's rise and the unsung heroes who shaped the digital landscape.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/computers/Silicon Cowboys.jpg" alt="Silicon Cowboys Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/computers/Silicon Cowboys.jpg" alt="Silicon Cowboys movie poster" loading="lazy">
+                        <figcaption class="sr-only">Silicon Cowboys (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Silicon Cowboys (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Compaq’s underdog battle against IBM in the PC wars sparks nostalgia. Engaging storytelling captivates, but limited scope and dry delivery boot some viewers. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Compaq's underdog battle against IBM in the PC wars sparks nostalgia. Engaging storytelling captivates, but limited scope and dry delivery boot some viewers.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/computers/Revolution OS.jpg" alt="Revolution OS Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/computers/Revolution OS.jpg" alt="Revolution OS movie poster" loading="lazy">
+                        <figcaption class="sr-only">Revolution OS (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Revolution OS (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>The open-source movement’s rise, led by Linux pioneers, gets a geeky spotlight. Informative for techies, but dated visuals and niche focus crash for casual audiences. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>The open-source movement's rise, led by Linux pioneers, gets a geeky spotlight. Informative for techies, but dated visuals and niche focus crash for casual audiences.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/computers/The Code.jpg" alt="The Code Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/computers/The Code.jpg" alt="The Code movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Code (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Code (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A documentary dives into Linux’s creation and open-source ethos. Passionate interviews intrigue, but low production values and repetitive preaching log off mainstream appeal. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A documentary dives into Linux's creation and open-source ethos. Passionate interviews intrigue, but low production values and repetitive preaching log off mainstream appeal.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Social Media & Digital Culture</h2>
-            <p>Exploring the societal impact of the digital age.</p>
+        <!-- Social Media & Digital Culture Section -->
+        <section class="movie-section" aria-labelledby="social-media-heading">
+            <header class="section-header">
+                <h2 id="social-media-heading">Social Media & Digital Culture</h2>
+                <p>Exploring the societal impact and ethical dilemmas of the digital age.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/computers/The Social Dilemma.jpg" alt="The Social Dilemma Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/computers/The Social Dilemma.jpg" alt="The Social Dilemma movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Social Dilemma (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Social Dilemma (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tech insiders expose social media’s addictive, polarizing dark side. Alarming insights hit hard, but dramatized segments and preachy tone buffer its signal. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tech insiders expose social media's addictive, polarizing dark side. Alarming insights hit hard, but dramatized segments and preachy tone buffer its signal.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Tech Thrillers</h2>
-            <p>High-stakes dramas in the world of hacking and corporate espionage.</p>
+        <!-- Tech Thrillers Section -->
+        <section class="movie-section" aria-labelledby="tech-thrillers-heading">
+            <header class="section-header">
+                <h2 id="tech-thrillers-heading">Tech Thrillers</h2>
+                <p>High-stakes dramas in the world of hacking, corporate espionage, and digital threats.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/computers/Anti-Trust.jpg" alt="Anti-Trust Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/computers/Anti-Trust.jpg" alt="Anti-Trust movie poster" loading="lazy">
+                        <figcaption class="sr-only">AntiTrust (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>AntiTrust (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A coder battles a sinister tech mogul stealing open-source ideas. Timely paranoia entertains, but dated tech and cartoonish villains crash its credibility. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A coder battles a sinister tech mogul stealing open-source ideas. Timely paranoia entertains, but dated tech and cartoonish villains crash its credibility.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/computers/I.T..jpg" alt="I.T. Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/computers/I.T..jpg" alt="I.T. movie poster" loading="lazy">
+                        <figcaption class="sr-only">I.T. (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>I.T. (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A tech consultant hacks a CEO’s life in a digital vendetta. Brosnan’s gravitas tries, but generic plotting and absurd tech tropes unplug the suspense. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A tech consultant hacks a CEO's life in a digital vendetta. Brosnan's gravitas tries, but generic plotting and absurd tech tropes unplug the suspense.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/computers/CTRL.jpg" alt="CTRL Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/computers/CTRL.jpg" alt="CTRL movie poster" loading="lazy">
+                        <figcaption class="sr-only">CTRL (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>CTRL (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A gamer’s virtual world blurs with reality as code turns deadly. Intriguing indie premise fizzles with low-budget execution and a muddled, unscary script. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A gamer's virtual world blurs with reality as code turns deadly. Intriguing indie premise fizzles with low-budget execution and a muddled, unscary script.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

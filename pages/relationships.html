@@ -3,28 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Relationships</title>
+    <title>Relationships - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing movies I've watched, rated by color.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing relationship movies I've watched, rated by color. Explore romantic comedies, coming-of-age stories, erotic thrillers, and relationship dramas.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>Relationships</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Stories of love, connection, and human bonds in romantic comedies, coming-of-age tales, erotic thrillers, and relationship dramas.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 67 movies</span>
+            <span class="movie-count">4 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
             <li><a href="african.html">African</a></li>
             <li><a href="ai-machines.html">AI & Machines</a></li>
             <li><a href="animation.html">Animation</a></li>
-             <li><a href="apocalyptic.html">Apocalyptic</a></li>
+            <li><a href="apocalyptic.html">Apocalyptic</a></li>
             <li><a href="assassins.html">Assassins</a></li>
             <li><a href="black-lives.html">Black Lives</a></li>
             <li><a href="christmas-family.html">Christmas & Family</a></li>
@@ -44,6 +49,7 @@
             <li><a href="monsters-aliens.html">Monsters & Aliens</a></li>
             <li><a href="music-dance.html">Music & Dance</a></li>
             <li><a href="provocative-controversial.html">Provocative & Controversial</a></li>
+            <li><a href="relationships.html" aria-current="page">Relationships</a></li>
             <li><a href="religion-mythology.html">Religion & Mythology</a></li>
             <li><a href="sci-fi.html">Sci-Fi</a></li>
             <li><a href="serial-killers.html">Serial Killers</a></li>
@@ -53,714 +59,1074 @@
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
             <li><a href="war-soldiers.html">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>Romantic Comedies</h2>
-            <p>Light-hearted tales of love, mishaps, and happy endings.</p>
+        <!-- Romantic Comedies Section -->
+        <section class="movie-section" aria-labelledby="romcom-heading">
+            <header class="section-header">
+                <h2 id="romcom-heading">Romantic Comedies</h2>
+                <p>Light-hearted tales of love, mishaps, and happy endings.</p>
+                <div class="section-stats">
+                    <span class="movie-count">33 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-10">
-                    <img src="../img/relationships/To All the Boys I've Loved Before.jpg" alt="To All the Boys I've Loved Before Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/relationships/To All the Boys I've Loved Before.jpg" alt="To All the Boys I've Loved Before movie poster" loading="lazy">
+                        <figcaption class="sr-only">To All the Boys I've Loved Before (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>To All the Boys I've Loved Before (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A secret stash of love letters spills out, turning a quiet teen's world into a whirlwind of fake dates and real feelings. Charming chaos ensues in this fresh take on young love. Rating: 10/10.</p>
+                        <h4>Overview</h4>
+                        <p>A secret stash of love letters spills out, turning a quiet teen's world into a whirlwind of fake dates and real feelings. Charming chaos ensues in this fresh take on young love.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/relationships/Bros.jpg" alt="Bros Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/relationships/Bros.jpg" alt="Bros movie poster" loading="lazy">
+                        <figcaption class="sr-only">Bros (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Bros (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two commitment-phobes stumble into love while planning a historic museum opening. Witty banter meets heartfelt moments in this groundbreaking gay rom-com. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two commitment-phobes stumble into love while planning a historic museum opening. Witty banter meets heartfelt moments in this groundbreaking gay rom-com.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/relationships/The 40 Year Old Virgin.jpg" alt="The 40-Year-Old Virgin Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/relationships/The 40 Year Old Virgin.jpg" alt="The 40-Year-Old Virgin movie poster" loading="lazy">
+                        <figcaption class="sr-only">The 40-Year-Old Virgin (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The 40-Year-Old Virgin (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A middle-aged geek's quest to lose his virginity leads to hilarious mishaps and unexpected romance. Raunchy yet sweet exploration of adult relationships. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A middle-aged geek's quest to lose his virginity leads to hilarious mishaps and unexpected romance. Raunchy yet sweet exploration of adult relationships.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/relationships/Long Shot.jpg" alt="Long Shot Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/relationships/Long Shot.jpg" alt="Long Shot movie poster" loading="lazy">
+                        <figcaption class="sr-only">Long Shot (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Long Shot (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An unlikely pairing between a journalist and a presidential candidate sparks outrageous laughs and genuine sparks. Sharp political satire meets rom-com gold. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>An unlikely pairing between a journalist and a presidential candidate sparks outrageous laughs and genuine sparks. Sharp political satire meets rom-com gold.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/Coming to America.jpg" alt="Coming to America Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/Coming to America.jpg" alt="Coming to America movie poster" loading="lazy">
+                        <figcaption class="sr-only">Coming to America (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Coming to America (1988)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>An African prince ventures to Queens to find true love beyond royalty. Cultural clashes deliver timeless comedy and royal charm. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>An African prince ventures to Queens to find true love beyond royalty. Cultural clashes deliver timeless comedy and royal charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/Friends with Benefits.jpg" alt="Friends with Benefits Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/Friends with Benefits.jpg" alt="Friends with Benefits movie poster" loading="lazy">
+                        <figcaption class="sr-only">Friends with Benefits (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Friends with Benefits (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Two friends add benefits to their relationship, only to discover emotions complicate no-strings fun. Sassy dialogue drives this modern take on casual romance. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Two friends add benefits to their relationship, only to discover emotions complicate no-strings fun. Sassy dialogue drives this modern take on casual romance.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/Hitch.jpg" alt="Hitch Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/Hitch.jpg" alt="Hitch movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hitch (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hitch (2005)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A smooth-talking date doctor coaches awkward men in romance while fumbling his own love life. Charismatic leads make this matchmaking mishap irresistible. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A smooth-talking date doctor coaches awkward men in romance while fumbling his own love life. Charismatic leads make this matchmaking mishap irresistible.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/Isn't It Romantic.jpg" alt="Isn't It Romantic Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/Isn't It Romantic.jpg" alt="Isn't It Romantic movie poster" loading="lazy">
+                        <figcaption class="sr-only">Isn't It Romantic (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Isn't It Romantic (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rom-com hater wakes up trapped in her least favorite genre. Meta humor skewers tropes while delivering feel-good laughs. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rom-com hater wakes up trapped in her least favorite genre. Meta humor skewers tropes while delivering feel-good laughs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/The Best Man Holiday.jpg" alt="The Best Man Holiday Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/The Best Man Holiday.jpg" alt="The Best Man Holiday movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Best Man Holiday (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Best Man Holiday (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Old college friends reunite for Christmas, rekindling rivalries and romances. Balances heartfelt drama with holiday cheer. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Old college friends reunite for Christmas, rekindling rivalries and romances. Balances heartfelt drama with holiday cheer.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/The Hating Game.jpg" alt="The Hating Game Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/The Hating Game.jpg" alt="The Hating Game movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hating Game (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hating Game (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Office rivals turn romantic tension into real sparks. Enemies-to-lovers trope done with wit and chemistry. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Office rivals turn romantic tension into real sparks. Enemies-to-lovers trope done with wit and chemistry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/The Lovebirds.jpg" alt="The Lovebirds Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/The Lovebirds.jpg" alt="The Lovebirds movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Lovebirds (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Lovebirds (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A couple on the brink gets entangled in murder mystery mayhem. Action-packed laughs test their breaking relationship. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A couple on the brink gets entangled in murder mystery mayhem. Action-packed laughs test their breaking relationship.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/The Perfect Date.jpg" alt="The Perfect Date Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/The Perfect Date.jpg" alt="The Perfect Date movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Perfect Date (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Perfect Date (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen creates an app to be the ideal escort date, leading to self-discovery and real romance. Tech-savvy teen comedy with heart. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen creates an app to be the ideal escort date, leading to self-discovery and real romance. Tech-savvy teen comedy with heart.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/relationships/Baby Mama.jpg" alt="Baby Mama Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/relationships/Baby Mama.jpg" alt="Baby Mama movie poster" loading="lazy">
+                        <figcaption class="sr-only">Baby Mama (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Baby Mama (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A career woman hires a surrogate, leading to mismatched motherhood madness. Odd-couple laughs explore family in unexpected ways. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A career woman hires a surrogate, leading to mismatched motherhood madness. Odd-couple laughs explore family in unexpected ways.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/relationships/Serendipity.jpg" alt="Serendipity Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/relationships/Serendipity.jpg" alt="Serendipity movie poster" loading="lazy">
+                        <figcaption class="sr-only">Serendipity (2001)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Serendipity (2001)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Fate plays matchmaker for two strangers who leave love to chance. Whimsical pursuit of destiny delivers feel-good magic. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Fate plays matchmaker for two strangers who leave love to chance. Whimsical pursuit of destiny delivers feel-good magic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/Book Club.jpg" alt="Book Club Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/Book Club.jpg" alt="Book Club movie poster" loading="lazy">
+                        <figcaption class="sr-only">Book Club (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Book Club (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Four lifelong friends spice up their lives with racy reading material. Golden years get golden laughs in this senior romance revival. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Four lifelong friends spice up their lives with racy reading material. Golden years get golden laughs in this senior romance revival.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/Coming 2 America.jpg" alt="Coming 2 America Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/Coming 2 America.jpg" alt="Coming 2 America movie poster" loading="lazy">
+                        <figcaption class="sr-only">Coming 2 America (2021)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Coming 2 America (2021)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A prince returns to Queens for his heir, facing new challenges in old stomping grounds. Nostalgic sequel delivers familiar laughs but lacks fresh spark. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A prince returns to Queens for his heir, facing new challenges in old stomping grounds. Nostalgic sequel delivers familiar laughs but lacks fresh spark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/Holly Slept Over.png" alt="Holly Slept Over Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/Holly Slept Over.png" alt="Holly Slept Over movie poster" loading="lazy">
+                        <figcaption class="sr-only">Holly Slept Over (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Holly Slept Over (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A married couple's life flips when the wife's old college fling visits. Awkward attractions lead to unexpected explorations. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A married couple's life flips when the wife's old college fling visits. Awkward attractions lead to unexpected explorations.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/No Strings Attached.jpg" alt="No Strings Attached Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/No Strings Attached.jpg" alt="No Strings Attached movie poster" loading="lazy">
+                        <figcaption class="sr-only">No Strings Attached (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>No Strings Attached (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends try casual hookups, but strings inevitably attach. Predictable plot redeemed by leads' charm. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Friends try casual hookups, but strings inevitably attach. Predictable plot redeemed by leads' charm.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/Think Like a Man.jpg" alt="Think Like a Man Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/Think Like a Man.jpg" alt="Think Like a Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">Think Like a Man (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Think Like a Man (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Women use self-help book tactics on men, sparking battle of the sexes hilarity. Ensemble charm carries familiar formula. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Women use self-help book tactics on men, sparking battle of the sexes hilarity. Ensemble charm carries familiar formula.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/Black Coffee.jpg" alt="Black Coffee Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/Black Coffee.jpg" alt="Black Coffee movie poster" loading="lazy">
+                        <figcaption class="sr-only">Black Coffee (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Black Coffee (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A fired executive brews new romance after heartbreak. Percolates with charm but lacks strong flavor in execution. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A fired executive brews new romance after heartbreak. Percolates with charm but lacks strong flavor in execution.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/How to Lose a Guy in 10 Days.jpg" alt="How to Lose a Guy in 10 Days Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/How to Lose a Guy in 10 Days.jpg" alt="How to Lose a Guy in 10 Days movie poster" loading="lazy">
+                        <figcaption class="sr-only">How to Lose a Guy in 10 Days (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>How to Lose a Guy in 10 Days (2003)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A writer bets she can drive away any man, while he wagers he can make her fall in love. Formulaic farce with sparkling leads. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A writer bets she can drive away any man, while he wagers he can make her fall in love. Formulaic farce with sparkling leads.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/Puppy Love.jpg" alt="Puppy Love Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/Puppy Love.jpg" alt="Puppy Love movie poster" loading="lazy">
+                        <figcaption class="sr-only">Puppy Love (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Puppy Love (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Mismatched owners unite when their dogs mate. Canine chaos breeds human romance in this paw-some but predictable tale. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Mismatched owners unite when their dogs mate. Canine chaos breeds human romance in this paw-some but predictable tale.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/Three Can Play That Game.jpg" alt="Three Can Play That Game Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/Three Can Play That Game.jpg" alt="Three Can Play That Game movie poster" loading="lazy">
+                        <figcaption class="sr-only">Three Can Play That Game (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Three Can Play That Game (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A relationship expert applies her tactics to her own romance gone wrong. Sassy sequel recycles formulas without fresh twists. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A relationship expert applies her tactics to her own romance gone wrong. Sassy sequel recycles formulas without fresh twists.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/What Men Want.jpg" alt="What Men Want Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/What Men Want.jpg" alt="What Men Want movie poster" loading="lazy">
+                        <figcaption class="sr-only">What Men Want (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>What Men Want (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A sports agent gains mind-reading powers, hearing men's thoughts to gain edge. Gender-flipped remake fumbles fresh opportunities. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A sports agent gains mind-reading powers, hearing men's thoughts to gain edge. Gender-flipped remake fumbles fresh opportunities.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/Why Him.jpg" alt="Why Him? Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/Why Him.jpg" alt="Why Him? movie poster" loading="lazy">
+                        <figcaption class="sr-only">Why Him? (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Why Him? (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A dad clashes with daughter's eccentric billionaire boyfriend. Crude humor dominates mismatched family farce. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A dad clashes with daughter's eccentric billionaire boyfriend. Crude humor dominates mismatched family farce.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/relationships/The Wedding Ringer.jpg" alt="The Wedding Ringer Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/relationships/The Wedding Ringer.jpg" alt="The Wedding Ringer movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Wedding Ringer (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Wedding Ringer (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A groom hires fake friends for his wedding. Bromantic hijinks ensue in this rental buddy comedy. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>A groom hires fake friends for his wedding. Bromantic hijinks ensue in this rental buddy comedy.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/Overboard.jpg" alt="Overboard Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/Overboard.jpg" alt="Overboard movie poster" loading="lazy">
+                        <figcaption class="sr-only">Overboard (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Overboard (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A spoiled playboy gets amnesia; a single mom convinces him he's her husband. Gender-swapped remake sinks with outdated antics. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>A spoiled playboy gets amnesia; a single mom convinces him he's her husband. Gender-swapped remake sinks with outdated antics.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/Someone Marry Barry.jpg" alt="Someone Marry Barry Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/Someone Marry Barry.jpg" alt="Someone Marry Barry movie poster" loading="lazy">
+                        <figcaption class="sr-only">Someone Marry Barry (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Someone Marry Barry (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends set up obnoxious pal with equally crude woman. Crass comedy mistakes vulgarity for laughs. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Friends set up obnoxious pal with equally crude woman. Crass comedy mistakes vulgarity for laughs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/Think Like a Man Too.jpg" alt="Think Like a Man Too Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/Think Like a Man Too.jpg" alt="Think Like a Man Too movie poster" loading="lazy">
+                        <figcaption class="sr-only">Think Like a Man Too (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Think Like a Man Too (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Couples' Vegas wedding plans go awry with wild antics. Sequel recycles jokes without fresh insights. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Couples' Vegas wedding plans go awry with wild antics. Sequel recycles jokes without fresh insights.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/What to expect When you_re Expecting.jpg" alt="What to Expect When You're Expecting Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/What to expect When you_re Expecting.jpg" alt="What to Expect When You're Expecting movie poster" loading="lazy">
+                        <figcaption class="sr-only">What to Expect When You're Expecting (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>What to Expect When You're Expecting (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Ensemble couples navigate pregnancy pitfalls. Star-studded but scattered adaptation lacks depth. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>Ensemble couples navigate pregnancy pitfalls. Star-studded but scattered adaptation lacks depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/Couples Retreat.jpg" alt="Couples Retreat Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/Couples Retreat.jpg" alt="Couples Retreat movie poster" loading="lazy">
+                        <figcaption class="sr-only">Couples Retreat (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Couples Retreat (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends' island getaway turns into mandatory therapy. Talented cast wasted on unfunny relationship retreads. Rating: 1/10.</p>
+                        <h4>Overview</h4>
+                        <p>Friends' island getaway turns into mandatory therapy. Talented cast wasted on unfunny relationship retreads.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/The Ladies Man.jpg" alt="The Ladies Man Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/The Ladies Man.jpg" alt="The Ladies Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Ladies Man (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Ladies Man (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A womanizing radio host searches for his mystery ex. Sketch comedy stretched thin into feature-length flop. Rating: 1/10.</p>
+                        <h4>Overview</h4>
+                        <p>A womanizing radio host searches for his mystery ex. Sketch comedy stretched thin into feature-length flop.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/Mother of the Bride.jpg" alt="Mother of the Bride Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/Mother of the Bride.jpg" alt="Mother of the Bride movie poster" loading="lazy">
+                        <figcaption class="sr-only">Mother of the Bride (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Mother of the Bride (2024)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A mom's ex resurfaces at daughter's destination wedding. Tropic thunder of clichés drowns star power. Rating: 1/10.</p>
+                        <h4>Overview</h4>
+                        <p>A mom's ex resurfaces at daughter's destination wedding. Tropic thunder of clichés drowns star power.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Coming-of-Age Romances</h2>
-            <p>Stories of young love, self-discovery, and growing pains.</p>
+        <!-- Coming-of-Age Romances Section -->
+        <section class="movie-section" aria-labelledby="coming-of-age-heading">
+            <header class="section-header">
+                <h2 id="coming-of-age-heading">Coming-of-Age Romances</h2>
+                <p>Stories of young love, self-discovery, and growing pains.</p>
+                <div class="section-stats">
+                    <span class="movie-count">11 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-10">
-                    <img src="../img/relationships/Pariah.jpg" alt="Pariah Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-10">
+                    <div class="rating-badge rating-10">10</div>
+                    <figure>
+                        <img src="../img/relationships/Pariah.jpg" alt="Pariah movie poster" loading="lazy">
+                        <figcaption class="sr-only">Pariah (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Pariah (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Brooklyn teen navigates her identity amid family pressures. Raw, honest portrait of queer Black girlhood finding her voice. Rating: 10/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Brooklyn teen navigates her identity amid family pressures. Raw, honest portrait of queer Black girlhood finding her voice.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/relationships/Juno.jpg" alt="Juno Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/relationships/Juno.jpg" alt="Juno movie poster" loading="lazy">
+                        <figcaption class="sr-only">Juno (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Juno (2007)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A quirky teen faces unexpected pregnancy with wit and heart. Sharp dialogue elevates coming-of-age tale beyond convention. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>A quirky teen faces unexpected pregnancy with wit and heart. Sharp dialogue elevates coming-of-age tale beyond convention.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/relationships/Love & Basketball.jpg" alt="Love & Basketball Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/relationships/Love & Basketball.jpg" alt="Love & Basketball movie poster" loading="lazy">
+                        <figcaption class="sr-only">Love & Basketball (2000)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Love & Basketball (2000)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Childhood sweethearts bond over hoops, navigating love and dreams. Passionate courtside romance scores big on authenticity. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Childhood sweethearts bond over hoops, navigating love and dreams. Passionate courtside romance scores big on authenticity.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/relationships/Nineteen Eighty-Four.JPG" alt="Nineteen Eighty-Four Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/relationships/Nineteen Eighty-Four.JPG" alt="Nineteen Eighty-Four movie poster" loading="lazy">
+                        <figcaption class="sr-only">Nineteen Eighty-Four (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Nineteen Eighty-Four (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>In dystopian society, forbidden love defies Big Brother's watchful eye. Chilling adaptation captures Orwell's warning of totalitarianism. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>In dystopian society, forbidden love defies Big Brother's watchful eye. Chilling adaptation captures Orwell's warning of totalitarianism.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/About Time.jpg" alt="About Time Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/About Time.jpg" alt="About Time movie poster" loading="lazy">
+                        <figcaption class="sr-only">About Time (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>About Time (2013)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A time-traveler learns life's lessons through reliving moments. Whimsical blend of sci-fi and heartfelt family bonds. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A time-traveler learns life's lessons through reliving moments. Whimsical blend of sci-fi and heartfelt family bonds.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/Nappily Ever After.png" alt="Nappily Ever After Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/Nappily Ever After.png" alt="Nappily Ever After movie poster" loading="lazy">
+                        <figcaption class="sr-only">Nappily Ever After (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Nappily Ever After (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A perfectionist's hair mishap sparks self-love journey. Empowering tale of embracing natural beauty and independence. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A perfectionist's hair mishap sparks self-love journey. Empowering tale of embracing natural beauty and independence.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/The Adjustment Bureau.jpg" alt="The Adjustment Bureau Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/The Adjustment Bureau.jpg" alt="The Adjustment Bureau movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Adjustment Bureau (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Adjustment Bureau (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Fate intervenes in politician's chance romance. Mind-bending chase through destiny's doors. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Fate intervenes in politician's chance romance. Mind-bending chase through destiny's doors.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/The Illusionist.jpg" alt="The Illusionist Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/The Illusionist.jpg" alt="The Illusionist movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Illusionist (2006)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Illusionist (2006)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A magician defies class and crown for childhood love. Mesmerizing mystery weaves illusion with passion. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A magician defies class and crown for childhood love. Mesmerizing mystery weaves illusion with passion.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/Everything Everything.jpg" alt="Everything, Everything Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/Everything Everything.jpg" alt="Everything, Everything movie poster" loading="lazy">
+                        <figcaption class="sr-only">Everything, Everything (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Everything, Everything (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A bubble girl's first love risks her fragile health. Cloying adaptation bubbles with teen angst overkill. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>A bubble girl's first love risks her fragile health. Cloying adaptation bubbles with teen angst overkill.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/The Notebook.jpg" alt="The Notebook Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/The Notebook.jpg" alt="The Notebook movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Notebook (2004)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Notebook (2004)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Star-crossed lovers defy class in passionate Southern romance. Tear-jerking tale manipulates emotions with practiced precision. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Star-crossed lovers defy class in passionate Southern romance. Tear-jerking tale manipulates emotions with practiced precision.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/The Perfect Match.jpg" alt="The Perfect Match Cover">
-                    <div class="movie-title">
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/The Perfect Match.jpg" alt="The Perfect Match movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Perfect Match (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Perfect Match (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A playboy bets he can commit, facing unexpected feelings. Formulaic fling fails to spark original romance. Rating: 2/10.</p>
+                        <h4>Overview</h4>
+                        <p>A playboy bets he can commit, facing unexpected feelings. Formulaic fling fails to spark original romance.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Erotic Thrillers</h2>
-            <p>Passionate affairs laced with danger and intrigue.</p>
+        <!-- Erotic Thrillers Section -->
+        <section class="movie-section" aria-labelledby="erotic-heading">
+            <header class="section-header">
+                <h2 id="erotic-heading">Erotic Thrillers</h2>
+                <p>Passionate affairs laced with danger and intrigue.</p>
+                <div class="section-stats">
+                    <span class="movie-count">8 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/relationships/Shame.jpg" alt="Shame Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/relationships/Shame.jpg" alt="Shame movie poster" loading="lazy">
+                        <figcaption class="sr-only">Shame (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Shame (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A sex addict's carefully curated life unravels when his sister arrives. Stark exploration of compulsion and emotional isolation. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A sex addict's carefully curated life unravels when his sister arrives. Stark exploration of compulsion and emotional isolation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/An Affair to Die For.jpg" alt="An Affair to Die For Cover">
-                    <div class="movie-title">
-                        <h3>An Affair to Die For (2019)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A weekend tryst turns deadly in twisted revenge plot. Tense but trope-heavy erotic suspense. Rating: 4/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/relationships/Fifty Shades of Grey.jpg" alt="Fifty Shades of Grey Cover">
-                    <div class="movie-title">
-                        <h3>Fifty Shades of Grey (2015)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A naive student enters dominant billionaire's kinky world. Steamy adaptation lacks substance beyond surface titillation. Rating: 3/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/The Perfect Guy.jpg" alt="The Perfect Guy Cover">
-                    <div class="movie-title">
-                        <h3>The Perfect Guy (2015)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Charming suitor reveals dark side in obsessive pursuit. Stalker thriller recycles scares without fresh chills. Rating: 2/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/Addicted.jpg" alt="Addicted Cover">
-                    <div class="movie-title">
-                        <h3>Addicted (2014)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A married woman's affairs spiral into dangerous obsession. Sleazy drama exploits addiction without insight or depth. Rating: 1/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/Fifty Shades Darker.jpg" alt="Fifty Shades Darker Cover">
-                    <div class="movie-title">
-                        <h3>Fifty Shades Darker (2017)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Reunited lovers face threats from past flames. Sequel deepens tedium with contrived drama and zero chemistry. Rating: 1/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/Fifty Shades Freed.jpg" alt="Fifty Shades Freed Cover">
-                    <div class="movie-title">
-                        <h3>Fifty Shades Freed (2018)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Newlyweds' bliss interrupted by vengeful shadows. Trilogy concludes with lifeless luxury and pointless peril. Rating: 1/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/When the Bough Breaks.jpg" alt="When the Bough Breaks Cover">
-                    <div class="movie-title">
-                        <h3>When the Bough Breaks (2016)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Surrogate's obsession threatens expectant couple. Formulaic thriller breaks no new ground in suspense. Rating: 1/10.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </article>
 
-        <div class="movie-section">
-            <h2>Relationship Dramas</h2>
-            <p>Explorations of marriage, affairs, and family dynamics.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/relationships/Don Jon.jpg" alt="Don Jon Cover">
-                    <div class="movie-title">
-                        <h3>Don Jon (2013)</h3>
-                    </div>
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/An Affair to Die For.jpg" alt="An Affair to Die For movie poster" loading="lazy">
+                        <figcaption class="sr-only">An Affair to Die For (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>An Affair to Die For (2019)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A ladies' man confronts his porn addiction amid budding romance. Raw look at intimacy issues with humor and heart. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A weekend tryst turns deadly in twisted revenge plot. Tense but trope-heavy erotic suspense.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/Don Juan DeMarco.jpg" alt="Don Juan DeMarco Cover">
-                    <div class="movie-title">
-                        <h3>Don Juan DeMarco (1995)</h3>
-                    </div>
+                </article>
+
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/relationships/Fifty Shades of Grey.jpg" alt="Fifty Shades of Grey movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fifty Shades of Grey (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Fifty Shades of Grey (2015)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A delusional romantic inspires his psychiatrist's fading passion. Whimsical tale celebrates love's transformative power. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A naive student enters dominant billionaire's kinky world. Steamy adaptation lacks substance beyond surface titillation.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/relationships/About Last Night.jpg" alt="About Last Night Cover">
-                    <div class="movie-title">
-                        <h3>About Last Night (2014)</h3>
-                    </div>
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/The Perfect Guy.jpg" alt="The Perfect Guy movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Perfect Guy (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Perfect Guy (2015)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>One-night stands evolve into complicated relationships. Modern remake explores commitment with urban edge. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Charming suitor reveals dark side in obsessive pursuit. Stalker thriller recycles scares without fresh chills.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/relationships/Love, Sex, and Eating the Bones.jpg" alt="Love, Sex, and Eating the Bones Cover">
-                    <div class="movie-title">
-                        <h3>Love, Sex, and Eating the Bones (2003)</h3>
-                    </div>
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/Addicted.jpg" alt="Addicted movie poster" loading="lazy">
+                        <figcaption class="sr-only">Addicted (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Addicted (2014)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A porn-addicted photographer seeks real intimacy. Sensual comedy blends erotica with emotional growth. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A married woman's affairs spiral into dangerous obsession. Sleazy drama exploits addiction without insight or depth.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/relationships/Baby Mama.jpg" alt="Baby Mama Cover">
-                    <div class="movie-title">
-                        <h3>Baby Mama (2008)</h3>
-                    </div>
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/Fifty Shades Darker.jpg" alt="Fifty Shades Darker movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fifty Shades Darker (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Fifty Shades Darker (2017)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Career woman hires surrogate, sparking class-clash comedy. Mismatched mamas-to-be deliver laughs on family bonds. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Reunited lovers face threats from past flames. Sequel deepens tedium with contrived drama and zero chemistry.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/relationships/Why Did I Get Married.jpg" alt="Why Did I Get Married? Cover">
-                    <div class="movie-title">
-                        <h3>Why Did I Get Married? (2007)</h3>
-                    </div>
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/Fifty Shades Freed.jpg" alt="Fifty Shades Freed movie poster" loading="lazy">
+                        <figcaption class="sr-only">Fifty Shades Freed (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Fifty Shades Freed (2018)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends' mountain retreat exposes marital cracks. Ensemble drama mixes laughs with relationship revelations. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Newlyweds' bliss interrupted by vengeful shadows. Trilogy concludes with lifeless luxury and pointless peril.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/relationships/Black Coffee.jpg" alt="Black Coffee Cover">
-                    <div class="movie-title">
-                        <h3>Black Coffee (2014)</h3>
-                    </div>
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/When the Bough Breaks.jpg" alt="When the Bough Breaks movie poster" loading="lazy">
+                        <figcaption class="sr-only">When the Bough Breaks (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>When the Bough Breaks (2016)</h3>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Dumped executive finds new love amid family drama. Brews familiar romance tropes without much kick. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Surrogate's obsession threatens expectant couple. Formulaic thriller breaks no new ground in suspense.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/relationships/Good Deeds.jpg" alt="Good Deeds Cover">
-                    <div class="movie-title">
-                        <h3>Good Deeds (2012)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Wealthy exec helps struggling single mom, finding purpose. Predictable philanthropy romance lacks genuine spark. Rating: 3/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/relationships/Nobody's Fool.png" alt="Nobody's Fool Cover">
-                    <div class="movie-title">
-                        <h3>Nobody's Fool (2018)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Sisters uncover online boyfriend's deception. Raunchy comedy prioritizes laughs over coherent plotting. Rating: 3/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/relationships/Why Did I Get Married Too.jpg" alt="Why Did I Get Married Too? Cover">
-                    <div class="movie-title">
-                        <h3>Why Did I Get Married Too? (2010)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Couples' Bahamas getaway reignites old flames and fights. Sequel amplifies drama but recycles marital melodrama. Rating: 3/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/relationships/Meet the Browns.jpg" alt="Meet the Browns Cover">
-                    <div class="movie-title">
-                        <h3>Meet the Browns (2008)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Single mom discovers eccentric Southern family inheritance. Culture clash comedy mixes laughs with family lessons. Rating: 3/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/Acrimony.jpg" alt="Acrimony Cover">
-                    <div class="movie-title">
-                        <h3>Acrimony (2018)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Betrayed wife's revenge spirals into obsession. Over-the-top melodrama drowns in bitter excess. Rating: 2/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/Diary of a Mad Black Woman.jpg" alt="Diary of a Mad Black Woman Cover">
-                    <div class="movie-title">
-                        <h3>Diary of a Mad Black Woman (2005)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Dumped wife rebuilds life with new love. Broad comedy clashes with heavy drama tones. Rating: 2/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-2">
-                    <img src="../img/relationships/I Think I Love My Wife.jpg" alt="I Think I Love My Wife Cover">
-                    <div class="movie-title">
-                        <h3>I Think I Love My Wife (2007)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Married man tempted by old flame's return. Midlife crisis comedy fumbles marital insights. Rating: 2/10.</p>
-                    </div>
-                </div>
-                <div class="movie-card rating-1">
-                    <img src="../img/relationships/35 and Ticking.jpg" alt="35 and Ticking Cover">
-                    <div class="movie-title">
-                        <h3>35 and Ticking (2011)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Friends face midlife pressures to settle down. Ticking clock comedy runs out of fresh ideas. Rating: 1/10.</p>
-                    </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
+
+        <!-- Relationship Dramas Section -->
+        <section class="movie-section" aria-labelledby="drama-heading">
+            <header class="section-header">
+                <h2 id="drama-heading">Relationship Dramas</h2>
+                <p>Explorations of marriage, affairs, and family dynamics.</p>
+                <div class="section-stats">
+                    <span class="movie-count">15 movies</span>
+                </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/relationships/Don Jon.jpg" alt="Don Jon movie poster" loading="lazy">
+                        <figcaption class="sr-only">Don Jon (2013)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Don Jon (2013)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A ladies' man confronts his porn addiction amid budding romance. Raw look at intimacy issues with humor and heart.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/Don Juan DeMarco.jpg" alt="Don Juan DeMarco movie poster" loading="lazy">
+                        <figcaption class="sr-only">Don Juan DeMarco (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Don Juan DeMarco (1995)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A delusional romantic inspires his psychiatrist's fading passion. Whimsical tale celebrates love's transformative power.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/relationships/About Last Night.jpg" alt="About Last Night movie poster" loading="lazy">
+                        <figcaption class="sr-only">About Last Night (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>About Last Night (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>One-night stands evolve into complicated relationships. Modern remake explores commitment with urban edge.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/relationships/Love, Sex, and Eating the Bones.jpg" alt="Love, Sex, and Eating the Bones movie poster" loading="lazy">
+                        <figcaption class="sr-only">Love, Sex, and Eating the Bones (2003)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Love, Sex, and Eating the Bones (2003)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>A porn-addicted photographer seeks real intimacy. Sensual comedy blends erotica with emotional growth.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/relationships/Baby Mama.jpg" alt="Baby Mama movie poster" loading="lazy">
+                        <figcaption class="sr-only">Baby Mama (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Baby Mama (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Career woman hires surrogate, sparking class-clash comedy. Mismatched mamas-to-be deliver laughs on family bonds.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/relationships/Why Did I Get Married.jpg" alt="Why Did I Get Married? movie poster" loading="lazy">
+                        <figcaption class="sr-only">Why Did I Get Married? (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Why Did I Get Married? (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Friends' mountain retreat exposes marital cracks. Ensemble drama mixes laughs with relationship revelations.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/relationships/Black Coffee.jpg" alt="Black Coffee movie poster" loading="lazy">
+                        <figcaption class="sr-only">Black Coffee (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Black Coffee (2014)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Dumped executive finds new love amid family drama. Brews familiar romance tropes without much kick.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/relationships/Good Deeds.jpg" alt="Good Deeds movie poster" loading="lazy">
+                        <figcaption class="sr-only">Good Deeds (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Good Deeds (2012)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Wealthy exec helps struggling single mom, finding purpose. Predictable philanthropy romance lacks genuine spark.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/relationships/Nobody's Fool.png" alt="Nobody's Fool movie poster" loading="lazy">
+                        <figcaption class="sr-only">Nobody's Fool (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Nobody's Fool (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Sisters uncover online boyfriend's deception. Raunchy comedy prioritizes laughs over coherent plotting.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/relationships/Why Did I Get Married Too.jpg" alt="Why Did I Get Married Too? movie poster" loading="lazy">
+                        <figcaption class="sr-only">Why Did I Get Married Too? (2010)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Why Did I Get Married Too? (2010)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Couples' Bahamas getaway reignites old flames and fights. Sequel amplifies drama but recycles marital melodrama.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/relationships/Meet the Browns.jpg" alt="Meet the Browns movie poster" loading="lazy">
+                        <figcaption class="sr-only">Meet the Browns (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Meet the Browns (2008)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Single mom discovers eccentric Southern family inheritance. Culture clash comedy mixes laughs with family lessons.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/Acrimony.jpg" alt="Acrimony movie poster" loading="lazy">
+                        <figcaption class="sr-only">Acrimony (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Acrimony (2018)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Betrayed wife's revenge spirals into obsession. Over-the-top melodrama drowns in bitter excess.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/Diary of a Mad Black Woman.jpg" alt="Diary of a Mad Black Woman movie poster" loading="lazy">
+                        <figcaption class="sr-only">Diary of a Mad Black Woman (2005)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>Diary of a Mad Black Woman (2005)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Dumped wife rebuilds life with new love. Broad comedy clashes with heavy drama tones.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-2">
+                    <div class="rating-badge rating-2">2</div>
+                    <figure>
+                        <img src="../img/relationships/I Think I Love My Wife.jpg" alt="I Think I Love My Wife movie poster" loading="lazy">
+                        <figcaption class="sr-only">I Think I Love My Wife (2007)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>I Think I Love My Wife (2007)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Married man tempted by old flame's return. Midlife crisis comedy fumbles marital insights.</p>
+                    </div>
+                </article>
+
+                <article class="movie-card rating-1">
+                    <div class="rating-badge rating-1">1</div>
+                    <figure>
+                        <img src="../img/relationships/35 and Ticking.jpg" alt="35 and Ticking movie poster" loading="lazy">
+                        <figcaption class="sr-only">35 and Ticking (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>35 and Ticking (2011)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Friends face midlife pressures to settle down. Ticking clock comedy runs out of fresh ideas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>

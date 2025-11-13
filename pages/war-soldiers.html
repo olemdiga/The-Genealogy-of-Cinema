@@ -3,21 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>War & Soldiers</title>
+    <title>War & Soldiers - Olems Watchlist</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Showcasing war and soldier movies sorted by theme, with razor-sharp, witty overviews and objective ratings based on Rotten Tomatoes consensus.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Showcasing war and soldier movies I've watched, rated by color. Explore WWII epics, modern warfare, elite squads, and military dramas.">
     <link rel="icon" href="../olem.png" sizes="any">
 </head>
 
 <body>
     <header>
+        <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">&#9776; Menu</button>
         <h1>War & Soldiers</h1>
-        <span class="openbtn" onclick="openNav()">&#9776; Menu</span>
+        <p>Heroic battles, gritty modern conflicts, elite special forces, and harrowing tales of soldiers facing impossible odds across different eras and theaters of war.</p>
+        <div class="section-stats">
+            <span class="movie-count">Total: 47 movies</span>
+            <span class="movie-count">9 Categories</span>
+        </div>
     </header>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav id="mySidenav" class="sidenav" aria-label="Main navigation">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation menu">&times;</button>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="action.html">Action</a></li>
@@ -53,479 +58,735 @@
             <li><a href="spy-film.html">Spy Film</a></li>
             <li><a href="stand-up.html">Stand-up</a></li>
             <li><a href="superheroes.html">Superheroes</a></li>
+            <li><a href="war-soldiers.html" aria-current="page">War & Soldiers</a></li>
+            <li><a href="shows.html">TV Shows</a></li>
         </ul>
-    </div>
+    </nav>
 
     <main>
-        <div class="movie-section">
-            <h2>World War II Epics</h2>
-            <p>Heroic battles and harrowing tales from the global conflict.</p>
+        <!-- World War II Epics Section -->
+        <section class="movie-section" aria-labelledby="wwii-epics-heading">
+            <header class="section-header">
+                <h2 id="wwii-epics-heading">World War II Epics</h2>
+                <p>Heroic battles and harrowing tales from the global conflict that defined a generation.</p>
+                <div class="section-stats">
+                    <span class="movie-count">10 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/war/Schindlers List.jpg" alt="Schindler's List Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/war/Schindlers List.jpg" alt="Schindler's List movie poster" loading="lazy">
+                        <figcaption class="sr-only">Schindler's List (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Schindler's List (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Spielberg’s gut-wrenching Holocaust saga follows a profiteer saving lives. Some call it emotionally manipulative, but its raw power and humanity are undeniable. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Spielberg's gut-wrenching Holocaust saga follows a profiteer saving lives. Some call it emotionally manipulative, but its raw power and humanity are undeniable.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-9">
-                    <img src="../img/war/Saving Private Ryan.jpg" alt="Saving Private Ryan Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/war/Saving Private Ryan.jpg" alt="Saving Private Ryan movie poster" loading="lazy">
+                        <figcaption class="sr-only">Saving Private Ryan (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Saving Private Ryan (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>D-Day’s brutal chaos leads a squad to save one soldier. Critics gripe about sentimental stretches, but the visceral combat and heart hit like shrapnel. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>D-Day's brutal chaos leads a squad to save one soldier. Critics gripe about sentimental stretches, but the visceral combat and heart hit like shrapnel.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/war/The Pianist.jpg" alt="The Pianist Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/The Pianist.jpg" alt="The Pianist movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Pianist (2002)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Pianist (2002)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Jewish pianist survives Warsaw’s horrors through music and grit. Some find it cold, but Polanski’s stark lens and Brody’s haunting performance resonate. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Jewish pianist survives Warsaw's horrors through music and grit. Some find it cold, but Polanski's stark lens and Brody's haunting performance resonate.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/war/Dunkirk.jpg" alt="Dunkirk Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/Dunkirk.jpg" alt="Dunkirk movie poster" loading="lazy">
+                        <figcaption class="sr-only">Dunkirk (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Dunkirk (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Nolan’s time-juggled evacuation epic drowns you in tension. Character depth takes flak, but the relentless pace and visuals storm the beaches. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Nolan's time-juggled evacuation epic drowns you in tension. Character depth takes flak, but the relentless pace and visuals storm the beaches.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/war/Inglourious Basterds.jpg" alt="Inglourious Basterds Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/Inglourious Basterds.jpg" alt="Inglourious Basterds movie poster" loading="lazy">
+                        <figcaption class="sr-only">Inglourious Basterds (2009)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Inglourious Basterds (2009)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Tarantino’s Nazi-scalping fantasy crackles with dialogue and gore. Historical liberties irk purists, but the audacious revenge tale sizzles like a swastika on fire. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Tarantino's Nazi-scalping fantasy crackles with dialogue and gore. Historical liberties irk purists, but the audacious revenge tale sizzles like a swastika on fire.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/war/Darkest Hour.jpg" alt="Darkest Hour Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/Darkest Hour.jpg" alt="Darkest Hour movie poster" loading="lazy">
+                        <figcaption class="sr-only">Darkest Hour (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Darkest Hour (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Churchill’s wartime defiance roars through Oldman’s prosthetics. Some call it hagiographic fluff, but the oratory fire and stakes make it a bulldog triumph. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Churchill's wartime defiance roars through Oldman's prosthetics. Some call it hagiographic fluff, but the oratory fire and stakes make it a bulldog triumph.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/The Boy in Striped Pyjamas.jpg" alt="The Boy in the Striped Pajamas Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/The Boy in Striped Pyjamas.jpg" alt="The Boy in the Striped Pajamas movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Boy in the Striped Pajamas (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Boy in the Striped Pajamas (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Nazi kid befriends a camp prisoner, naive to the horrors. Critics torch the simplistic lens, but the gut-punch ending leaves scars. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Nazi kid befriends a camp prisoner, naive to the horrors. Critics torch the simplistic lens, but the gut-punch ending leaves scars.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/The Man with the Iron Heart.jpg" alt="The Man with the Iron Heart Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/The Man with the Iron Heart.jpg" alt="The Man with the Iron Heart movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Man with the Iron Heart (2017)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Man with the Iron Heart (2017)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Resistance fighters plot to kill Nazi butcher Heydrich. Uneven pacing and thin characters dull the edge, but the tense assassination keeps it from surrender. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Resistance fighters plot to kill Nazi butcher Heydrich. Uneven pacing and thin characters dull the edge, but the tense assassination keeps it from surrender.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/war/Ashes in the Snow.jpg" alt="Ashes in the Snow Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/war/Ashes in the Snow.jpg" alt="Ashes in the Snow movie poster" loading="lazy">
+                        <figcaption class="sr-only">Ashes in the Snow (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Ashes in the Snow (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A teen artist endures Stalin’s gulags with hope. Heavy-handed drama and YA tropes dull the edge, but the grim history keeps it chilling. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A teen artist endures Stalin's gulags with hope. Heavy-handed drama and YA tropes dull the edge, but the grim history keeps it chilling.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/war/Where Hands Touch.jpg" alt="Where Hands Touch Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/war/Where Hands Touch.jpg" alt="Where Hands Touch movie poster" loading="lazy">
+                        <figcaption class="sr-only">Where Hands Touch (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Where Hands Touch (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Black teen’s Nazi romance in WWII Germany sparks debate. Critics torch the tone-deaf love story, but the bold premise ekes out some weight. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Black teen's Nazi romance in WWII Germany sparks debate. Critics torch the tone-deaf love story, but the bold premise ekes out some weight.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Modern Warfare</h2>
-            <p>Post-9/11 conflicts with gritty soldiers and moral gray zones.</p>
+        <!-- Modern Warfare Section -->
+        <section class="movie-section" aria-labelledby="modern-warfare-heading">
+            <header class="section-header">
+                <h2 id="modern-warfare-heading">Modern Warfare</h2>
+                <p>Post-9/11 conflicts with gritty soldiers and moral gray zones in contemporary battlefields.</p>
+                <div class="section-stats">
+                    <span class="movie-count">5 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/war/The Hurt Locker.jpg" alt="The Hurt Locker Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/war/The Hurt Locker.jpg" alt="The Hurt Locker movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Hurt Locker (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Hurt Locker (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bomb squad thrill-seekers defuse IEDs in Iraq's urban powder keg, where every curb hides a boom. Bigelow's pulse-pounding epic nails war's addictive rush, though some dub it tension overkill; still, its gritty realism explodes expectations. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bomb squad thrill-seekers defuse IEDs in Iraq's urban powder keg, where every curb hides a boom. Bigelow's pulse-pounding epic nails war's addictive rush, though some dub it tension overkill; still, its gritty realism explodes expectations.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/war/American Sniper.jpg" alt="American Sniper Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/American Sniper.jpg" alt="American Sniper movie poster" loading="lazy">
+                        <figcaption class="sr-only">American Sniper (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>American Sniper (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Eastwood’s take on sniper Chris Kyle nails tension and trauma. Jingoism and simplification draw fire, but Cooper’s haunted aim hits the mark. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Eastwood's take on sniper Chris Kyle nails tension and trauma. Jingoism and simplification draw fire, but Cooper's haunted aim hits the mark.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/12 Strong.jpg" alt="12 Strong Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/12 Strong.jpg" alt="12 Strong movie poster" loading="lazy">
+                        <figcaption class="sr-only">12 Strong (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>12 Strong (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Post-9/11 Green Berets ride horses to rout Taliban. Generic heroics and thin depth irk, but the gritty action and Hemsworth’s grit gallop hard. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Post-9/11 Green Berets ride horses to rout Taliban. Generic heroics and thin depth irk, but the gritty action and Hemsworth's grit gallop hard.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/13 Hours - The Secret Soldiers of Benghazi.jpg" alt="13 Hours: The Secret Soldiers of Benghazi Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/13 Hours - The Secret Soldiers of Benghazi.jpg" alt="13 Hours: The Secret Soldiers of Benghazi movie poster" loading="lazy">
+                        <figcaption class="sr-only">13 Hours: The Secret Soldiers of Benghazi (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>13 Hours: The Secret Soldiers of Benghazi (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Bay’s chaotic take on Benghazi’s siege pumps adrenaline. Political bias and bombast bug some, but the raw combat keeps it locked and loaded. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Bay's chaotic take on Benghazi's siege pumps adrenaline. Political bias and bombast bug some, but the raw combat keeps it locked and loaded.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/Eye in the Sky.jpg" alt="Eye in the Sky Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/Eye in the Sky.jpg" alt="Eye in the Sky movie poster" loading="lazy">
+                        <figcaption class="sr-only">Eye in the Sky (2015)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Eye in the Sky (2015)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Drone strike debates spark moral firestorms in real time. Didactic moments preach, but Mirren’s steel and tense ethics keep it laser-focused. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Drone strike debates spark moral firestorms in real time. Didactic moments preach, but Mirren's steel and tense ethics keep it laser-focused.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Rambo & Lone Warriors</h2>
-            <p>One-man armies mowing down enemies with grit and guns.</p>
+        <!-- Rambo & Lone Warriors Section -->
+        <section class="movie-section" aria-labelledby="rambo-lone-warriors-heading">
+            <header class="section-header">
+                <h2 id="rambo-lone-warriors-heading">Rambo & Lone Warriors</h2>
+                <p>One-man armies mowing down enemies with grit, guns, and sheer determination against overwhelming odds.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/war/First Blood.jpg" alt="First Blood Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/First Blood.jpg" alt="First Blood movie poster" loading="lazy">
+                        <figcaption class="sr-only">First Blood (1982)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>First Blood (1982)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rambo’s hunted vet snaps in a small-town showdown. Some see it as cartoonish, but Stallone’s raw trauma and survival grit carve a classic. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rambo's hunted vet snaps in a small-town showdown. Some see it as cartoonish, but Stallone's raw trauma and survival grit carve a classic.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/Sisu.jpg" alt="Sisu Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/Sisu.jpg" alt="Sisu movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sisu (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sisu (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A Finnish miner slaughters Nazis for his gold in WWII. Over-the-top gore divides, but the lean, bloody revenge romp is a Nordic middle finger. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>A Finnish miner slaughters Nazis for his gold in WWII. Over-the-top gore divides, but the lean, bloody revenge romp is a Nordic middle finger.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/war/Rambo First Blood II.jpg" alt="Rambo: First Blood Part II Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/war/Rambo First Blood II.jpg" alt="Rambo: First Blood Part II movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rambo: First Blood Part II (1985)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rambo: First Blood Part II (1985)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rambo rescues POWs with '80s muscle and explosions. Uneven stakes bore, but the relentless action and one-take carnage crush. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rambo rescues POWs with '80s muscle and explosions. Uneven stakes bore, but the relentless action and one-take carnage crush.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/war/Rambo 3.jpg" alt="Rambo III Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/war/Rambo 3.jpg" alt="Rambo III movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rambo III (1988)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rambo III (1988)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rambo aids Afghan rebels with tank-busting bravado. Uneven pacing and thin characters dull the edge, but the tense assassination keeps it from surrender. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rambo aids Afghan rebels with tank-busting bravado. Uneven pacing and thin characters dull the edge, but the tense assassination keeps it from surrender.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/war/Rambo.jpg" alt="Rambo Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/war/Rambo.jpg" alt="Rambo movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rambo (2008)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rambo (2008)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Rambo rescues missionaries from Burmese warlords with extreme prejudice. Over-the-top gore and thin plot divide, but Sly’s grizzled rampage keeps the body count biblical. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Rambo rescues missionaries from Burmese warlords with extreme prejudice. Over-the-top gore and thin plot divide, but Sly's grizzled rampage keeps the body count biblical.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/war/Rambo - Last Blood.jpg" alt="Rambo: Last Blood Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/war/Rambo - Last Blood.jpg" alt="Rambo: Last Blood movie poster" loading="lazy">
+                        <figcaption class="sr-only">Rambo: Last Blood (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Rambo: Last Blood (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Aging Rambo slaughters cartels for family vengeance. Xenophobic vibes and tired tropes tank, but the gory traps give fans a final bloodbath. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>Aging Rambo slaughters cartels for family vengeance. Xenophobic vibes and tired tropes tank, but the gory traps give fans a final bloodbath.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Elite Squads</h2>
-            <p>Special forces and mercenaries in high-stakes missions.</p>
+        <!-- Elite Squads Section -->
+        <section class="movie-section" aria-labelledby="elite-squads-heading">
+            <header class="section-header">
+                <h2 id="elite-squads-heading">Elite Squads</h2>
+                <p>Special forces and mercenaries in high-stakes missions requiring precision, teamwork, and extreme firepower.</p>
+                <div class="section-stats">
+                    <span class="movie-count">6 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-8">
-                    <img src="../img/war/Hacksaw Ridge.jpg" alt="Hacksaw Ridge Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/Hacksaw Ridge.jpg" alt="Hacksaw Ridge movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hacksaw Ridge (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hacksaw Ridge (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A pacifist medic saves lives in WWII’s bloodiest battles. Melodrama bugs some, but Garfield’s faith and Gibson’s brutal combat make it a hero’s hymn. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>A pacifist medic saves lives in WWII's bloodiest battles. Melodrama bugs some, but Garfield's faith and Gibson's brutal combat make it a hero's hymn.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/Extraction.jpg" alt="Extraction Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/Extraction.jpg" alt="Extraction movie poster" loading="lazy">
+                        <figcaption class="sr-only">Extraction (2020)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Extraction (2020)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hemsworth’s merc rescues a kid in Dhaka’s chaos. Thin plot and white-saviour vibes irk, but the relentless action and one-take carnage crush. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Hemsworth's merc rescues a kid in Dhaka's chaos. Thin plot and white-saviour vibes irk, but the relentless action and one-take carnage crush.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/war/Extraction 2.jpg" alt="Extraction 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/war/Extraction 2.jpg" alt="Extraction 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">Extraction 2 (2023)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Extraction 2 (2023)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Hemsworth’s back for another bullet-fest rescue. Repetitive stakes bore, but the insane action sequences keep this merc sequel firing on all cylinders. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Hemsworth's back for another bullet-fest rescue. Repetitive stakes bore, but the insane action sequences keep this merc sequel firing on all cylinders.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/war/The Expendables 2.jpg" alt="The Expendables 2 Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/war/The Expendables 2.jpg" alt="The Expendables 2 movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Expendables 2 (2012)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Expendables 2 (2012)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Stallone’s aging mercs blast through a retro shoot-’em-up. Brainless excess numbs, but the '80s star power and cheesy chaos make it a guilty blast. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Stallone's aging mercs blast through a retro shoot-'em-up. Brainless excess numbs, but the '80s star power and cheesy chaos make it a guilty blast.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/war/Hunter Killer.jpg" alt="Hunter Killer Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/war/Hunter Killer.jpg" alt="Hunter Killer movie poster" loading="lazy">
+                        <figcaption class="sr-only">Hunter Killer (2018)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Hunter Killer (2018)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Sub captain Butler rescues a Russian prez. Clichéd plot and B-movie vibes sink, but the underwater action keeps it from total submersion. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Sub captain Butler rescues a Russian prez. Clichéd plot and B-movie vibes sink, but the underwater action keeps it from total submersion.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/war/Seal Team Eight - Behind Enemy Lines.jpg" alt="Seal Team Eight: Behind Enemy Lines Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/war/Seal Team Eight - Behind Enemy Lines.jpg" alt="Seal Team Eight: Behind Enemy Lines movie poster" loading="lazy">
+                        <figcaption class="sr-only">Seal Team Eight: Behind Enemy Lines (2014)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Seal Team Eight: Behind Enemy Lines (2014)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>SEALs hunt uranium in Africa with low-budget grit. Generic action and weak script flop, but the shootouts keep this DTV mission barely alive. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>SEALs hunt uranium in Africa with low-budget grit. Generic action and weak script flop, but the shootouts keep this DTV mission barely alive.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Military Snipers</h2>
-            <p>Sharpshooters taking aim at enemies and inner demons.</p>
+        <!-- Military Snipers Section -->
+        <section class="movie-section" aria-labelledby="military-snipers-heading">
+            <header class="section-header">
+                <h2 id="military-snipers-heading">Military Snipers</h2>
+                <p>Sharpshooters taking aim at enemies and inner demons from hidden positions with precision and patience.</p>
+                <div class="section-stats">
+                    <span class="movie-count">3 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/war/Sniper.jpg" alt="Sniper Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/Sniper.jpg" alt="Sniper movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sniper (1993)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sniper (1993)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Berenger’s sniper hunts a jungle warlord with rookie baggage. Dated tropes and slow aim miss, but the tense shootouts keep it in the crosshairs. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Berenger's sniper hunts a jungle warlord with rookie baggage. Dated tropes and slow aim miss, but the tense shootouts keep it in the crosshairs.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/war/Sniper - Reloaded.jpg" alt="Sniper: Reloaded Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/war/Sniper - Reloaded.jpg" alt="Sniper: Reloaded movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sniper: Reloaded (2011)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sniper: Reloaded (2011)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A young sniper avenges his squad in Congo. B-grade clichés and weak stakes misfire, but the action keeps this DTV shot from total recoil. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A young sniper avenges his squad in Congo. B-grade clichés and weak stakes misfire, but the action keeps this DTV shot from total recoil.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-3">
-                    <img src="../img/war/Sniper - Ghost Shooter.jpg" alt="Sniper: Ghost Shooter Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-3">
+                    <div class="rating-badge rating-3">3</div>
+                    <figure>
+                        <img src="../img/war/Sniper - Ghost Shooter.jpg" alt="Sniper: Ghost Shooter movie poster" loading="lazy">
+                        <figcaption class="sr-only">Sniper: Ghost Shooter (2016)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Sniper: Ghost Shooter (2016)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Snipers hunt terrorists with drones and betrayals. Cheap production and thin plot jam, but the barebones action scrapes a faint hit. Rating: 3/10.</p>
+                        <h4>Overview</h4>
+                        <p>Snipers hunt terrorists with drones and betrayals. Cheap production and thin plot jam, but the barebones action scrapes a faint hit.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Naval & Air Combat</h2>
-            <p>High-flying dogfights and tense submarine showdowns.</p>
+        <!-- Naval & Air Combat Section -->
+        <section class="movie-section" aria-labelledby="naval-air-combat-heading">
+            <header class="section-header">
+                <h2 id="naval-air-combat-heading">Naval & Air Combat</h2>
+                <p>High-flying dogfights and tense submarine showdowns in the air and beneath the waves.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-9">
-                    <img src="../img/war/Top Gun Maverick.jpg" alt="Top Gun: Maverick Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-9">
+                    <div class="rating-badge rating-9">9</div>
+                    <figure>
+                        <img src="../img/war/Top Gun Maverick.jpg" alt="Top Gun: Maverick movie poster" loading="lazy">
+                        <figcaption class="sr-only">Top Gun: Maverick (2022)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Top Gun: Maverick (2022)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Maverick trains pilots for a suicide mission with jaw-dropping jets. Nostalgia reliance nags, but the aerial stunts and Cruise’s charm soar sky-high. Rating: 9/10.</p>
+                        <h4>Overview</h4>
+                        <p>Maverick trains pilots for a suicide mission with jaw-dropping jets. Nostalgia reliance nags, but the aerial stunts and Cruise's charm soar sky-high.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-8">
-                    <img src="../img/war/Top Gun.jpg" alt="Top Gun Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-8">
+                    <div class="rating-badge rating-8">8</div>
+                    <figure>
+                        <img src="../img/war/Top Gun.jpg" alt="Top Gun movie poster" loading="lazy">
+                        <figcaption class="sr-only">Top Gun (1986)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Top Gun (1986)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cruise’s hotshot pilot buzzes towers and hearts. Dated cheese and thin plot crash, but the dogfights and '80s vibes keep it flying. Rating: 8/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cruise's hotshot pilot buzzes towers and hearts. Dated cheese and thin plot crash, but the dogfights and '80s vibes keep it flying.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-7">
-                    <img src="../img/war/Crimson Tide.jpg" alt="Crimson Tide Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/Crimson Tide.jpg" alt="Crimson Tide movie poster" loading="lazy">
+                        <figcaption class="sr-only">Crimson Tide (1995)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Crimson Tide (1995)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Washington and Hackman clash in a sub’s nuke standoff. Exaggerated drama bugs, but the sweaty tension and star power keep it submerged in thrills. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Washington and Hackman clash in a sub's nuke standoff. Exaggerated drama bugs, but the sweaty tension and star power keep it submerged in thrills.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-6">
-                    <img src="../img/war/The Rock.jpg" alt="The Rock Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/war/The Rock.jpg" alt="The Rock movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Rock (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>The Rock (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Cage and Connery storm Alcatraz to stop a rogue general. Bay’s bombast overwhelms, but the wild action and quippy chemistry keep it explosive. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Cage and Connery storm Alcatraz to stop a rogue general. Bay's bombast overwhelms, but the wild action and quippy chemistry keep it explosive.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Sci-Fi Soldiers</h2>
-            <p>Futuristic warriors battling tech or clones.</p>
+        <!-- Sci-Fi Soldiers Section -->
+        <section class="movie-section" aria-labelledby="sci-fi-soldiers-heading">
+            <header class="section-header">
+                <h2 id="sci-fi-soldiers-heading">Sci-Fi Soldiers</h2>
+                <p>Futuristic warriors battling advanced technology, clones, and cybernetic enhancements in tomorrow's battlefields.</p>
+                <div class="section-stats">
+                    <span class="movie-count">4 movies</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/war/Gemini Man.jpg" alt="Gemini Man Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/Gemini Man.jpg" alt="Gemini Man movie poster" loading="lazy">
+                        <figcaption class="sr-only">Gemini Man (2019)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Gemini Man (2019)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Will Smith hunts his younger clone in a techy shootout. Uneven script and creepy CGI fumble, but the action and Smith’s charm keep it fighting. Rating: 7/10.</p>
+                        <h4>Overview</h4>
+                        <p>Will Smith hunts his younger clone in a techy shootout. Uneven script and creepy CGI fumble, but the action and Smith's charm keep it fighting.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/war/Soldier.webp" alt="Soldier Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/war/Soldier.webp" alt="Soldier movie poster" loading="lazy">
+                        <figcaption class="sr-only">Soldier (1998)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Soldier (1998)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Russell’s mute super-soldier battles obsolescence. Thin plot and grim tone tank, but the stoic action keeps the sci-fi grunt trudging. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Russell's mute super-soldier battles obsolescence. Thin plot and grim tone tank, but the stoic action keeps the sci-fi grunt trudging.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-5">
-                    <img src="../img/war/Universal Soldier.jpg" alt="Universal Soldier Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-5">
+                    <div class="rating-badge rating-5">5</div>
+                    <figure>
+                        <img src="../img/war/Universal Soldier.jpg" alt="Universal Soldier movie poster" loading="lazy">
+                        <figcaption class="sr-only">Universal Soldier (1992)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Universal Soldier (1992)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Van Damme’s undead soldier fights his cyborg rival. Cheesy '90s vibes and weak story flop, but the action nostalgia keeps it barely reanimated. Rating: 5/10.</p>
+                        <h4>Overview</h4>
+                        <p>Van Damme's undead soldier fights his cyborg rival. Cheesy '90s vibes and weak story flop, but the action nostalgia keeps it barely reanimated.</p>
                     </div>
-                </div>
-                <div class="movie-card rating-4">
-                    <img src="../img/war/Solo.jpg" alt="Solo Cover">
-                    <div class="movie-title">
+                </article>
+                
+                <article class="movie-card rating-4">
+                    <div class="rating-badge rating-4">4</div>
+                    <figure>
+                        <img src="../img/war/Solo.jpg" alt="Solo movie poster" loading="lazy">
+                        <figcaption class="sr-only">Solo (1996)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Solo (1996)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>A rogue android soldier battles for freedom. Low-budget clichés and dull pacing misfire, but the oddball premise keeps it faintly operational. Rating: 4/10.</p>
+                        <h4>Overview</h4>
+                        <p>A rogue android soldier battles for freedom. Low-budget clichés and dull pacing misfire, but the oddball premise keeps it faintly operational.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Cold War & Invasion</h2>
-            <p>Tensions of espionage and imagined invasions.</p>
+        <!-- Cold War & Invasion Section -->
+        <section class="movie-section" aria-labelledby="cold-war-invasion-heading">
+            <header class="section-header">
+                <h2 id="cold-war-invasion-heading">Cold War & Invasion</h2>
+                <p>Tensions of espionage and imagined invasions during the ideological standoff between superpowers.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
+                </div>
+            </header>
+            
             <div class="movie-grid">
-                <div class="movie-card rating-6">
-                    <img src="../img/war/Red Dawn.jpg" alt="Red Dawn Cover">
-                    <div class="movie-title">
+                <article class="movie-card rating-6">
+                    <div class="rating-badge rating-6">6</div>
+                    <figure>
+                        <img src="../img/war/Red Dawn.jpg" alt="Red Dawn movie poster" loading="lazy">
+                        <figcaption class="sr-only">Red Dawn (1984)</figcaption>
+                    </figure>
+                    <header class="movie-title">
                         <h3>Red Dawn (1984)</h3>
-                    </div>
+                    </header>
                     <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Teens guerrilla-fight a Soviet invasion of America. Jingoistic cheese and dated paranoia flop, but the '80s grit keeps it a nostalgic skirmish. Rating: 6/10.</p>
+                        <h4>Overview</h4>
+                        <p>Teens guerrilla-fight a Soviet invasion of America. Jingoistic cheese and dated paranoia flop, but the '80s grit keeps it a nostalgic skirmish.</p>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="movie-section">
-            <h2>Historical Military Dramas</h2>
-            <p>Unsung heroes and overlooked battles brought to light.</p>
-            <div class="movie-grid">
-                <div class="movie-card rating-7">
-                    <img src="../img/war/The Six Triple Eight.jpg" alt="The Six Triple Eight Cover">
-                    <div class="movie-title">
-                        <h3>The Six Triple Eight (2024)</h3>
-                    </div>
-                    <div class="overview">
-                        <h3>Overview</h3>
-                        <p>Black women soldiers sort WWII mail under fire. Predictable beats soften the impact, but the untold story and heart keep it marching. Rating: 7/10.</p>
-                    </div>
+        <!-- Historical Military Dramas Section -->
+        <section class="movie-section" aria-labelledby="historical-military-dramas-heading">
+            <header class="section-header">
+                <h2 id="historical-military-dramas-heading">Historical Military Dramas</h2>
+                <p>Unsung heroes and overlooked battles brought to light through compelling storytelling and historical accuracy.</p>
+                <div class="section-stats">
+                    <span class="movie-count">1 movie</span>
                 </div>
+            </header>
+            
+            <div class="movie-grid">
+                <article class="movie-card rating-7">
+                    <div class="rating-badge rating-7">7</div>
+                    <figure>
+                        <img src="../img/war/The Six Triple Eight.jpg" alt="The Six Triple Eight movie poster" loading="lazy">
+                        <figcaption class="sr-only">The Six Triple Eight (2024)</figcaption>
+                    </figure>
+                    <header class="movie-title">
+                        <h3>The Six Triple Eight (2024)</h3>
+                    </header>
+                    <div class="overview">
+                        <h4>Overview</h4>
+                        <p>Black women soldiers sort WWII mail under fire. Predictable beats soften the impact, but the untold story and heart keep it marching.</p>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Olems Watchlist. All rights reserved.</p>
     </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>
