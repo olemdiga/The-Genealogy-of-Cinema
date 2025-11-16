@@ -43,3 +43,28 @@ document.addEventListener('keydown', function(event) {
         closeNav();
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const movieCards = document.querySelectorAll('.movie-card');
+    
+    movieCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Close other open overviews
+            movieCards.forEach(otherCard => {
+                if (otherCard !== card && otherCard.classList.contains('active')) {
+                    otherCard.classList.remove('active');
+                }
+            });
+            
+            // Toggle current card
+            this.classList.toggle('active');
+        });
+        
+        // Close overview when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!card.contains(event.target)) {
+                card.classList.remove('active');
+            }
+        });
+    });
+});
