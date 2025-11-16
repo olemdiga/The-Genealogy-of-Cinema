@@ -491,6 +491,7 @@ main {
     will-change: transform;
     overflow-y: auto;
     backdrop-filter: blur(10px);
+    z-index: 2;
 }
 
 .overview h4 {
@@ -896,13 +897,27 @@ main {
         display: none;
     }
     
+    /* Fixed mobile overview issue - ensure overview is completely hidden by default */
     .overview {
-        position: static;
-        transform: none;
-        background: rgba(248, 250, 252, 0.95);
-        height: auto;
-        max-height: 120px;
+        position: absolute;
+        transform: translateY(101%);
+        background: rgba(248, 250, 252, 0.98);
+        height: 100%;
         overflow-y: auto;
+        z-index: 2;
+        /* Ensure it's properly hidden off-screen */
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: auto;
+    }
+    
+    /* Show overview only when card is active/tapped */
+    .movie-card.active .overview,
+    .movie-card:focus .overview,
+    .movie-card:focus-within .overview {
+        transform: translateY(-100%);
+        top: 0;
     }
     
     .sidenav ul li a:hover {
@@ -919,6 +934,13 @@ main {
 
     .movie-card:hover .rating-badge {
         transform: none;
+    }
+    
+    /* Remove any partial visibility */
+    .movie-card:not(.active):not(:focus):not(:focus-within) .overview {
+        transform: translateY(101%);
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
@@ -972,5 +994,26 @@ section:focus-within {
         box-shadow: none;
         background: white;
         border: 1px solid #ccc;
+    }
+}
+
+/* Mobile overview fix - ensure overview is completely hidden on mobile by default */
+@media (max-width: 768px) {
+    .overview {
+        transform: translateY(101%);
+        top: 100%;
+        /* Additional safety to ensure it's not visible */
+        opacity: 0;
+        visibility: hidden;
+        transition: transform var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
+    }
+    
+    .movie-card.active .overview,
+    .movie-card:focus .overview,
+    .movie-card:focus-within .overview {
+        transform: translateY(-100%);
+        top: 0;
+        opacity: 1;
+        visibility: visible;
     }
 }
