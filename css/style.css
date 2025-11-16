@@ -364,6 +364,7 @@ main {
     contain: layout style paint;
     will-change: transform;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 
 .movie-card::before {
@@ -380,12 +381,14 @@ main {
 }
 
 .movie-card:hover::before,
-.movie-card:focus-within::before {
+.movie-card:focus-within::before,
+.movie-card.active::before {
     transform: scaleX(1);
 }
 
 .movie-card:hover,
-.movie-card:focus-within {
+.movie-card:focus-within,
+.movie-card.active {
     transform: translateY(-8px) scale(1.02);
     box-shadow: var(--shadow-heavy);
     z-index: 2;
@@ -409,7 +412,8 @@ main {
     transition: transform var(--transition-normal);
 }
 
-.movie-card:hover img {
+.movie-card:hover img,
+.movie-card.active img {
     transform: scale(1.05);
 }
 
@@ -464,7 +468,8 @@ main {
     transition: all var(--transition-fast);
 }
 
-.movie-card:hover .rating-badge {
+.movie-card:hover .rating-badge,
+.movie-card.active .rating-badge {
     transform: scale(1.1);
     box-shadow: 
         0 6px 16px rgba(0, 0, 0, 0.8),
@@ -480,7 +485,7 @@ main {
     top: 0;
     right: 0;
     height: 100%;
-    transform: translateY(101%);
+    transform: translateY(100%);
     transition: transform var(--transition-normal);
     display: flex;
     flex-direction: column;
@@ -491,7 +496,8 @@ main {
     will-change: transform;
     overflow-y: auto;
     backdrop-filter: blur(10px);
-    z-index: 2;
+    z-index: 4;
+    border-radius: var(--radius-md);
 }
 
 .overview h4 {
@@ -515,7 +521,8 @@ main {
 }
 
 .movie-card:hover .overview,
-.movie-card:focus-within .overview {
+.movie-card:focus-within .overview,
+.movie-card.active .overview {
     transform: translateY(0);
 }
 
@@ -887,8 +894,13 @@ main {
     }
 }
 
-/* Touch device optimizations */
+/* Touch device optimizations - COMPLETELY REWORKED */
 @media (hover: none) and (pointer: coarse) {
+    .movie-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
     .movie-card:hover {
         transform: none;
     }
@@ -897,27 +909,25 @@ main {
         display: none;
     }
     
-    /* Fixed mobile overview issue - ensure overview is completely hidden by default */
+    /* Fixed overview for touch devices */
     .overview {
         position: absolute;
-        transform: translateY(101%);
-        background: rgba(248, 250, 252, 0.98);
+        transform: translateY(100%);
+        background: linear-gradient(135deg, rgba(248, 250, 252, 0.98), rgba(241, 245, 249, 0.98));
         height: 100%;
         overflow-y: auto;
-        z-index: 2;
-        /* Ensure it's properly hidden off-screen */
-        top: 100%;
+        z-index: 4;
+        border-radius: var(--radius-md);
+        top: 0;
         left: 0;
         right: 0;
         bottom: auto;
+        transition: transform var(--transition-normal);
     }
     
-    /* Show overview only when card is active/tapped */
-    .movie-card.active .overview,
-    .movie-card:focus .overview,
-    .movie-card:focus-within .overview {
-        transform: translateY(-100%);
-        top: 0;
+    /* Show overview when card has active class */
+    .movie-card.active .overview {
+        transform: translateY(0);
     }
     
     .sidenav ul li a:hover {
@@ -935,12 +945,22 @@ main {
     .movie-card:hover .rating-badge {
         transform: none;
     }
+}
+
+/* Mobile overview fix - SIMPLIFIED approach */
+@media (max-width: 768px) {
+    .movie-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
     
-    /* Remove any partial visibility */
-    .movie-card:not(.active):not(:focus):not(:focus-within) .overview {
-        transform: translateY(101%);
-        visibility: hidden;
-        opacity: 0;
+    .overview {
+        transform: translateY(100%);
+        transition: transform var(--transition-normal);
+    }
+    
+    .movie-card.active .overview {
+        transform: translateY(0);
     }
 }
 
@@ -994,26 +1014,5 @@ section:focus-within {
         box-shadow: none;
         background: white;
         border: 1px solid #ccc;
-    }
-}
-
-/* Mobile overview fix - ensure overview is completely hidden on mobile by default */
-@media (max-width: 768px) {
-    .overview {
-        transform: translateY(101%);
-        top: 100%;
-        /* Additional safety to ensure it's not visible */
-        opacity: 0;
-        visibility: hidden;
-        transition: transform var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
-    }
-    
-    .movie-card.active .overview,
-    .movie-card:focus .overview,
-    .movie-card:focus-within .overview {
-        transform: translateY(-100%);
-        top: 0;
-        opacity: 1;
-        visibility: visible;
     }
 }
