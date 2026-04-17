@@ -1238,3 +1238,12 @@ html, body {
         bottom: -6px;
     }
         }
+/* Add spacing above the "All Movies" header if it follows another section */
+.all-movies-header {
+    margin-top: 3rem;
+}
+
+/* Ensure the movie grid has bottom margin before the footer */
+.movie-grid {
+    margin-bottom: 4rem;
+ }
