@@ -1,339 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | The Film That Wasn't - The Genealogy of Cinema</title>
-    <!-- Root-relative paths for CSS and fonts -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* 404 Page Specific Styles */
-        .error-container {
-            min-height: calc(100vh - 200px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 4rem 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | The Film That Wasn't - The Genealogy of Cinema</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ====== INLINED FROM css/style.css ====== */
+    :root {
+      --primary-dark: #0a0a0a;
+      --secondary-dark: #1a1a1a;
+      --card-dark: #222222;
+      --border-dark: #333333;
+      --accent-nietzsche: #9c27b0;
+      --accent-marx: #f44336;
+      --accent-foucault: #2196f3;
+      --accent-fanon: #ff9800;
+      --accent-baudrillard: #00bcd4;
+      --accent-freud: #4caf50;
+      --accent-mbembe: #795548;
+      --accent-beauvoir: #e91e63;
+      --accent-adorno: #607d8b;
+      --accent-butler: #9c27b0;
+      --text-primary: #f0f0f0;
+      --text-secondary: #b0b0b0;
+      --text-muted: #888888;
+      --sidebar-width: 280px;
+      --header-height: 70px;
+      --border-radius: 12px;
+      --shadow-light: 0 6px 20px rgba(0, 0, 0, 0.3);
+      --shadow-heavy: 0 12px 36px rgba(0, 0, 0, 0.5);
+      --transition-fast: 0.2s ease;
+      --transition-medium: 0.4s cubic-bezier(0.2, 0, 0, 1);
+      --transition-slow: 0.6s cubic-bezier(0.2, 0, 0, 1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: var(--primary-dark); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .menu-toggle { display: flex; position: fixed; top: 24px; left: 24px; z-index: 1100; background: rgba(26, 26, 26, 0.95); border: 1px solid var(--border-dark); border-radius: var(--border-radius); width: 48px; height: 48px; align-items: center; justify-content: center; cursor: pointer; transition: var(--transition-medium); backdrop-filter: blur(10px); }
+    .menu-toggle:hover { background: var(--card-dark); border-color: var(--accent-nietzsche); transform: scale(1.05); }
+    .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--text-primary); position: relative; transition: var(--transition-medium); }
+    .menu-toggle span::before, .menu-toggle span::after { content: ''; position: absolute; width: 22px; height: 2px; background: var(--text-primary); transition: var(--transition-medium); }
+    .menu-toggle span::before { top: -6px; }
+    .menu-toggle span::after { top: 6px; }
+    .menu-toggle.active span { background: transparent; }
+    .menu-toggle.active span::before { transform: rotate(45deg); top: 0; }
+    .menu-toggle.active span::after { transform: rotate(-45deg); top: 0; }
+    .site-header { position: relative; height: var(--header-height); background: linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(26, 26, 26, 0.95) 100%); border-bottom: 1px solid var(--border-dark); display: flex; align-items: center; justify-content: center; padding: 0 2rem; box-shadow: var(--shadow-light); }
+    .site-header a { text-decoration: none; color: inherit; }
+    .site-title { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; color: var(--text-primary); text-align: center; position: relative; transition: var(--transition-medium); }
+    .site-title:hover { opacity: 0.9; }
+    .site-title::after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(90deg, var(--accent-nietzsche), var(--accent-marx)); border-radius: 3px; }
+    .sidebar { width: var(--sidebar-width); background: linear-gradient(180deg, var(--secondary-dark) 0%, #151515 100%); border-right: 1px solid var(--border-dark); position: fixed; left: 0; top: 0; bottom: 0; overflow-y: auto; padding: calc(var(--header-height) + 2rem) 0 2rem; z-index: 900; transform: translateX(-100%); transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1); box-shadow: 10px 0 40px rgba(0, 0, 0, 0.6); }
+    .sidebar.active { transform: translateX(0); }
+    .sidebar-section { margin-bottom: 2rem; padding: 0 2rem; }
+    .sidebar-title { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent-nietzsche); margin-bottom: 1.2rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(156, 39, 176, 0.3); }
+    .genre-list { list-style: none; }
+    .genre-list li { margin-bottom: 0.5rem; }
+    .genre-list a { display: flex; align-items: center; gap: 12px; padding: 0.85rem 1.2rem; color: var(--text-secondary); text-decoration: none; font-size: 0.95rem; font-weight: 500; border-radius: var(--border-radius); transition: var(--transition-medium); border-left: 3px solid transparent; }
+    .genre-list a:hover { color: var(--text-primary); background: rgba(156, 39, 176, 0.1); transform: translateX(4px); border-left-color: var(--accent-nietzsche); }
+    .genre-list a.active { color: var(--accent-nietzsche); background: rgba(156, 39, 176, 0.15); border-left: 3px solid var(--accent-nietzsche); }
+    .main-content { padding: 3rem 2.5rem; max-width: 1200px; margin: 0 auto; width: 100%; animation: fadeIn 0.8s ease-out; }
+    .site-footer { padding: 3rem 2rem; background: var(--secondary-dark); border-top: 1px solid var(--border-dark); color: var(--text-secondary); text-align: center; }
+    .site-footer .footer-content { max-width: 600px; margin: 0 auto; }
+    .footer-quote { font-style: italic; color: var(--accent-nietzsche); font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem; padding: 0 1rem; }
+    .footer-copyright { font-size: 0.9rem; color: var(--text-muted); letter-spacing: 0.5px; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-        .error-title {
-            font-size: 8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--accent-nietzsche), var(--accent-marx));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin: 0;
-            line-height: 1;
-            letter-spacing: -3px;
-        }
-
-        .error-subtitle {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 1rem 0 2rem;
-            letter-spacing: -0.5px;
-        }
-
-        .error-message {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 3rem;
-            max-width: 600px;
-        }
-
-        .error-quote {
-            font-style: italic;
-            color: var(--accent-mbembe);
-            font-size: 1.3rem;
-            line-height: 1.6;
-            margin: 2rem 0;
-            padding: 2rem;
-            border-left: 4px solid var(--accent-mbembe);
-            background: rgba(121, 85, 72, 0.05);
-            border-radius: 0 var(--border-radius) var(--border-radius) 0;
-            text-align: left;
-        }
-
-        .error-quote cite {
-            display: block;
-            margin-top: 1rem;
-            font-size: 1rem;
-            color: var(--text-muted);
-        }
-
-        .philosopher-analysis {
-            background: var(--card-dark);
-            border: 1px solid var(--border-dark);
-            border-radius: var(--border-radius);
-            padding: 2rem;
-            margin: 2rem 0;
-            text-align: left;
-            box-shadow: var(--shadow-light);
-        }
-
-        .philosopher-analysis h3 {
-            color: var(--accent-nietzsche);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .philosopher-analysis p {
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
-        .action-buttons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .btn {
-            padding: 1rem 2rem;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition-medium);
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--accent-nietzsche), var(--accent-marx));
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-light);
-        }
-
-        .btn-secondary {
-            background: var(--card-dark);
-            color: var(--text-primary);
-            border: 1px solid var(--border-dark);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(156, 39, 176, 0.1);
-            border-color: var(--accent-nietzsche);
-            transform: translateY(-2px);
-        }
-
-        .lost-films {
-            margin-top: 3rem;
-            text-align: left;
-            width: 100%;
-        }
-
-        .lost-films h3 {
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-        }
-
-        .lost-films-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .lost-films-list li {
-            margin-bottom: 0.8rem;
-        }
-
-        .lost-films-list a {
-            color: var(--accent-nietzsche);
-            text-decoration: none;
-            transition: var(--transition-fast);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .lost-films-list a:hover {
-            color: var(--accent-marx);
-            transform: translateX(5px);
-        }
-
-        .lost-films-list a::before {
-            content: "🎬";
-            font-size: 0.9rem;
-        }
-
-        /* Mobile adjustments */
-        @media (max-width: 768px) {
-            .error-title {
-                font-size: 5rem;
-            }
-            
-            .error-subtitle {
-                font-size: 1.8rem;
-            }
-            
-            .error-container {
-                padding: 2rem 1rem;
-            }
-            
-            .action-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-            
-            .btn {
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .error-title {
-                font-size: 4rem;
-            }
-            
-            .error-subtitle {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    /* ====== 404 PAGE SPECIFIC STYLES ====== */
+    .error-container { min-height: calc(100vh - 200px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; max-width: 800px; margin: 0 auto; }
+    .error-title { font-size: 8rem; font-weight: 800; background: linear-gradient(135deg, var(--accent-nietzsche), var(--accent-marx)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 0; line-height: 1; letter-spacing: -3px; }
+    .error-subtitle { font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0 2rem; letter-spacing: -0.5px; }
+    .error-message { font-size: 1.2rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 3rem; max-width: 600px; }
+    .error-quote { font-style: italic; color: var(--accent-mbembe); font-size: 1.3rem; line-height: 1.6; margin: 2rem 0; padding: 2rem; border-left: 4px solid var(--accent-mbembe); background: rgba(121, 85, 72, 0.05); border-radius: 0 var(--border-radius) var(--border-radius) 0; text-align: left; }
+    .error-quote cite { display: block; margin-top: 1rem; font-size: 1rem; color: var(--text-muted); }
+    .philosopher-analysis { background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: var(--border-radius); padding: 2rem; margin: 2rem 0; text-align: left; box-shadow: var(--shadow-light); }
+    .philosopher-analysis h3 { color: var(--accent-nietzsche); margin-bottom: 1rem; font-size: 1.3rem; }
+    .philosopher-analysis p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
+    .philosopher-analysis p strong { color: var(--text-primary); }
+    .action-buttons { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center; }
+    .btn { padding: 1rem 2rem; border-radius: var(--border-radius); font-weight: 600; text-decoration: none; transition: var(--transition-medium); font-size: 1rem; border: none; cursor: pointer; font-family: 'Inter', sans-serif; }
+    .btn-primary { background: linear-gradient(135deg, var(--accent-nietzsche), var(--accent-marx)); color: white; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-light); }
+    .btn-secondary { background: var(--card-dark); color: var(--text-primary); border: 1px solid var(--border-dark); }
+    .btn-secondary:hover { background: rgba(156, 39, 176, 0.1); border-color: var(--accent-nietzsche); transform: translateY(-2px); }
+    .lost-films { margin-top: 3rem; text-align: left; width: 100%; }
+    .lost-films h3 { color: var(--text-primary); margin-bottom: 1.5rem; font-size: 1.2rem; }
+    .lost-films-list { list-style: none; padding: 0; }
+    .lost-films-list li { margin-bottom: 0.8rem; }
+    .lost-films-list a { color: var(--accent-nietzsche); text-decoration: none; transition: var(--transition-fast); display: flex; align-items: center; gap: 0.5rem; }
+    .lost-films-list a:hover { color: var(--accent-marx); transform: translateX(5px); }
+    .lost-films-list a::before { content: "🎬"; font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      .error-title { font-size: 5rem; }
+      .error-subtitle { font-size: 1.8rem; }
+      .error-container { padding: 2rem 1rem; }
+      .action-buttons { flex-direction: column; width: 100%; }
+      .btn { width: 100%; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .error-title { font-size: 4rem; }
+      .error-subtitle { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Mobile Menu Button -->
-    <div class="menu-toggle" id="menuToggle">
-        <span></span>
+  <div class="menu-toggle" id="menuToggle"><span></span></div>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-title">The Genealogy of Cinema</a>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">Browse by Genre</div>
+      <ul class="genre-list">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="critics.html">🧠 Critical Thinkers</a></li>
+        <li><a href="genres/sci-fi.html">🚀 Sci-Fi</a></li>
+        <li><a href="genres/action.html">💥 Action</a></li>
+        <li><a href="genres/african.html">🌍 African</a></li>
+        <li><a href="genres/ai-machines.html">🤖 AI & Machines</a></li>
+        <li><a href="genres/animation.html">🎨 Animation</a></li>
+        <li><a href="genres/apocalyptic.html">🔥 Apocalyptic</a></li>
+        <li><a href="genres/assassins.html">🔪 Assassins</a></li>
+        <li><a href="genres/black-lives.html">✊🏿 Black Lives</a></li>
+        <li><a href="genres/christmas-family.html">🎄 Christmas & Family</a></li>
+        <li><a href="genres/comedy.html">😂 Comedy</a></li>
+        <li><a href="genres/computer-crimes.html">💻 Computer Crimes</a></li>
+        <li><a href="genres/computers.html">🖥️ Computers</a></li>
+        <li><a href="genres/crime.html">🔫 Crime</a></li>
+        <li><a href="genres/documentary.html">📹 Documentary</a></li>
+        <li><a href="genres/drama.html">🎭 Drama</a></li>
+        <li><a href="genres/fantasy-adventure.html">🧙 Fantasy & Adventure</a></li>
+        <li><a href="genres/financial.html">💰 Financial</a></li>
+        <li><a href="genres/heists.html">🎲 Heists</a></li>
+        <li><a href="genres/historical-biographical.html">📜 Historical & Biographical</a></li>
+        <li><a href="genres/horror.html">👻 Horror</a></li>
+        <li><a href="genres/literature.html">📚 Literature</a></li>
+        <li><a href="genres/martial-arts.html">🥋 Martial Arts</a></li>
+        <li><a href="genres/monsters-aliens.html">👽 Monsters & Aliens</a></li>
+        <li><a href="genres/music-dance.html">🎵 Music & Dance</a></li>
+        <li><a href="genres/provocative-controversial.html">💣 Provocative & Controversial</a></li>
+        <li><a href="genres/relationships.html">❤️ Relationships</a></li>
+        <li><a href="genres/religion-mythology.html">🕊️ Religion & Mythology</a></li>
+        <li><a href="genres/serial-killers.html">🔪 Serial Killers</a></li>
+        <li><a href="genres/series-films.html">🎞️ Series Films</a></li>
+        <li><a href="genres/sports.html">⚽ Sports</a></li>
+        <li><a href="genres/spy-film.html">🕵️ Spy Film</a></li>
+        <li><a href="genres/stand-up.html">🎤 Stand-up</a></li>
+        <li><a href="genres/superheroes.html">🦸 Superheroes</a></li>
+        <li><a href="genres/war-soldiers.html">⚔️ War & Soldiers</a></li>
+      </ul>
     </div>
-    
-    <!-- Mobile Menu Overlay -->
-    <div class="menu-overlay" id="menuOverlay"></div>
+  </nav>
 
-    <!-- Header -->
-    <header class="site-header">
-        <a href="index.html" class="site-title">The Genealogy of Cinema</a>
-    </header>
+  <main class="main-content">
+    <div class="error-container">
+      <h1 class="error-title">404</h1>
+      <h2 class="error-subtitle">The Film That Wasn't</h2>
+      
+      <p class="error-message">
+        You've stumbled upon a missing reel—a cinematic void where the expected narrative fails to materialize. 
+        This lacuna in the filmography presents a unique opportunity for philosophical inquiry.
+      </p>
 
-    <!-- Sidebar -->
-    <nav class="sidebar" id="sidebar">
-        <div class="sidebar-section">
-            <div class="sidebar-title">Browse by Genre</div>
-            <ul class="genre-list">
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="critics.html">🧠 Critical Thinkers</a></li>
-                <li><a href="genres/sci-fi.html">🚀 Sci-Fi</a></li>
-                <li><a href="genres/action.html">💥 Action</a></li>
-                <li><a href="genres/african.html">🌍 African</a></li>
-                <li><a href="genres/ai-machines.html">🤖 AI & Machines</a></li>
-                <li><a href="genres/animation.html">🎨 Animation</a></li>
-                <li><a href="genres/apocalyptic.html">🔥 Apocalyptic</a></li>
-                <li><a href="genres/assassins.html">🔪 Assassins</a></li>
-                <li><a href="genres/black-lives.html">✊🏿 Black Lives</a></li>
-                <li><a href="genres/christmas-family.html">🎄 Christmas & Family</a></li>
-                <li><a href="genres/comedy.html">😂 Comedy</a></li>
-                <li><a href="genres/computer-crimes.html">💻 Computer Crimes</a></li>
-                <li><a href="genres/computers.html">🖥️ Computers</a></li>
-                <li><a href="genres/crime.html">🔫 Crime</a></li>
-                <li><a href="genres/documentary.html">📹 Documentary</a></li>
-                <li><a href="genres/drama.html">🎭 Drama</a></li>
-                <li><a href="genres/fantasy-adventure.html">🧙 Fantasy & Adventure</a></li>
-                <li><a href="genres/financial.html">💰 Financial</a></li>
-                <li><a href="genres/heists.html">🎲 Heists</a></li>
-                <li><a href="genres/historical-biographical.html">📜 Historical & Biographical</a></li>
-                <li><a href="genres/horror.html">👻 Horror</a></li>
-                <li><a href="genres/literature.html">📚 Literature</a></li>
-                <li><a href="genres/martial-arts.html">🥋 Martial Arts</a></li>
-                <li><a href="genres/monsters-aliens.html">👽 Monsters & Aliens</a></li>
-                <li><a href="genres/music-dance.html">🎵 Music & Dance</a></li>
-                <li><a href="genres/provocative-controversial.html">💣 Provocative & Controversial</a></li>
-                <li><a href="genres/relationships.html">❤️ Relationships</a></li>
-                <li><a href="genres/religion-mythology.html">🕊️ Religion & Mythology</a></li>
-                <li><a href="genres/serial-killers.html">🔪 Serial Killers</a></li>
-                <li><a href="genres/series-films.html">🎞️ Series Films</a></li>
-                <li><a href="genres/sports.html">⚽ Sports</a></li>
-                <li><a href="genres/spy-film.html">🕵️ Spy Film</a></li>
-                <li><a href="genres/stand-up.html">🎤 Stand-up</a></li>
-                <li><a href="genres/superheroes.html">🦸 Superheroes</a></li>
-                <li><a href="genres/war-soldiers.html">⚔️ War & Soldiers</a></li>
-            </ul>
-        </div>
-    </nav>
+      <div class="error-quote">
+        "What we cannot speak about we must pass over in silence."<br>
+        But cinema rebels against this Wittgensteinian edict—it insists on showing what cannot be said, 
+        even when what should be shown remains absent.
+        <cite>— Wittgenstein's Tractatus, Cinematically Misappropriated</cite>
+      </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="error-container">
-            <h1 class="error-title">404</h1>
-            <h2 class="error-subtitle">The Film That Wasn't</h2>
-            
-            <p class="error-message">
-                You've stumbled upon a missing reel—a cinematic void where the expected narrative fails to materialize. 
-                This lacuna in the filmography presents a unique opportunity for philosophical inquiry.
-            </p>
+      <div class="philosopher-analysis">
+        <h3>Philosophical Analysis: The 404 as Cinematic Lacuna</h3>
+        <p><strong>Derrida's Trace:</strong> The missing page you seek leaves only a trace—an absence that speaks volumes about the archive's structure. Every 404 error reveals what the system excludes, marginalizes, or defers.</p>
+        <p><strong>Baudrillard's Simulacrum:</strong> You anticipated a film, but received its absence—a hyperreal experience of a non-existent cinematic object. The error page becomes more "real" than the missing content.</p>
+        <p><strong>Foucault's Archive:</strong> This gap in the cinematic database reveals the power structures governing what gets preserved, cataloged, and made accessible. The missing film becomes a testament to archival politics.</p>
+      </div>
 
-            <div class="error-quote">
-                "What we cannot speak about we must pass over in silence."<br>
-                But cinema rebels against this Wittgensteinian edict—it insists on showing what cannot be said, 
-                even when what should be shown remains absent.
-                <cite>— Wittgenstein's Tractatus, Cinematically Misappropriated</cite>
-            </div>
+      <div class="action-buttons">
+        <a href="index.html" class="btn btn-primary">Return to the Archive</a>
+        <a href="critics.html" class="btn btn-secondary">Consult the Philosophers</a>
+      </div>
 
-            <div class="philosopher-analysis">
-                <h3>Philosophical Analysis: The 404 as Cinematic Lacuna</h3>
-                <p>
-                    <strong>Derrida's Trace:</strong> The missing page you seek leaves only a trace—an absence that speaks 
-                    volumes about the archive's structure. Every 404 error reveals what the system excludes, marginalizes, 
-                    or defers.
-                </p>
-                <p>
-                    <strong>Baudrillard's Simulacrum:</strong> You anticipated a film, but received its absence—a hyperreal 
-                    experience of a non-existent cinematic object. The error page becomes more "real" than the missing content.
-                </p>
-                <p>
-                    <strong>Foucault's Archive:</strong> This gap in the cinematic database reveals the power structures 
-                    governing what gets preserved, cataloged, and made accessible. The missing film becomes a testament 
-                    to archival politics.
-                </p>
-            </div>
+      <div class="lost-films">
+        <h3>Perhaps You Were Seeking These Found Films:</h3>
+        <ul class="lost-films-list">
+          <li><a href="genres/sci-fi.html">🚀 Science Fiction - Speculative futures analyzed</a></li>
+          <li><a href="genres/black-lives.html">✊🏿 Black Lives - Critical race theory in cinema</a></li>
+          <li><a href="genres/provocative-controversial.html">💣 Provocative & Controversial - Transgressive cinema</a></li>
+          <li><a href="genres/crime.html">🔫 Crime - Power structures and morality</a></li>
+          <li><a href="genres/drama.html">🎭 Drama - Human condition through philosophical lenses</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
-            <div class="action-buttons">
-                <a href="index.html" class="btn btn-primary">Return to the Archive</a>
-                <a href="critics.html" class="btn btn-secondary">Consult the Philosophers</a>
-            </div>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-quote">"The cinema is not an art which films life: the cinema is something between art and life." — Jean-Luc Godard</p>
+      <p class="footer-copyright">The Genealogy of Cinema © <span id="current-year"></span></p>
+    </div>
+  </footer>
 
-            <div class="lost-films">
-                <h3>Perhaps You Were Seeking These Found Films:</h3>
-                <ul class="lost-films-list">
-                    <li><a href="genres/sci-fi.html">🚀 Science Fiction - Speculative futures analyzed</a></li>
-                    <li><a href="genres/black-lives.html">✊🏿 Black Lives - Critical race theory in cinema</a></li>
-                    <li><a href="genres/provocative-controversial.html">💣 Provocative & Controversial - Transgressive cinema</a></li>
-                    <li><a href="genres/crime.html">🔫 Crime - Power structures and morality</a></li>
-                    <li><a href="genres/drama.html">🎭 Drama - Human condition through philosophical lenses</a></li>
-                </ul>
-            </div>
-        </div>
-    </main>
+  <script>
+    // ====== INLINED FROM js/script.js ======
+    (function() {
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM loaded - Initializing sidebar...');
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        let menuOverlay = document.getElementById('menuOverlay');
+        
+        if (!menuOverlay) {
+          menuOverlay = document.createElement('div');
+          menuOverlay.id = 'menuOverlay';
+          menuOverlay.className = 'menu-overlay';
+          document.body.appendChild(menuOverlay);
+        }
+        
+        if (!menuToggle || !sidebar) {
+          console.error('Missing required elements for sidebar!');
+          return;
+        }
+        
+        function toggleSidebar() {
+          menuToggle.classList.toggle('active');
+          sidebar.classList.toggle('active');
+          menuOverlay.classList.toggle('active');
+          document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+        }
+        
+        function closeSidebar() {
+          menuToggle.classList.remove('active');
+          sidebar.classList.remove('active');
+          menuOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+        
+        menuToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          toggleSidebar();
+        });
+        
+        menuOverlay.addEventListener('click', closeSidebar);
+        
+        document.addEventListener('click', function(e) {
+          if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && e.target !== menuToggle) {
+            closeSidebar();
+          }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+            closeSidebar();
+          }
+        });
+        
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+              closeSidebar();
+            }
+          });
+        });
+        
+        function updateActiveLink() {
+          const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+          const links = document.querySelectorAll('.sidebar a');
+          links.forEach(link => {
+            link.classList.remove('active');
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage) {
+              link.classList.add('active');
+            }
+            if ((linkHref === 'index.html' || linkHref === './' || linkHref === '/') && (currentPage === 'index.html' || currentPage === '')) {
+              link.classList.add('active');
+            }
+            if (linkHref === 'critics.html' && currentPage === 'critics.html') {
+              link.classList.add('active');
+            }
+          });
+        }
+        updateActiveLink();
+        
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+        
+        console.log('Sidebar initialization complete');
+      });
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p class="footer-quote">"The cinema is not an art which films life: the cinema is something between art and life." — Jean-Luc Godard</p>
-            <p class="footer-copyright">The Genealogy of Cinema &copy; <span id="current-year"></span></p>
-        </div>
-    </footer>
-    
-    <!-- Root-relative path for JavaScript -->
-    <script src="js/script.js"></script>
-    <script>
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+      window.addEventListener('resize', function() {
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.getElementById('menuToggle');
+        const menuOverlay = document.getElementById('menuOverlay');
+        if (window.innerWidth > 768 && sidebar && sidebar.classList.contains('active')) {
+          sidebar.classList.remove('active');
+          if (menuToggle) menuToggle.classList.remove('active');
+          if (menuOverlay) menuOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    })();
+  </script>
 </body>
-      </html>
+    </html>
